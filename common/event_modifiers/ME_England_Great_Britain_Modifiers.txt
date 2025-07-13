@@ -115,7 +115,7 @@ ENG_new_men_modifier = {
 
 ENG_elizabethan_era = {
 	global_prosperity_growth = 0.5
-	development_cost = -0.05
+	development_cost = -0.025
 }
 
 ENG_bill_of_rights = {
@@ -217,7 +217,7 @@ ENG_admirals_regiment_no_dlc = {
 ENG_admirals_regiment = {
 	regiment_manpower_usage = -0.1
 	reinforce_cost_modifier = -0.5
-	shock_damage_received = -0.33
+	shock_damage_received = -0.15 #originally -0.33
 	is_marine_modifier = yes
 }
 
@@ -280,13 +280,13 @@ ENG_setting_the_stage = {
 }
 
 ENG_growth_of_industrial_city = {
-	local_development_cost = -0.6
+	local_development_cost = -0.3
 	trade_goods_size = 1
 	trade_goods_size_modifier = 1
 }
 
 ENG_industrial_revolution = {
-	development_cost = -0.05
+	development_cost = -0.025
 	technology_cost = -0.1
 }
 
@@ -393,7 +393,7 @@ ENG_spice_trade_modifier = {
 ENG_founding_of_singapore = {
 	province_trade_power_value = 25
 	province_trade_power_modifier = 0.25
-	local_development_cost = -0.25
+	local_development_cost = -0.125
 	min_local_autonomy = -25
 }
 
@@ -592,7 +592,7 @@ ME_decree_of_indulgence = {
 
 # Generic English 
 LNC_support_of_commons = {
-	development_cost = -0.1
+	development_cost = -0.05
 	global_prosperity_growth = 1 
 }
 
