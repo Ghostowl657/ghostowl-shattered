@@ -29,7 +29,7 @@ w_george ={
 w_mary = {
 	#(Economic - Income)
 	global_tax_modifier = 0.25
-	development_cost = -0.1
+	development_cost = -0.05
 	
 	potential = { religion = waldensian }
 	trigger = {}

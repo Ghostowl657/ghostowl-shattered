@@ -782,12 +782,12 @@ christian = {
 			protestant
 		}
 		country = {
-			development_cost = -0.1
+			development_cost = -0.05
 			innovativeness_gain = 0.5
 		}
 		
 		country_as_secondary = {
-			development_cost = -0.1
+			development_cost = -0.05
 			innovativeness_gain = 0.5
 		}
 		
@@ -1156,7 +1156,7 @@ christian = {
 			}
 
 			icon_pancreator = {
-				development_cost = -0.10
+				development_cost = -0.05
 				build_cost = -0.05
 				
 				allow = {
@@ -1537,7 +1537,7 @@ christian = {
 		#	}
 		#
 		#	icon_pancreator = {
-		#		development_cost = -0.10
+		#		development_cost = -0.05
 		#		production_efficiency = 0.1
 		#		
 		#		allow = {

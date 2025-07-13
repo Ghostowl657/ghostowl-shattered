@@ -59,7 +59,7 @@ american_pagan = {
 			state_maintenance_modifier = -0.25
 		}
 		country_as_secondary = {
-			development_cost = -0.1
+			development_cost = -0.05
 			global_prosperity_growth = 0.1
 		}
 		province = {

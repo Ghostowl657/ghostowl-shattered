@@ -1,5 +1,5 @@
 zeus = {
-        development_cost = -0.1
+        development_cost = -0.05
         global_unrest = -1
 
         potential = {

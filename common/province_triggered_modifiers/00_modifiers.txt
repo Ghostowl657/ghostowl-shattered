@@ -234,7 +234,7 @@ perpetual_diet = {
 	}
 
 	prestige = 0.5
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 	is_imperial_modifier = yes
 
 	on_activation = {
@@ -928,7 +928,7 @@ ajuuran_place_of_istunka = {
 			mission_completed = aju_invent_istunka
 		}
 	}
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 	global_unrest = -1
 }
 
@@ -1029,7 +1029,7 @@ livonian_diet_capital = {
 	local_tax_modifier = 0.1
 	local_production_efficiency = 0.1
 	local_manpower_modifier = 0.1
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 }
 
 livonian_headquarter = {
@@ -1048,7 +1048,7 @@ livonian_headquarter = {
 	diplomatic_upkeep = 1
 	yearly_army_professionalism = 0.005
 	local_manpower_modifier = 0.25
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 }
 
 teutonic_headquarter = {
@@ -1067,7 +1067,7 @@ teutonic_headquarter = {
 	diplomatic_upkeep = 1
 	yearly_army_professionalism = 0.01
 	local_manpower_modifier = 0.25
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 }
 
 seat_of_the_rigan_archbishopric = {
@@ -1106,7 +1106,7 @@ seat_of_the_rigan_archbishopric = {
 	local_production_efficiency = 0.25
 	local_manpower_modifier = 0.25
 	local_sailors_modifier = 0.25
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 }
 
 cathedral_of_riga = {
@@ -1128,7 +1128,7 @@ cathedral_of_riga = {
 			}
 		}
 	}
-	local_development_cost = -0.25
+	local_development_cost = -0.125
 	tax_income = 60
 	local_governing_cost = -0.25
 	church_loyalty_modifier = 0.1
@@ -1480,7 +1480,7 @@ BYZ_seat_of_a_patriarch = {
 
 	tax_income = 12
 	local_tax_modifier = 0.25
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	
 	#Province scope
 	on_activation = {
@@ -1730,7 +1730,7 @@ orm_hormuz_sound_tool = {
 	}
 
 	province_trade_power_value = 20
-	local_development_cost = -0.10
+	local_development_cost = -0.05
 	
 	#Province scope
 	on_activation = {
@@ -1755,7 +1755,7 @@ ITA_all_roads_lead_to_rome = {
 		controlled_by = owner
 	}
 
-	local_development_cost_modifier = -0.25
+	local_development_cost_modifier = -0.125
 	
 	#Province scope
 	on_activation = {
@@ -1877,7 +1877,7 @@ ITA_superior_trade_center = {
 		controlled_by = owner
 	}
 	
-	local_development_cost_modifier = -0.15
+	local_development_cost_modifier = -0.075
 	
 	
 	#Province scope
@@ -2175,7 +2175,7 @@ SUN_symposium_modifier = {
 		}
 	}
 	
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 hab_vienna_ballrooms = {
@@ -2214,7 +2214,7 @@ ned_sound_toll_ties = {
 		}
     }
 	
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	
 	#Province scope
 	on_activation = {

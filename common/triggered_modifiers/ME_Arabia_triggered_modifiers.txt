@@ -12,7 +12,7 @@ HED_vassal_completed_dev_cost_mission = {
 		}
 	}
 	
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 ARB_china_trade = {

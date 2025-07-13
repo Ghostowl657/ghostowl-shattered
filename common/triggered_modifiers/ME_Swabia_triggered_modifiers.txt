@@ -8,7 +8,7 @@ ME_SWA_Stability_1 = {
 		always = yes
 	}
 	
-	development_cost = -0.05
+	development_cost = -0.025
 }
 
 ME_SWA_Stability_2 = {
@@ -21,7 +21,7 @@ ME_SWA_Stability_2 = {
 		always = yes
 	}
 	
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 ME_SWA_Stability_3 = {
@@ -33,5 +33,5 @@ ME_SWA_Stability_3 = {
 		always = yes
 	}
 	
-	development_cost = -0.15
+	development_cost = -0.075
 }

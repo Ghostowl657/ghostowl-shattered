@@ -315,7 +315,7 @@ LNC_poor_law_act = {
 	}
 	
 	modifier = {
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	backing_percentage = 10
 	

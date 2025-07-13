@@ -31,7 +31,7 @@ moon = {
 
 earth = {
 	global_trade_goods_size_modifier = 0.05
-	development_cost = -0.1	
+	development_cost = -0.05	
 	potential = { religion = polynesian_religion }
 	trigger = {}
 	effect = {}

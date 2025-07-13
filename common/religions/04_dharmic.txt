@@ -628,7 +628,7 @@ dharmic = {
 						type = ADM
 						cost = 50
 
-						development_cost = -0.1
+						development_cost = -0.05
 					}
 					divine_justice = {
 						type = DIP

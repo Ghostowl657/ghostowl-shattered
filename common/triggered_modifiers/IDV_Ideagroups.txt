@@ -1,15 +1,15 @@
 
 #morale_bonus_5_cultures
-humanist_bonus = {
-	potential = {
-		has_idea_group = humanist_ideas
-	}
-	trigger = {
-		has_idea = cultural_ties_2
-		num_accepted_cultures = 7
-	}
-	land_morale = 0.075
-}
+#humanist_bonus = {
+#	potential = {
+#		has_idea_group = humanist_ideas
+#	}
+#	trigger = {
+#		has_idea = cultural_ties_2
+#		num_accepted_cultures = 7
+#	}
+#	land_morale = 0.075
+#}
 
 kolo3_1_bonus = {
 	potential = {

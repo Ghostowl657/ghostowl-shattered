@@ -242,7 +242,7 @@ earthwork_expert_personality = {
 	
 	
 	build_time = -0.15
-	development_cost = -0.05
+	development_cost = -0.025
 	
 	building_budget_multiplier = 1.5
 	nation_designer_cost = 2

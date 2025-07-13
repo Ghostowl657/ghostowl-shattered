@@ -12,11 +12,11 @@ eastern = {
 			mahayana
 		}
 		country = {
-			development_cost = -0.05
+			development_cost = -0.025
 			advisor_cost = -0.1
 		}
 		country_as_secondary = {
-			development_cost = -0.05
+			development_cost = -0.025
 			advisor_cost = -0.1
 		}
 		on_convert = {
