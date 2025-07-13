@@ -1,0 +1,42 @@
+the_sol_raided_province = {
+	opinion = -50
+	yearly_decay = 5
+}
+
+wendish_flavour_chose_slavic_opinion_mod = {
+	opinion = 25
+}
+
+opinion_marble_monopoly = {
+	opinion = -25
+	yearly_decay = 2
+}
+
+opinion_bogomilist_rome_tier_one = {
+	opinion = -50
+	yearly_decay = 2
+}
+
+opinion_bogomilist_rome_tier_two = {
+	opinion = -100
+	yearly_decay = 2	
+}
+
+opinion_bogomilist_constantinople_tier_one = {
+	opinion = -50
+	yearly_decay = 2
+}
+
+opinion_bogomilist_constantinople_tier_two = {
+	opinion = -100
+	yearly_decay = 2	
+}
+
+opinion_bogomilist_missionaries = {
+	opinion = -25
+	yearly_decay = 1
+}
+
+opinion_player_alliance_positive = {
+	opinion = 400
+}

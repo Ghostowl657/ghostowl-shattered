@@ -1,0 +1,153 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new dieties, make sure they are uniquely named.
+
+w_george ={
+	# (Diplomatic - War)
+	core_creation = -0.1
+	province_warscore_cost = -0.1
+	
+	potential = { religion = waldensian }
+	trigger = {}
+	effect = {}
+	removed_effect = {}
+
+	sprite = 48
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}		
+	}
+}
+
+w_mary = {
+	#(Economic - Income)
+	global_tax_modifier = 0.25
+	development_cost = -0.1
+	
+	potential = { religion = waldensian }
+	trigger = {}
+	effect = {}
+	removed_effect = {}
+
+	sprite = 49
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_militarist
+		}			
+	}	
+}
+
+w_patrick ={
+	#(Diplomatic - Peace)
+	diplomatic_reputation = 1
+	improve_relation_modifier = 0.33
+	
+	potential = { religion = waldensian }
+	trigger = {}
+	effect = {}
+	removed_effect = {}
+
+	sprite = 50
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_capitalist
+		}		
+		modifier = {
+			factor = 2
+			personality = ai_colonialist
+		}			
+	}	
+}
+
+w_michael = {
+	#(Military - Offensive) 
+	siege_ability = 0.15
+	discipline = 0.05
+	
+	potential = { religion = waldensian }
+	trigger = {}
+	effect = {}
+	removed_effect = {}
+
+	sprite = 51
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 3
+			personality = ai_capitalist
+		}	
+		modifier = {
+			factor = 2
+			personality = ai_colonialist
+		}		
+	}	
+}
+
+w_joseph = { 
+	#(Economic - Savings)
+	interest = -0.5
+	global_trade_goods_size_modifier = 0.1
+	
+	potential = { religion = waldensian }
+	trigger = {}
+	effect = {}
+	removed_effect = {}
+
+	sprite = 52
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}		
+	}	
+}
+
+w_augustine ={
+	# (Military - Defensive)
+	defensiveness = 0.25
+	max_hostile_attrition = 1
+
+	potential = { religion = waldensian }
+	trigger = {}
+	effect = {}
+	removed_effect = {}
+
+	sprite = 53
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}	
+		modifier = {
+			factor = 0.5
+			personality = ai_capitalist
+		}		
+	}	
+}
+
