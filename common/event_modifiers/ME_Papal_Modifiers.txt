@@ -73,7 +73,7 @@ me_pap_french_technological_aid = {
 }
 
 me_pap_city_of_christendom = {
-    local_development_cost = -0.2
+    local_development_cost = -0.1
     local_tax_modifier = 0.4
     local_great_project_upgrade_cost = -0.25
 }
@@ -90,7 +90,7 @@ me_pap_naval_base_of_the_south = {
 
 me_pap_free_pilgrimages = {
     local_tax_modifier = 0.5
-    local_development_cost = -0.15
+    local_development_cost = -0.075
 }
 
 me_pope_mutual_economic_aid = {
@@ -109,7 +109,7 @@ me_pap_old_seat_of_popes = {
 
 me_pap_rhone_estuary_expanded = {
     province_trade_power_value = 10
-    local_development_cost = -0.1
+    local_development_cost = -0.05
 }
 
 me_pap_french_papal_guard = {
@@ -210,7 +210,7 @@ me_pap_holy_city_jerusalem_modifier = {
 
 me_pap_restored_catholic_pilgrims = {
     local_tax_modifier = 0.35
-    local_development_cost = -0.1
+    local_development_cost = -0.05
 }
 
 me_pap_populating_iraqi_land = {
@@ -254,7 +254,7 @@ me_pap_high_orsini_influence = {
 }
 
 me_pap_high_colonna_influence = {
-    development_cost = 0.1
+    development_cost = 0.05
     global_unrest = 2
 }
 

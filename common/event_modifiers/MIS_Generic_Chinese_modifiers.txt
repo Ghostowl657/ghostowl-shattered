@@ -81,7 +81,7 @@ chinese_minor_artigiani = {
 }
 chinese_minor_center_renaissance = {
 	institution_growth = 12
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 }
 
 #Events
@@ -106,7 +106,7 @@ chinese_minor_end_genoa = {
 }
 
 chinese_minor_end_medici = {
-	development_cost = -0.10
+	development_cost = -0.05
 	technology_cost = -0.05
 }
 

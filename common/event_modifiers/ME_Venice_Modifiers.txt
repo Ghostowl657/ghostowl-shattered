@@ -15,7 +15,7 @@ ven_protectors_of_mediterranean = {
 	prestige = 0.5
 }
 ven_venetian_peace_modifier = {
-	development_cost = -0.05
+	development_cost = -0.025
 	trade_efficiency = 0.15
 }
 
@@ -89,7 +89,7 @@ ven_vicedominus_ferrarie = {
 
 #5th column
 ven_venetian_factories = {
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 	local_production_efficiency = 0.1
 }
 ven_negroponte_fort = {
@@ -107,7 +107,7 @@ ven_colonisation_greece = {
 }
 ven_port_araby = {
 	allowed_num_of_buildings = 1
-	local_development_cost = -0.10
+	local_development_cost = -0.05
 	local_ship_cost = -0.25
 }
 ven_a_new_age = {
@@ -115,7 +115,7 @@ ven_a_new_age = {
 	local_build_time = -0.25
 }
 ven_a_golden_century_for_venice = {
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 	trade_value_modifier = 0.1
 }
 ven_spread_of_ideas = {
@@ -123,7 +123,7 @@ ven_spread_of_ideas = {
 }
 ven_glass = {
 	prestige = 1
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 #Event Modifier
@@ -153,7 +153,7 @@ ven_standing_alone = {
 
 #Decisions
 ven_steady_grain_supply = {
-	development_cost = -0.15
+	development_cost = -0.075
 }
 ven_colonia_veneziana = {
 	province_trade_power_modifier = 0.50

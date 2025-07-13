@@ -1,16 +1,16 @@
 HED_development_cost = {
-	development_cost = -0.1 
+	development_cost = -0.05 
 }
 
 HED_pilgrims_arriving_en_masse = {
 	picture = "pilgrim_escort_modifier_icon"
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 	local_tax_modifier = 0.15
 }
 
 HED_pilgrims_arriving_en_masse_2 = {
 	picture = "pilgrim_escort_modifier_icon"
-	local_development_cost = -0.3
+	local_development_cost = -0.15
 	local_tax_modifier = 0.3
 }
 

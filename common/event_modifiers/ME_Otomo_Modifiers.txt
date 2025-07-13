@@ -20,7 +20,7 @@ me_otomo_buzen_castle = {
 }
 
 me_otomo_pride_of_kyushu = {
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 me_otomo_master_gunners = {

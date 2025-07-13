@@ -43,7 +43,7 @@ usa_gold_rush_province_modifier = {
 }
 
 usa_building_a_nation_modifier = {
-	development_cost = -0.15
+	development_cost = -0.075
 	culture_conversion_cost = -0.4
 }
 
@@ -90,7 +90,7 @@ usa_reconnect_with_the_west_modifier = {
 
 usa_hudson_bay_port_province_modifier = {
 	trade_value_modifier = 0.15
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 }
 
 usa_the_inland_trade_modifier = {
@@ -103,7 +103,7 @@ usa_continental_canals_province_modifier = {
 }
 
 usa_new_orleans_outpost_province_modifier = {
-	local_development_cost = -0.2
+	local_development_cost = -0.1
 	province_trade_power_modifier = 0.2
 }
 
@@ -139,7 +139,7 @@ usa_a_new_revolution_modifier = {
 usa_fuel_the_fires_modifier = {
 	technology_cost = -0.05
 	build_cost = -0.075
-	development_cost = -0.05
+	development_cost = -0.025
 }
 
 usa_build_manufactories_province_modifier = {

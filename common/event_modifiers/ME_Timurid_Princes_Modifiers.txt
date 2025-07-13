@@ -94,7 +94,7 @@ me_prince_conversion = {
 
 ME_seljuk_architecture = {
 	build_cost = -0.075
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 me_prince_islamic_arts = {
@@ -104,5 +104,5 @@ me_prince_islamic_arts = {
 
 me_prince_cultural_centre = {
 	institution_growth = 4
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }

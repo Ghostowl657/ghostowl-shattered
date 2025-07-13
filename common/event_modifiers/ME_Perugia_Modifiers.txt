@@ -15,7 +15,7 @@ pga_reign_central_italy = {
 }
 
 pga_constitutio_amalfitana = {
-	development_cost = -0.10
+	development_cost = -0.05
 	all_estate_loyalty_equilibrium = 0.10
 }
 pga_braccio_montone = {
@@ -35,7 +35,7 @@ pga_guelph_ghibelline = {
 }
 pga_rinascimento_baglioni_modifier = {
 	reform_progress_growth = 0.10
-	development_cost = -0.10
+	development_cost = -0.05
 	local_prosperity_growth = 0.5
 	local_monthly_devastation = -0.10
 }
@@ -45,5 +45,5 @@ pga_rocca_paolina_modifier = {
 }
 pga_governo_artigiano = {
 	trade_goods_size = 1
-	local_development_cost = -0.25
+	local_development_cost = -0.125
 }

@@ -25,7 +25,7 @@ pis_glory_pisa = {
 #3
 pis_sultan_deceived = {
 	local_missionary_strength = 0.02
-	local_development_cost = -0.10
+	local_development_cost = -0.05
 }
 
 #4

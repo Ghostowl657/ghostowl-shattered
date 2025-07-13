@@ -47,7 +47,7 @@ mysore_restricted_distribution = {
 }
 
 mysore_patronage_foundations = {
-	local_development_cost = -0.10
+	local_development_cost = -0.05
 	local_tax_modifier = 0.50
 }
 
@@ -57,7 +57,7 @@ mysore_lively_court = {
 }
 
 mysore_cultivating_land = {
-	development_cost = -0.10
+	development_cost = -0.05
 	build_cost = -0.20
 }
 

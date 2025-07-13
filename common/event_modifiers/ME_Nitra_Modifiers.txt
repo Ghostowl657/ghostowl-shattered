@@ -93,11 +93,11 @@ slo_mint = {
 }
 
 slo_royal = {
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 slo_pearl = {
-	local_development_cost = -0.2
+	local_development_cost = -0.1
 	local_prosperity_growth = 1
 }
 
@@ -107,7 +107,7 @@ slo_adriatic_port = {
 }
 
 slo_great_city = {
-	local_development_cost = -0.25
+	local_development_cost = -0.125
 }
 
 slo_slovak_romanticism = {
@@ -150,7 +150,7 @@ slo_matica3 = {
 }
 
 slo_matica0 = {
-	development_cost = -0.05
+	development_cost = -0.025
 }
 
 slo_matica5 = {

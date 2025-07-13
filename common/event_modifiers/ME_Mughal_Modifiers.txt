@@ -54,7 +54,7 @@ me_mug_direct_rule = {
 
 me_mug_viceroyalty = {
 	administrative_efficiency = 0.1
-	min_autonomy_in_territories = -0.05
+	min_autonomy_in_territories = -0.025
 }
 
 me_mug_viceroyalty_gov = {
@@ -84,7 +84,7 @@ me_mug_capital_of_agra = {
 }
 
 me_mug_capital_city = {
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 	institution_growth = 2
 }
 
@@ -209,12 +209,12 @@ me_mug_trunk_road = {
 }
 
 me_mug_textile_production = {
-	development_cost = -0.1
+	development_cost = -0.05
 	advisor_cost = -0.1
 }
 
 me_mug_indian_economic_hegemony = {
-	#development_cost_modifier = -0.05
+	#development_cost_modifier = -0.025
 	global_trade_goods_size_modifier = 0.1
 }
 
@@ -438,7 +438,7 @@ me_mug_islamic_traders = {
 }
 
 me_mug_subah_focus = {
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 	local_governing_cost = -0.1
 }
 

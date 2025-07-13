@@ -46,12 +46,12 @@ indigo_leader_new = {
 
 llama_leader_new = {
 	picture = "llama_leader_modifier_icon"
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 camel_leader_new = {
 	picture = "camel_leader_modifier_icon"
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 import_from_subjects_modifier = {

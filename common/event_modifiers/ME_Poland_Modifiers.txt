@@ -3,7 +3,7 @@ POL_faithful_adherence = {
 }
 
 POL_leave_brick = {
-	development_cost = -0.05
+	development_cost = -0.025
 }
 
 POL_buffer_state = {
@@ -20,7 +20,7 @@ POL_double_trouble = {
 }
 
 POL_leave_brick_2 = {
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 POL_influx_of_polish_settlers = {
@@ -32,7 +32,7 @@ POL_cost_reduction = {
 }
 
 POL_expansion_of_krakow = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_production_efficiency = 0.1
 	local_prosperity_growth = 0.5
 }
@@ -109,7 +109,7 @@ POL_new_industry = {
 
 POL_cloth_reinforced = {
 	trade_goods_size_modifier = 0.25
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 POL_country_stabilized = {

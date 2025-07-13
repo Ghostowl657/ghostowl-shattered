@@ -27,7 +27,7 @@ third_bulgarian_empire = {
 }
 
 restored_tarnovo = {
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 	local_institution_spread = 0.15
 	local_build_cost = -0.15
 }
@@ -42,7 +42,7 @@ silistra_port = {
 development_bulgaria = {
 	global_tax_modifier = 0.15
 	production_efficiency = 0.15
-	development_cost = -0.15
+	development_cost = -0.075
 }
 
 bulgaria_industry = {

@@ -21,7 +21,7 @@ sav_administrating_nation = {
 }
 
 sav_piedmont_unified = {
-	local_development_cost = -0.10
+	local_development_cost = -0.05
 	local_build_cost = -0.10
 }
 sav_la_cittadella = {
@@ -52,7 +52,7 @@ sav_our_own_army = {
 	drill_decay_modifier = -0.25
 }
 sav_new_union = {
-	local_development_cost = -0.20
+	local_development_cost = -0.1
 	local_build_cost = -0.30
 }
 

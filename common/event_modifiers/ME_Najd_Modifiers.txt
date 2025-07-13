@@ -1,5 +1,5 @@
 NAJ_an_oasis_in_the_sandy_sea = {
-	local_development_cost = -0.4
+	local_development_cost = -0.2
 	tax_income = 12
 }
 
@@ -18,7 +18,7 @@ NAJ_the_gardens_modifier = {
 
 NAJ_diriyah_modifier = {
 	tax_income = 6
-	local_development_cost = -0.2
+	local_development_cost = -0.1
 }
 
 NAJ_support_of_tribes = {
@@ -29,7 +29,7 @@ NAJ_support_of_tribes = {
 
 NAJ_local_madrasah = {
 	local_institution_spread = 0.5
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 NAJ_warriors_of_the_sands = {

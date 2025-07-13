@@ -25,7 +25,7 @@ tur_condemened_skanderbeg = {
 
 tur_jandarid = {
 	local_build_cost = -0.1
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 	local_institution_spread = 0.15
 }
 
@@ -42,7 +42,7 @@ tur_karaman_horses = {
 }
 
 tur_turkmen_settlers = {
-	development_cost = -0.05
+	development_cost = -0.025
 }
 
 tur_mamluk_fort = {
@@ -59,7 +59,7 @@ tur_expelled_jerusalem_national = {
 }
 
 tur_expelled_jerusalem = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_institution_spread = 0.15
 }
 
@@ -75,7 +75,7 @@ TUR_spared_knights_modifier = {
 TUR_orthodox_cyrpus = {
 	local_state_maintenance_modifier = -0.75
 	local_missionary_strength = -1
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 TUR_banished_tribes = {
@@ -118,7 +118,7 @@ TUR_failed_tunis_expedition = {
 
 TUR_rebuilding_tlemcen = {
 	local_build_cost = -0.40
-	local_development_cost = -0.10
+	local_development_cost = -0.05
 }
 
 TUR_berber_pirates = {

@@ -12,7 +12,7 @@ So_strawhat_pirates = {
 	recover_navy_morale_speed = 0.2
 }
 So_development_plan = {
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 	tax_income = 6
 }
 So_wokou_marines = {

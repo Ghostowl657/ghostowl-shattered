@@ -97,12 +97,12 @@ MSY_upkeep_of_the_holy_cities = {
 }
 
 estate_burghers_marsh_development = {
-	local_development_cost = -0.25
+	local_development_cost = -0.125
 }
 
 MSY_delta = {
 	local_hostile_attrition = 1
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 }
 
 MSY_diversification_of_economy = {

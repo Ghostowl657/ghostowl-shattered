@@ -19,12 +19,12 @@ OMA_mahri_culture = {
 }
 
 OMA_looted = {
-	local_development_cost = 0.25
+	local_development_cost = 0.125
 	local_tax_modifier = -0.5 
 }
 
 OMA_new_residence = {
-	local_development_cost = -0.25
+	local_development_cost = -0.125
 	local_tax_modifier = 0.25
 	province_trade_power_modifier = 0.25
 }
@@ -57,6 +57,6 @@ OMA_control_over_the_western_indian_ocean = {
 }
 
 OMA_center_of_trade = {
-	local_development_cost = -0.2
+	local_development_cost = -0.1
 	province_trade_power_modifier = 0.25
 }

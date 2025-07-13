@@ -8,7 +8,7 @@ YUA_subservient_ming = {
 
 YUA_pax_mongolica = {
 	local_institution_spread = 1
-	local_development_cost = 0.1
+	local_development_cost = 0.05
 	prestige = 0.2
 }
 

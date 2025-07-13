@@ -53,7 +53,7 @@ OLD_vri_jade = {
 }
 
 PAD_irrigation_modifier = {
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 	local_monthly_devastation = -0.1
 }
 
@@ -216,7 +216,7 @@ WES_the_noble_of_westphalia = {
 }
 
 WES_more_property = {
-	development_cost = -0.1
+	development_cost = -0.05
 	state_maintenance_modifier = -0.1
 }
 
@@ -225,7 +225,7 @@ WES_centralization_modifier = {
 }
 
 WES_favored = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_production_efficiency = 0.25
 	local_tax_modifier = 0.1
 }

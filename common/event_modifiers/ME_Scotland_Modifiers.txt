@@ -63,7 +63,7 @@ EE_SCO_developing_clans_highlands = {
 	local_development_cost = -0.15
 }
 EE_SCO_urbanization_clanlands = {
-	development_cost = -0.1
+	development_cost = -0.05
 }
 EE_SCO_Influx_Great_Minds = {
 	advisor_pool = 1

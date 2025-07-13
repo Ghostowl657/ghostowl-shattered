@@ -1,9 +1,9 @@
 nile_state_dev_cost_forever = {
-    local_development_cost = -0.05   
+    local_development_cost = -0.025   
 }
 
 nile_state_dev_cost_25 = {
-    local_development_cost = -0.1
+    local_development_cost = -0.05
 }
 
 non_nile_state_construction_cost_25 = {
@@ -15,7 +15,7 @@ egypt_construction_cost_forever = {
 }
 
 ALX_development_improvement = {
-    development_cost = -0.15
+    development_cost = -0.075
 	global_tax_modifier = 0.15
 	global_autonomy = -0.025
 }
@@ -31,7 +31,7 @@ ALX_industry_modifer = {
 
 ALX_silk_industry_modifier = {
 	production_efficiency = 0.1
-	development_cost = -0.05
+	development_cost = -0.025
 }
 
 ALX_final_push_modifier = {
@@ -69,7 +69,7 @@ ALX_dockyard_modifier = {
 }
 
 ALX_expand_capital_modifier = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_build_cost = -0.1
 	local_build_time = -0.1    
 }

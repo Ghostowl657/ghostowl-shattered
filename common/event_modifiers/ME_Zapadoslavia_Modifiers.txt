@@ -5,7 +5,7 @@ zcv_full_army = {
 
 zcv_legacy_of_lech_and_czech = {
 	cavalry_cost = -0.15
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 zcv_conquered_rus = {

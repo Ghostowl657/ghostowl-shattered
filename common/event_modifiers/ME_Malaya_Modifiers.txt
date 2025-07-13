@@ -15,7 +15,7 @@ MSA_in_defiance_modifier = {
 
 MSA_neutral_modifier = {
 	diplomatic_upkeep = 1
-	development_cost = -0.05
+	development_cost = -0.025
 }
 
 MSA_swayed_modifier = {
@@ -324,7 +324,7 @@ MSA_enlightened_advice = {
 }
 
 MSA_christian_community = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_production_efficiency = 0.33
 	province_trade_power_modifier = -0.5
 	religion = yes
@@ -409,7 +409,7 @@ MSA_trading_in_tea = {
 }
 
 MSA_residence_of_chakravarti = {
-	local_development_cost = -0.25
+	local_development_cost = -0.125
 	trade_value_modifier = 0.25
 }
 
@@ -454,7 +454,7 @@ MSA_converting_the_commons = {
 
 MSA_porch_of_mecca_modifier = {
 	province_trade_power_value = 5
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	global_missionary_strength = 0.02
 }
 
@@ -599,7 +599,7 @@ MSA_rallied_against_colonizers = {
 }
 
 MSA_foreign_embassies = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	institution_growth = 12
 	local_institution_spread = 0.25
 	improve_relation_modifier = 0.05

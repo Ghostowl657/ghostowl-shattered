@@ -110,7 +110,7 @@ me_tim_conqueror_of_europe = {
 }
 
 me_tim_kazan_gold = {
-	local_development_cost = -0.2
+	local_development_cost = -0.1
 	trade_goods_size = 0.5
 }
 
@@ -145,7 +145,7 @@ me_tim_a_new_ankara = {
 }
 
 me_tim_arabian_development = {
-	local_development_cost_modifier = -0.05
+	local_development_cost_modifier = -0.025
 }
 
 me_tim_foothold_in_arabia = {
@@ -217,12 +217,12 @@ me_tim_scientific_innovations = {
 }
 
 me_tim_persian_empire = {
-	development_cost_modifier_in_primary_culture = 0.05
+	development_cost_modifier_in_primary_culture = 0.025
 	manpower_in_own_culture_provinces = 0.1
 }
 
 me_tim_ignored_roman_legacy = {
-	local_development_cost = 0.5
+	local_development_cost = 0.25
 	local_tax_modifier = -0.5
 }
 
@@ -232,7 +232,7 @@ me_tim_above_rome = {
 }
 
 me_tim_persian_empire_province = {
-	local_development_cost_modifier = -0.05
+	local_development_cost_modifier = -0.025
 }
 
 me_tim_seat_of_power = {
@@ -430,7 +430,7 @@ me_tim_emperors_guard_2 = {
 }
 
 estate_burghers_steppe_development = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_tax_modifier = 0.3
 }
 
@@ -591,8 +591,8 @@ me_tim_scourge_of_byzantium = {
 }
 
 me_tim_encourge_the_bedouins = {
-	local_development_cost = -0.15
-	local_development_cost_modifier = -0.05
+	local_development_cost = -0.075
+	local_development_cost_modifier = -0.025
 	tax_income = 12
 }
 

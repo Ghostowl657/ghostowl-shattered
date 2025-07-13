@@ -18,7 +18,7 @@ MAM_al_azhar_university_modifier = {
 MAM_heart_of_egypt = {
 	picture = "heart_of_egypt_modifier_icon"
 	local_prosperity_growth = 0.15
-	local_development_cost = -0.075
+	local_development_cost = -0.0375
 	province_trade_power_modifier = 0.15
 }
 
@@ -205,7 +205,7 @@ MAM_ld_from_dev = {
 
 MAM_coptic_minority = {
 	tax_income = 2
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_production_efficiency = 0.33
 	province_trade_power_modifier = 0.25
 	

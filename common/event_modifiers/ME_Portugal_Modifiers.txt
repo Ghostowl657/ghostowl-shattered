@@ -13,7 +13,7 @@ POR_crusader_kings = {
 }
 
 PRBR_salvador_of_bahia_modifier = {
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 	trade_goods_size_modifier = 0.25
 	local_tax_modifier = 0.15
 }
@@ -60,7 +60,7 @@ PRBR_salvador_of_bahia_2 = {
 }
 
 PRBR_cellula_mater = {
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 	province_trade_power_value = 5
 	province_trade_power_modifier = 0.25
 }
@@ -71,7 +71,7 @@ PRBR_successful_portuguese_captaincy = {
 
 PRBR_governorate_of_brasil_modifier = {
 	governing_capacity = 150
-	development_cost = -0.15
+	development_cost = -0.075
 }
 
 PRBR_brazilian_demand = {
@@ -132,7 +132,7 @@ POR_fish = {
 
 POR_capital_of_portuguese_india = {
 	local_center_of_trade_upgrade_cost = -0.5
-	local_development_cost = -0.3
+	local_development_cost = -0.15
 	state_governing_cost = -0.5
 	province_trade_power_modifier = 1
 }
@@ -152,13 +152,13 @@ POR_exports_to_england = {
 
 POR_english_demand_for_portuguese_wine = {
 	province_trade_power_value = 10
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 	trade_goods_size_modifier = 0.25
 	trade_goods_size = 0.4
 }
 
 POR_english_demand_for_portuguese_wine_valley = {
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 	trade_goods_size_modifier = 0.25
 	trade_goods_size = 0.5
 }
@@ -258,7 +258,7 @@ POR_woad_of_azores = {
 
 POR_more_permanent_colony = {
 	province_trade_power_value = 5
-	local_development_cost = -0.2
+	local_development_cost = -0.1
 }
 
 POR_explorer_1 = {
@@ -308,7 +308,7 @@ POR_fight_against_castile = {
 POR_ribeira_palace_modifier = {
 	monthly_splendor = 2
 	mil_advisor_cost = -0.1
-	local_development_cost = -0.3
+	local_development_cost = -0.15
 	local_manpower_modifier = 0.5
 }
 
@@ -517,7 +517,7 @@ POR_a_portuguese_state_in_india = {
 
 POR_belem_tower = {
 	local_great_project_upgrade_cost = -0.25
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_build_cost = -0.5
 }
 
@@ -612,7 +612,7 @@ POR_reinvoked_crusader_spirit = {
 }
 
 POR_brazil_buff = {
-	development_cost = -0.1
+	development_cost = -0.05
 	local_production_efficiency = 0.15
 }
 

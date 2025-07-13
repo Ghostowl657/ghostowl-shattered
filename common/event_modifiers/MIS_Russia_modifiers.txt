@@ -36,7 +36,7 @@ russia_caucasia = {
 }
 
 russia_petrograd = {
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 	local_build_cost = -0.15
 	local_institution_spread = 0.15
 }
