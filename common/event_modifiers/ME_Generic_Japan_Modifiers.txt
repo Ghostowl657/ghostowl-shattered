@@ -35,7 +35,7 @@ JAP_warrior_monks = {
 
 JAP_budhhist_influence = {
 	local_autonomy = 0.05
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 }
 
 JAP_wealth_of_the_isle = {

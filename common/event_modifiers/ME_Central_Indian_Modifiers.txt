@@ -4,7 +4,7 @@
 #CENTRAL INDIAN & NAGPUR MODIFIERS#
 central_indian_construction = {
 	local_build_cost = -0.25
-	local_development_cost = -0.10
+	local_development_cost = -0.05
 }
 
 central_indian_scholarship = {

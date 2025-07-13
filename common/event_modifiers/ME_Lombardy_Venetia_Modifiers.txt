@@ -23,7 +23,7 @@ lvn_darsena = {
 	supply_limit_modifier = 0.10
 }
 lvn_industrialisation_sprint = {
-	local_development_cost = -0.10
+	local_development_cost = -0.05
 	local_build_cost = -0.10
 }
 

@@ -135,7 +135,7 @@ boh_maritime_trade_modifier = {
 	merchants = 1 
 }
 boh_wave_of_prosperity_modifier = {
-	development_cost = -0.05 
+	development_cost = -0.025 
 }
 boh_smelting_facility_modifier = {
 	trade_goods_size_modifier = 0.20 

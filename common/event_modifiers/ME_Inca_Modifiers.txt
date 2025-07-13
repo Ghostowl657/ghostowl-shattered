@@ -41,8 +41,8 @@ inca_advisor_council_modifier = {
 }
 
 inca_advanced_native_administration_modifier = {
-	development_cost = -0.1
-	min_autonomy_in_territories = -0.1
+	development_cost = -0.05
+	min_autonomy_in_territories = -0.05
 }
 
 inca_advanced_native_administration_modifier_no_dlc = {
@@ -203,7 +203,7 @@ inca_temples_for_pacha_kamaq_modifier = {
 }
 
 inca_conquer_incan_lands_province_modifier = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_tax_modifier = 0.1
 }
 
@@ -212,7 +212,7 @@ inca_colonize_ucayali_modifier = {
 }
 
 inca_colonize_western_amazon_province_modifier = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_production_efficiency = 0.2
 }
 

@@ -25,7 +25,7 @@ ARM_nation_of_fortresses = {
 }
 
 ARM_armenian_highlands = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 ARM_united_defense = {

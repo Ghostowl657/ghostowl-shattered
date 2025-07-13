@@ -16,7 +16,7 @@ gen_krymchaks = {
 }
 gen_return_genoese_ruling = {
 	local_tax_modifier = 0.10
-	local_development_cost = -0.10
+	local_development_cost = -0.025
 }
 gen_protecting_trade = {
 	global_trade_power = 0.1
@@ -105,7 +105,7 @@ gen_genoese_fortress = {
 	blockade_force_required = 0.33
 }
 gen_superba = {
-	local_development_cost = -0.10
+	local_development_cost = -0.025
 	trade_goods_size_modifier = 0.1
 }
 gen_merchant_army = {

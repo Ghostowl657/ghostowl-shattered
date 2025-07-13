@@ -57,12 +57,12 @@ HAN_throne_game = {
 }
 
 HAN_agrarian_trade = {
-	development_cost = -0.1
+	development_cost = -0.05
 	trade_efficiency = 0.05
 }
 
 HAN_agrarian_trade_province = {
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 }
 
 HAN_the_guard_of_hanover = {

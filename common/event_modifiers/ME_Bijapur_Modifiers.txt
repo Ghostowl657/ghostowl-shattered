@@ -48,7 +48,7 @@ bijapur_market_profits = {
 
 bijapur_new_varanasi_baghdad = {
 	tolerance_own = 1
-	local_development_cost = -0.10
+	local_development_cost = -0.05
 }
 
 bijapur_blooming_of_education = {

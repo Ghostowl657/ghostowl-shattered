@@ -3,7 +3,7 @@
 ####################################################
 
 development_raised = {	
-		development_cost = 0.1
+		development_cost = 0.05
 }
 
 recently_hired_advisor_mechanic = {
@@ -103,5 +103,5 @@ idea_variation_grant_self_governance = {
 
 idea_variation_legacy_laws = {
 	stability_cost_modifier = -0.3
-	development_cost = 0.2
+	development_cost = 0.1
 }

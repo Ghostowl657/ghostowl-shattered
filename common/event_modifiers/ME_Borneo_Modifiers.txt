@@ -15,5 +15,5 @@ BEI_generic_against_adversities = {
 }
 
 BEI_generic_dev_cost = {
-	development_cost = -0.025
+	development_cost = -0.0125
 }

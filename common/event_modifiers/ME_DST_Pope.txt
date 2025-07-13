@@ -33,14 +33,14 @@ italy_morale = {
 	land_morale = 0.1
 }
 italy_development = {
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 }
 italy_cost = {
 	local_build_cost = -0.1
 }
 italy_pax_italica = {
 	global_unrest = -3
-	development_cost = -0.05
+	development_cost = -0.025
 	build_cost = -0.075
 	stability_cost_modifier = -0.2
 }

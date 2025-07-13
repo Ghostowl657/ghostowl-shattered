@@ -19,7 +19,7 @@ MLC_entrepot = {
 }
 
 MLC_back_to_singapura = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 MLC_past_mistakes = {
@@ -28,11 +28,11 @@ MLC_past_mistakes = {
 
 MLC_singapura_restored = {
 	local_build_cost = -0.1
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 MLC_remaining_in_melaka = {
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 	allowed_num_of_buildings = 1
 	local_state_maintenance_modifier = -0.1
 }

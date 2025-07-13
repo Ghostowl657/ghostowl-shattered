@@ -19,7 +19,7 @@ ice_ready_for_conquest = {
 }
 ice_integration = {
     local_core_creation  = -0.1
-    local_development_cost = -0.1
+    local_development_cost = -0.05
 }
 ice_viking_empire = {
     land_morale = 0.15

@@ -27,7 +27,7 @@ AAC_mil_policy = {
 }
 
 AAC_cloth = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	province_trade_power_value = 5
 }
 
@@ -126,7 +126,7 @@ AAC_new_carolingian_renaissance = {
 }
 
 AAC_primary_culture_buffs = {
-	development_cost_in_primary_culture = -0.1
+	development_cost_in_primary_culture = -0.05
 	manpower_in_own_culture_provinces = 0.15
 	same_culture_advisor_cost = -0.1
 }
@@ -187,7 +187,7 @@ AAC_little_ship = {
 }
 
 AAC_frankish_peace_modifier = {
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 AAC_great_unknown = {

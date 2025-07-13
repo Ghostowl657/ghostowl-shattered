@@ -17,7 +17,7 @@ FKN_emperor_recogntion = {
 	ae_impact = -0.1
 }
 FKN_selfreliant_burghers = {
-	local_development_cost = -0.1
+	local_development_cost = -0.025
 }
 FKN_robber_barons_no_more = {
 	global_autonomy = -0.025
@@ -51,7 +51,7 @@ FKN_new_power_in_germany ={
 	legitimate_subject_elector = 10
 }
 FKN_rising_metropoly = {
-	local_development_cost = -0.1
+	local_development_cost = -0.025
 }
 FKN_golden_era = {
 	idea_cost = -0.05
@@ -116,7 +116,7 @@ FKN_focus_on_diplomacy = {
 	diplomatic_reputation = 1
 }
 FKN_focus_on_prosperity = {
-	development_cost = -0.1
+	development_cost = -0.025
 }
 FKN_focus_on_expansion = {
 	core_creation = -0.1

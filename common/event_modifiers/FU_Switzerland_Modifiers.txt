@@ -1,5 +1,5 @@
 swi_period_of_stability_modifier = {
-	development_cost = -0.1 
+	development_cost = -0.05 
 	stability_cost_modifier = -0.25 
 }
 swi_swiss_linen_industry_modifier = {

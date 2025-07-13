@@ -93,7 +93,7 @@ AKK_new_administration = {
 }
 
 AKK_pontic_minority = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_unrest = 2
 }
 
@@ -119,7 +119,7 @@ AKK_tribal_cohesion = {
 AKK_local_qadi = {
 	local_tax_modifier = 0.3
 	tax_income = 2
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 	local_unrest = -2
 }
 

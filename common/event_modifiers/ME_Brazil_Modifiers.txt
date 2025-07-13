@@ -25,7 +25,7 @@ BRZ_merchants = {
 	global_trade_power = 0.1
 }
 BRZ_saint_john = {
-	local_development_cost = -0.25
+	local_development_cost = -0.125
 	local_build_cost = -0.2
 }
 BRZ_liberty_and_equality = {
@@ -54,7 +54,7 @@ BRZ_Brazilwood_2 = {
 	trade_goods_size = 1
 }
 BRZ_sustainable = {
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 	local_build_cost = -0.05
 }
 BRZ_gold_influence = {

@@ -7,7 +7,7 @@ GEO_restoration_campaigns = {
 	unjustified_demands = -0.2
 }
 GEO_georgians_stand_strong = {
-	development_cost = -0.1
+	development_cost = -0.05
 }
 GEO_influx_of_trade = {
 	trade_efficiency = 0.15

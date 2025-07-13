@@ -14,7 +14,7 @@ jurchen_old_ways = {
 }
 
 jurchen_hetu_ala = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_amount_of_banners = 4
 }
 

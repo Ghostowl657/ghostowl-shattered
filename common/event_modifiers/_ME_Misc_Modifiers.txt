@@ -50,7 +50,7 @@ ME_reformed_tax_laws = {
 
 ME_talented_qadi = {
 	tax_income = 2 
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_unrest = -2
 }
 
@@ -104,7 +104,7 @@ debug_free_instant_great_project = {
 }
 
 ME_promising_land = {
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 	province_trade_power_value = 3
 	local_colonial_growth = 25
 }

@@ -25,7 +25,7 @@ colombia_venezuela_independence_for_suriname_and_guyana_modifier = {
 
 colombia_venezuela_venezuelan_revolution_province_modifier = {
 	trade_goods_size = 0.5
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 gran_colombia_unite_the_central_american_states_modifier = {
@@ -34,7 +34,7 @@ gran_colombia_unite_the_central_american_states_modifier = {
 
 gran_colombia_bolivars_ambition_modifier = {
 	global_unrest = -1
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 gran_colombia_free_upper_peru_modifier = {
@@ -49,7 +49,7 @@ colombia_venezuela_the_riches_of_the_south_modifier = {
 }
 
 colombia_venezuela_development_of_south_america_modifier = {
-	development_cost = -0.1
+	development_cost = -0.05
 	center_of_trade_upgrade_cost = -0.15
 }
 
@@ -59,7 +59,7 @@ colombia_venezuela_founding_new_towns_province_modifier = {
 }
 
 colombia_venezuela_the_seat_of_power_province_modifier = {
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 	local_institution_spread = 0.15
 }
 

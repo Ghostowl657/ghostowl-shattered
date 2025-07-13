@@ -84,7 +84,7 @@ HSN_importing_lumber = {
 }
 
 HSN_importing_grain = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 HNS_splendor_of_the_fur = {

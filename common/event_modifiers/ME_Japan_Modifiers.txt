@@ -17,7 +17,7 @@ jap_development_program_ase = {
 	production_efficiency = 0.10
 }
 jap_development_program = {
-	development_cost = -0.15
+	development_cost = -0.075
 }
 
 jap_horde_integration = {
@@ -104,7 +104,7 @@ jap_yamato = {
 	years_of_nationalism = -3
 }
 jap_seimei_kikan = {
-	local_development_cost = -0.10
+	local_development_cost = -0.05
 	local_years_of_nationalism = -10
 }
 jap_to_the_sea = {
@@ -165,7 +165,7 @@ jap_master_east_indies_modifiers = {
 	province_trade_power_modifier = 0.25
 }
 jap_japanese_knowledge = {
-	development_cost = -0.10
+	development_cost = -0.05
 	trade_efficiency = 0.10
 }
 jap_gyojin_karate_ogi_buraikan = {

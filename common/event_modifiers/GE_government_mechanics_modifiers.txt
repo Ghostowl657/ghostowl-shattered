@@ -140,7 +140,7 @@ venetian_government_stato_mar_modifier = {
 	nobles_loyalty_modifier = -0.05
 }
 venetian_government_carnevale_venezia_modifier = {
-	development_cost_in_primary_culture = -0.15
+	development_cost_in_primary_culture = -0.075
 	global_unrest = -2
 	all_estate_loyalty_equilibrium = 0.05
 	global_institution_spread = 0.15
@@ -158,17 +158,17 @@ venetian_government_stato_tera_modifier = {
 
 	diplomatic_reputation = -1
 	global_unrest = 2
-	development_cost = 0.10
+	development_cost = 0.05
 }
 
 # Imperial Grace Mechanic
 imperial_grace_mechanic_interaction_construct_barays_modifier = {
-	development_cost_in_primary_culture = -0.1
+	development_cost_in_primary_culture = -0.05
 	expand_administration_cost = -1
 }
 
 imperial_grace_mechanic_interaction_construct_barays_province_modifier = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 imperial_grace_mechanic_interaction_sanction_temple_cities_modifier = {

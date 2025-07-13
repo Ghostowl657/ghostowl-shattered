@@ -7,7 +7,7 @@ direction_trade_mod = {
 direction_inward_mod = {
     production_efficiency = 0.075
     build_cost = -0.075
-    development_cost = -0.05
+    development_cost = -0.025
 }
 
 direction_rulership_mod = {

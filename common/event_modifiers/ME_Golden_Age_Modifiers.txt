@@ -4,7 +4,7 @@ ME_golden_era_to_fallen_heroes = {
 
 ME_golden_era_the_country = {
 	global_prosperity_growth = 0.5
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 ME_golden_era_proper_burial_for_valor = {
@@ -42,7 +42,7 @@ ME_golden_age_privileges_granted = {
 }
 
 ME_golden_age_ideal_city = {
-	local_development_cost_modifier = -0.1
+	local_development_cost_modifier = -0.05
 	trade_goods_size_modifier = 1
 }
 
@@ -88,6 +88,6 @@ ME_golden_age_decadence = {
 
 ME_golden_age_the_beautiful = {
 	local_defensiveness = 0.25
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_garrison_size = 0.25
 }

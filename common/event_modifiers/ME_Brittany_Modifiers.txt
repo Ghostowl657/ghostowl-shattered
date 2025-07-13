@@ -79,7 +79,7 @@ EE_BRI_scath_cheile = {
 	local_years_of_nationalism = -10
 }
 EE_BRI_Nil_Tintean = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_production_efficiency = 0.15
 }
 EE_BRI_Gaelic_Culture_Revival = {
@@ -121,10 +121,10 @@ EE_BRI_staunch_reformists = {
 }
 EE_BRI_Breton_Renaissance = {
 	embracement_cost = -0.25
-	development_cost = -0.1
+	development_cost = -0.05
 }
 EE_BRI_Breton_Renaissance_1 = {
-	development_cost = -0.15
+	development_cost = -0.075
 }
 EE_BRI_Development_Projects = {
 	local_tax_modifier = 0.2

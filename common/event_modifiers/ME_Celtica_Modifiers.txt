@@ -26,7 +26,7 @@ EE_CLT_Breton_Identity = {
 }
 EE_CLT_Irish_Identity = {
 	infantry_shock = 0.5
-	development_cost = -0.15
+	development_cost = -0.075
 }
 EE_CLT_ScotsGaels_Identity = {
 	global_manpower_modifier = 0.1
@@ -34,7 +34,7 @@ EE_CLT_ScotsGaels_Identity = {
 }
 EE_CLT_highlander_Identity = {
 	infantry_power = 0.05
-	development_cost = -0.1
+	development_cost = -0.05
 }
 EE_CLT_Welsh_Identity = {
 	infantry_fire = 0.5
@@ -49,7 +49,7 @@ EE_CLT_Breton_Identity_1 = {
 }
 EE_CLT_Irish_Identity_1 = {
 	infantry_shock = 0.25
-	development_cost = -0.075
+	development_cost = -0.0375
 }
 EE_CLT_ScotsGaels_Identity_1 = {
 	global_manpower_modifier = 0.05
@@ -57,7 +57,7 @@ EE_CLT_ScotsGaels_Identity_1 = {
 }
 EE_CLT_highlander_Identity_1 = {
 	infantry_power = 0.025
-	development_cost = -0.05
+	development_cost = -0.025
 }
 EE_CLT_Welsh_Identity_1 = {
 	infantry_fire = 0.25
@@ -159,7 +159,7 @@ EE_CLT_Back_Celtic_Fold = {
 }
 EE_CLT_Back_Celtic_Roots = {
 	culture_conversion_cost = -0.15
-	development_cost_in_primary_culture = -0.1
+	development_cost_in_primary_culture = -0.05
 }
 EE_CLT_New_Frankish_Masters = {
 	local_autonomy = -0.05
@@ -197,7 +197,7 @@ EE_CLT_industrial_revolution = {
 	allowed_num_of_manufactories = 1
 }
 EE_CLT_Increase_Immigration = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_build_cost = -0.2
 }
 EE_CLT_Improved_Colonization_methods = {
@@ -335,7 +335,7 @@ EE_CLT_Reichsarmatur_modifier = {
 	global_manpower = -0.5
 }
 EE_CLT_estate_burghers_exclusive_trade_rights_mod = {
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 }
 EE_CLT_increased_commercial_Interests = {
 	province_trade_power_modifier = 0.1

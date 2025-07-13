@@ -4,7 +4,7 @@ ahmed_military_treatises_circulating = {
 }
 
 ahmed_land_reforms = {
-	local_development_cost = -0.10
+	local_development_cost = -0.05
 }
 
 ahmed_construction_efforts = {
@@ -27,7 +27,7 @@ ahmed_exude_power = {
 }
 
 ahmed_capital_tombs = { #Counters the inherent terrain penalty of Ahmednagar the province
-	local_development_cost = -0.20
+	local_development_cost = -0.1
 }
 
 ahmed_habshi_influx = {

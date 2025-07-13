@@ -71,7 +71,7 @@ germany_deutsch_ostafrika_modifier = {
 }
 
 germany_kaiser_wilhelms_land_province_modifier = {
-	local_development_cost = -0.2
+	local_development_cost = -0.1
 	local_build_time = -0.15
 }
 

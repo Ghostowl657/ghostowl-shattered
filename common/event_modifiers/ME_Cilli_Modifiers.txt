@@ -7,7 +7,7 @@ cli_celje_castle = {
 	local_defensiveness = 0.20
 }
 cli_slovenian_faith = {
-	local_development_cost = -0.10
+	local_development_cost = -0.05
 	local_unrest = -1
 }
 cli_pearl_sea = {

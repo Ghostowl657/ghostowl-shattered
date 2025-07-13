@@ -82,7 +82,7 @@ GRA_wealth_awaits = {
 }
 
 GRA_dev_cost_caribbean = {
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 GRA_to_protect_the_treasure_fleets = {
@@ -110,7 +110,7 @@ GRA_capital_of_andalusia = {
 	local_build_cost = -0.5
 	local_build_time = -0.5
 	tax_income = 6
-	local_development_cost = -0.2
+	local_development_cost = -0.1
 }
 
 
@@ -118,7 +118,7 @@ GRA_capital_of_andalusia_2 = {
 	local_build_cost = -0.5
 	local_build_time = -0.5
 	tax_income = 18
-	local_development_cost = -0.2
+	local_development_cost = -0.1
 	local_manpower = 2
 }
 
@@ -136,7 +136,7 @@ GRA_mosaic_of_faiths_modifier = {
 }
 
 GRA_northern_capital = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 GRA_war_is_imminent = {
@@ -209,7 +209,7 @@ GRA_lower_andalucia_conversion = {
 
 GRA_printing_press_centre = {
 	institution_growth = 12
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 GRA_island_possessions = {
@@ -218,12 +218,12 @@ GRA_island_possessions = {
 }
 
 GRA_fleeing_muslims = {
-	local_development_cost = -0.25
+	local_development_cost = -0.125
 }
 
 GRA_sephardic_jews = {
 	picture = "sephardic_jews_modifier_icon"
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_missionary_strength = -0.1
 	province_trade_power_value = 5
 	religion = yes
@@ -259,7 +259,7 @@ GRA_almeria_mercury_mine = {
 }
 
 GRA_trade_center = {
-	local_development_cost = -0.25
+	local_development_cost = -0.125
 	local_prosperity_growth = 2
 	trade_value_modifier = 0.5
 }
@@ -278,7 +278,7 @@ GRA_military_in_almaden = {
 
 GRA_naval_boost_modifier = {
 	province_trade_power_value = 10
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	global_ship_trade_power = 0.1
 }
 
@@ -396,7 +396,7 @@ GRA_hanbali_scholar_modifier = {
 
 GRA_maliki_scholar_modifier = {
 	religion = yes
-	development_cost = -0.05
+	development_cost = -0.025
 }
 
 GRA_shafii_scholar_modifier = {
@@ -431,7 +431,7 @@ caliphal_legitimacy_fatwa_modifier = {
 
 GRA_library_of_cordoba_modifier = {
 	innovativeness_gain = 0.25
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 GRA_has_seized_the_caliph = {

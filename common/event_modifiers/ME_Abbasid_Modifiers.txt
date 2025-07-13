@@ -140,7 +140,7 @@ ABA_hanbali_scholar_modifier = {
 ABA_maliki_scholar_modifier = {
 	picture = "decree_modifier_icon"
 	religion = yes
-	development_cost = -0.05
+	development_cost = -0.025
 }
 
 ABA_shafii_scholar_modifier = {

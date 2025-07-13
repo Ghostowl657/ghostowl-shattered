@@ -75,7 +75,7 @@ BUR_dutch_trade_vassal_subject = {
 }
 
 BUR_new_dutch_towns = {
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 	local_center_of_trade_upgrade_cost = -0.1
 	province_trade_power_modifier = 0.15
 }
@@ -90,7 +90,7 @@ BUR_european_model_court = {
 }
 
 me_bur_aachen_palace = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_tax_modifier = 0.4
 }
 
@@ -101,7 +101,7 @@ lot_buff_frankish_provinces_modifier = {
 
 me_lot_jousting_hold_in_province = {
 	local_tax_modifier = 0.5
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 me_lot_restore_frankish_culture_mododifier = {

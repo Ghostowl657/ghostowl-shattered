@@ -85,8 +85,8 @@ AZE_nation_of_poets = {
 }
 AZE_growth_of_capital = {
 	local_tax_modifier = 0.1
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 AZE_in_halls_of_mountain_shah = {
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 }

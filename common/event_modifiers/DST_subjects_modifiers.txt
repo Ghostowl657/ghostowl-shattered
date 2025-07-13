@@ -16,7 +16,7 @@ persian_satrapy_sword_hunt_modifier = {
 
 persian_satrapy_overlord_modifier = {
 	advisor_pool = 1
-	min_autonomy_in_territories = -0.05
+	min_autonomy_in_territories = -0.025
 }
 
 persian_satrapy_overlord_no_dip_relation_cost_modifier = {

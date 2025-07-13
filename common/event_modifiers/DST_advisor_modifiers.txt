@@ -15,7 +15,7 @@ advisor_modifier_3 = {
 }
 # Reformist
 advisor_modifier_4 = {
-    development_cost = -0.1
+    development_cost = -0.05
 }
 # Missionary
 advisor_modifier_5 = {

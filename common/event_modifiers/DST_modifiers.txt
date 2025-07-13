@@ -17,12 +17,12 @@ idea_cost_10 = {
 
 dse_centralization_mechanic_country_mod = {
 	picture = "chorapolis_modifier_icon"
-    development_cost_modifier = -0.1
+    development_cost_modifier = -0.05
 }
 
 dse_centralization_mechanic_province_mod = {
 	picture = "chorapolis_modifier_icon"
-	local_development_cost = -0.2
+	local_development_cost = -0.1
 }
 
 shipbuilding_everything_25 = {
@@ -59,12 +59,12 @@ dse_fortress_local_mechanic_province_mod = {
 
 # _ME_Westernization_Events
 me_westernization = {
-	local_development_cost = -0.4
+	local_development_cost = -0.2
 }
 
 
 destroy_city_walls = { # For decision to destroy city walls
-	local_development_cost = -0.3
+	local_development_cost = -0.15
 	allowed_num_of_buildings = 2
 	local_defensiveness = -0.75
 }
@@ -117,22 +117,22 @@ dse_basic_timer_modifier = {
 }
 
 dse_events_general_farmland_mismanagement_mod_1 = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_tax_modifier = 0.2
 }
 
 dse_events_general_farmland_mismanagement_mod_2 = {
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 	local_tax_modifier = 0.1
 }
 
 dse_events_general_farmland_mismanagement_mod_3 = {
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 	local_tax_modifier = 0.1
 }
 
 dse_events_general_farmland_mismanagement_mod_4 = {
-	local_development_cost = 0.1
+	local_development_cost = 0.05
 	local_tax_modifier = -0.2
 }
 

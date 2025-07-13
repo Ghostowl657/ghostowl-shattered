@@ -39,7 +39,7 @@ BRA_new_lords_of_brandenburg = {
 	global_unrest = -2
 }
 BRA_saxon_trading_company = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	province_trade_power_value = 5
 }
 BRA_absolute_upper_saxon_leader = {
@@ -245,7 +245,7 @@ PRU_glass_factory = {
 	trade_value = 4
 }
 PRU_hub_of_metalworking = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 PRU_investing = {
 	build_cost = -0.075
@@ -295,11 +295,11 @@ PRU_army_with_a_state = {
 PRU_vassal_play = {
 	core_creation = 0.33
 	accept_vassalization_reasons = 5
-	development_cost = -0.05
+	development_cost = -0.025
 	vassal_forcelimit_bonus = 1
 }
 PRU_immigration_hub = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_governing_cost = -0.1
 }
 PRU_treaties_of_august = {
@@ -309,14 +309,14 @@ PRU_treaties_of_august = {
 prussian_vassal_modifier = {
 	land_forcelimit_modifier = -0.5
 	build_cost = -0.1
-	development_cost = -0.05
+	development_cost = -0.025
 }
 prussian_vassal_modifier_overlord = {
 	technology_cost = -0.01
 	land_forcelimit_modifier = 0.05
 }
 PRU_dev_cost_boost = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_production_efficiency = 0.1
 }
 PRU_BAV_unification = {

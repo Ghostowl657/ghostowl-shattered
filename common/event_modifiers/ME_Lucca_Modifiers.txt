@@ -65,7 +65,7 @@ luc_santi_giovanni_reparata = {
 	stability_cost_modifier = -0.05
 }
 luc_san_pietro_somaldi = {
-	development_cost = -0.05
+	development_cost = -0.025
 }
 luc_san_giusto = {
 	ae_impact = -0.05

@@ -5,7 +5,7 @@ BEI_humble_rise_to_greatness = {
 
 BEI_sultan_alis_legacy = {
 	local_defensiveness = 0.1
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 BEI_bruneian_empire_modifier = {

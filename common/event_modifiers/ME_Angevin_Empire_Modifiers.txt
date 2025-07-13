@@ -107,7 +107,7 @@ AVE_great_britain_united = {
 
 AVE_britain_united = {
 	global_ship_trade_power = 0.1
-	development_cost_in_primary_culture = -0.1
+	development_cost_in_primary_culture = -0.05
 }
 
 AVE_the_dutch_ordeal = {
@@ -253,7 +253,7 @@ AVE_angevin_main_modifier = {
 
 AVE_hammer_strikes_anvil = {
 	local_governing_cost_increase = -15
-	local_development_cost = -0.15 
+	local_development_cost = -0.075 
 }
 
 AVE_united_armies = {

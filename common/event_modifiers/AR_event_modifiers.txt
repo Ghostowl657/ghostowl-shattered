@@ -99,7 +99,7 @@ rebuild_nineveh_modifier = {
 	trade_goods_size = 1
 }
 reconquest_meso_modifier = {
-	development_cost = -0.1
+	development_cost = -0.05
 	build_cost = -0.075
 }
 legacy_assur_modifier = {

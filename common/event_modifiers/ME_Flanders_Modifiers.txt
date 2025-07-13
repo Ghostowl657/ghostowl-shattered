@@ -40,5 +40,5 @@ FLA_famous_flemish_merchants = {
 FLA_wealth_modifier = {
 	trade_goods_size_modifier = 0.25
 	local_prosperity_growth = 1
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 }

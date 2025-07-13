@@ -5,7 +5,7 @@ CN_positive_vibes = {
 	trade_efficiency = 0.1
 }
 CN_flow_of_immigrants = {
-	local_development_cost = -0.1
+	local_development_cost = -0.025
 	local_tax_modifier = 0.1
 }
 CN_colony_thriving = {
@@ -20,7 +20,7 @@ CN_new_lands_new_opportunities = {
 }
 CN_the_more_we_grow_the_more_we_plow = {
 	state_maintenance_modifier = -0.25
-	development_cost = -0.1
+	development_cost = -0.025
 }
 CN_new_land_claimed = {
 	prestige = 1
@@ -49,7 +49,7 @@ CN_increased_militancy = {
 	army_tradition = 0.5
 }
 CN_influx_of_settlers = {
-	local_development_cost = -0.1
+	local_development_cost = -0.025
 }
 CN_growing_economy = {
  	global_prov_trade_power_modifier = 0.25

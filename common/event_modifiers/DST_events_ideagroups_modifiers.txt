@@ -73,7 +73,7 @@ events_ideagroups_development_mod_2_1 = {
 }
 
 events_ideagroups_development_mod_3_1 = {
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 events_ideagroups_development_mod_4_1 = {
@@ -189,7 +189,7 @@ events_ideagroups_stateaffairs_mod_5_1 = {
 }
 
 events_ideagroups_stateaffairs_mod_5_2 = {
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 events_ideagroups_stateaffairs_mod_5_3 = {
@@ -321,7 +321,7 @@ iv_modifier_event_40 = {
 }
 
 iv_modifier_event_41 = {
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 iv_modifier_event_42 = {

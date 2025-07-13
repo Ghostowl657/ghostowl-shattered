@@ -73,7 +73,7 @@ ath_generalsmod = {
 
 ath_trade_city = {
 	local_sailors_modifier = 1
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 	trade_value = 15
 	local_institution_spread = 0.3
 }

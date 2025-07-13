@@ -32,7 +32,7 @@ ser_slavic_empire = {
 }
 
 ser_white_city = {
-	local_development_cost_modifier = -0.15
+	local_development_cost_modifier = -0.075
 	allowed_num_of_manufactories = 1
 }
 
@@ -114,7 +114,7 @@ ser_order_of_the_dragon = {
 
 ab_ser_novo_brdo_code = {
 	production_efficiency = 0.1
-	development_cost_modifier = -0.05
+	development_cost_modifier = -0.025
 }
 
 ser_industrial_expansion = {
@@ -174,7 +174,7 @@ cro_war_preparations = {
 }
 
 cro_pannonian_capital = {
-	local_development_cost_modifier = -0.1
+	local_development_cost_modifier = -0.05
 	trade_goods_size_modifier = 0.25
 }
 
@@ -248,7 +248,7 @@ byzantium_conversion_of_rome = {
 }
 
 alb_revitalization = {
-	development_cost = -0.1
+	development_cost = -0.05
 	tax_income = 12
 }
 

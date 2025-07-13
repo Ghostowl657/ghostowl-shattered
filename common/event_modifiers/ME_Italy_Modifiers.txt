@@ -78,7 +78,7 @@ ita_italian_hegemony = {
 }
 ita_finally_united = {
 	local_years_of_nationalism = -5
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 }
 ita_eboriokratia_ge = {
 	production_efficiency = 0.1
@@ -135,11 +135,11 @@ ita_safe_home_water = {
 }
 
 ita_italian_prosperity_1 = {
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 	local_governing_cost = -0.10
 }
 ita_italian_prosperity_final = {
-	local_development_cost = -0.10
+	local_development_cost = -0.05
 	local_governing_cost = -0.20
 }
 ita_coal_race = {
@@ -181,7 +181,7 @@ ita_monumento_quattro_mori = {
 }
 ita_center_newfoudned_state = {
 	local_governing_cost = -0.33
-	local_development_cost = -0.10
+	local_development_cost = -0.05
 }
 
 #Decisions

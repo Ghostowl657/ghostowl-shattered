@@ -1,5 +1,5 @@
 corsica_greek_islands_conquest = { 
-	development_cost = -0.1
+	development_cost = -0.05
 	build_time = -0.15
 }
 

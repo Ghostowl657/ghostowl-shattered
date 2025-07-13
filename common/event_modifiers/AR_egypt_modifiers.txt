@@ -94,7 +94,7 @@ ar_egypt_true_coptic_kingdom = {
 ar_egypt_home_of_faithful = {
 	global_monthly_devastation = -1
 	global_unrest = -1
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 ar_egypt_religion_christian_supremacy = {
@@ -320,7 +320,7 @@ ar_egypt_new_census = {
 #Province
 
 ar_egypt_canal_building = {
-	local_development_cost_modifier = 1
+	local_development_cost_modifier = 0.5
 	local_build_cost = 1
 }
 
@@ -351,11 +351,11 @@ ar_egypt_granary_med = {
 }
 
 ar_egypt_greek_investment = {
-	local_development_cost_modifier = -0.05
+	local_development_cost_modifier = -0.025
 }
 
 ar_egypt_religion_pagan_temple = {
-	local_development_cost_modifier = -0.05
+	local_development_cost_modifier = -0.025
 	local_unrest = -3
 }
 
@@ -396,7 +396,7 @@ ar_egypt_patrols = {
 }
 
 ar_egypt_sandstorm_aftermath = {
-	local_development_cost_modifier = 1
+	local_development_cost_modifier = 0.5
 	local_autonomy = 0.02
 	local_tax_modifier = -0.1
 	local_production_efficiency = -0.1
@@ -404,7 +404,7 @@ ar_egypt_sandstorm_aftermath = {
 
 ar_egypt_temple_complex_funded = {
 	local_build_cost = -0.1
-	local_development_cost_modifier = -0.05
+	local_development_cost_modifier = -0.025
 }
 
 ar_egypt_temple_complex_disrepair = {
@@ -418,11 +418,11 @@ ar_temple_complex = {
 	local_missionary_strength = -0.04
 	allowed_num_of_buildings = 1
 	trade_value = 0.25
-	local_development_cost_modifier = -0.15
+	local_development_cost_modifier = -0.075
 }
 
 ar_temple_complex_construction = {
-	local_development_cost_modifier = 1
+	local_development_cost_modifier = 0.5
 	local_production_efficiency = -0.5
 	local_tax_modifier = -0.5
 }

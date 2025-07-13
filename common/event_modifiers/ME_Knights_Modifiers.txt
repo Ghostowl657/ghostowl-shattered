@@ -7,7 +7,7 @@ KNI_Colossus_Mod = {
 }
 KNI_Great = {
 	build_cost = -0.20
-	development_cost = -0.15
+	development_cost = -0.075
 }
 KNI_Vult = {
 	land_morale = 0.1
@@ -47,7 +47,7 @@ KNI_improved_defences = {
 KNI_earthquakes = {
 	local_defensiveness = -0.25
 	local_build_cost = 0.25
-	local_development_cost = 0.25
+	local_development_cost = 0.125
 	supply_limit = -8
 }
 KNI_rhodian_arsenal = {

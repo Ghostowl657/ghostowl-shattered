@@ -34,7 +34,7 @@ japan_the_five_routes_province_modifier = {
 
 japan_found_the_zaibatsu_province_modifier = {
 	local_production_efficiency = 0.05
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 }
 
 japan_shoreline_fortifications_modifier = {
@@ -63,7 +63,7 @@ japan_issue_a_new_coin_modifier = {
 }
 
 japan_conclude_urbanization_province_modifier = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_production_efficiency = 0.1
 }
 
@@ -214,7 +214,7 @@ japan_the_kaiji_kyoku_edict_modifier = {
 japan_foothold_in_malacca_modifier = {
 	build_cost = -0.1
 	production_efficiency = 0.1
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 japan_umi_no_teikoku_modifier = {
@@ -287,7 +287,7 @@ japan_martial_law_modifier = {
 
 japan_great_leap_ahead_decision_modifier = {
 	global_unrest = 2
-	development_cost = -0.05
+	development_cost = -0.025
 }
 
 # Events:

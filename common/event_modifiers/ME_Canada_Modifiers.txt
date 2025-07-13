@@ -10,7 +10,7 @@ can_gateway_west_modifier = {
 }
 can_great_plains = {
 	local_colonial_growth = 20
-	local_development_cost = -0.10
+	local_development_cost = -0.05
 }
 can_first_intercontinental_rail = {
 	local_friendly_movement_speed = 0.30
@@ -50,7 +50,7 @@ can_copper_rush = {
 	trade_goods_size = 0.5
 }
 can_windy_city = {
-	local_development_cost = -0.20
+	local_development_cost = -0.1
 }
 can_rocky_mountain_forts = {
 	local_defensiveness = 0.10
@@ -73,7 +73,7 @@ can_fortress_louisbourg = {
 	local_manpower_modifier = 0.25
 }
 can_massive_urban_development = {
-	local_development_cost = -0.20
+	local_development_cost = -0.1
 	local_production_efficiency = 0.10
 	province_trade_power_modifier = 0.10
 }
@@ -87,10 +87,10 @@ can_citadel_quebec = {
 }
 can_multicultural_city = {
 	global_unrest = -1
-	local_development_cost = -0.10
+	local_development_cost = -0.05
 }
 can_port_new_world = {
-	local_development_cost = -0.10
+	local_development_cost = -0.05
 }
 can_cuisines_canada = {
 	global_unrest = -2
@@ -153,10 +153,10 @@ can_frontier_settlements = {
 	global_colonial_growth = 15
 }
 can_new_capital = {
-	local_development_cost = -0.20
+	local_development_cost = -0.1
 }
 can_new_capital_ottawa = {
-	local_development_cost = -0.35
+	local_development_cost = -0.175
 }
 can_maple_syrup_modifier = {
 	local_tax_modifier = 0.25
@@ -177,7 +177,7 @@ can_royal_military_college = {
 }
 can_gold_industry = {
 	local_production_efficiency = 0.1
-	development_cost = -0.10
+	development_cost = -0.05
 }
 can_gold_high_industry = {
 	trade_goods_size_modifier = 0.15
@@ -217,13 +217,13 @@ can_residential_school_global = {
 	culture_conversion_cost = -0.10
 }
 can_residential_school_full = {
-	local_development_cost = -0.10
+	local_development_cost = -0.05
 }
 can_residential_school_culture = {
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 }
 can_residential_school_religion = {
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 }
 can_less_taxes = {
 	local_tax_modifier = -0.25

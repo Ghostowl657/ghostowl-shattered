@@ -42,7 +42,7 @@ SIS_reconquest_of_quhistan = {
 YZD_KRM_ISF_the_new_persian_capital = {
 	local_institution_spread = 0.25
 	local_build_cost = -0.1
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 YZD_KRM_ISF_prospering = {
 	trade_goods_size_modifier = 0.4

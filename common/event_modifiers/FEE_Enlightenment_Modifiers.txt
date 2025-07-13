@@ -42,7 +42,7 @@ fee_enlightenment_dubious_mercantilist_practices = {
 
 fee_enlightenment_war_criticism_circulating_province = {
 	local_unrest = 2
-	development_cost = 0.10
+	development_cost = 0.05
 }
 fee_enlightenment_war_criticism_circulating = {
 	war_exhaustion_cost = 0.05

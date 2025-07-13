@@ -7,7 +7,7 @@ rome_reborn = {
 	diplomatic_upkeep = 1
 	build_cost = -0.05
 	build_time = -0.05
-	development_cost = -0.05
+	development_cost = -0.025
 	diplomats = 1
 	diplomatic_reputation = 3
 	global_unrest = -2
@@ -61,7 +61,7 @@ HRE_production = {
 	trade_goods_size_modifier = 0.25
 }
 HRE_Plan = {
-	local_development_cost = -0.3
+	local_development_cost = -0.15
 }
 Hre_peace = {
 	local_unrest = -2.5

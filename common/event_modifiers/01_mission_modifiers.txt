@@ -10,7 +10,7 @@ thriving_arms_industry = {
 }
 
 growth_of_capital = {
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 	local_build_cost = -0.15
 }
 
@@ -46,7 +46,7 @@ naval_enthusiasm_mission = {
 
 dominant_trade_hub = {
 	province_trade_power_value = 10
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 	picture = "province_trade_power_value"
 }
 
@@ -92,7 +92,7 @@ succesful_bid_for_imperial_crown = {
 }
 
 austrian_silesia = {
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 }
 
 habsburg_bohemia = {
@@ -293,7 +293,7 @@ teu_pru_westphalian_uniforms = {
 }
 
 teu_pru_university_of_konigsberg = {
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 	institution_growth = 1
 }
 
@@ -425,7 +425,7 @@ teu_holy_horde_modifier = {
 
 # Danzig missions
 dnz_development_investment = {
-	development_cost = -0.1
+	development_cost = -0.05
 	build_cost = -0.075
 	build_time = -0.15
 }
@@ -489,7 +489,7 @@ liv_lva_expanded_land = {
 }
 
 liv_lva_the_new_capital = {	#Permanent
-	local_development_cost = -0.2
+	local_development_cost = -0.1
 	local_tax_modifier = 0.1
 	local_production_efficiency = 0.1
 	local_manpower_modifier = 0.1
@@ -520,7 +520,7 @@ liv_lva_prussian_military = {
 }
 
 lif_lva_baltic_expansion = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 liv_religious_resistance = {
@@ -680,11 +680,11 @@ balkan_empire = {
 }
 
 byzantine_treasures_returned = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 chastening_of_venice = {
-	local_development_cost = 0.1
+	local_development_cost = 0.05
 	local_autonomy = -0.025
 	local_unrest = -4
 }
@@ -702,7 +702,7 @@ per_pashtun_warriors = {
 
 per_pearl_of_khorasan = {
 	local_state_maintenance_modifier = -0.25
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 # Swedish missions
@@ -743,7 +743,7 @@ swe_economical_upswing = {
 }
 
 swe_local_economical_upswing = {
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 	local_build_time = -0.1
 	local_build_cost = -0.1
 }
@@ -792,11 +792,11 @@ swe_nobles_fortification = {	#Permanent, province
 #	local_manpower_modifier = 0.25
 #	local_tax_modifier = 0.1
 #	local_production_efficiency = 0.1
-#	local_development_cost = -0.05
+#	local_development_cost = -0.025
 #}
 
 swe_arctic_expansion = {
-	local_development_cost = -0.4
+	local_development_cost = -0.2
 	allowed_num_of_buildings = 1
 }
 
@@ -1063,7 +1063,7 @@ nor_fight_for_liberty = {
 }
 
 nor_trade_posts_of_the_north = { #Permanent
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 	local_autonomy = -0.025
 	province_trade_power_modifier = 0.5
 }
@@ -1261,7 +1261,7 @@ sca_swe_control_over_the_low_countries = {
 sca_swe_danish_shipyard = {	#Permanent, gets removed if Shipyard gets destroyed or province gets lost
 	allowed_num_of_buildings = 2
 	local_ship_cost = -0.15
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 }
 
 sca_swe_norwegian_navy = {
@@ -1270,7 +1270,7 @@ sca_swe_norwegian_navy = {
 }
 
 sca_nor_panama_sound_toll = {	#Permanent-permanent
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 	province_trade_power_value = 10
 	local_great_project_upgrade_cost = -0.33
 }
@@ -1327,7 +1327,7 @@ sca_baltic_markets = {	#Permanent
 }
 
 sca_expanded_jutland = {	#Permanent
-	local_development_cost_modifier = -0.05
+	local_development_cost_modifier = -0.025
 	trade_goods_size_modifier = 0.1
 }
 
@@ -1340,7 +1340,7 @@ sca_reinforcement_of_kronborg = {	#Permanent
 }
 
 sca_scandinavian_tenacity = {	#Permanent
-	development_cost_modifier = -0.05
+	development_cost_modifier = -0.025
 }
 
 sca_african_trade_company = {	#Permanent
@@ -1409,7 +1409,7 @@ got_expanded_port = {
 
 got_investment_into_capital = {	#Permanent
 	trade_value = 5
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 got_lubeck_trade_fleet = {	#Permanent
@@ -1429,7 +1429,7 @@ got_merchants_of_the_baltics = {
 }
 
 got_artisan_fleet = {
-	development_cost = -0.1
+	development_cost = -0.05
 	production_efficiency = 0.1
 	mr_guilds_influence = 0.1
 }
@@ -1465,7 +1465,7 @@ got_baltic_monopoly = {
 }
 
 got_baltic_maritime_empire = {
-	development_cost = -0.15
+	development_cost = -0.075
 	republican_tradition = 0.5
 	mr_guilds_influence = 0.1
 }
@@ -1511,12 +1511,12 @@ got_piratical_control = {
 
 got_heavily_looted = {
 	local_prosperity_growth = -0.15
-	local_development_cost = 0.1
+	local_development_cost = 0.05
 }
 
 got_quite_looted = {
 	local_prosperity_growth = -0.075
-	local_development_cost = 0.05
+	local_development_cost = 0.025
 }
 
 got_the_buccaneers_focus = {
@@ -1685,7 +1685,7 @@ eng_rb_promulgation = {
 eng_rb_angers_summer_court = {
 	supply_limit_modifier = 1
 	regiment_recruit_speed = -0.5
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 	local_state_maintenance_modifier = -0.15
 }
 
@@ -1732,7 +1732,7 @@ eng_unified_britain = {
 }
 
 gbr_british_rule = {	#Permanent
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 	local_unrest = -1
 }
 
@@ -1794,7 +1794,7 @@ gbr_unified_british_isles_culture = {	#Permanent until either Irish or Highlande
 
 gbr_isolation_policy = {
 	global_unrest = -2
-	development_cost = -0.05
+	development_cost = -0.025
 }
 
 gbr_recovering_prestige = {
@@ -1846,7 +1846,7 @@ ave_anglo_french_imperium = {	#Permanent
 
 gbr_end_of_the_villeinage = {
 	global_prosperity_growth = 0.25
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 gbr_exploration_spirit = {
@@ -1858,7 +1858,7 @@ gbr_influence_of_the_trade_company = {
 }
 
 gbr_emperor_of_india = {	#Permanent
-	min_autonomy_in_territories = -0.1
+	min_autonomy_in_territories = -0.025
 	diplomatic_annexation_cost = -0.1
 }
 
@@ -1915,7 +1915,7 @@ ave_new_world_dominance = {	#Permanent
 ave_local_expanded_barracks = {	#Permanent
 	local_garrison_size = 1
 	local_fort_maintenance_modifier = -0.75
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 eng_the_two_houses = {
@@ -2014,7 +2014,7 @@ highlands_consolidated = {
 }
 
 edinburgh_london_modifier = {
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 	local_build_cost = -0.15
 }
 
@@ -2095,7 +2095,7 @@ ire_recruiting_from_clans = {
 }
 
 irish_potatoes = {
-	development_cost = -0.1
+	development_cost = -0.05
 	production_efficiency = 0.1
 }
 
@@ -2141,7 +2141,7 @@ oma_maritime_mod = {
 
 three_koreas_mod = {
 	local_tax_modifier = 0.1
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 # Orissan Missions
@@ -2181,7 +2181,7 @@ conquest_of_beijing = {
 
 # Daimyo missions
 improved_han = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 supported_kabuki = {
 	advisor_cost = -0.1
@@ -2399,7 +2399,7 @@ vij_andhra_modifier = {
 }
 
 vij_plunder_modifier = {
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 vij_local_gods_modifier = {
@@ -2411,7 +2411,7 @@ vij_building = {
 
 city_of_victory_modifier = {
 	prestige = 1
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 # Delhi missions
@@ -2489,7 +2489,7 @@ third_rome_modifier = {	#Permanent, province
 	tolerance_own = 1
 	legitimacy = 1
 	local_manpower_modifier = 1
-	local_development_cost = -0.2
+	local_development_cost = -0.1
 	local_defensiveness = 0.25
 	local_tax_modifier = 0.5
 	local_production_efficiency = 0.2
@@ -2525,7 +2525,7 @@ rus_expanded_administrative_offices = {
 }
 
 rus_developed_trade_post_novgorod = {	#Permanent, province
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 	province_trade_power_value = 10
 }
 
@@ -2589,7 +2589,7 @@ rus_end_of_the_horde = {
 
 rus_local_russian_trade_center = {
 	province_trade_power_modifier = 0.5
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_build_time = -0.25
 }
 
@@ -2646,7 +2646,7 @@ rus_early_modernization_modifier = {
 
 rus_center_of_modernization = {	#Permanent, province
 	local_institution_spread = 2
-	development_cost_modifier = -0.05
+	development_cost_modifier = -0.025
 }
 
 rus_loyalty_of_the_patriarchy = {	#Permanent
@@ -2766,23 +2766,23 @@ rus_state_investment = {	#Permanent
 
 rus_orthodox_holy_site = {	#Permanent, province
 	local_tax_modifier = 0.5
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 }
 
 rus_center_of_commerce = {	#Permanent, province
 	province_trade_power_modifier = 0.25
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 }
 
 rus_the_west_fort = {	#Permanent, province
 	local_defensiveness = 0.5
 	local_fort_maintenance_modifier = -0.75
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 }
 
 rus_kiev_mohyla_academy = {	#Permanent, province
 	local_institution_spread = 1
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 }
 
 rus_trade_empire = {	#Permanent
@@ -2862,13 +2862,13 @@ neva_fleet = {
 
 nov_the_great = {
 	prestige = 1
-	local_development_cost = -0.2
+	local_development_cost = -0.1
 	allowed_num_of_buildings = 3
 	local_institution_spread = 0.5
 }
 
 arkhangelsk_modifier = {
-	local_development_cost = -0.35
+	local_development_cost = -0.175
 	province_trade_power_value = 10
 	trade_value_modifier = 0.1
 }
@@ -3005,7 +3005,7 @@ mlw_education = {
 #Bahmanis
 
 growing_importance_of_golconda = {
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 	local_build_cost = -0.1
 }
 
@@ -3064,7 +3064,7 @@ bah_access_to_the_sea = {
 }
 
 mahmud_gawans_madrassah_modifier = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_institution_spread = 0.1
 }
 
@@ -3074,7 +3074,7 @@ marathi_fiefs_modifier = {
 }
 
 metropolis_of_the_deccan_modifier = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_build_cost = -0.1
 }
 
@@ -3085,13 +3085,13 @@ brahmin_administrators_modifier = {
 #Mewar
 
 capital_of_rajputana = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_build_cost = -0.1
 	prestige = 0.5
 }
 
 kannauj_restored_modifier = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_defensiveness = 0.1
 }
 
@@ -3142,7 +3142,7 @@ forts_of_rajputana = {
 
 city_of_lakes = {
 	prestige = 0.5
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 mer_plains_of_punjab = {
@@ -3175,7 +3175,7 @@ guj_rajputana_mewar = {
 }
 
 ahmadabad_paper = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_production_efficiency = 0.2
 }
 
@@ -3196,7 +3196,7 @@ gujarati_shipyards = {
 }
 
 new_cambay = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 port_of_surat = {
@@ -3217,7 +3217,7 @@ dharma_modifier = {
 }
 
 united_bengal = {
-	local_development_cost = -0.2
+	local_development_cost = -0.1
 }
 
 hin_rajput_integration = {
@@ -3226,7 +3226,7 @@ hin_rajput_integration = {
 
 peacock_throne = {
 	legitimacy = 1
-	local_development_cost = -0.2
+	local_development_cost = -0.1
 }
 
 hindu_ganges = {
@@ -3276,7 +3276,7 @@ shan_relocation = {
 }
 
 tau_new_capital = {
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 	local_build_cost = -0.15
 }
 
@@ -3318,7 +3318,7 @@ mug_malay_seamanship = {
 
 subah_of_ayuddhya_modifier = {
 	local_state_maintenance_modifier = -0.2
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_autonomy = -0.02
 }
 
@@ -3353,7 +3353,7 @@ mug_fall_of_delhi = {
 
 fortified_the_doab = {
 	trade_value = 0.2
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 western_trade_relations = {
@@ -3375,7 +3375,7 @@ mug_control_of_sufi_shrines = {
 ajmer_subah = {
 	local_defensiveness = 0.25
 	local_state_maintenance_modifier = -0.3
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 mug_watan_jagirs_rajputs = {
@@ -3384,7 +3384,7 @@ mug_watan_jagirs_rajputs = {
 }
 
 mughal_imperial_capital = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_build_cost = -0.1
 	legitimacy = 0.5
 }
@@ -3395,7 +3395,7 @@ mug_divine_faith = {
 }
 
 city_of_aurangabad = {
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 	local_defensiveness = 0.1
 }
 
@@ -3454,7 +3454,7 @@ indian_empire = {
 
 south_india_construction = {
 	build_cost = -0.075
-	development_cost = -0.05
+	development_cost = -0.025
 }
 
 south_india_forts = {
@@ -3598,7 +3598,7 @@ invested_in_eastern_poland = {
 
 restored_ruthenia = {
 	local_unrest = -2
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 }
 
 pol_swedish_deluge = {
@@ -3624,7 +3624,7 @@ united_voivodes = {
 }
 
 bucharest_summer_capital = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 rmn_consolidating_transylvania = {
@@ -3775,7 +3775,7 @@ spa_new_granada = {
 }
 
 displaced_moriscos = {
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 spanish_imperial_ambition = {
@@ -4069,7 +4069,7 @@ gra_mouth_of_mediterranean = {
 }
 
 gra_reconvert_giralda = {
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 	local_monthly_devastation = -0.1
 	local_unrest = -3
 }
@@ -4300,7 +4300,7 @@ kor_conquest_manchuria = {
 
 kor_emperor_of_china = {
 	prestige = 1
-	development_cost = -0.15
+	development_cost = -0.075
 	imperial_mandate = 0.03
 }
 
@@ -4329,8 +4329,8 @@ kor_mission_traders = {
 }
 
 kor_japanese_loot = {
-	development_cost = -0.05
-	local_development_cost = -0.05
+	development_cost = -0.025
+	local_development_cost = -0.025
 	prestige = 0.5
 }
 
@@ -4345,7 +4345,7 @@ kor_turtle_fleets = {
 
 kor_growing_economy = {
 	build_cost = -0.10
-	development_cost = -0.10
+	development_cost = -0.05
 }
 
 kor_prosperous_korea = {
@@ -4459,7 +4459,7 @@ mlo_ascendant_force = {
 
 mlo_mona_lisa = {
 	prestige = 1.5
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 mlo_unified_italy = {
@@ -4489,7 +4489,7 @@ mlo_alpine_fortifications = {
 }
 
 mlo_lombard_renaissance = {
-	development_cost = -0.1
+	development_cost = -0.05
 	build_cost = -0.075
 }
 
@@ -4709,7 +4709,7 @@ gen_spanish_alliance_modifier = {
 }
 
 gen_prosperous_republic = {
-	development_cost = -0.1
+	development_cost = -0.05
 	global_institution_spread = 0.15
 	advisor_pool = 1
 }
@@ -4771,7 +4771,7 @@ bav_bavarian_netherlands = {
 bav_established_oktoberfest = {
 	prestige = 0.5
 	local_production_efficiency = 0.2
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 bav_bavarian_absolutism = {
@@ -4822,7 +4822,7 @@ hun_nagysz_uni_non_catholic = {
 
 hun_great_city = {
 	prestige = 1
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	province_trade_power_modifier = 0.25
 }
 
@@ -5135,7 +5135,7 @@ sav_king_of_cyprus = {
 
 sav_piedmont_lombardy = {
 	global_institution_spread = 0.1
-	development_cost = -0.1
+	development_cost = -0.05
 	build_cost = -0.075
 }
 
@@ -5151,7 +5151,7 @@ sav_king_of_france = {
 }
 
 sav_prosperous_homelands = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_production_efficiency = 0.1
 }
 
@@ -5190,7 +5190,7 @@ sav_savoyard_army = {
 #Italian missions
 
 ita_italian_prosperity = {
-	development_cost = -0.1
+	development_cost = -0.05
 	stability_cost_modifier = -0.25
 }
 
@@ -5326,7 +5326,7 @@ ned_je_maintiendrai_mod = {
 }
 
 ser_novo_brdo_code = {
-	development_cost = -0.1
+	development_cost = -0.05
 	production_efficiency = 0.1
 }
 
@@ -5401,7 +5401,7 @@ lan_arno_flood_controls = {
 }
 
 lan_monumental_construction = {
-	development_cost = -0.1
+	development_cost = -0.05
 	prestige = 1
 }
 
@@ -5569,7 +5569,7 @@ fkn_expansionist_ambition = {
 }
 
 fkn_franconian_palace = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	reform_progress_growth = 0.1 #-10% idea cost without Dharma/Emperor
 }
 
@@ -5766,7 +5766,7 @@ pap_gasmoulikon_corps = {
 
 pap_chinese_jesuits_catholic = {
 	local_missionary_strength  = -0.05
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 pap_chinese_jesuits_noncatholic = {
@@ -5851,7 +5851,7 @@ croatian_fleet = {
 }
 
 gosti_guests = {
-	development_cost = -0.05
+	development_cost = -0.025
 }
 
 itm_italian_renaissance_modifier = {
@@ -5919,7 +5919,7 @@ pom_pol_unity = {
 
 # Westphalian Missions
 westfalen_capital_modifier = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 westphalia_integrate_rheinland = {
@@ -5998,7 +5998,7 @@ hanseatic_queen_modifier = {
 # Pegu missions
 
 restored_sadhuim = {
-	local_development_cost = -0.2
+	local_development_cost = -0.1
 }
 
 mon_restoration = {
@@ -6042,7 +6042,7 @@ siam_monument_modifier = {
 }
 
 siam_best_city_modifier = {
-	development_cost = -0.05
+	development_cost = -0.025
 }
 
 siam_trade = {
@@ -6078,7 +6078,7 @@ new_khmer_golden_age = {
 }
 
 estate_burghers_khmer_irrigation_mod = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 grain_production_improved = {
@@ -6153,7 +6153,7 @@ majapahit_respected = {
 }
 
 negara_agung = {
-	development_cost = -0.05
+	development_cost = -0.025
 }
 
 maj_colony_modifier = {
@@ -6486,7 +6486,7 @@ sw_joshua_trees = {
 }
 
 sw_casas_grandes = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_build_cost = -0.1
 }
 
@@ -6507,7 +6507,7 @@ nah_hogan_constructed = {
 }
 
 nah_blessed_by_the_earth = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_build_cost = -0.1
 }
 
@@ -6629,7 +6629,7 @@ pow_mouth_of_the_river = {
 
 pow_leeroy_yehakins = {
 	local_tax_modifier = 0.1
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 # Native American/Oceanian Missions
@@ -6680,14 +6680,14 @@ eth_blessing_of_kings = {
 
 #Province modifier
 eth_restoration_of_antioch = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_missionary_strength = 0.03
 	local_build_cost = -0.25
 }
 
 #Permanent Province modifier
 eth_obelisk_of_axum = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	prestige = 0.25
 }
 
@@ -6706,7 +6706,7 @@ eth_restoration_of_ancient_borders = {
 #Province modifier
 eth_active_missionaries = {
 	local_missionary_strength = 0.03
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 }
 
 #Province modifier
@@ -6775,7 +6775,7 @@ mal_economic_oppression = {
 
 #Province modifier
 mal_river_cultivation = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_tax_modifier = 0.1
 	local_production_efficiency = 0.1
 }
@@ -7076,7 +7076,7 @@ zim_sacred_court = {
 
 #Province modifier
 zim_mutapan_influence = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_production_efficiency = 0.1
 	local_prosperity_growth = 0.1
 	local_monthly_devastation = -0.1
@@ -7293,7 +7293,7 @@ msi_centralization_focus = {
 
 hau_city_builders = {
 	build_cost = -0.075
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 #The Chief Modifier
@@ -7429,7 +7429,7 @@ east_africa_trading_hub = {
 
 east_africa_blooming_nation = {
 	build_cost = -0.10
-	development_cost = -0.05
+	development_cost = -0.025
 }
 
 east_africa_money_calls_money = {
@@ -7494,7 +7494,7 @@ gen_hoa_great_power_modifier = {
 gen_hoa_unify_horn_modifier = {
 	local_monthly_devastation = -0.1
 	local_unrest = -2
-	development_cost = -0.05
+	development_cost = -0.025
 }
 
 gen_hoa_horn_bravery_modifier = {
@@ -7589,7 +7589,7 @@ w_african_tax_collectors = {
 }
 
 w_african_develop_modifier = {
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 ###
@@ -7731,7 +7731,7 @@ pol_fortified_border_modifier = {
 	local_fort_maintenance_modifier = -1 
 }
 pol_efficienct_development_modifier = {
-	development_cost_modifier = -0.1 
+	development_cost_modifier = -0.05 
 	build_cost = -0.05
 }
 pol_global_maritime_empire_modifier = {	
@@ -7756,7 +7756,7 @@ pol_winter_preparations_modifier = {
 	land_attrition = -0.2
 }
 pol_polish_swedish_act_of_baltic_coprosperity_modifier = {
-	development_cost_modifier = -0.05 
+	development_cost_modifier = -0.025 
 	trade_efficiency = 0.1 
 }
 pol_victory_polish_crown_modifier = {
@@ -7772,7 +7772,7 @@ pol_swedish_metal_imports_modifier = {
 	global_regiment_cost = -0.05
 }
 pol_shared_prosperity_modifier = {
-	development_cost = -0.1 
+	development_cost = -0.05 
 	stability_cost_modifier = -0.15
 }
 pol_efficient_taxation_lit_lands_modifier = {
@@ -7812,14 +7812,14 @@ pol_overlordship_in_prussia_modifier = {
 	vassal_forcelimit_bonus = 0.2 
 }
 pol_developing_port_modifier = {
-	local_development_cost = -0.10 
+	local_development_cost = -0.05 
 }
 pol_daugava_estuary_modifier = {
 	province_trade_power_value = 20
 	picture = "estuary_icon"
 }
 pol_wave_of_migration_modifier = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 pol_cheap_ap_mercs_modifier = { }
 pol_trigger_for_army_professionalism_modifier = { } 
@@ -7852,7 +7852,7 @@ lit_stable_rule_2_modifier = {
 }
 lit_centers_urbanization_modifier = {
 	local_build_time = -0.35 
-	local_development_cost_modifier = -0.25 
+	local_development_cost_modifier = -0.125 
 }
 lit_efficient_sejmiks_modifier = {
 	monthly_reform_progress = 0.3 
@@ -7873,7 +7873,7 @@ lit_part_of_the_polish_domain_modifier = {
 	stability_cost_modifier = -0.2
 }
 lit_attracting_migrants_modifier = {
-	development_cost = -0.1
+	development_cost = -0.05
 }
 lit_lithuanian_supremacy_modifier = {
 	same_culture_advisor_cost = -0.25 
@@ -7906,7 +7906,7 @@ fin_accelerated_assimilation_modifier = {
 	years_of_nationalism = -10 
 }
 fin_abundant_food_modifier = {
-	development_cost = -0.15 
+	development_cost = -0.075 
 	build_time = -0.15
 }
 fin_viipurin_linna_modifier = {
@@ -7983,7 +7983,7 @@ hsa_aristocrat_burgermeister_modifier = {
 }
 hsa_strong_mercantile_union_modifier = {
 	transfer_trade_power_reasons = 100
-	development_cost = -0.05
+	development_cost = -0.025
 	allowed_num_of_buildings = 1 
 }
 hsa_valuable_mineral_deposits_modifier = {
@@ -8028,22 +8028,22 @@ hsa_theory_of_mercantilism_modifier = {
 	placed_merchant_power = 5 
 }
 hsa_development_works_of_the_hansa_modifier1 = {
-	development_cost = -0.025
+	development_cost = -0.0125
 }
 hsa_development_works_of_the_hansa_modifier2 = {
-	development_cost = -0.05
+	development_cost = -0.025
 }
 hsa_development_works_of_the_hansa_modifier3 = {
-	development_cost = -0.075
+	development_cost = -0.0375
 }
 hsa_development_works_of_the_hansa_modifier4 = {
-	development_cost = -0.1
+	development_cost = -0.05
 }
 hsa_development_works_of_the_hansa_modifier5 = {
-	development_cost = -0.125
+	development_cost = -0.0625
 }
 hsa_development_works_of_the_hansa_modifier6 = {
-	development_cost = -0.15
+	development_cost = -0.075
 }
 hsa_lower_saxon_drittel_modifier = {
 	country_admin_power = 1 
@@ -8163,7 +8163,7 @@ hsa_northern_alliance_of_trade_cities1_modifier = {
 }
 hsa_center_of_mineral_trade = {
 	local_gold_depletion_chance_modifier = -0.25
-	local_development_cost_modifier = -0.05
+	local_development_cost_modifier = -0.025
 }
 hsa_maritime_hegemon_modifier = {
 	naval_forcelimit_modifier = 0.2
@@ -8171,7 +8171,7 @@ hsa_maritime_hegemon_modifier = {
 	navy_tradition = 1
 }
 capital_expansion_modifier = {
-	local_development_cost_modifier = -0.05 
+	local_development_cost_modifier = -0.025 
 	local_build_time = -0.25 
 }
 
@@ -8202,7 +8202,7 @@ tur_early_cannons_modifier = {
 }
 
 tur_resettlement_of_constantinople = {
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 	local_monthly_devastation = -0.25
 }
 
@@ -8254,7 +8254,7 @@ tur_legitimate_roman_empire_modifier = {
 }
 
 tur_expanded_governmential_offices = {	#Permanent
-	local_development_cost_modifier = -0.05
+	local_development_cost_modifier = -0.025
 }
 
 tur_eyalet_management = {	#Permanent
@@ -8262,7 +8262,7 @@ tur_eyalet_management = {	#Permanent
 }
 
 tur_morisco_refugees_modifier = { 
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	trade_goods_size = 0.25
 }
 
@@ -8321,7 +8321,7 @@ tur_integration_in_the_ottoman_government_modifier = {
 tur_caucasian_conquest = {
 	local_autonomy = -0.025
 	local_monthly_devastation = -0.05
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 tur_conquest_of_persia = {
@@ -8342,24 +8342,24 @@ tur_mamlukian_administration = {
 
 tur_investment_into_infrastructure = {
 	trade_goods_size_modifier = 0.2
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 tur_imperial_muslim_center = {	#Permanent
 	local_tax_modifier = 0.5
-	local_development_cost = -0.2
+	local_development_cost = -0.1
 }
 
 tur_the_imperial_capital = {	#Permanent
 	local_build_cost = -0.25
 	local_build_time = -0.25
-	local_development_cost = -0.2
+	local_development_cost = -0.1
 }
 
 tur_the_gem_of_worlds_desire = {	#Permanent
 	province_trade_power_value = 20
 	trade_value_modifier = 0.1
-	local_development_cost = -0.2
+	local_development_cost = -0.1
 }
 
 tur_imperial_school_of_military_engineering = {	#Permanent
@@ -8548,7 +8548,7 @@ mng_cabinet_cooperation_modifier = {
 	all_estate_influence_modifier = 0.1 
 }
 mng_decentralized_migration_modifier = {
-	development_cost = -0.1 
+	development_cost = -0.05 
 }
 mng_expanded_eunuch_palatial_rights_modifier = {
 	eunuchs_privilege_slots = 1 
@@ -8681,7 +8681,7 @@ mng_great_engineer_modifier = {
 mng_yellow_river_dykes_modifier = {
 	local_tax_modifier = 0.25
 	local_monthly_devastation = -0.25
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 }
 mng_silver_house_of_china_modifier = {
 	trade_goods_size = 1.5
@@ -8694,7 +8694,7 @@ mng_shared_prosperity_modifier = {
 	global_prosperity_growth = 1
 }
 mng_divine_mandate_modifier = {
-	development_cost = -0.1
+	development_cost = -0.05
 	reduced_liberty_desire = 10
 	max_absolutism_effect = 0.1
 }
@@ -8865,7 +8865,7 @@ mjz_hordesons_modifier = {
 	army_tradition = 0.5 
 }
 mjz_horde_cooperation_modifier = {
-	development_cost = -0.05
+	development_cost = -0.025
 	global_autonomy = -0.025
 }
 qng_new_banners_modifier = {
@@ -8961,7 +8961,7 @@ era_of_the_great_dragon_modifier = {
 }
 chi_stable_court_modifier = {
 	advisor_cost = -0.2
-	development_cost = -0.1 
+	development_cost = -0.05 
 	meritocracy = 0.2
 }
 chi_imperial_center_of_commerce_modifier = {
@@ -9020,7 +9020,7 @@ fra_cutthroat_diplomacy_modifier = {
 }
 fra_attracted_leonardo_da_vinci_modifier = { 
 	local_great_project_upgrade_cost = -0.5
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	innovativeness_gain = 0.25
 }
 fra_expansion_in_italy_modifier = { 
@@ -9048,7 +9048,7 @@ fra_sociopolitical_reforms_modifier = {
 	advisor_pool = 1 
 }
 fra_exploitation_of_neapolitan_estates_modifier = {
-	development_cost = -0.1
+	development_cost = -0.05
 	global_tax_modifier = 0.15
 }
 fra_franco_iberian_cooperation_modifier = { 
@@ -9098,7 +9098,7 @@ fra_french_papal_military_cooperation_modifier = {
 }
 fra_influx_of_milanese_engineers_modifier = { 
 	great_project_upgrade_cost = -0.1
-	development_cost = -0.1
+	development_cost = -0.05
 }
 fra_first_opera_house_modifier = { 
 	max_absolutism = 5 
@@ -9225,7 +9225,7 @@ fra_rules_the_waves_modifier = {
 }
 fra_french_isles_modifier = {
 	culture_conversion_cost = -0.2
-	development_cost = -0.05
+	development_cost = -0.025
 }
 fra_channel_dominance_modifier = {
 	trade_efficiency = 0.1
@@ -9260,7 +9260,7 @@ fra_university_of_paris_modifier = {
 fra_developing_urban_center_modifier = {
 	local_build_cost = -0.1
 	local_build_time = -0.15
-	local_development_cost_modifier = -0.05
+	local_development_cost_modifier = -0.025
 }
 
 fra_provincial_road_system = {
@@ -9284,7 +9284,7 @@ fra_absolutism_modifier = {
 
 fra_french_industrial_revolution_modifier = {
 	global_trade_goods_size = 0.2
-	development_cost_modifier = -0.05
+	development_cost_modifier = -0.025
 }
 
 fra_steel_barons_modifier = {
@@ -9307,7 +9307,7 @@ fra_cabinet_reforms_modifier = {
 	core_creation = -0.1
 }
 fra_economic_reforms_modifier = {
-	development_cost = -0.1
+	development_cost = -0.05
 	production_efficiency = 0.15
 }
 fra_colbert_trade_reforms_modifier = {
@@ -9321,7 +9321,7 @@ fra_colbert_naval_reforms_modifier = {
 	number_of_cannons_flagship_modifier = 0.5
 }
 fra_french_dockyard_industry_modifier = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_ship_cost = -0.1
 	local_ship_repair = 0.1
 	ship_recruit_speed = -0.1
@@ -9449,7 +9449,7 @@ fra_popularization_of_secular_beliefs_modifier = {
 
 fra_riches_of_italy_modifier = { 
 	global_trade_goods_size_modifier = 0.1
-	development_cost = -0.05
+	development_cost = -0.025
 }
 
 fra_stable_currency_modifier = { 
@@ -9526,7 +9526,7 @@ jap_exchange_ideas_modifier = {
 
 jap_sakoku_modifier = {
 	allowed_num_of_manufactories = 1 
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 }
 
 jap_trade_innovations_modifier = {
@@ -9543,7 +9543,7 @@ jap_stability_edo_period_modifier = {
 jap_gokaido_modifier = {
 	trade_goods_size_modifier = 0.2
 	province_trade_power_modifier = 0.25
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 }
 
 jap_wealth_of_china_modifier = {
@@ -9553,12 +9553,12 @@ jap_wealth_of_china_modifier = {
 
 jap_expanded_mining_operations_modifier = {
 	local_gold_depletion_chance_modifier = -0.25
-	local_development_cost = -0.2
+	local_development_cost = -0.1
 	trade_goods_size = 1 
 }
 
 jap_period_tranquility_modifier = {
-	development_cost = -0.15 
+	development_cost = -0.075 
 	global_prosperity_growth = 0.25
 }
 
@@ -9719,7 +9719,7 @@ jap_improved_engineering_expertise_modifier = {
 
 jap_self_sufficient_market_modifier = {
 	global_trade_goods_size_modifier = 0.1
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 jap_overseas_ventures_modifier = {
@@ -9782,7 +9782,7 @@ pru_embed_company_modifier = {
 }
 
 pru_expanded_the_western_domains_modifier = {
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 pru_thunderous_advance_modifier = {
@@ -9836,7 +9836,7 @@ spa_bid_for_the_hab_crown_modifier = {
 spa_royal_authority_restored_modifier = {
 	monthly_reform_progress = 0.2
 	global_autonomy = -0.025
-	development_cost = -0.05
+	development_cost = -0.025
 }
 
 spa_valladolid_court_modifier = {
@@ -9890,7 +9890,7 @@ spa_victory_netherlands_modifier = {
 
 spa_transatlantic_migrations_modifier = {
 	expel_minorities_cost = -0.5
-	development_cost = -0.1
+	development_cost = -0.05
 	burghers_loyalty_modifier = 0.1
 }
 
@@ -9979,7 +9979,7 @@ por_presence_in_india_modifier = {
 
 por_center_of_portuguese_trade_modifier = {
 	local_great_project_upgrade_cost = -0.1 
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	trade_value_modifier = 0.15 
 }
 
@@ -10126,7 +10126,7 @@ geo_wineyards = {
 }
 
 geo_tbilisi = {
-	local_development_cost = -0.35
+	local_development_cost = -0.175
 }
 
 geo_second_golden_age = {
@@ -10172,7 +10172,7 @@ geo_religious_mission = {
 }
 
 geo_consecrated_ground = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 geo_beacon1 = {
@@ -10209,7 +10209,7 @@ geo_heirs_of_romans = {
 
 geo_fertile_crescent = {
 	allowed_num_of_manufactories = 1
-	local_development_cost_modifier = -0.05
+	local_development_cost_modifier = -0.025
 }
 
 geo_embassies = {
@@ -10250,7 +10250,7 @@ geo_strengthen_the_true_faith = {
 }
 
 geo_city_world_desire = {
-	local_development_cost = -0.2
+	local_development_cost = -0.1
 }
 
 geo_conceded_demands = {
@@ -10329,7 +10329,7 @@ arm_new_anatolian_hegemon = {
 }
 
 arm_great_city_tigranes = {
-	local_development_cost = -0.35
+	local_development_cost = -0.175
 	trade_value = 10
 }
 
@@ -10356,7 +10356,7 @@ arm_sword_of_true_faith = {
 
 arm_coptic_restoration = {
 	local_unrest = -2
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	trade_goods_size_modifier = 0.1
 }
 
@@ -10373,7 +10373,7 @@ turkoman_maragheh = {
 }
 
 turkoman_expanding_industry = {
-	development_cost = -0.1
+	development_cost = -0.05
 	global_trade_goods_size_modifier = 0.1
 }
 
@@ -10405,7 +10405,7 @@ turkoman_tamerlane_bloodline = {
 }
 
 turkoman_restore_irans_glory = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_build_cost = -0.2
 }
 
@@ -10438,23 +10438,23 @@ turkoman_architectural_revival = {
 }
 
 turkoman_privilege_mountains = {
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 }
 
 turkoman_privilege_highlands = {
-	local_development_cost = -0.1
-}
-
-turkoman_privilege_desert = {
-	local_development_cost = -0.2
-}
-
-turkoman_privilege_drylands = {
 	local_development_cost = -0.05
 }
 
+turkoman_privilege_desert = {
+	local_development_cost = -0.1
+}
+
+turkoman_privilege_drylands = {
+	local_development_cost = -0.025
+}
+
 turkoman_repopulate_persia = {
-	development_cost_modifier = -0.05
+	development_cost_modifier = -0.025
 	manpower_in_culture_group_provinces = 0.2
 }
 
@@ -10509,7 +10509,7 @@ turkoman_emirs_of_baghdad = {
 }
 
 turkoman_the_city_of_peace = {
-	local_development_cost_modifier = -0.1
+	local_development_cost_modifier = -0.05
 	allowed_num_of_buildings = 2
 }
 
@@ -10538,7 +10538,7 @@ turkoman_overpower_mamluks = {
 }
 
 turkoman_renovate_tabriz = {
-	local_development_cost = -0.35
+	local_development_cost = -0.175
 }
 
 turkoman_guaranteed_the_rights = {
@@ -10608,7 +10608,7 @@ turkoman_mausoleum = {
 }
 
 turkoman_new_capital = {
-	local_development_cost = -0.2
+	local_development_cost = -0.1
 	local_prosperity_growth = 0.5
 }
 
@@ -10725,7 +10725,7 @@ BYZ_no_slot_bulgarian = {
 }
 
 BYZ_grain_shipments = {
-	local_development_cost = -0.3 
+	local_development_cost = -0.175 
 }
 
 BYZ_champions_of_the_east = {
@@ -10737,7 +10737,7 @@ BYZ_fertile_valleys = {
 }
 
 BYZ_new_constantinople = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	trade_goods_size_modifier = 0.25
 	local_prosperity_growth = 0.25
 }
@@ -10790,7 +10790,7 @@ BYZ_local_galleass = {
 }
 
 BYZ_chastening_of_venice = {
-	local_development_cost_modifier = 0.25
+	local_development_cost_modifier = 0.125
 	local_monthly_devastation = 0.05
 }
 
@@ -10844,7 +10844,7 @@ BYZ_icon_eleusa = {
 	harsh_treatment_cost = -0.25
 }
 BYZ_icon_pancreator = {
-	development_cost = -0.10
+	development_cost = -0.05
 	build_cost = -0.075
 }
 BYZ_icon_nicholas = {
@@ -10871,12 +10871,12 @@ BYZ_origins_of_renaissance = {
 }
 
 BYZ_secondary_trade_capital = {
-	local_development_cost = -0.2
+	local_development_cost = -0.1
 	province_trade_power_value = 10
 }
 
 BYZ_primary_trade_capital = {
-	local_development_cost = -0.2
+	local_development_cost = -0.1
 	province_trade_power_value = 15
 }
 
@@ -10899,7 +10899,7 @@ BYZ_queen_of_cities = {
 }
 
 BYZ_queen_of_cities_no_dlc = {
-	local_development_cost_modifier = -0.05
+	local_development_cost_modifier = -0.025
 }
 
 BYZ_centralize_all_wealth = {
@@ -11003,7 +11003,7 @@ BYZ_turkish_retinue = {
 }
 
 BYZ_constantinople_outgrows_limits = {
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 BYZ_experience_assaulting_thessaly = {
@@ -11100,7 +11100,7 @@ ARB_stewards_of_the_two_cities = {
 }
 
 ARB_well_managed = {
-	local_development_cost = -0.2
+	local_development_cost = -0.1
 }
 
 ARB_increased_pilgrim_traction = {
@@ -11113,7 +11113,7 @@ ARB_naval_routes = {
 }
 
 ARB_port_in_jeddah = {
-	local_development_cost = -0.2
+	local_development_cost = -0.1
 }
 
 ARB_guarantors_of_peace = {
@@ -11163,12 +11163,12 @@ ARB_estate_burghers_arid_climate_development = {
 
 ARB_oasis_city_on_stop_to_mecca = {
 	tax_income = 4 
-	local_development_cost = -0.25
+	local_development_cost = -0.125
 }
 
 ARB_oasis_city_on_stop_to_mecca_2 = {
 	tax_income = 12 
-	local_development_cost = -0.5
+	local_development_cost = -0.25
 }
 
 ABR_safety_for_the_caravans = {
@@ -11200,7 +11200,7 @@ ARB_northern_citadel = {
 }
 
 ARB_dhimmi_self_government = {
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 ARB_claiming_title_of_caliph = {
@@ -11468,7 +11468,7 @@ estate_nobles_tofangchi_regiment_tooltip = {
 per_investment_into_persia = {
 	build_cost = -0.075
 	build_time = -0.15
-	development_cost = -0.05
+	development_cost = -0.025
 }
 
 per_persian_merchants_active = {
@@ -11480,7 +11480,7 @@ per_persian_merchants_active = {
 per_center_of_culture = {
 	local_tax_modifier = 0.5
 	local_production_efficiency = 0.25
-	local_development_cost_modifier = -0.05
+	local_development_cost_modifier = -0.025
 	monthly_persian_influence = 0.05
 }
 
@@ -11518,12 +11518,12 @@ estate_ghulams_qurchi_service_scaling = {
 #Permanent, province
 per_the_second_capital = {
 	prestige_decay = -0.01
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 per_arts_of_the_greeks_and_turks = {
 	prestige_decay = -0.01
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 estate_nobles_mamlukian_administration_tooltip = {
@@ -11581,7 +11581,7 @@ per_persian_defender_of_faith = {
 #Permanent
 per_culture_of_art = {
 	monthly_persian_influence = 0.1
-	development_cost_in_primary_culture = -0.1
+	development_cost_in_primary_culture = -0.05
 	same_culture_advisor_cost = -0.1
 }
 
@@ -11604,7 +11604,7 @@ estate_church_muslim_integration_mod = {
 
 grain_trade_imports_modifier = {
 	supply_limit_modifier = 0.1
-	development_cost = -0.05
+	development_cost = -0.025
 	global_unrest = -1
 }
 
@@ -11660,7 +11660,7 @@ mam_goods_from_the_east_modifier = {
 mam_adopted_persian_architecture_modifier = {
 	build_cost = -0.075
 	build_time = -0.15
-	development_cost = -0.05
+	development_cost = -0.025
 }
 
 protector_of_the_islamic_realm_modifier = {
@@ -11708,13 +11708,13 @@ feo_one_goth_to_rule_them_all = {
 }
 
 feo_gavras_family_gold_deposits = {
-	local_development_cost_modifier = -0.1
+	local_development_cost_modifier = -0.05
 	local_gold_depletion_chance_modifier = -1
 	trade_goods_size = 2
 }
 
 feo_aegean_trading_outpost = {
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 	province_trade_power_modifier = 0.2
 	province_trade_power_value = 10
 }
@@ -11733,7 +11733,7 @@ feo_plains_of_ruthenia = {
 }
 
 feo_tatar_population = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_manpower_modifier = 0.1
 	local_tax_modifier = 0.15
 }
@@ -11849,7 +11849,7 @@ hsn_jizya = {
 }
 
 hsn_restoration_baghdad = {
-	local_development_cost = -0.2
+	local_development_cost = -0.1
 	local_monthly_devastation = -0.1
 }
 
@@ -11874,7 +11874,7 @@ hsn_madrasas = {
 }
 
 hsn_paradise_gardens = {
-	local_development_cost_modifier = -0.1
+	local_development_cost_modifier = -0.05
 }
 
 hsn_fertile_crescent = {
@@ -12029,7 +12029,7 @@ hsn_legacy_of_saladin = {
 }
 
 hsn_restoring_damascus = {
-	local_development_cost = -0.2
+	local_development_cost = -0.1
 }
 
 orm_protected_trading_outposts = {
@@ -12091,14 +12091,14 @@ orm_end_of_the_timurids = {
 }
 
 orm_coastal_development = {
-    local_development_cost = -0.05
+    local_development_cost = -0.025
     ship_recruit_speed = -0.25
 }
 
 orm_siraf_ports = {
     trade_value = 10
     local_governing_cost = -0.1
-    local_development_cost = -0.15
+    local_development_cost = -0.075
 }
 
 orm_beyond_arabic_ports = {
@@ -12177,12 +12177,12 @@ oma_zanzibar_ivory_trade = {
 }
 
 oma_development_of_masqat_port = {
-    local_development_cost = -0.3
+    local_development_cost = -0.15
 }
 
 oma_nizwa_fort_modifier = {
     local_fort_maintenance_modifier = -0.75
-    local_development_cost = -0.15
+    local_development_cost = -0.075
 }
 
 oma_omani_marines = {
@@ -12275,7 +12275,7 @@ ITA_integration_with_southern_france = {
 }
 
 ITA_unity = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_prosperity_growth = 0.33
 	trade_goods_size_modifier = 0.15
 }
@@ -12327,7 +12327,7 @@ ITA_renaissance = {
 ITA_new_renaissance = {
 	national_focus_years = -5
 	advisor_cost = -0.25
-	development_cost_in_primary_culture = -0.1
+	development_cost_in_primary_culture = -0.05
 }
 
 ITA_adapt_the_condotierri = {
@@ -12387,7 +12387,7 @@ free_slot_for_occitain = {
 
 ITA_industrial_triangle_modifier = {
 	trade_goods_size_modifier = 0.15
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 ITA_extra_goods_produced_for_colonies = {
@@ -12414,7 +12414,7 @@ GER_rapid_industrialization = {
 GER_major_city = {
 	trade_goods_size_modifier = 0.33
 	trade_goods_size = 0.4
-	local_development_cost = -0.3
+	local_development_cost = -0.15
 }
 
 GER_a_turn_inwards = {
@@ -12437,7 +12437,7 @@ GER_industrialization_rhineland = {
 
 GER_industrialization = {
 	production_efficiency = 0.2
-	development_cost = -0.05
+	development_cost = -0.025
 }
 
 GER_fight_against_the_catholic_church = {
@@ -12518,7 +12518,7 @@ GER_paper_provinces_franconian = {
 }
 
 GER_mining_provinces_saxon = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	trade_goods_size_modifier = 0.1
 }
 
@@ -12534,7 +12534,7 @@ GER_refused_to_renew_diploma_andreanum = {
 }
 
 GER_transylvanian_saxon_minority = {
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 	trade_goods_size_modifier = 0.33
 }
 
@@ -12608,7 +12608,7 @@ ven_plague_doctors_modifier = {
 
 ven_defensive_stance_modifier = {
 	local_defensiveness = 0.2
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_manpower_modifier = 0.25
 }
 
@@ -12685,7 +12685,7 @@ ven_wealth_of_the_new_world_modifier = {
 
 ven_venetian_sugar_modifier = {
 	trade_goods_size = 1
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 ven_global_presence_modifier = {
@@ -12714,7 +12714,7 @@ ven_wealth_of_india_modifier = {
 }
 
 ned_seven_provinces_organization_positive_modifier = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	trade_goods_size_modifier = 0.1
 	local_governing_cost = -0.25
 	local_build_cost = -0.1
@@ -12737,7 +12737,7 @@ ned_hollander_settlers = {
 
 ned_je_maintiedrai = {
 	discipline = 0.05
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 ned_devise_glorious_crossing = {
@@ -12785,13 +12785,13 @@ ned_empowered_staatse_leger = {
 }
 
 ned_low_countries_fort_buff = {
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 	local_production_efficiency = 0.1
 	local_defensiveness = 0.1
 }
 
 ned_low_countries_fort_buff_buffed = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_production_efficiency = 0.2
 	local_defensiveness = 0.2
 }
@@ -12928,7 +12928,7 @@ hol_parliament_of_mechelen_modifier = {
 }
 
 hol_influx_prosperity_modifier = {
-	development_cost = -0.05
+	development_cost = -0.025
 }
 
 hol_ample_grain_trade_modifier = {
@@ -12987,7 +12987,7 @@ hun_guarantee_minority_rights = {
 }
 
 hun_fertile_lands = {
-	local_development_cost_modifier = -0.05
+	local_development_cost_modifier = -0.025
 	trade_goods_size_modifier = 0.1
 }
 
@@ -13029,7 +13029,7 @@ hun_black_legion = {
 }
 
 estate_burghers_hungarian_royal_city_modifier = {
-	local_development_cost_modifier = -0.1
+	local_development_cost_modifier = -0.05
 	trade_goods_size_modifier = 0.5
 	allowed_num_of_manufactories = 1
 }
@@ -13198,18 +13198,18 @@ azt_religious_classes = {
 }
 
 azt_techchitlan_1 = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_gold_depletion_chance_modifier = -0.25
 }
 
 azt_techchitlan_2 = {
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 	local_gold_depletion_chance_modifier = -0.25
 	local_prosperity_growth = 0.5
 }
 
 azt_techchitlan_3 = {
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 	local_gold_depletion_chance_modifier = -0.25
 	local_prosperity_growth = 0.5
 	local_build_time = -0.15
@@ -13217,8 +13217,8 @@ azt_techchitlan_3 = {
 }
 
 azt_techchitlan_4 = {
-	local_development_cost = -0.15
-	local_development_cost_modifier = -0.1
+	local_development_cost = -0.075
+	local_development_cost_modifier = -0.05
 	local_gold_depletion_chance_modifier = -0.25
 	local_prosperity_growth = 0.5
 	local_build_time = -0.15
@@ -13251,7 +13251,7 @@ azt_pleasing_the_gods = {
 
 chinampa_farms_modifier = {
 	trade_goods_size_modifier = 0.25
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 }
 
 azt_gold_mines_of_mexico = {
@@ -13325,7 +13325,7 @@ INC_inca_idol_making_alternative = {
 }
 
 INC_development_cost_penalty = {
-	development_cost = 0.15
+	development_cost = 0.075
 }
 
 INC_royal_roads = {
@@ -13418,12 +13418,12 @@ INC_pachakuti = {
 }
 
 INC_mountain_adaptations = {
-	development_cost = -0.05 
+	development_cost = -0.025 
 }
 
 INC_increased_productivity = {
 	local_production_efficiency = 0.15 
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 }
 
 INC_central_plaza = {
@@ -13431,7 +13431,7 @@ INC_central_plaza = {
 }
 
 INC_central_plaza_no_dlc = {
-	local_development_cost = -0.5
+	local_development_cost = -0.25
 }
 
 INC_authority = {
@@ -13601,7 +13601,7 @@ MAY_unifying_maya_people = {
 
 MAY_religion_reformed = {
  	monthly_reform_progress = 0.25
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 MAY_restoring_maya_golden_age = {
@@ -13612,11 +13612,11 @@ MAY_restoring_maya_golden_age = {
 }
 
 MAY_jungle_reduction = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 MAY_jungle_reduction_upgrade = {
-	local_development_cost = -0.3
+	local_development_cost = -0.15
 }
 
 MAY_taming_the_jungle = {
@@ -13645,7 +13645,7 @@ MAY_merchant_travels = {
 }
 
 MAY_building_up_the_city = {
-	development_cost = -0.1
+	development_cost = -0.05
 	land_forcelimit_modifier = 0.1
 }
 
@@ -13736,7 +13736,7 @@ boh_otakars_legacy = {
 }
 
 boh_great_city_of_svatopluk = {
-	local_development_cost_modifier = -0.1
+	local_development_cost_modifier = -0.05
 }
 
 boh_purge_hussites = {
@@ -13745,7 +13745,7 @@ boh_purge_hussites = {
 
 boh_early_industrialization = {
 	production_efficiency = 0.1
-	development_cost_modifier = -0.05
+	development_cost_modifier = -0.025
 }
 
 boh_hussite_destruction = {
@@ -13812,7 +13812,7 @@ boh_premyslid_heritage_3 = {
 }
 
 czech_nationalism = {
-	development_cost_in_primary_culture = -0.05
+	development_cost_in_primary_culture = -0.025
 }
 
 boh_pearl_of_the_baltics = {
@@ -14079,7 +14079,7 @@ tre_kalamita_fortress = {
 
 tre_grecoturkish_reconciliation = {
 	local_unrest = -2
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 tre_avengers_of_manzikert = {
@@ -14088,7 +14088,7 @@ tre_avengers_of_manzikert = {
 
 tre_perateia_colonies = {
 	province_trade_power_modifier = 0.25
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 tre_bolstered_the_defences = {
@@ -14129,7 +14129,7 @@ tre_martial_resurgence = {
 }
 
 tre_revitalization = {
-	development_cost = -0.1
+	development_cost = -0.05
 	global_tax_income = 12
 }
 
@@ -14160,7 +14160,7 @@ hab_union_with_bohemia = {
 
 hab_silesian_economy = {
 	trade_goods_size_modifier = 0.1
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 hab_expansion_of_krakow = {
@@ -14223,12 +14223,12 @@ hab_maintaining_the_imperial_religion = {
 }
 
 hab_capitals_of_the_empire = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_manpower_modifier = 0.2
 }
 
 hab_imperial_cities = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_production_efficiency = 0.15
 }
 
@@ -14242,7 +14242,7 @@ hab_fort_of_breisgau = {
 }
 
 hab_south_german_cities = {
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 }
 
 hab_haugwitz_reforms = {
@@ -14252,7 +14252,7 @@ hab_haugwitz_reforms = {
 
 hab_tirol_mine = {
 	local_gold_depletion_chance_modifier = -0.5
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 hab_aeiou_modifier = {
@@ -14382,7 +14382,7 @@ TIM_pearl_of_khorasan_no_dlc = {
     local_production_efficiency = 0.5
     local_manpower = 0.5
     trade_goods_size_modifier = 0.25
-    local_development_cost = -0.1
+    local_development_cost = -0.05
 } 
 
 TIM_a_pious_ruler = {
@@ -14470,7 +14470,7 @@ TIM_loot_and_plunder = {
 }
 
 TIM_dev_cost_until_persia_formation = {
-	development_cost_in_primary_culture = -0.2
+	development_cost_in_primary_culture = -0.1
 }
 
 TIM_great_architects = {
@@ -14656,7 +14656,7 @@ MUG_agra_fort = {
 MUG_ideal_capital = {
 	trade_goods_size_modifier = 0.15
 	local_manpower_modifier = 0.15
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 	local_prosperity_growth = 2
 }
 
@@ -14831,7 +14831,7 @@ boh_hegemon_dlcless = {
 ita_southern_focus_no_dlc = {
     local_unrest = -3
     trade_goods_size_modifier = 0.15
-    local_development_cost = -0.1
+    local_development_cost = -0.05
 }
 
 ITA_constantinople_taken_no_dlc = {
@@ -14839,11 +14839,11 @@ ITA_constantinople_taken_no_dlc = {
     tax_income = 12
     local_core_creation = -0.5
     trade_goods_size_modifier = 0.15
-    local_development_cost = -0.1
+    local_development_cost = -0.05
 }
 
 ITA_unity_no_dlc = {
-    local_development_cost = -0.15
+    local_development_cost = -0.075
     trade_goods_size_modifier = 0.3
 }
 
@@ -14853,7 +14853,7 @@ ITA_best_form_of_defense_is_attack_no_dlc = {
 
 ITA_new_renaissance_non_dlc = {
     advisor_cost = -0.25
-    development_cost_in_primary_culture = -0.15
+    development_cost_in_primary_culture = -0.075
 } 
 
 orm_protected_trading_outposts_no_dlc = {

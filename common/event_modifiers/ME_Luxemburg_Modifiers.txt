@@ -24,7 +24,7 @@ LUX_glory_of_von_luxemburg = {
 
 LUX_small_city = {
 	local_fort_maintenance_modifier = -0.75
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 LUX_gibraltar_of_the_north = {
@@ -40,7 +40,7 @@ LUX_bock_level_3_no_dlc = {
 LUX_castle = {
 	local_assault_fort_ability = -0.75
 	local_garrison_damage = 0.5
-	local_development_cost = -0.25
+	local_development_cost = -0.125
 }
 
 LUX_bock_modifier = {

@@ -79,7 +79,7 @@ LIE_imperial_incursion = {
 
 LIE_antwerpen_favoritism = {
 	province_trade_power_value = 10
-	local_development_cost = -0.25
+	local_development_cost = -0.125
 }
 
 LIE_holland_modifier = {

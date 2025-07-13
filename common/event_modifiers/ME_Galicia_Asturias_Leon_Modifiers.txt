@@ -47,7 +47,7 @@ LON_peregrinatio_compostellana = {
 
 LON_camino_de_santiago = {
 	local_tax_modifier = 0.33
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 LON_st_james_the_patron = {

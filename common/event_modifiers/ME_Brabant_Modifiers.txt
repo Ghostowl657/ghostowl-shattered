@@ -8,7 +8,7 @@ BRB_army_of_the_duke = {
 }
 
 BRB_growth_of_antwerpen = {
-	local_development_cost = -0.1 
+	local_development_cost = -0.05 
 	province_trade_power_modifier = 0.25
 	local_great_project_upgrade_cost = -0.25
 }

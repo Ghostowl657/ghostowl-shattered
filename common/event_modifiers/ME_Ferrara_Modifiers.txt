@@ -15,7 +15,7 @@ fer_blasting_fire = {
 }
 #4
 fer_tempi_arte = {
-	local_development_cost = -0.10
+	local_development_cost = -0.05
 	local_production_efficiency = 0.10
 }
 fer_fortificazione_moderna = {
@@ -44,5 +44,5 @@ fer_fonditore_cannoni = {
 }
 fer_saxon_von = {
 	advisor_cost = -0.10
-	development_cost = -0.10
+	development_cost = -0.05
 }

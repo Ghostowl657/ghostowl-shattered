@@ -16,7 +16,7 @@ Mil_Infantry = {
 	infantry_cost = -0.1
 }
 Adm_2_Dev = {
-	development_cost = -0.1
+	development_cost = -0.05
 }
 Adm_2_Tax = {
 	global_tax_modifier = 0.10
@@ -267,7 +267,7 @@ GE_Koprulu_Court = {
 	yearly_corruption = -0.05
 }
 GE_Public_Works = {
-	local_development_cost = -0.10
+	local_development_cost = -0.05
 	local_unrest = -2
 }
 GE_Caravanserai = {

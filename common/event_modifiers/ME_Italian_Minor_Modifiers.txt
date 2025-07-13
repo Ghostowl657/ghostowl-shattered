@@ -76,7 +76,7 @@ italian_minor_artigiani = {
 }
 italian_minor_center_renaissance = {
 	institution_growth = 12
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 }
 
 #Events
@@ -101,7 +101,7 @@ italian_minor_end_genoa = {
 }
 
 italian_minor_end_medici = {
-	development_cost = -0.10
+	development_cost = -0.05
 	technology_cost = -0.05
 }
 

@@ -1,6 +1,6 @@
 #GOLCONDA MODIFIERS#
 golconda_shown_telegu_might = {
-	local_development_cost = -0.20
+	local_development_cost = -0.10
 }
 
 golconda_ready_to_fight = {
@@ -15,7 +15,7 @@ golconda_tight_control = {
 
 golconda_fortified_capital = {
 	local_defensiveness = 0.25
-	local_development_cost = -0.10
+	local_development_cost = -0.05
 }
 
 golconda_rising_capital_wealth = {

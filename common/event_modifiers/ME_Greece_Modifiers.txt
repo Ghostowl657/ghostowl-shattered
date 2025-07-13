@@ -13,7 +13,7 @@ gre_aegean_domination = {
 
 gateway_to_aegean = {
 	trade_value = 10
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 gre_naval_ambitions = {
@@ -22,7 +22,7 @@ gre_naval_ambitions = {
 }
 
 colony_gre = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_culture_conversion_cost = -0.25
 }
 

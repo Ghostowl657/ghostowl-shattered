@@ -127,7 +127,7 @@ me_hab_conquest_of_swabia = {
 }
 
 me_hab_peaceful_rein = {
-	development_cost = -0.1
+	development_cost = -0.05
 	global_trade_goods_size_modifier = 0.1
 }
 
@@ -190,7 +190,7 @@ me_hab_absolute_authority = {
 }
 
 me_habsburg_land = {
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 }
 
 me_bra_new_march = {
@@ -243,7 +243,7 @@ me_hab_empire_secured = {
 
 me_hab_bestow_imperial_privileges = {
 	trade_goods_size_modifier = 0.1
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_manpower_modifier = 0.15
 }
 
@@ -280,7 +280,7 @@ me_hab_staff_planning = {
 me_hab_abolished_serfdom = {
 	land_morale = 0.05
 	production_efficiency = 0.15
-	development_cost_modifier = -0.05
+	development_cost_modifier = -0.025
 }
 
 me_hab_revenge_fulfilled = {
@@ -290,7 +290,7 @@ me_hab_revenge_fulfilled = {
 
 me_hab_austrian_unifcation = {
 	local_unrest = -2
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 }
 
 me_hab_unity_of_the_confederation = {
@@ -361,7 +361,7 @@ me_hab_burghers_in_navy = {
 }
 
 me_hab_expanding_the_lands = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_manpower_modifier = 0.2
 }
 
@@ -375,7 +375,7 @@ me_hab_venetian_production = {
 }
 
 me_hab_foundation_of_new_cities = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_production_efficiency = 0.25
 }
 
@@ -440,7 +440,7 @@ me_hab_conscription_law = {
 }
 
 me_hab_development_law = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 me_hab_glory_of_habsburg = {
@@ -474,7 +474,7 @@ me_hab_the_church_is_me = {
 }
 
 me_hab_imperial_treasurer = {
-	development_cost = -0.2
+	development_cost = -0.1
 	imperial_authority_per_development_click = 0.01
 }
 
@@ -504,7 +504,7 @@ me_hab_conquered_poland = {
 
 me_hab_austrian_empire = {
 	harsh_treatment_cost = -0.25
-	min_autonomy_in_territories = -0.2
+	min_autonomy_in_territories = -0.1
 }
 
 me_hab_a_victorious_crusade = {
@@ -534,7 +534,7 @@ me_hab_iron_fist_ita = {
 }
 
 me_hab_a_secure_empire = {
-	development_cost = -0.05
+	development_cost = -0.025
 	technology_cost = -0.1
 }
 

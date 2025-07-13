@@ -21,14 +21,14 @@ EE_spa_la_macha_goldmine = {
 }
 
 EE_spa_la_macha_goldmine_1 = {
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 }
 
 EE_spa_la_macha_goldmine_final = {
 	inflation_reduction_local = 0.3
 	local_gold_depletion_chance_modifier = -0.4
 	trade_goods_size_modifier = 0.05
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 }
 
 EE_spa_placated_strong_noble = {
@@ -85,7 +85,7 @@ EE_spa_fall_of_maghreb = {
 }
 
 EE_spa_maghreb_development = {
-	development_cost = -0.1
+	development_cost = -0.05
 	build_cost = -0.15
 	global_trade_goods_size_modifier = 0.1
 }
@@ -185,7 +185,7 @@ EE_spa_mexican_gold = {
 }
 
 EE_spa_floridan_capital = {
-	local_development_cost = -0.25
+	local_development_cost = -0.125
 	local_manpower_modifier = 0.3
 }
 
@@ -371,7 +371,7 @@ ee_spa_state_sponsored_witchcrafts = {
 }
 
 ee_spa_a_new_rome = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_manpower = 1
 }
 
@@ -530,6 +530,6 @@ ee_spa_tercios_disbanded = {
 }
 
 ee_spa_bourgeoisie_empowered = {
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 	province_trade_power_modifier = 0.1
 }
