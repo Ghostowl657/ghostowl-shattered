@@ -40,7 +40,7 @@ client_ideas = {
 
 trading_city_ideas = {
 	start = {
-		development_cost = -0.05
+		development_cost = -0.025
 		build_cost = -0.1
 	}
 	
@@ -79,7 +79,7 @@ trading_city_ideas = {
 
 colonial_ideas = {
 	start = {
-		development_cost = -0.1
+		development_cost = -0.05
 		missionaries = 1
 		#no_religion_penalty = yes
 	}
@@ -826,7 +826,7 @@ BAV_ideas = {
 	}
 	
 	bonus = {
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	
 	trigger = {
@@ -1459,7 +1459,7 @@ andean_ideas = {
 		production_efficiency = 0.1
 	}
 	andean_idea_5 = {
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	andean_idea_6 = {
 		defensiveness = 0.1
@@ -2070,7 +2070,7 @@ mayan_ideas = {
 		stability_cost_modifier = -0.15
 	}
 	mayan_building_traditions = {
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	mayan_ancient_feuds = {
 		ae_impact = -0.10
@@ -2422,7 +2422,7 @@ congolese_minor_ideas = {
 caspian_ideas = {
 	start = {
 		merc_maintenance_modifier = -0.1
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	
 	bonus = {
@@ -2657,7 +2657,7 @@ garjati_ideas = {
 		global_manpower_modifier = 0.1
 	}
 	garjati_extend_tanks_and_reservoirs = {
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	garjati_jungle_warfare = {
 		infantry_power = 0.1
@@ -2830,7 +2830,7 @@ plains_native_ideas = {
 		fire_damage = 0.1
 	}
 	bison_hunters = {
-		development_cost = -0.10	
+		development_cost = -0.05	
 		land_attrition = -0.10
 	}
 	peaceful_people = {
@@ -2877,7 +2877,7 @@ california_native_ideas = {
 		stability_cost_modifier = -0.15
 	}
 	forest_gardening = {
-		development_cost = -0.10			
+		development_cost = -0.05			
 	}
 	kuksu_cult = {
 		religious_unity = 0.5
@@ -3022,7 +3022,7 @@ sw_native_ideas = {
 		land_morale = 0.1
 	}
 	sw_prosperous_sedentarism = {
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	sw_the_grand_canyon = {
 		defensiveness = 0.15
@@ -3249,7 +3249,7 @@ eastern_algonquian_federation_ideas = {
 		production_efficiency = 0.1
 	}
 	ealg_seasonal_economy = {
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	ealg_slash_and_burn = {
 		hostile_attrition = 1
@@ -3360,7 +3360,7 @@ muskogean_federation_ideas = {
 generic_federation_ideas = {
 	start = {
 		core_creation = -0.1
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	
 	bonus = {
@@ -3431,7 +3431,7 @@ horn_of_african_ideas = {
 		trade_range_modifier = 0.2
 	}
 	horn_of_african_highland_cultivation = {
-		development_cost = -0.05
+		development_cost = -0.025
 	}
 	horn_of_african_oromon_warriors = {
 		infantry_power = 0.1
@@ -3476,7 +3476,7 @@ norse_ideas = {
 		leader_naval_shock = 1
 	}
 	norse_ideas_norse_artisans = {
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	norse_ideas_berserkir = {
 		shock_damage = 0.1

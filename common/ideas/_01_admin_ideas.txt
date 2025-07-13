@@ -106,7 +106,7 @@ economic_ideas = {
 	category = ADM
 
 	bonus = {
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 
 	bureaucracy = {
@@ -210,7 +210,7 @@ expansion_ideas = {
 	important = yes
 
 	bonus = {
-		min_autonomy_in_territories = -0.1
+		min_autonomy_in_territories = -0.05
 	}
 
 	additional_colonists = {
@@ -294,7 +294,7 @@ administrative_ideas = {
 
 	organised_mercenary_payment = {
 		autonomy_change_time = -0.15
-		min_autonomy_in_territories = -0.1
+		min_autonomy_in_territories = -0.05
 	}
 	adaptability = {
 		core_creation = -0.25
@@ -372,131 +372,7 @@ administrative_ideas = {
 		}
 	}
 }
-# HUMANIST IDEAS
-humanist_ideas = {
-	category = ADM
 
-	bonus = {
-		idea_cost = -0.05
-		yearly_harmony = 0.25
-	}
-	benevolence = {
-		improve_relation_modifier = 0.15
-	}
-	local_traditions = {
-		global_unrest = -2
-		harmonization_speed = 0.25
-	}
-	ecumenism = {
-		tolerance_heretic = 2
-	}
-	humanist_tolerance = {
-		tolerance_heathen = 2
-	}
-	cultural_ties_2 = {
-		num_accepted_cultures = 2
-		# <<WIKI>> morale_bonus_5_cultures = yes
-	}
-	indirect_rule = {
-		years_of_nationalism = -5
-	}
-	tolerance_idea_2 = {
-		religious_unity = 0.15
-		# <<WIKI>> decision = dst_hire_advisor
-	}
-
-	ai_will_do = {
-		factor = 0.85
-		#LIMIT
-		modifier = {
-			factor = 0
-			OR = {
-				has_idea_group = religious_ideas
-				has_idea_group = katholisch0
-				has_idea_group = protestant0
-				has_idea_group = reformiert0
-				has_idea_group = orthodox0
-				has_idea_group = islam0
-				has_idea_group = cathar0
-				has_idea_group = shinto0
-				has_idea_group = norse0
-				has_idea_group = budda0
-				has_idea_group = confuci0
-				has_idea_group = hindu0
-				has_idea_group = tengri0
-				has_idea_group = coptic0
-				has_idea_group = helle0
-				has_idea_group = slav0
-				has_idea_group = jew0
-				has_idea_group = suomi0
-				has_idea_group = romuva0
-				has_idea_group = animist0
-				has_idea_group = feti0
-				has_idea_group = zoro0
-				has_idea_group = mane0
-				has_idea_group = ancli0
-				has_idea_group = mesoam0
-				has_idea_group = inti0
-				has_idea_group = tote0
-				has_idea_group = nahu0
-				has_idea_group = shia0
-				has_idea_group = ibadi0
-				has_idea_group = hussite0
-			}
-		}
-		modifier = {
-			factor = 0.5
-			NOT = { has_border_with_religious_enemy = yes }
-		}
-		modifier = {
-			factor = 0.5
-			religious_unity = 0.7
-		}
-		#PERSONALITY
-		modifier = {
-			factor = 1.5
-			ruler_has_personality = tolerant_personality
-		}
-		#POTENTIAL
-		modifier = {
-			factor = 2.0
-			OR = {
-				technology_group = indian
-				technology_group = chinese
-			}
-		}
-		modifier = {
-			factor = 2.0
-			religion = buddhism
-		}
-		modifier = {
-			factor = 2.5
-			religion = confucianism
-		}
-		modifier = {
-			factor = 2.5
-			NOT = { religious_unity = 0.7 }
-		}
-		modifier = {
-			factor = 2.5
-			has_border_with_religious_enemy = yes
-		}
-		#IDEAS
-		modifier = {
-			factor = 3.0
-			has_idea_group = quantity_ideas
-		}
-		#PRIORITY
-		modifier = {
-			factor = 2.5
-			xorme_can_select_second_idea_group_trigger = yes
-		}
-		modifier = {
-			factor = 5.0
-			xorme_can_select_sixth_idea_group_trigger = yes
-		}
-	}
-}
 
 # Moved from MIL
 indigenous_ideas = {
@@ -512,7 +388,7 @@ indigenous_ideas = {
 
 	indigenous_bountiful_land = {
 		tribal_development_growth = 0.05
-		development_cost = -0.05
+		development_cost = -0.025
 	}
 	indigenous_irregular_warfare = {
 		hostile_attrition = 1
@@ -602,7 +478,7 @@ entwicklung0 = {
 	category = ADM
 
 	bonus = {
-		development_cost = -0.05
+		development_cost = -0.025
 	}
 
 
@@ -942,7 +818,7 @@ zentra0 = {
 		reinforce_speed = 0.05
 	}
 	zentra6 = {
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	zentra7 = {
 		# development_cost_over_25 = yes
@@ -970,7 +846,7 @@ dezentra0 = {
 	}
 
 	bonus = {
-		min_autonomy_in_territories = -0.1
+		min_autonomy_in_territories = -0.05
 	}
 
 

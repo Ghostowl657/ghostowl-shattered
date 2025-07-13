@@ -163,7 +163,7 @@ TKT_ideas = {
 		manpower_in_true_faith_provinces = 0.3
 	}
 	TKT_crusader_cities = {
-		development_cost = -0.1
+		development_cost = -0.05
 		defensiveness = 0.1
 	}
 }
@@ -221,7 +221,7 @@ JUT_ideas = {
 		free = yes
 	
 		bonus = { 
-			development_cost = -0.1
+			development_cost = -0.05
 	
 			}
 	
@@ -390,7 +390,7 @@ ELS_ideas = {
 RHN_ideas = {
 	start = {
 		global_prov_trade_power_modifier = 0.15
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 
 	bonus = {
@@ -454,7 +454,7 @@ ZCV_ideas = {
         fire_damage = 0.075
     }
     slovak_development_of_the_terrain = {
-        development_cost = -0.1
+        development_cost = -0.05
     }
     moravia_first_and_foremost_of_the_west_slavs = {
 		legitimacy = 1
@@ -549,7 +549,7 @@ AZE_ideas = {
 	}
 	AZE_in_the_valleys = {
 		defensiveness = 0.2
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	AZE_great_architecture = {
 		build_cost = -0.1
@@ -566,7 +566,7 @@ AZE_ideas = {
 #	}
 #
 #	bonus = {
-#		development_cost = -0.1
+#		development_cost = -0.05
 #	}
 #
 #	trigger = {
@@ -678,7 +678,7 @@ BRK_ideas = { #south american african lost colony
 		local_friendly_movement_speed = 0.2
 	}
 	BRK7 = { 
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 
 }
@@ -705,7 +705,7 @@ YNZ_ideas = { #Yingshou, chinese lost colony
 		trade_range_modifier = 0.25
 	}
 	ynz_colonial_bureaucracy ={
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	ynz_renew_the_mandate = {
 		republican_tradition = 0.3
@@ -727,7 +727,7 @@ YNZ_ideas = { #Yingshou, chinese lost colony
 #BEL_ideas = { # Original Belgian ideas replaced by Formable Expanded ideas
 #	start = {
 #		religious_unity = 0.25
-#		development_cost = -0.1
+#		development_cost = -0.05
 #	}
 #	
 #	bonus = {
@@ -811,7 +811,7 @@ NDB_ideas = {
 		global_regiment_recruit_speed = -0.10
 	}
 	NDB_religious_toleration = {
-		development_cost = -0.1
+		development_cost = -0.05
 		tolerance_of_heretics_capacity = 2
 	}
 }
@@ -1149,7 +1149,7 @@ PRC_ideas = { # Peoples Republic of China
 		reinforce_cost_modifier = -0.25
 	}
 	PRC_four = {
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	PRC_five = {
 		trade_efficiency = 0.1
@@ -1198,7 +1198,7 @@ HEA_ideas = { # Heavenly Kingdom China
 	 	state_maintenance_modifier = -0.25
 	}
 	HEA_six = {
-		development_cost = -0.15
+		development_cost = -0.075
 	}
 	HEA_seven = {
 		advisor_cost = -0.1
@@ -1487,7 +1487,7 @@ MDG_ideas = { # Madagascar
 		movement_speed = 0.15
 	}
 	renewed_foloalindahy  = {
-		development_cost = -0.1
+		development_cost = -0.05
 		production_efficiency = 0.1
 	}
 	ibonia = {
@@ -1573,7 +1573,7 @@ DAE_ideas = {
 	}
 	
 	DAE_the_growth_of_york = {
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	
 	DAE_north_sea_trade = {
@@ -1616,7 +1616,7 @@ AYY_ideas = {
 	}
 	ayy_ayyubid_architecture = {
 		build_cost = -0.1
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	hsn_rise_of_the_eagle = {
 		core_creation = -0.15
@@ -1635,7 +1635,7 @@ AYY_ideas = {
 GHA_ideas = { 
 	start = {
 		inflation_reduction = 0.1
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	
 	bonus = {
@@ -1732,7 +1732,7 @@ MJO_ideas = {
 	}
 	free = yes
 	MJO_palma = {
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	MJO_trade_fleet = {
 		global_ship_trade_power = 0.2
@@ -1761,7 +1761,7 @@ MJO_ideas = {
 FAD_ideas = {
 	start = {
 		merchants = 1
-		development_cost = -0.15
+		development_cost = -0.075
 	}
 	bonus = {
 		production_efficiency = 0.1
@@ -2399,7 +2399,7 @@ ADR_ideas = {
 		flagship_morale = 0.2
 	}
 	ADR_encourage_large_city_settlers = {
-		development_cost_modifier = -0.05
+		development_cost_modifier = -0.025
 		movement_speed_onto_off_boat_modifier = 1
 	}
 	ADR_home_turf = {
@@ -2475,7 +2475,7 @@ CTG_ideas = {
 	}
 	CTG_attract_italian_merchants = {
 		merchants = 1
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	CTG_punic_warriors = {
 		discipline = 0.05
@@ -2659,7 +2659,7 @@ SGF_ideas = {
 
 	SGF_german_federal_republic = {
 		republican_tradition = 0.2
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 
 	SGF_glorious_leadership = {
@@ -2711,7 +2711,7 @@ TAT_ideas = {
 		land_attrition = -0.25
 	}
 	TAT_idea_3 = {
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	TAT_idea_4 = {
 		technology_cost = -0.05
@@ -2812,7 +2812,7 @@ LSE_ideas = {
 
 	LSE_open_up_the_guilds = {
 		build_cost = -0.1
-		development_cost = -0.15
+		development_cost = -0.075
 	}
 }
 
@@ -2823,7 +2823,7 @@ BRS_ideas = {
         build_cost = -0.05
     }
     bonus = {
-        development_cost = -0.1
+        development_cost = -0.05
     }
     trigger = {
         tag = N99
@@ -2862,7 +2862,7 @@ CAP_ideas = {
         galley_power = 0.1
     }
     bonus = {
-        development_cost = -0.1
+        development_cost = -0.05
     }
     trigger = {
         tag = CAP
@@ -3013,7 +3013,7 @@ INT_ideas = {
        placed_merchant_power = 15
     }
     INT_ideas_fertile_lands = {
-		development_cost = -0.15
+		development_cost = -0.075
     }
 }
 
@@ -3151,7 +3151,7 @@ CZS_ideas = {
 
 N01_ideas = {
 	start = {
-		development_cost = -0.1
+		development_cost = -0.05
 		legitimacy = 1
 		republican_tradition = 0.5
 	}
@@ -3318,7 +3318,7 @@ SKJ_ideas = {
 AZV_ideas = {
 	start = {
 		culture_conversion_cost = -0.15
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	bonus = {
 		technology_cost = -0.1
@@ -3445,7 +3445,7 @@ VLG_ideas = {
 		siege_ability = 0.15
 	}
 	VLG_Beautification_of_Vologda = {
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	VLG_European_Mercenaries = {
 		fire_damage_received = -0.1
@@ -3579,7 +3579,7 @@ MYR_ideas = {
 		improve_relation_modifier = 0.2
 	}
 	MYR_ili_self_dependency = { 
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 }
 
@@ -3775,7 +3775,7 @@ CHV_ideas = {
 
 rce_NPA_ideas = {
 	start = {
-		development_cost = -0.1
+		development_cost = -0.05
 		global_trade_goods_size_modifier = 0.1
 	}
 

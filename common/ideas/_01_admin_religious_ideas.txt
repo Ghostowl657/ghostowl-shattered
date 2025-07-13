@@ -1959,7 +1959,7 @@ waldensian_ideas_0 = {
 		ae_impact = -0.15
 	}
 	waldensian_ideas_4 = {
-		development_cost = -0.05
+		development_cost = -0.025
 	}
 	waldensian_ideas_5 = {
 		land_morale = 0.075

@@ -318,7 +318,7 @@ LML_ideas = {  #Lombard League
 LVN_MLO_ideas = {  #Lombardy-Venetia, Milan Version
 	start = {
 		mercenary_cost = -0.1
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	
 	bonus = {
@@ -418,7 +418,7 @@ HXA_ZAP_ideas = { #Huaxyacac, Zapotec Version
 	free = yes
 	
 	hxa_unite_the_scattered_cities = { #Same for all
-		development_cost = -0.15
+		development_cost = -0.075
 	}
 	zap_religious_heart_of_mitla = {
 		missionaries = 1
@@ -458,7 +458,7 @@ HXA_MIX_ideas = { #Huaxyacac, Mixtec Version
 	free = yes
 	
 	hxa_unite_the_scattered_cities = { #Same for all
-		development_cost = -0.15
+		development_cost = -0.075
 	}
 	mix_connect_the_city_states = {
 		movement_speed = 0.15
@@ -498,7 +498,7 @@ HXA_TLA_ideas = { #Huaxyacac, Tlapanec Version
 	free = yes
 	
 	hxa_unite_the_scattered_cities = { #Same for all
-		development_cost = -0.15
+		development_cost = -0.075
 	}
 	tla_reformation_of_cotton_armor = {
 		shock_damage_received = -0.10
@@ -764,7 +764,7 @@ NUA_ideas = {
 		vassal_forcelimit_bonus = 1
 	}
 	cultivation_of_harsh_land = {
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	currency_transition = {
 		inflation_reduction = 0.10
@@ -1081,7 +1081,7 @@ TMY_ideas = { #Tamoyo Confederation
 		infantry_power = 0.1
 	}
 	tropical_developments_of_the_tupi = {
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	resolve_tribal_feuds = {
 		legitimacy = 1
@@ -1117,7 +1117,7 @@ DOZ_ideas = { #Dongbu, Eastern State
 		trade_steering = 0.25
 	}
 	porcelain_tower_and_nanjing = {
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	anti_piracy_policies = {
 		navy_tradition = 1
@@ -1156,7 +1156,7 @@ XBU_ideas = { #Xibu, Western Land
 		same_culture_advisor_cost = -0.20
 	}
 	the_four_rivers_of_sichuan = {
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	refugees_in_our_midst = {
 		global_manpower_modifier = 0.15
@@ -1256,7 +1256,7 @@ ZXI_ideas = { #The Later Xia
 	}
 	
 	bonus = {
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	
 	trigger = {
@@ -1361,7 +1361,7 @@ ZHA_ideas = { #The Later Han
 		diplomatic_upkeep = 2
 	}
 	the_issue_of_conufcianism_and_taoism = {
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	an_end_to_warring_states = { #Same for all
 		yearly_harmony = 0.5
@@ -1452,7 +1452,7 @@ ZSN_ideas = { #The Later Song
 }
 ZSU_ideas = { #The Later Sui
 	start = {
-		development_cost = -0.1
+		development_cost = -0.05
 		land_maintenance_modifier = -0.10
 	}
 	
@@ -1701,7 +1701,7 @@ BGM_WAL_ideas = { #Belgium, Wallonian Version
 	}
 	
 	bonus = {
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 
 	trigger = {
@@ -1780,7 +1780,7 @@ BGM_FLE_ideas = { #Belgium, Flemish Version
 IKI_ideas = { #Jodo Shinshu
 	start = {
 		years_of_nationalism = -5
-		development_cost = -0.10
+		development_cost = -0.05
 	}
 	
 	bonus = {
@@ -1950,7 +1950,7 @@ CMN_ideas = {  #Comancheria
 }
 NVJ_ideas = {  #Dinétah
 	start = {
-		development_cost = -0.15
+		development_cost = -0.075
 		hostile_attrition = 2
 	}
 	
@@ -2054,7 +2054,7 @@ SQL_ideas = {  #Selis-Qlispe
 		production_efficiency = 0.1
 	}
 	reorganized_housing_and_property = {
-		development_cost = -0.15
+		development_cost = -0.075
 	}
 	the_art_of_a_diverse_nation = {
 		prestige_decay = -0.01
@@ -2098,7 +2098,7 @@ MHY_ideas = {  #Meghalaya
 		promote_culture_cost = -0.50
 	}
 	adaptation_to_tropical_agriculture = {
-		development_cost = -0.15
+		development_cost = -0.075
 	}
 	the_wettest_homeland_on_earth = {
 		leader_land_manuever = 1
@@ -2337,7 +2337,7 @@ ILY_SER_ideas = {  #Illyria, Serbian
 		inflation_reduction = 0.10
 	}
 	stability_brings_prosperity_to_illyria = {
-		development_cost = -0.1
+		development_cost = -0.05
 		build_cost = -0.1
 	}
 	hajduks_and_hussars = {
@@ -2512,7 +2512,7 @@ ILY_SLO_ideas = {  #Illyria, slovene
 		global_institution_spread = 0.20
 	}
 	the_new_middle_class_of_illyria = {
-		development_cost = -0.10
+		development_cost = -0.05
 	}
 	in_brotherhood_as_we_are_in_statehood = {  #Same for All
 		manpower_recovery_speed = 0.15
@@ -2829,7 +2829,7 @@ SDN_ideas = {  #Sudan
 		cavalry_flanking = 0.5
     }
     methods_of_arid_land_governance = {
-        min_autonomy_in_territories = -0.10
+        min_autonomy_in_territories = -0.05
     }    
     observe_others_and_take_after_them = {
         improve_relation_modifier = 0.20
@@ -2976,7 +2976,7 @@ TSA_ideas = { #Thessalonica
 
 VLS_ideas = {  #Vladimir-Suzdal
 	start = {
-		development_cost = -0.10
+		development_cost = -0.05
 		province_warscore_cost = -0.10
 	}
 	bonus = {
@@ -2998,7 +2998,7 @@ VLS_ideas = {  #Vladimir-Suzdal
 		build_cost = -0.1
 	}
 	kremlins_of_and_for_vladimir_suzdal = {
-		min_autonomy_in_territories = -0.10
+		min_autonomy_in_territories = -0.05
 		defensiveness = 0.15
 	}
 	enemy_tactics_and_homegrown_strategy = {
