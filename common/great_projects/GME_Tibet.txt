@@ -39,7 +39,7 @@ gme_potala_palace = {
 		province_modifiers = {
 			tax_income = 12
 			local_defensiveness = 0.15
-			local_development_cost = -0.1
+			local_development_cost = -0.05
 			local_state_maintenance_modifier = -0.15
 			local_institution_spread = 0.1
 		}
@@ -59,7 +59,7 @@ gme_potala_palace = {
 			local_state_maintenance_modifier = -0.25
 		}
 		area_modifier = {
-			local_development_cost = -0.1
+			local_development_cost = -0.05
 			local_institution_spread = 0.2
 		}
 		country_modifiers = {
@@ -77,7 +77,7 @@ gme_potala_palace = {
 			statewide_governing_cost = -0.25
 		}
 		area_modifier = {
-			local_development_cost = -0.1
+			local_development_cost = -0.05
 			local_institution_spread = 0.3
 			local_state_maintenance_modifier = -0.25
 		}

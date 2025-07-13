@@ -48,7 +48,7 @@ categories =  {
 		defence = 4
 		movement_cost = 1.5
 		supply_limit = 2		
-		local_development_cost = 0.8
+		local_development_cost = 0.5
 		local_colonial_growth = -50
 		nation_designer_cost_multiplier = 0.75		
 		
@@ -64,7 +64,7 @@ categories =  {
 		sound_type = plains
 
 		movement_cost = 1.0
-		local_development_cost = -0.05
+		local_development_cost = -0.025
 		supply_limit = 10
 		nation_designer_cost_multiplier = 1.05
 		
@@ -171,7 +171,7 @@ categories =  {
 		movement_cost = 1.40
 		defence = 1
 		local_defensiveness = 0.1
-		local_development_cost = 0.3
+		local_development_cost = 0.25
 		local_colonial_growth = -10
 		nation_designer_cost_multiplier = 0.85
 		supply_limit = 5
@@ -312,7 +312,7 @@ categories =  {
 		movement_cost = 1.5
 		defence = 2
 		local_defensiveness = 0.25
-		local_development_cost = 0.6
+		local_development_cost = 0.35
 		local_colonial_growth = -25
 		local_institution_spread = -0.5
 		local_missionary_strength = -0.01
@@ -455,7 +455,7 @@ categories =  {
 
 		movement_cost = 1.5
 		defence = 1
-		local_development_cost = 0.4
+		local_development_cost = 0.35
 		local_colonial_growth = -20
 		nation_designer_cost_multiplier = 0.8
 		supply_limit = 5
@@ -498,7 +498,7 @@ categories =  {
 
 		movement_cost = 1.4
 		defence = 1
-		local_development_cost = 0.3
+		local_development_cost = 0.25
 		local_colonial_growth = -10
 		nation_designer_cost_multiplier = 0.85
 		supply_limit = 5
@@ -532,7 +532,7 @@ categories =  {
 
 		movement_cost = 1.10
 		supply_limit = 4
-		local_development_cost = 0.8
+		local_development_cost = 0.5
 		local_colonial_growth = -50
 		local_institution_spread = -0.5
 		nation_designer_cost_multiplier = 0.8
@@ -562,7 +562,7 @@ categories =  {
 		sound_type = desert
 
 		movement_cost = 1.0
-		local_development_cost = 0.4
+		local_development_cost = 0.35
 		local_colonial_growth = -10
 		nation_designer_cost_multiplier = 0.9		
 		supply_limit = 4
@@ -591,7 +591,7 @@ categories =  {
 		sound_type = sea
 
 		movement_cost = 1.0
-		local_development_cost = 0.2
+		local_development_cost = 0.15
 		nation_designer_cost_multiplier = 0.85		
 		supply_limit = 6 
 		
@@ -628,7 +628,7 @@ categories =  {
 		sound_type = plains
 
 		movement_cost = 1.00
-		local_development_cost = 0.1
+		local_development_cost = 0.05
 		nation_designer_cost_multiplier = 0.95
 		supply_limit = 7
 
@@ -678,7 +678,7 @@ categories =  {
 		movement_cost = 1.40
 		defence = 1
 		local_defensiveness = 0.1
-		local_development_cost = 0.4
+		local_development_cost = 0.2
 		local_colonial_growth = -15
 		nation_designer_cost_multiplier = 0.9	
 
@@ -728,7 +728,7 @@ categories =  {
 
 		supply_limit = 6
 		movement_cost = 1.00
-		local_development_cost = 0.1
+		local_development_cost = 0.15
 		local_colonial_growth = -10
 		nation_designer_cost_multiplier = 0.95	
 		

@@ -68,7 +68,7 @@ gme_binnenhof = {
 			legitimacy = 0.5
 			republican_tradition = 0.2
 			devotion = 0.5
-			min_autonomy_in_territories = -0.05
+			min_autonomy_in_territories = -0.025
 		}
 		on_upgraded = { }
 	}
@@ -82,7 +82,7 @@ gme_binnenhof = {
 			republican_tradition = 0.3
 			devotion = 1
 			diplomatic_reputation = 1
-			min_autonomy_in_territories = -0.1
+			min_autonomy_in_territories = -0.05
 		}
 		on_upgraded = { }
 	}
@@ -1788,7 +1788,7 @@ gme_sint_pietersabdij = {
 		cost_to_upgrade = {	factor = 1000 }
 		province_modifiers = {
 			province_trade_power_value = 5
-			local_development_cost = -0.05
+			local_development_cost = -0.025
 		}
 		area_modifier = { }
 		country_modifiers = {
@@ -1812,7 +1812,7 @@ gme_sint_pietersabdij = {
 		cost_to_upgrade = {	factor = 2500 }
 		province_modifiers = {
 			province_trade_power_value = 10
-			local_development_cost = -0.10
+			local_development_cost = -0.05
 		}
 		area_modifier = { }
 		country_modifiers = {
@@ -1837,7 +1837,7 @@ gme_sint_pietersabdij = {
 		cost_to_upgrade = {	factor = 5000 }
 		province_modifiers = {
 			province_trade_power_value = 15
-			local_development_cost = -0.20
+			local_development_cost = -0.10
 		}
 		area_modifier = { }
 		country_modifiers = {

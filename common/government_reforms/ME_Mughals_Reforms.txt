@@ -190,7 +190,7 @@ mughal_government_me = {
 			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
 		}
 		southeastasian_group = {
-			development_cost = -0.05
+			development_cost = -0.025
 			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
 			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
 		}
@@ -447,7 +447,7 @@ mughal_government_me_modifier_buff = {
 			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
 		}
 		southeastasian_group = {
-			development_cost = -0.05
+			development_cost = -0.025
 			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
 			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
 		}

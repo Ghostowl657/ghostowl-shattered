@@ -76,7 +76,7 @@ expel_heathens_reform = {
 	icon = "landscape"
 	allow_normal_conversion = yes
 	modifiers = {
-		development_cost = -0.05
+		development_cost = -0.025
 		culture_conversion_cost = -0.1
 		expel_minorities_cost = -0.5
 	}
@@ -698,7 +698,7 @@ herders_of_the_steppe = {
 	}
 	modifiers = {
 		manpower_recovery_speed = 0.1
-		min_autonomy_in_territories = -0.1
+		min_autonomy_in_territories = -0.05
 	}
 	ai = {
 		factor = 10
@@ -908,7 +908,7 @@ children_of_osanobua_reform = {
 		}
 	}
 	modifiers = {
-		development_cost = -0.10
+		development_cost = -0.05
 	}
 	ai = {
 		factor = 100

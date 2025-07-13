@@ -14,7 +14,7 @@ alpland_italian_faction = {
 	always = yes
 
 	modifier = {
-		development_cost_modifier = -0.05
+		development_cost_modifier = -0.025
 		trade_efficiency = 0.25
 		merchants = 1
 	}

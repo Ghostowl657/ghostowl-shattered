@@ -127,8 +127,7 @@ custom_button = {
         }
         custom_trigger_tooltip = {
             tooltip = dst_hire_advisor_button_requirement_tt
-            OR = { 
-                FROM = { full_idea_group = humanist_ideas }
+            OR = {
                 FROM = { has_idea = imperialismus5 }
             }
         }

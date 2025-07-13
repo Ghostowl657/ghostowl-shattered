@@ -56,7 +56,7 @@ ME_mercenary_commander = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -128,7 +128,7 @@ sufi_scholar_advisor = { # created by Ginger_Sod
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -221,7 +221,7 @@ ME_wahhabi_scholar = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -297,7 +297,7 @@ ME_historian = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {

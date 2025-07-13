@@ -40,7 +40,7 @@ estate_eunuchs_bookkeepers_privilege = {
 
 estate_eunuchs_outwards_perfection_privilege = {
 	icon = estate_eunuchs_outwards_perfection_privilege
-	max_absolutism = 5
+	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
 		OR = { 
@@ -119,7 +119,7 @@ estate_eunuchs_delegate_provincial_administration_privilege = {
 	}
 	
 	modifier_by_land_ownership = {
-		development_cost = -0.15
+		development_cost = -0.075
 		yearly_corruption = 0.33
 	}
 	
@@ -143,7 +143,7 @@ estate_eunuchs_imperial_council_privilege = {
 	benefits = { advisor_pool = 2 }
 	penalties = { } 
 	
-	modifier_by_land_ownership = { yearly_corruption = 0.1 }
+	modifier_by_land_ownership = { yearly_corruption = 0.1 } 
 	loyalty_scaled_conditional_modifier = {
 		trigger = { has_country_flag = yua_buff_imperial_council_flag }
 		modifier = {

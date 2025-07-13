@@ -204,7 +204,7 @@ gme_lonja_seda = {
 		cost_to_upgrade = { factor = 2500 }
 		province_modifiers = {
 			province_trade_power_value = 10
-			local_development_cost = -0.10
+			local_development_cost = -0.05
 			trade_goods_size = 0.5
 		}
 		area_modifier = {
@@ -231,7 +231,7 @@ gme_lonja_seda = {
 		cost_to_upgrade = { factor = 5000 }
 		province_modifiers = {
 			province_trade_power_value = 15
-			local_development_cost = -0.20
+			local_development_cost = -0.1
 			trade_goods_size = 1
 		}
 		area_modifier = {

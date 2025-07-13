@@ -33,14 +33,14 @@ estate_burghers = {
 	# These scale with loyalty & power
 	country_modifier_happy = {
 		trade_efficiency = 0.2
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	country_modifier_neutral = {
 		trade_efficiency = 0.1
 	}	
 	country_modifier_angry = {
 		trade_efficiency = -0.2
-		development_cost = 0.1
+		development_cost = 0.05
 		global_unrest = 2
 	}
 	land_ownership_modifier = {
@@ -371,7 +371,6 @@ estate_burghers = {
 		EE_SPA_empower_bourgeoisie
 		ME_estate_burghers_ARA_promote_catalan_language
 		ME_estate_burhgers_POR_exports
-		ME_estate_burghers_WAL_bardic_system
 		######## Idea Variation
 		estate_priv_idea_variation_4_7
 		######## Shattered

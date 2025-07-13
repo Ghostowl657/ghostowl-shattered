@@ -21,7 +21,7 @@ ancestor_story = {
 
 erathipa_story = {
 	build_cost = -0.1
-	development_cost = -0.05
+	development_cost = -0.025
 
 	allow = {
 		religion = dreamtime

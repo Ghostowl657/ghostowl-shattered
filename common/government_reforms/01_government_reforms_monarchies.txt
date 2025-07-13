@@ -1545,7 +1545,7 @@ persian_government_reform = {
 		missionaries = 1
 		global_missionary_strength = 0.01
 		tolerance_own = 2
-		development_cost = -0.05
+		development_cost = -0.025
 		innovativeness_gain = 0.25
 	}
 	custom_attributes = {
@@ -1594,7 +1594,7 @@ zoroastrian_persian_government_reform = {
 		innovativeness_gain = 0.25
 		global_missionary_strength = 0.01
 		tolerance_own = 2
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	custom_attributes = {
 		enables_theokratie_idea_group = yes
@@ -2991,7 +2991,7 @@ mughal_government = {
 			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
 		}
 		southeastasian_group = {
-			development_cost = -0.05
+			development_cost = -0.025
 			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
 			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
 		}
@@ -3354,7 +3354,7 @@ korean_monarchy = {
 		}
 	}
 	modifiers = {
-		development_cost_in_primary_culture = -0.1
+		development_cost_in_primary_culture = -0.05
 		same_culture_advisor_cost = -0.1
 		global_institution_spread = 0.15
 	}
@@ -3919,7 +3919,7 @@ livonian_military_monarchy = {
 
 	modifiers = {
 		war_exhaustion = -0.05
-		development_cost = -0.05
+		development_cost = -0.025
 		monarch_military_power = 2
 		nobles_loyalty_modifier = 0.1
 		governing_capacity_modifier = -0.5
@@ -3966,7 +3966,7 @@ livonian_naval_monarchy = {
 	nation_designer_cost = 60
 
 	modifiers = {
-		development_cost = -0.1
+		development_cost = -0.05
 		allowed_marine_fraction = 0.5
 		monarch_diplomatic_power = 2
 		burghers_loyalty_modifier = 0.1
@@ -5181,7 +5181,7 @@ sufi_syncretism_reform = {
 	}
 	modifiers = {
 		global_missionary_strength = 0.01
-		development_cost = -0.05
+		development_cost = -0.025
 	}
 	ai = {
 		factor = 3
@@ -5206,7 +5206,7 @@ poligar_reform = {
 	}
 	modifiers = {
 		infantry_power = 0.1
-		development_cost = -0.05
+		development_cost = -0.025
 	}
 	ai = {
 		factor = 3
@@ -5697,7 +5697,7 @@ centralize_reform = {
 		}
 	}
 	modifiers = {
-		development_cost_modifier = -0.05
+		development_cost_modifier = -0.025
 		global_prosperity_growth = 0.5
 		all_estate_loyalty_equilibrium = -0.05
 	}
@@ -5884,7 +5884,7 @@ decentralize_reform = {
 	removed_effect = {
 	}
 	modifiers = {
-		min_autonomy_in_territories = -0.1
+		min_autonomy_in_territories = -0.05
 		num_accepted_cultures = 2
 		all_estate_loyalty_equilibrium = 0.05
 	}
@@ -6953,7 +6953,7 @@ strengthened_parliament_reform = {
 	}
 	modifiers = {
 		max_absolutism = -20
-		development_cost_in_primary_culture = -0.1
+		development_cost_in_primary_culture = -0.05
 		parliament_backing_chance = 0.05
 	}
 	ai = {
@@ -7120,7 +7120,7 @@ regional_representation_reform = {
 	icon = "assembly_hall"
 	allow_normal_conversion = yes
 	modifiers = {
-		min_autonomy_in_territories = -0.1
+		min_autonomy_in_territories = -0.05
 		core_creation = -0.05
 	}
 }

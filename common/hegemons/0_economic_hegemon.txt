@@ -15,13 +15,13 @@ economic_hegemon = {
 	base = {
 		global_spy_defence = 0.3
 		war_exhaustion = -0.1
-		development_cost_modifier = -0.05
+		development_cost_modifier = -0.025
 	}
 	
 	# At max 100% tickup.
 	scale = {
 		#mercenary_discipline = 0.075
-		governing_capacity_modifier = 0.20
+		governing_capacity_modifier = 0.10
 		min_autonomy_in_territories = -0.20
 	}
 	

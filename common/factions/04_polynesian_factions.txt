@@ -27,7 +27,7 @@ pr_rich_family = {
 	always = yes
 
 	modifier = {
-		development_cost = -0.1
+		development_cost = -0.05
 		global_tax_modifier = -0.25
 	}
 }

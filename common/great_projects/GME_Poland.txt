@@ -494,7 +494,7 @@ gme_wawel = {
 			local_defensiveness = 0.15
 		}
 		area_modifier = {
-			local_development_cost = -0.05
+			local_development_cost = -0.025
 			local_governing_cost = -0.10
 			local_state_maintenance_modifier = -0.10
 		}
@@ -515,7 +515,7 @@ gme_wawel = {
 			local_defensiveness = 0.25
 		}
 		area_modifier = {
-			local_development_cost = -0.10
+			local_development_cost = -0.05
 		}
 		region_modifier = {
 			local_governing_cost = -0.10
@@ -570,7 +570,7 @@ gme_zamosc_city = {
 		upgrade_time = { months = 240 }
 		cost_to_upgrade = { factor = 2500 }
 		province_modifiers = {
-			local_development_cost = -0.1
+			local_development_cost = -0.05
 			local_build_cost = -0.1
 			local_build_time = -0.1
 		}
@@ -595,7 +595,7 @@ gme_zamosc_city = {
 			local_build_time = -0.2
 		}
 		area_modifier = {
-			local_development_cost = -0.1
+			local_development_cost = -0.05
 			local_institution_spread = 0.3
 		}
 		region_modifier = { }

@@ -245,7 +245,7 @@ jesuit_order = {
         remove_province_modifier = EE_spa_holy_order_supremacy_modifier
     }
     modifier = {
-		local_development_cost_modifier = -0.05
+		local_development_cost_modifier = -0.025
     }
     ai_priority = {
         factor = 2
@@ -1186,7 +1186,7 @@ mevlevi_order = {
     }
     modifier = {
         local_unrest = -1
-        local_development_cost = -0.05
+        local_development_cost = -0.025
     }
     ai_priority = {
         factor = 1
@@ -1360,7 +1360,7 @@ kashifs = {
     }
     modifier = {
 		local_governing_cost = -0.1
-        local_development_cost = -0.1
+        local_development_cost = -0.05
     }
     ai_priority = {
         factor = 2
@@ -1439,7 +1439,7 @@ zahediyeh_order = {
         }
     }
     modifier = {
-        local_development_cost = -0.1
+        local_development_cost = -0.05
         trade_goods_size_modifier = 0.1
         local_missionary_strength = 0.015
         local_has_qizilbash = yes
@@ -1468,7 +1468,7 @@ scuola_grande = {
         add_base_production = -1
     }
     modifier = {
-		local_development_cost = -0.1
+		local_development_cost = -0.05
         local_institution_spread = 0.25
     }
     ai_priority = {

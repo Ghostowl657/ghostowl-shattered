@@ -93,7 +93,7 @@ philosopher = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -235,7 +235,7 @@ natural_scientist = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -367,7 +367,7 @@ artist = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -517,7 +517,7 @@ treasurer = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -566,7 +566,7 @@ treasurer = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	chance = {
@@ -679,7 +679,7 @@ theologian = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -914,7 +914,7 @@ master_of_mint = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -1060,7 +1060,7 @@ inquisitor = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -1238,7 +1238,7 @@ statesman = {
 			owner = { has_country_flag = ITA_cavour_alive }
 		}
 		modifier = {
-			development_cost = -0.03
+			development_cost = -0.015
 			global_trade_goods_size_modifier = 0.03
 			reform_progress_growth = 0.1
 		}
@@ -1631,7 +1631,7 @@ spymaster = {
 			}
 		}
 		modifier = {
-			min_autonomy_in_territories = -0.02
+			min_autonomy_in_territories = -0.01
 		}
 	}
 	chance = {

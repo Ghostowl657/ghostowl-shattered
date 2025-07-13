@@ -6,36 +6,12 @@ estate_nobles_land_rights = {
 	loyalty = 0.05
 	influence = 0.05
 	can_select = {
-		custom_trigger_tooltip = {
-			tooltip = no_other_governing_capacity_privilege
-			NOT = { has_estate_privilege = estate_brahmins_land_rights }
-			NOT = { has_estate_privilege = estate_nobles_land_rights }
-			NOT = { has_estate_privilege = estate_church_land_rights }
-			NOT = { has_estate_privilege = estate_maratha_land_rights }
-			NOT = { has_estate_privilege = estate_burghers_land_rights }
-			NOT = { has_estate_privilege = estate_vaisyas_land_rights }
-			NOT = { has_estate_privilege = estate_cossacks_land_rights }
-			NOT = { has_estate_privilege = estate_nomadic_tribes_land_rights }
-			NOT = { has_estate_privilege = estate_dhimmi_land_rights }
-			NOT = { has_estate_privilege = estate_jains_land_rights }
-			NOT = { has_estate_privilege = estate_rajput_land_rights }
-			NOT = { has_estate_privilege = estate_qizilbash_land_rights }
-			NOT = { has_estate_privilege = estate_ghulams_land_rights }
-		}
+		not = { has_estate_privilege = estate_ghulams_land_rights }
+		not = { has_estate_privilege = estate_qizilbash_land_rights }
 	}
 	on_granted = {
 	}
 	penalties = {
-		state_maintenance_modifier = 0.25
-	}
-	benefits = {
-		governing_capacity = 200
-	}
-	conditional_modifier = {
-		trigger = { has_country_flag = ned_land_rights_buff_flag }
-		modifier = {
-			governing_capacity = 25
-		}
 	}
 	conditional_modifier = {
 		trigger = { has_country_flag = mng_increased_land_rights_flag }
@@ -51,8 +27,15 @@ estate_nobles_land_rights = {
 		}
 	}
 
+
 	benefits = {
 		governing_capacity = 100
+	}
+	conditional_modifier = {
+		trigger = { has_country_flag = ned_land_rights_buff_flag }
+		modifier = {
+			governing_capacity = 20
+		}
 	}
 	conditional_modifier = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
@@ -330,17 +313,12 @@ estate_nobles_officer_corp = {
 			}
 			custom_tooltip = HAB_WHEN_AT_WAR_GRANT_MORALE
 		}
-		if = {
-			limit = { mission_completed = NED_professional_army }
-			custom_tooltip = NED_war_exhaustion
-		}
 	}
 	penalties = {
 	}
 	benefits = {
+		army_tradition_decay = -0.005
 	}
-
-	#Vanilla
 	conditional_modifier = {
 		trigger = { 
 			NOT = { has_country_flag = TIM_upgrade_amirs_in_officer_corps_mission_flag }
@@ -371,66 +349,6 @@ estate_nobles_officer_corp = {
 		}
 		modifier = { land_morale = 0.1 }
 	}
-
-	#Shattered
-	conditional_modifier = {
-		trigger = { mission_completed = PRO_croissant }
-		modifier = { army_tradition = 0.5 }	
-	}
-	conditional_modifier = {
-		trigger = {
-			has_government_mechanic = frankish_chivalry_mechanic
-		}
-		modifier = {
-			monthly_frankish_chivalry = 0.05
-		}	
-	}
-	conditional_modifier = {
-		trigger = {
-			NOT = { has_country_flag = ENG_upgrade_nobles_privilege_flag }
-		}
-		modifier = {
-			army_tradition_decay = -0.005
-		}	
-	}
-	conditional_modifier = {
-		trigger = {
-			has_country_flag = ENG_upgrade_nobles_privilege_flag
-		}
-		modifier = {
-			army_tradition_decay = -0.01
-			max_absolutism = 5
-		}	
-	}
-	conditional_modifier = {
-		trigger = { has_country_flag = EE_CLT_reduce_absolutism_nobles }
-		modifier = { max_absolutism = 5 }
-	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.05 }
-	}
-	conditional_modifier = {
-		trigger = { 
-			mission_completed = NED_professional_army
-			has_global_modifier_value = {
-				which = discipline
-				value = 0.1
-			}
-		}
-		modifier = { war_exhaustion = -0.05 }
-	}
-	#conditional_modifier = {
-	#	trigger = { 
-	#		mission_completed = ME_bur_expanding_the_order
-	#		army_tradition = 80
-	#	}
-	#	modifier = { max_general_shock = 1 }
-	#}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
 	ai_will_do = {
 		factor = 0
 	}
@@ -444,7 +362,6 @@ estate_nobles_levies = {
 	loyalty = 0.1
 	is_valid = {
 		NOT = { has_estate_privilege = estate_nobles_golden_liberty }
-		NOT = { has_country_flag = EE_SCO_buff_prvivilege_and_NI_flag }
 		NOT = { has_estate = estate_ghulams }
 	}
 	can_select = {
@@ -469,7 +386,7 @@ estate_nobles_levies = {
 		}
 	} 
 	modifier_by_land_ownership = {
-		global_tax_modifier = -0.25
+		global_tax_modifier = -0.10
 		global_manpower_modifier = 0.5
 	}
 	influence_scaled_conditional_modifier = {
@@ -500,22 +417,6 @@ estate_nobles_levies = {
 		modifier = {
 			max_absolutism = 5
 			nobles_influence_modifier = -0.1
-		}
-	}
-	conditional_modifier = {
-		trigger = {
-			has_country_flag = WLS_buff_increased_levies_priv_flag
-		}
-		modifier = {
-			manpower_in_own_culture_provinces = 0.25 
-		}
-	}
-	conditional_modifier = {
-		trigger = {
-			has_country_flag = me_lot_noble_levies_buff
-		}
-		modifier = {
-			leader_cost = -0.1
 		}
 	}
 	conditional_modifier = {
@@ -590,7 +491,7 @@ estate_nobles_advisors = {
 	influence = 0.05
 	loyalty = 0.05
 	penalties = {
-		stability_cost_modifier = 0.15
+		stability_cost_modifier = 0.1
 	}
 	can_select = { 
 		NOT = { has_estate_privilege = estate_maratha_advisor }
@@ -662,9 +563,8 @@ estate_nobles_french_strong_duchies = {
 				is_subject_of_type = client_march
 				is_subject_of_type = client_vassal
 				is_subject_of_type = personal_union
-
-				is_subject_of_type = prussian_vassal
-				is_subject_of_type = prussian_congress_vassal
+				is_subject_of_type = incorporated_vassal
+				is_subject_of_type = integrated_personal_union
 			}
 			capital_scope = { region = france_region }
 			culture_group = french
@@ -683,9 +583,8 @@ estate_nobles_french_strong_duchies = {
 						is_subject_of_type = client_march
 						is_subject_of_type = client_vassal
 						is_subject_of_type = personal_union
-
-						is_subject_of_type = prussian_vassal
-						is_subject_of_type = prussian_congress_vassal
+						is_subject_of_type = incorporated_vassal
+						is_subject_of_type = integrated_personal_union
 					}
 				}
 			}
@@ -817,6 +716,15 @@ estate_nobles_monopoly_of_metals = {
 		}
 	}
 	on_granted = {
+		if = {
+			limit = {
+				OR = {
+					iron = 1
+					copper = 1
+				}
+			}
+			add_mercantilism = 1
+		}
 		add_years_of_owned_provinces_production_income = {
 			years = 8
 			trigger = {
@@ -928,6 +836,12 @@ estate_nobles_monopoly_of_livestock = {
 		}
 	}
 	on_granted = {
+		if = {
+			limit = {
+				livestock = 1
+			}
+			add_mercantilism = 1
+		}
 		add_years_of_owned_provinces_production_income = {
 			years = 8
 			trigger = {
@@ -1009,11 +923,7 @@ estate_nobles_monopoly_of_gems = {
 			has_country_flag = buffed_monopolies
 		}
 		any_owned_province = {
-			OR = { 
-				trade_goods = gems
-				trade_goods = pearls
-				trade_goods = amber
-			}
+			trade_goods = gems
 		}
 	}
 	can_select = {
@@ -1038,44 +948,23 @@ estate_nobles_monopoly_of_gems = {
 	on_granted = {
 		if = {
 			limit = {
-				has_country_flag = ORM_gems_monopolies_buff
+				gems = 1
 			}
-			add_years_of_owned_provinces_production_income = {
-				years = 16
-				trigger = {
-					OR = { 
-						trade_goods = gems
-						trade_goods = pearls
-						trade_goods = amber
-					}
-				}
-				custom_tooltip = MONOPOLY_INCOME_GEMS_DESC
-			}
-			custom_tooltip = estate_nobles_monopoly_of_gems_effect_tooltip
+			add_mercantilism = 1
 		}
-		else = {
-			add_years_of_owned_provinces_production_income = {
-				years = 8
-				trigger = {
-					OR = { 
-						trade_goods = gems
-						trade_goods = pearls
-						trade_goods = amber
-					}
-				}
-				custom_tooltip = MONOPOLY_INCOME_GEMS_DESC
+		add_years_of_owned_provinces_production_income = {
+			years = 8
+			trigger = {
+				trade_goods = gems
 			}
-			custom_tooltip = estate_nobles_monopoly_of_gems_effect_tooltip
+			custom_tooltip = MONOPOLY_INCOME_GEMS_DESC
 		}
+		custom_tooltip = estate_nobles_monopoly_of_gems_effect_tooltip
 	}
 	on_granted_province = {
 		if = {
 			limit = {
-				OR = { 
-					trade_goods = gems
-					trade_goods = pearls
-					trade_goods = amber
-				}
+				trade_goods = gems
 			}
 			add_province_modifier = {
 				name = estate_nobles_monopoly_of_gems_mod
@@ -1195,15 +1084,13 @@ estate_nobles_strong_duchies = {
 	is_valid = {
 		any_subject_country = {
 			OR = {
-				is_subject_of_type = appanage
 				is_subject_of_type = vassal
+				is_subject_of_type = client_vassal
 				is_subject_of_type = march
 				is_subject_of_type = client_march
-				is_subject_of_type = client_vassal
 				is_subject_of_type = personal_union
-
-				is_subject_of_type = prussian_vassal
-				is_subject_of_type = prussian_congress_vassal
+				is_subject_of_type = incorporated_vassal
+				is_subject_of_type = integrated_personal_union
 			}
 		}
 		NOT = { has_estate_privilege = estate_nobles_french_strong_duchies }
@@ -1215,15 +1102,13 @@ estate_nobles_strong_duchies = {
 				amount = 2
 				all_subject_country = {
 					OR = {
-						is_subject_of_type = appanage
 						is_subject_of_type = vassal
+						is_subject_of_type = client_vassal
 						is_subject_of_type = march
 						is_subject_of_type = client_march
-						is_subject_of_type = client_vassal
 						is_subject_of_type = personal_union
-
-						is_subject_of_type = prussian_vassal
-						is_subject_of_type = prussian_congress_vassal
+						is_subject_of_type = incorporated_vassal
+						is_subject_of_type = integrated_personal_union
 					}
 				}
 			}
@@ -1376,7 +1261,7 @@ estate_nobles_golden_liberty = {
 	penalties = {
 	}
 	benefits = {
-		global_manpower_modifier = 0.25
+		global_manpower_modifier = 0.33
 	}
 	mechanics = {
 		exempt_from_seize_land
@@ -1523,9 +1408,8 @@ estate_nobles_better_integration = {
 				is_subject_of_type = daimyo_vassal
 				is_subject_of_type = personal_union
 				is_subject_of_type = appanage
-
-				is_subject_of_type = prussian_vassal
-				is_subject_of_type = prussian_congress_vassal
+				is_subject_of_type = incorporated_vassal
+				is_subject_of_type = integrated_personal_union
 			}
 		}
 	}
@@ -2397,7 +2281,7 @@ estate_nobles_mansabdari_cav_maintenance = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	benefits = {
-		cav_to_inf_ratio = 0.15
+		cav_to_inf_ratio = 0.25
 	}
 	loyalty_scaled_conditional_modifier = {
 		trigger = {
@@ -2485,7 +2369,7 @@ estate_nobles_landed_army = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	benefits = {
-		cav_to_inf_ratio = 0.15
+		cav_to_inf_ratio = 0.25
 		cavalry_cost = -0.1
 	}
 	on_granted = {
@@ -2923,10 +2807,10 @@ estate_nobles_devastating_serfdom = {
 	benefits = {
 		nobles_privilege_slots = 1
 		global_unrest = -2
-		global_manpower_modifier = 0.25
+		global_manpower_modifier = 0.33
 	}
 	penalties = {
-		development_cost = 0.25
+		development_cost = 0.125
 		global_institution_spread = -0.5
 		technology_cost = 0.15
 		idea_cost = 0.15
@@ -3208,17 +3092,6 @@ estate_nobles_english_villeinage = {
 	on_granted = {
 	}
 	on_revoked = {
-	}
-	conditional_modifier = {
-		trigger = {
-			has_country_flag = LNC_villeinage
-			NOT = { tag = ENG }
-		}
-		modifier = {
-			global_manpower = 5
-			global_manpower_modifier = 0.25
-			land_morale = 0.1
-		}
 	}
 	modifier_by_land_ownership = {
 		global_tax_modifier = -0.5
@@ -4088,7 +3961,7 @@ estate_nobles_ITA_military_governors = {
 			has_country_flag = ITA_upgrade_military_governorship_with_autonomy_in_terr_flag
 		}
 		modifier = {
-			min_autonomy_in_territories = -0.05
+			min_autonomy_in_territories = -0.025
 		}
 	}
 	conditional_modifier = {
@@ -4256,7 +4129,19 @@ estate_nobles_MAY_arm_nobles_with_obsidian_blades = {
 	influence = 0.05
 	loyalty = 0.1
 	is_valid = {
-		technology_group = mesoamerican
+		OR = {
+			technology_group = mesoamerican
+			AND = {
+				technology_group = high_american
+				OR = {
+					was_tag = MAY
+					tag = MAY
+					has_country_flag = unlock_aztec_missions_flag
+					was_tag = AZT
+					tag = AZT
+				}
+			}
+		}
 	}
 	benefits = {
 		infantry_cost = -0.05
@@ -4770,7 +4655,7 @@ estate_nobles_hab_von_raab_restructions = {
 			}
 		}
 		modifier = {
-			development_cost = -0.075
+			development_cost = -0.0375
 		}
 	}
 	ai_will_do = {

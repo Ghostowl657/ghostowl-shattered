@@ -6,22 +6,6 @@ estate_church_land_rights = {
 	loyalty = 0.05
 	influence = 0.05
 	can_select = {
-		custom_trigger_tooltip = {
-			tooltip = no_other_governing_capacity_privilege
-			NOT = { has_estate_privilege = estate_brahmins_land_rights }
-			NOT = { has_estate_privilege = estate_nobles_land_rights }
-			NOT = { has_estate_privilege = estate_church_land_rights }
-			NOT = { has_estate_privilege = estate_maratha_land_rights }
-			NOT = { has_estate_privilege = estate_burghers_land_rights }
-			NOT = { has_estate_privilege = estate_vaisyas_land_rights }
-			NOT = { has_estate_privilege = estate_cossacks_land_rights }
-			NOT = { has_estate_privilege = estate_nomadic_tribes_land_rights }
-			NOT = { has_estate_privilege = estate_dhimmi_land_rights }
-			NOT = { has_estate_privilege = estate_jains_land_rights }
-			NOT = { has_estate_privilege = estate_rajput_land_rights }
-			NOT = { has_estate_privilege = estate_qizilbash_land_rights }
-			NOT = { has_estate_privilege = estate_ghulams_land_rights }
-		}
 	}
 	on_granted = {
 	}
@@ -29,16 +13,6 @@ estate_church_land_rights = {
 		
 	}
 	penalties = {
-		state_maintenance_modifier = 0.25
-	}
-	benefits = {
-		governing_capacity = 200
-	}
-	conditional_modifier = {
-		trigger = { has_country_flag = ned_land_rights_buff_flag }
-		modifier = {
-			governing_capacity = 25
-		}
 	}
 	conditional_modifier = {
 		trigger = { has_country_flag = mng_increased_land_rights_flag }
@@ -46,11 +20,20 @@ estate_church_land_rights = {
 			stability_cost_modifier = -0.05
 		}
 	}
+
+	benefits = {
+		governing_capacity = 100
+	}
+	conditional_modifier = {
+		trigger = { has_country_flag = ned_land_rights_buff_flag }
+		modifier = {
+			governing_capacity = 20
+		}
+	}
 	conditional_modifier = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
-
 	ai_will_do = {
 		factor = 5
 		modifier = {
@@ -299,7 +282,7 @@ estate_church_independent_inquisition = {
 	influence = 0.05
 	loyalty = 0.05
 	penalties = {
-		stability_cost_modifier = 0.15
+		stability_cost_modifier = 0.1
 	}
 	benefits = {
 		adm_advisor_cost = -0.15
@@ -401,7 +384,6 @@ estate_church_papal_emissary = {
 	is_valid = {
 		religion = catholic
 		NOT = { tag = PAP }
-		NOT = { has_country_flag = EE_BRI_empowered_clergy_privilege }
 	}
 	can_select = {
 		papal_influence = 20
@@ -410,14 +392,8 @@ estate_church_papal_emissary = {
 	on_granted = {
 		add_papal_influence = -5
 	}
-	conditional_modifier = {
-		is_bad = yes 
-		trigger = {
-			NOT = { has_country_flag = LIE_upgrade_the_church_priv_flag }
-		}
-		modifier = {
-			curia_powers_cost = 0.05
-		}
+	penalties = {
+		curia_powers_cost = 0.05
 	}
 	benefits = {
 		papal_influence = 1
@@ -469,19 +445,6 @@ estate_church_clerical_ministers = {
 		}
 		else = {
 			custom_tooltip = has_no_effects_on_granted
-		}
-		
-		if = {
-			limit = {
-				has_country_flag = NAJ_clerical_ministers_buff
-				has_dlc = "Mandate of Heaven"
-			}
-			custom_tooltip = NAJ_clerical_ministers_buff_tooltip
-		}
-	}
-	can_select = {
-		NOT = {
-			has_estate_privilege = ME_estate_church_tariqa 
 		}
 	}
 	conditional_modifier = {
@@ -540,7 +503,11 @@ estate_church_clerical_ministers = {
 	conditional_modifier = {
 		trigger = {
 			has_dlc = "Common Sense"
-			religion_uses_karma_mechanic_trigger = yes
+			OR = {
+				religion = buddhism
+				religion = vajrayana
+				religion = mahayana
+			}
 		}
 		modifier = {
 			yearly_karma_decay = 0.05
@@ -586,12 +553,7 @@ estate_church_clerical_ministers = {
 		trigger = {
 			has_dlc = "Cradle of Civilization"
 			religion_group = muslim
-			NOT = {
-				OR = {
-					has_country_flag = MUG_upgrade_clerical_ministers_flag
-					has_country_flag = NAJ_get_double_piety_from_clerical_ministers_priv_flag
-				}
-			}
+			NOT = { has_country_flag = MUG_upgrade_clerical_ministers_flag }
 		}
 		modifier = {
 			monthly_piety = 0.001
@@ -601,10 +563,7 @@ estate_church_clerical_ministers = {
 		trigger = {
 			has_dlc = "Cradle of Civilization"
 			religion_group = muslim
-			OR = {
-				has_country_flag = MUG_upgrade_clerical_ministers_flag
-				has_country_flag = NAJ_get_double_piety_from_clerical_ministers_priv_flag
-			}
+			has_country_flag = MUG_upgrade_clerical_ministers_flag
 		}
 		modifier = {
 			monthly_piety = 0.002
@@ -827,15 +786,15 @@ estate_church_inwards_perfection = {
 		}
 	}
 	modifier_by_land_ownership = {
-		#development_cost = -0.25
-		global_tax_modifier = 0.5
-		production_efficiency = 0.5
-		manpower_in_true_faith_provinces = 0.25
+		development_cost = -0.165
+		global_tax_modifier = 0.33
+		production_efficiency = 0.33
+		manpower_in_true_faith_provinces = 0.33
 		core_creation = 1
 		province_warscore_cost = 2
 	}
 	penalties = {
-		stability_cost_to_declare_war = 2
+		stability_cost_to_declare_war = 1
 	}
 	benefits = {
 		tolerance_own = 2
@@ -1000,6 +959,12 @@ estate_church_monopoly_of_incense = {
 		}
 	}
 	on_granted = {
+		if = {
+			limit = {
+				incense = 1
+			}
+			add_mercantilism = 1
+		}
 		add_years_of_owned_provinces_production_income = {
 			years = 8
 			trigger = {
@@ -1104,6 +1069,12 @@ estate_church_monopoly_of_wool = {
 		}
 	}
 	on_granted = {
+		if = {
+			limit = {
+				wool = 1
+			}
+			add_mercantilism = 1
+		}
 		add_years_of_owned_provinces_production_income = {
 			years = 8
 			trigger = {
@@ -1217,6 +1188,7 @@ estate_church_monopoly_of_wine = {
 				limit = {
 					wine = 1
 				}
+				add_mercantilism = 2
 			}
 			add_years_of_owned_provinces_production_income = {
 				years = 12
@@ -1231,6 +1203,7 @@ estate_church_monopoly_of_wine = {
 				limit = {
 					wine = 1
 				}
+				add_mercantilism = 1
 			}
 			add_years_of_owned_provinces_production_income = {
 				years = 8
@@ -1338,6 +1311,12 @@ estate_church_monopoly_of_slaves = {
 		}
 	}
 	on_granted = {
+		if = {
+			limit = {
+				slaves = 1
+			}
+			add_mercantilism = 1
+		}
 		add_years_of_owned_provinces_production_income = {
 			years = 8
 			trigger = {
@@ -1441,12 +1420,6 @@ estate_church_for_the_faith = {
 			limit = { has_government_attribute = free_expansionist_zealotry }
 			custom_tooltip = estate_church_for_the_faith_effect_tooltip_a
 		}
-		else_if = {
-			limit = {
-				has_country_flag = POR_upgrade_expansionist_zealotry_flag
-			}
-			custom_tooltip = estate_church_for_the_faith_effect_tooltip_POR
-		}
 		else = {
 			custom_tooltip = estate_church_for_the_faith_effect_tooltip
 		}
@@ -1455,12 +1428,6 @@ estate_church_for_the_faith = {
 		if = {
 			limit = { has_government_attribute = free_expansionist_zealotry }
 			custom_tooltip = estate_church_for_the_faith_effect_tooltip_a
-		}
-		else_if = {
-			limit = {
-				has_country_flag = POR_upgrade_expansionist_zealotry_flag
-			}
-			custom_tooltip = estate_church_for_the_faith_effect_tooltip_POR
 		}
 		else = {
 			custom_tooltip = estate_church_for_the_faith_effect_tooltip
@@ -1643,7 +1610,7 @@ estate_church_brahmins_at_court = {
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
 	ai_will_do = {
-		factor = 0
+		factor = 1000
 	}
 }
 
@@ -1655,7 +1622,11 @@ estate_church_karma_temples = {
 	influence = 0.05
 	is_valid = {
 		has_dlc = "Common Sense"
-		religion_uses_karma_mechanic_trigger = yes
+		OR = {
+			religion = buddhism
+			religion = mahayana
+			religion = vajrayana
+		}
 	}
 	can_select = {
 	}
@@ -1935,7 +1906,6 @@ estate_church_one_faith_one_culture = {
 	loyalty = 0.05
 	land_share = 5
 	is_valid = {
-		NOT = { has_country_flag = EE_Improved_religious_culture }
 	}
 	can_select = {
 	}
@@ -2087,12 +2057,7 @@ estate_church_one_faith_one_culture = {
 			tolerance_own = 2
 		}
 	}
-	conditional_modifier = {
-		trigger = { mission_completed = EE_spa_iberian_identity }
-		modifier = {
-			global_missionary_strength = 0.02
-		}
-	}	
+	
 	conditional_modifier = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
@@ -2139,16 +2104,7 @@ estate_church_heir_shrine = {
 	influence = 0.1
 	loyalty = 0
 	is_valid = {
-		OR = { 
-			religion = shamanism
-			religion = bidaism
-			religion = siguism
-			religion = akoism
-			religion = orisanism
-			religion = bornoism
-			religion = kalenjinism
-			religion = sanism
-		}
+		religion = shamanism
 		has_dlc = "Rights of Man"
 		NOT = { has_country_flag = heir_cult_through_missions }
 		has_government_attribute = heir
@@ -2200,16 +2156,7 @@ estate_church_embrace_singluar_cult = {
 	influence = 0.1
 	loyalty = 0
 	is_valid = {
-		OR = { 
-			religion = shamanism
-			religion = bidaism
-			religion = siguism
-			religion = akoism
-			religion = orisanism
-			religion = bornoism
-			religion = kalenjinism
-			religion = sanism
-		}
+		religion = shamanism
 		has_dlc = "Rights of Man"
 	}
 	can_select = {
@@ -2253,16 +2200,7 @@ estate_church_flexible_cults = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	influence = 0.05
 	is_valid = {
-		OR = { 
-			religion = shamanism
-			religion = bidaism
-			religion = siguism
-			religion = akoism
-			religion = orisanism
-			religion = bornoism
-			religion = kalenjinism
-			religion = sanism
-		}
+		religion = shamanism
 		has_dlc = "Rights of Man"
 		NOT = { has_country_flag = enabled_cult_switching_mission }
 	}
@@ -2302,7 +2240,6 @@ estate_church_scholar_connections = {
 	influence = 0.05
 	loyalty = 0
 	is_valid = {
-		NOT = { has_country_flag = enabled_baseline_invite_scholar_no_priv }
 		religion_group = muslim
 		has_dlc = "Cradle of Civilization"
 	}
@@ -2342,6 +2279,7 @@ estate_church_integrated_school = {
 	influence = 0.05
 	loyalty = 0
 	is_valid = {
+		NOT = { has_country_flag = enabled_baseline_invite_scholar_no_priv }
 		religion_group = muslim
 		has_dlc = "Cradle of Civilization"
 	}
@@ -2905,7 +2843,7 @@ estate_church_religious_delegation = {
 		modifier = { monthly_russian_modernization = -0.03 }
 	}
 	ai_will_do = {
-		factor = 1
+		factor = 10
 		modifier = {
 			factor = 0.1
 			is_absolutism_active = yes
@@ -2971,7 +2909,7 @@ estate_church_donation_right = {
 		}
 		modifier = {
 			missionary_maintenance_cost = -1
-			prestige_per_development_from_conversion = 0.33
+			prestige_per_development_from_conversion = 0.5
 		}
 	}
 	on_granted = {
@@ -3028,7 +2966,7 @@ estate_church_BYZ_legitimization_of_dynasty = {
 			patriarch_authority = 0.33
 		}
 		modifier = {
-			global_autonomy = -0.05
+			global_autonomy = -0.1
 			legitimacy = 1
 			tolerance_own = 1
 		}
@@ -3379,6 +3317,7 @@ estate_church_MAY_cocoa_monopoly = {
 			limit = {
 				cocoa = 1
 			}
+			add_mercantilism = 1
 		}
 		add_years_of_owned_provinces_production_income = {
 			years = 12

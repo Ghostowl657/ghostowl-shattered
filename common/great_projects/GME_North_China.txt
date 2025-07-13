@@ -107,7 +107,7 @@ gme_chengde_mountain_resort = {
 		upgrade_time = { months = 120 }
 		cost_to_upgrade = { factor = 1000 }
 		province_modifiers = {
-			local_development_cost = -0.05
+			local_development_cost = -0.025
 		}
 		area_modifier = {
 			statewide_governing_cost = -0.25
@@ -121,7 +121,7 @@ gme_chengde_mountain_resort = {
 		upgrade_time = { months = 240 }
 		cost_to_upgrade = { factor = 2500 }
 		province_modifiers = {
-			local_development_cost = -0.1
+			local_development_cost = -0.05
 		}
 		area_modifier = {
 			statewide_governing_cost = -0.25
@@ -136,7 +136,7 @@ gme_chengde_mountain_resort = {
 		upgrade_time = { months = 480 }
 		cost_to_upgrade = { factor = 5000 }
 		province_modifiers = {
-			local_development_cost = -0.15
+			local_development_cost = -0.075
 		}
 		area_modifier = {
 			statewide_governing_cost = -0.5
@@ -543,7 +543,7 @@ gme_temple_of_heaven = {
 			local_institution_spread = 0.1
 		}
 		area_modifier = {
-			local_development_cost = -0.05
+			local_development_cost = -0.025
 		}
 		country_modifiers = { }
 		on_upgraded = { }
@@ -555,7 +555,7 @@ gme_temple_of_heaven = {
 			province_trade_power_modifier = 0.25
 		}
 		area_modifier = {
-			local_development_cost = -0.1
+			local_development_cost = -0.05
 			local_institution_spread = 0.2
 		}
 		country_modifiers = {
@@ -570,7 +570,7 @@ gme_temple_of_heaven = {
 			province_trade_power_modifier = 0.5
 		}
 		area_modifier = {
-			local_development_cost = -0.15
+			local_development_cost = -0.075
 			local_institution_spread = 0.3
 		}
 		country_modifiers = {

@@ -53,7 +53,7 @@ GRA_muslim_scholar = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -136,7 +136,7 @@ GRA_mathematician = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -210,7 +210,7 @@ GRA_translator = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -284,7 +284,7 @@ GRA_astronomer = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -395,7 +395,7 @@ GRA_civil_engineer = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -469,7 +469,7 @@ GRA_military_writer = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -543,7 +543,7 @@ GRA_polymath = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {

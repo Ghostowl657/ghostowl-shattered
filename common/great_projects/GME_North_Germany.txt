@@ -127,7 +127,7 @@ gme_karlovy_vary = {
 		province_modifiers = {
 			local_unrest = -1
 			local_prosperity_growth = 1
-			local_development_cost = -0.15
+			local_development_cost = -0.075
 		}
 		area_modifier = { }
 		region_modifier = { }
@@ -146,7 +146,7 @@ gme_karlovy_vary = {
 			local_unrest = -2
 		}
 		area_modifier = {
-			local_development_cost = -0.15
+			local_development_cost = -0.075
 			local_prosperity_growth = 0.5
 			local_state_maintenance_modifier = -0.25
 		}
@@ -173,7 +173,7 @@ gme_karlovy_vary = {
 		area_modifier = {
 			local_unrest = -2
 			local_prosperity_growth = 1
-			local_development_cost = -0.15
+			local_development_cost = -0.075
 			local_state_maintenance_modifier = -0.25
 		}
 		region_modifier = { }
@@ -435,7 +435,7 @@ gme_wenceslas_square = {
 			trade_value = 0.75
 		}
 		area_modifier = {
-			local_development_cost = -0.15
+			local_development_cost = -0.075
 			trade_goods_size_modifier = 0.25
 			trade_value_modifier = 0.25
 		}
@@ -467,7 +467,7 @@ gme_wenceslas_square = {
 			trade_value = 1
 		}
 		area_modifier = {
-			local_development_cost = -0.25
+			local_development_cost = -0.125
 			province_trade_power_modifier = 0.25
 			trade_goods_size_modifier = 0.33
 			trade_value_modifier = 0.33

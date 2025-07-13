@@ -86,7 +86,7 @@ hessian_military_complex_reform = {
 		}
 	}
 	modifiers = {
-		development_cost = -0.05
+		development_cost = -0.025
 		build_cost = -0.10
 	}
 	custom_attributes = {

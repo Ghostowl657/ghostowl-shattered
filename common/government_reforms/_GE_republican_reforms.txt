@@ -416,7 +416,7 @@ volost_colonies_reform = {
 	}
 	modifiers = {
 		production_efficiency = 0.15
-		min_autonomy_in_territories = -0.1
+		min_autonomy_in_territories = -0.05
 	}
 	ai = {
 		factor = 100
@@ -885,7 +885,7 @@ regents_reform = {
 		}
 	}
 	modifiers = {
-		development_cost = -0.10
+		development_cost = -0.05
 	}
 	custom_attributes = {
 		enables_regent_investments = yes

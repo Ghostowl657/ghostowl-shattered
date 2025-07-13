@@ -80,7 +80,7 @@ subject_taxman = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -186,7 +186,7 @@ researcher = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -288,7 +288,7 @@ anti_corruption_officer = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -386,7 +386,7 @@ reformist = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -484,7 +484,7 @@ missionary_advisor = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -586,7 +586,7 @@ ship_inspector = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -692,7 +692,7 @@ navy_organiser = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -792,7 +792,7 @@ naval_surgeon = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -892,7 +892,7 @@ marketeer = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -992,7 +992,7 @@ mercantile_influencer = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -1095,7 +1095,7 @@ supplier = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -1194,7 +1194,7 @@ fieldSurgeon = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -1297,7 +1297,7 @@ mercenaryLeader = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -1398,7 +1398,7 @@ fortInspector = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -1496,7 +1496,7 @@ lootExpert = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {

@@ -933,7 +933,7 @@ muscovite_manorialism_reform = {
 		}
 	}
 	modifiers = {
-		development_cost = -0.05
+		development_cost = -0.025
 		infantry_cost = -0.05
 		nobles_influence_modifier = -0.05
 	}
@@ -1138,7 +1138,7 @@ taha_divisions_reform = {
 	}
 	modifiers = {
 		global_tax_modifier = 0.1
-		development_cost = -0.05
+		development_cost = -0.025
 	}
 	custom_attributes = {
 		enables_morisca_band = yes

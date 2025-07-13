@@ -23,7 +23,7 @@ corruption_mechanic = {
 					imperial_mandate = 1
 					# Additional Modifiers
 					yearly_corruption = 12
-					development_cost = -0.1
+					development_cost = -0.05
 					republican_tradition = 0.5
 				}
 			}

@@ -392,7 +392,7 @@ namestnik_reform = {
 	modifiers = {
 		global_autonomy = -0.025
 		autonomy_change_time = -0.15
-		min_autonomy_in_territories = -0.05
+		min_autonomy_in_territories = -0.025
 		trade_company_investment_cost = -0.1
 	}
 	ai = {
@@ -4012,7 +4012,7 @@ lockean_proviso_reform = {
 		}
 	}
 	modifiers = {
-		development_cost = -0.05
+		development_cost = -0.025
 		global_trade_goods_size_modifier = 0.05
 	}
 	ai = {
@@ -4608,7 +4608,7 @@ diwan_al_khass_reform = {
 		
 	}
 	modifiers = {
-		development_cost = -0.05
+		development_cost = -0.025
 		build_cost = -0.1
 	}
 	
@@ -5138,7 +5138,7 @@ german_swabian_reform = {
 	}
 	modifiers = {
 		inflation_reduction = 0.1
-		development_cost_in_primary_culture = -0.1
+		development_cost_in_primary_culture = -0.05
 	}
 	
 	conditional = {

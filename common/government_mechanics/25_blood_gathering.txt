@@ -41,7 +41,7 @@ blood_gathering_mechanic = {
 					has_country_flag = azt_tlaloc_deity
 				}
 				modifier = {
-					development_cost_in_primary_culture = -0.15
+					development_cost_in_primary_culture = -0.075
 					build_cost = -0.2
 				}
 			}

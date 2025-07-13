@@ -34,6 +34,6 @@ faction_red_mingo = {
 		shock_damage = 0.15
      	global_colonial_growth = 15
 
-        development_cost = 0.075
+        development_cost = 0.0375
 	}
 }

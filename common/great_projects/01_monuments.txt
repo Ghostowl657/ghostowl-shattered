@@ -3454,7 +3454,7 @@ mount_fuji = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			local_development_cost = -0.1
+			local_development_cost = -0.05
 			local_monthly_devastation = -0.05
 		}
 
@@ -3484,7 +3484,7 @@ mount_fuji = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			local_development_cost = -0.15
+			local_development_cost = -0.075
 			local_monthly_devastation = -0.05
 			local_tax_modifier = 0.15
 		}
@@ -3516,7 +3516,7 @@ mount_fuji = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			local_development_cost = -0.2
+			local_development_cost = -0.1
 			local_monthly_devastation = -0.1
 			local_tax_modifier = 0.2
 		}
@@ -3672,7 +3672,7 @@ tenochtitlan = {
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
 			local_build_cost = -0.15
-			local_development_cost = -0.1
+			local_development_cost = -0.05
 			trade_goods_size_modifier = 0.33
 		}
 
@@ -3704,13 +3704,13 @@ tenochtitlan = {
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
 			local_build_cost = -0.15
-			local_development_cost = -0.2
+			local_development_cost = -0.1
 			trade_goods_size_modifier = 0.5
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
-			local_development_cost = -0.15
+			local_development_cost = -0.075
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
@@ -4075,7 +4075,7 @@ shwedagon_pagoda = {
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
 			local_unrest = -2
-			local_development_cost = -0.05
+			local_development_cost = -0.025
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -4106,7 +4106,7 @@ shwedagon_pagoda = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			local_development_cost = -0.1
+			local_development_cost = -0.05
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -5976,7 +5976,7 @@ golden_temple = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			global_autonomy = -0.05
-			min_autonomy_in_territories = -0.05
+			min_autonomy_in_territories = -0.025
 		}
 
 		#what effects happen when this tier is achieved
@@ -6007,7 +6007,7 @@ golden_temple = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			global_autonomy = -0.1
-			min_autonomy_in_territories = -0.1
+			min_autonomy_in_territories = -0.05
 			
 		}
 
@@ -7666,7 +7666,7 @@ prambanan_temple = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			development_cost = -0.02
+			development_cost = -0.01
 			global_missionary_strength =  0.005
 		}
 
@@ -7696,7 +7696,7 @@ prambanan_temple = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			development_cost = -0.05
+			development_cost = -0.025
 			global_missionary_strength = 0.01
 		}
 
@@ -7726,7 +7726,7 @@ prambanan_temple = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			development_cost = -0.10
+			development_cost = -0.05
 			global_missionary_strength = 0.02
 			missionaries = 1
 		}
@@ -10841,7 +10841,7 @@ imperial_city_hue = {
 			yearly_karma_decay = 0.1
 			legitimacy = 1
 			state_maintenance_modifier = -0.2
-			min_autonomy_in_territories = -0.05
+			min_autonomy_in_territories = -0.025
 		}
 
 		#what effects happen when this tier is achieved
@@ -10874,7 +10874,7 @@ imperial_city_hue = {
 			yearly_karma_decay = 0.15
 			legitimacy = 1
 			state_maintenance_modifier = -0.25
-			min_autonomy_in_territories = -0.1
+			min_autonomy_in_territories = -0.05
 		}
 
 		#what effects happen when this tier is achieved
@@ -11913,7 +11913,7 @@ chan_chan_citadel = {
 			factor = 2500
 		}
 		province_modifiers = {
-			local_development_cost = -0.1
+			local_development_cost = -0.05
 			garrison_growth = 0.66
 			local_defensiveness = 0.2
 		}
@@ -11942,7 +11942,7 @@ chan_chan_citadel = {
 		}
 		area_modifier = {
 			local_defensiveness = 0.25
-			local_development_cost = -0.1
+			local_development_cost = -0.05
 		}
 		country_modifiers = {
 			diplomatic_upkeep = 2
@@ -12539,7 +12539,7 @@ erdene_zuu = {
 			factor = 2500
 		}
 		province_modifiers = {
-			local_development_cost = -0.1
+			local_development_cost = -0.05
 		}
 		area_modifier = {
 		}
@@ -12561,7 +12561,7 @@ erdene_zuu = {
 			factor = 5000
 		}
 		province_modifiers = {
-			local_development_cost = -0.15
+			local_development_cost = -0.075
 		}
 		area_modifier = {
 		}
@@ -13247,7 +13247,7 @@ gyeongbok_palace = {
 		}
 		province_modifiers = {
 			tax_income = 18
-			local_development_cost = -0.1
+			local_development_cost = -0.05
 		}
 		area_modifier = {
 		}
@@ -13268,10 +13268,10 @@ gyeongbok_palace = {
 		}
 		province_modifiers = {
 			tax_income = 24
-			local_development_cost = -0.15
+			local_development_cost = -0.075
 		}
 		area_modifier = {
-			local_development_cost = -0.1
+			local_development_cost = -0.05
 		}
 		country_modifiers = {
 			advisor_cost = -0.1
@@ -13958,7 +13958,7 @@ khajuraho = {
 			factor = 1000
 		}
 		province_modifiers = {
-			local_development_cost = -0.1
+			local_development_cost = -0.05
 		}
 		area_modifier = {
 		}
@@ -13979,7 +13979,7 @@ khajuraho = {
 		province_modifiers = {
 		}
 		area_modifier = {
-			local_development_cost = -0.2
+			local_development_cost = -0.1
 		}
 		country_modifiers = {
 			monthly_heir_claim_increase = 0.2
@@ -13999,7 +13999,7 @@ khajuraho = {
 		province_modifiers = {
 		}
 		area_modifier = {
-			local_development_cost = -0.3
+			local_development_cost = -0.15
 		}
 		country_modifiers = {
 			monthly_heir_claim_increase = 0.3
@@ -16452,7 +16452,7 @@ tikal = {
 			factor = 1000
 		}
 		province_modifiers = {
-			local_development_cost = -0.15
+			local_development_cost = -0.075
 		}
 		area_modifier = {
 			local_unrest = -1
@@ -16472,7 +16472,7 @@ tikal = {
 			factor = 2500
 		}
 		province_modifiers = {
-			local_development_cost = -0.2
+			local_development_cost = -0.1
 		}
 		area_modifier = {
 			local_unrest = -2
@@ -16494,7 +16494,7 @@ tikal = {
 		province_modifiers = {
 		}
 		area_modifier = {
-			local_development_cost = -0.3
+			local_development_cost = -0.15
 		}
 		country_modifiers = {
 			stability_cost_modifier = -0.3
@@ -18085,7 +18085,7 @@ dujiangyan = {
 			factor = 2500
 		}
 		province_modifiers = {
-			local_development_cost = -0.1
+			local_development_cost = -0.05
 			allowed_num_of_buildings = 1
 		}
 		area_modifier = {
@@ -18110,7 +18110,7 @@ dujiangyan = {
 		province_modifiers = {
 		}
 		area_modifier = {
-			development_cost_modifier = -0.1
+			development_cost_modifier = -0.05
 			allowed_num_of_buildings = 1
 			local_governing_cost = -0.25
 		}
@@ -18949,7 +18949,7 @@ grand_canal_1 = {
 		}
 		area_modifier = {
 			local_monthly_devastation = -0.1
-			local_development_cost = -0.025
+			local_development_cost = -0.0125
 		}
 	}
 
@@ -18966,7 +18966,7 @@ grand_canal_1 = {
 		}
 		area_modifier = {
 			local_monthly_devastation = -0.25
-			local_development_cost = -0.05
+			local_development_cost = -0.025
 		}
 		region_modifier = { 
 			
@@ -18987,7 +18987,7 @@ grand_canal_1 = {
 		}
 		area_modifier = {
 			local_monthly_devastation = -0.33
-			local_development_cost = -0.1
+			local_development_cost = -0.05
 		}
 		region_modifier = { 
 			
@@ -19059,7 +19059,7 @@ grand_canal_2 = {
 		}
 		area_modifier = {
 			local_monthly_devastation = -0.1
-			local_development_cost = -0.025
+			local_development_cost = -0.0125
 		}
 	}
 
@@ -19076,7 +19076,7 @@ grand_canal_2 = {
 		}
 		area_modifier = {
 			local_monthly_devastation = -0.25
-			local_development_cost = -0.05
+			local_development_cost = -0.025
 		}
 		region_modifier = { 
 			
@@ -19097,7 +19097,7 @@ grand_canal_2 = {
 		}
 		area_modifier = {
 			local_monthly_devastation = -0.33
-			local_development_cost = -0.1
+			local_development_cost = -0.05
 		}
 		region_modifier = { 
 			
@@ -19169,7 +19169,7 @@ grand_canal_3 = {
 		}
 		area_modifier = {
 			local_monthly_devastation = -0.1
-			local_development_cost = -0.025
+			local_development_cost = -0.0125
 		}
 	}
 
@@ -19186,7 +19186,7 @@ grand_canal_3 = {
 		}
 		area_modifier = {
 			local_monthly_devastation = -0.25
-			local_development_cost = -0.05
+			local_development_cost = -0.025
 		}
 		region_modifier = { 
 			
@@ -19207,7 +19207,7 @@ grand_canal_3 = {
 		}
 		area_modifier = {
 			local_monthly_devastation = -0.33
-			local_development_cost = -0.1
+			local_development_cost = -0.05
 		}
 		region_modifier = { 
 			
@@ -19279,7 +19279,7 @@ grand_canal_4 = {
 		}
 		area_modifier = {
 			local_monthly_devastation = -0.1
-			local_development_cost = -0.025
+			local_development_cost = -0.0125
 		}
 	}
 
@@ -19296,7 +19296,7 @@ grand_canal_4 = {
 		}
 		area_modifier = {
 			local_monthly_devastation = -0.25
-			local_development_cost = -0.05
+			local_development_cost = -0.025
 		}
 		region_modifier = { 
 			
@@ -19317,7 +19317,7 @@ grand_canal_4 = {
 		}
 		area_modifier = {
 			local_monthly_devastation = -0.33
-			local_development_cost = -0.1
+			local_development_cost = -0.05
 		}
 		region_modifier = { 
 			

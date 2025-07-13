@@ -66,7 +66,7 @@ mayan_scribe = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -173,7 +173,7 @@ usa_secretary_of_the_treasury = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -189,7 +189,7 @@ usa_secretary_of_the_treasury = {
 			}
 		}
 		modifier = { 
-			development_cost_modifier = 0.03
+			development_cost_modifier = 0.015
 		}
 	}
 
@@ -271,7 +271,7 @@ usa_head_diplomat = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -370,7 +370,7 @@ usa_secretary_of_war = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -467,7 +467,7 @@ muscovy_architect = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -564,7 +564,7 @@ me_reformist = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -668,7 +668,7 @@ me_lyricist = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -762,7 +762,7 @@ travelling_merchant = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -858,7 +858,7 @@ bendahara = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -953,7 +953,7 @@ jean_baptiste = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {
@@ -1027,7 +1027,7 @@ me_regent = {
 			}
 		}
 		modifier = {
-			development_cost = -0.02
+			development_cost = -0.01
 		}
 	}
 	skill_scaled_modifier = {

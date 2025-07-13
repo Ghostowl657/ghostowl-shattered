@@ -459,7 +459,7 @@ gme_pauls_cathedral = {
 		upgrade_time = { months = 120 }
 		cost_to_upgrade = { factor = 1000 }
 		province_modifiers = {
-			local_development_cost = -0.05
+			local_development_cost = -0.025
 		}
 		area_modifier = { }
 		region_modifier = { }
@@ -473,7 +473,7 @@ gme_pauls_cathedral = {
 		cost_to_upgrade = { factor = 2500 }
 		province_modifiers = { }
 		area_modifier = { 
-			local_development_cost = -0.1
+			local_development_cost = -0.05
 		}
 		region_modifier = { }
 		country_modifiers = { 
@@ -489,7 +489,7 @@ gme_pauls_cathedral = {
 		}
 		area_modifier = { }
 		region_modifier = {
-			local_development_cost = -0.1
+			local_development_cost = -0.05
 		}
 		country_modifiers = {
 			global_missionary_strength = 0.015

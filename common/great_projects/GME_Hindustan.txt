@@ -45,7 +45,7 @@ gme_padmasambhava_hidden_valley = {
 		upgrade_time = { months = 120 }
 		cost_to_upgrade = { factor = 1000 }
 		province_modifiers = {
-			local_development_cost = -0.25
+			local_development_cost = -0.125
 			local_unrest = -1
 		}
 		area_modifier = {
@@ -62,7 +62,7 @@ gme_padmasambhava_hidden_valley = {
 		upgrade_time = { months = 240 }
 		cost_to_upgrade = { factor = 2500 }
 		province_modifiers = {
-			local_development_cost = -0.25
+			local_development_cost = -0.125
 		}
 		area_modifier = {
 			local_manpower_modifier = 0.25
@@ -82,7 +82,7 @@ gme_padmasambhava_hidden_valley = {
 		cost_to_upgrade = { factor = 5000 }
 		province_modifiers = { }
 		area_modifier = {
-			local_development_cost = -0.25
+			local_development_cost = -0.125
 			local_manpower_modifier = 0.33
 			local_production_efficiency = 0.33
 		}

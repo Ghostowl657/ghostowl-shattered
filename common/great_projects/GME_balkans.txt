@@ -186,7 +186,7 @@ gme_porto_leone = {
 			naval_forcelimit = 2
 		}
 		area_modifier = {
-			local_development_cost = -0.10
+			local_development_cost = -0.05
 		}
 		country_modifiers = {
 			naval_forcelimit_modifier = 0.1
@@ -201,7 +201,7 @@ gme_porto_leone = {
 			naval_forcelimit = 4
 		}
 		area_modifier = {
-			local_development_cost = -0.15
+			local_development_cost = -0.075
 		}
 		country_modifiers = {
 			naval_forcelimit_modifier = 0.2

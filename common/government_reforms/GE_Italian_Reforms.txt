@@ -306,7 +306,7 @@ customs_house_of_apena_sheep_reform = {
 		}
 	}
 	modifiers = {
-		development_cost = -0.05
+		development_cost = -0.025
 		governing_capacity_modifier = 0.05
 	}
 	custom_attributes = {
@@ -567,7 +567,7 @@ communal_territories_reform = {
 	}
 	modifiers = {
 		years_of_nationalism = -5
-		min_autonomy_in_territories = -0.1
+		min_autonomy_in_territories = -0.05
 	}
 	ai = {
 		factor = 100
@@ -911,7 +911,7 @@ kingdom_of_sardinia_reform = {
 
 	modifiers = {
 		state_maintenance_modifier = -0.2
-		development_cost = -0.10
+		development_cost = -0.05
 	}
 	ai = {
 		factor = 100

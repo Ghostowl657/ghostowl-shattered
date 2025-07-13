@@ -282,7 +282,7 @@ buddhism_cult = {
 	allow  = {
 		has_unlocked_cult = buddhism_cult
 	}
-	development_cost = -0.15
+	development_cost = -0.075
 	ai_will_do = {
 		factor = 10
 		modifier = {
