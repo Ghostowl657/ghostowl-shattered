@@ -1,5 +1,12 @@
------ DOGE NDefines.NDiplomacy -----
+----- Ghostowl Doge NDefines.NDiplomacy -----
 
+NDefines.NCountry.MAXIMUM_CONDOTTIERI = 80 -- Default 20
+
+NDefines.NCountry.COLONIAL_CLAIM_BONUS = 0 -- Tordesillas, Default 10
+NDefines.NCountry.COLONIAL_CLAIM_VIOLATION = 0 -- Tordesillas, Default -20
+
+
+----- DOGE NDefines.NDiplomacy -----
 
 --Government
 NDefines.NCountry.ABDICATE_AGE_THRESHOLD = 50
