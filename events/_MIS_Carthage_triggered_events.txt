@@ -18,10 +18,10 @@ country_event = {
 			name = "CTG_muslim_founders"
 			duration = -1
 		}
-		add_country_modifier = {
-			name = "CTG_mediterranean_focus"
-			duration = -1
-		}
+		#add_country_modifier = {
+		#	name = "CTG_mediterranean_focus"
+		#	duration = -1
+		#}
 		every_neighbor_country = {
 			limit = {
 				religion_group = muslim

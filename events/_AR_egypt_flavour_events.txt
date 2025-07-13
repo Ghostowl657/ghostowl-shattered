@@ -295,297 +295,297 @@ country_event = {
 
 # Flavour events for Egyptian region #############################################################################################################################
 
-country_event = { #Bountiful Harvest in a province
-	id = ar_egypt.21
-	title = ar_egypt.21.title
-	desc = ar_egypt.21.desc
+#country_event = { #Bountiful Harvest in a province
+#	id = ar_egypt.21
+#	title = ar_egypt.21.title
+#	desc = ar_egypt.21.desc
+#
+#	picture = 19_Monsoon_eventPicture
+#
+#	trigger = {
+#		any_owned_province = {
+#			region = egypt_region
+#			OR = {
+#				trade_goods = grain
+#				trade_goods = sugar
+#				trade_goods = paper
+#				trade_goods = livestock
+#				has_terrain = farmlands
+#			}
+#			NOT = {
+#				OR = {
+#					has_province_modifier = ar_egypt_great_harvest
+#					has_province_modifier = ar_egypt_failed_harvest
+#					has_province_modifier = ar_egypt_worked_harvest
+#				}
+#			}
+#		}
+#	}
+#
+#	mean_time_to_happen = {
+#		years = 10
+#	}
+#
+#	immediate = {
+#		hidden_effect = {
+#			random_owned_province = {
+#				limit = {
+#					region = egypt_region
+#					OR = {
+#						trade_goods = grain
+#						trade_goods = sugar
+#						trade_goods = paper
+#						trade_goods = livestock
+#					}
+#					NOT = {
+#						OR = {
+#							has_province_modifier = ar_egypt_great_harvest
+#							has_province_modifier = ar_egypt_failed_harvest
+#							has_province_modifier = ar_egypt_worked_harvest
+#						}
+#					}
+#				}
+#				save_event_target_as = ar_harvest_province
+#				set_province_flag = ar_harvest_province_flag
+#			}
+#		}
+#	}
+#
+#	goto = ar_harvest_province
+#
+#	option = { #Great!
+#		name = ar_egypt.21.a 
+#
+#		add_years_of_income = 0.1
+#	}
+#
+#	option = { #let the peasants enjoy their harvests!
+#		name = ar_egypt.21.b
+#
+#		event_target:ar_harvest_province = {
+#			add_local_autonomy = 10
+#			add_province_modifier = {
+#				name = ar_egypt_great_harvest
+#				duration = 730
+#			}
+#		}
+#	}
+#
+#	after = {
+#		every_owned_province = {
+#			limit = {
+#				has_country_flag = ar_harvest_province_flag
+#			}
+#			clr_province_flag = ar_harvest_province_flag
+#		}
+#	}
+#}
+#
+#country_event = { #Harvests flood in a province
+#	id = ar_egypt.22
+#	title = ar_egypt.22.title
+#	desc = ar_egypt.22.desc
+#
+#	picture = COLONIZATION_eventPicture
+#
+#	trigger = {
+#		any_owned_province = {
+#			region = egypt_region
+#			OR = {
+#				trade_goods = grain
+#				trade_goods = sugar
+#				trade_goods = paper
+#				trade_goods = livestock
+#			}
+#			NOT = {
+#				OR = {
+#					has_province_modifier = ar_egypt_great_harvest
+#					has_province_modifier = ar_egypt_failed_harvest
+#					has_province_modifier = ar_egypt_worked_harvest
+#				}
+#			}
+#		}
+#	}
+#
+#	mean_time_to_happen = {
+#		years = 10
+#	}
+#
+#	immediate = {
+#		hidden_effect = {
+#			random_owned_province = {
+#				limit = {
+#					region = egypt_region
+#					OR = {
+#						trade_goods = grain
+#						trade_goods = sugar
+#						trade_goods = paper
+#						trade_goods = livestock
+#					}
+#					NOT = {
+#						OR = {
+#							has_province_modifier = ar_egypt_great_harvest
+#							has_province_modifier = ar_egypt_failed_harvest
+#							has_province_modifier = ar_egypt_worked_harvest
+#						}
+#					}
+#				}
+#				save_event_target_as = ar_flood_province
+#			}
+#		}
+#	}
+#
+#	goto = ar_flood_province
+#
+#	option = { #We have to try to save all we can
+#		name = ar_egypt.22.a
+#
+#		add_years_of_income = -0.25
+#
+#		event_target:ar_flood_province = {
+#			add_devastation = 5
+#		}
+#	}
+#
+#	option = { #There is nothing we can do
+#		name = ar_egypt.22.b
+#
+#		event_target:ar_flood_province = {
+#			add_devastation = 25
+#			add_province_modifier = {
+#				name = ar_egypt_failed_harvest
+#				duration = 730
+#			}
+#		}
+#	}
+#
+#	option = { #Well...they are peasants
+#		trigger = {
+#			OR = {
+#				ruler_has_personality = cruel_personality
+#				ruler_has_personality = malevolent_personality
+#				ruler_has_personality = embezzler_personality
+#			}
+#		}
+#
+#		name = ar_egypt.22.c
+#
+#		add_years_of_income = 1
+#
+#		event_target:ar_flood_province = {
+#			spawn_rebels = {
+#				size = 2
+#				type = anti_tax_rebels
+#				win = yes
+#				should_take_capital = yes
+#			}
+#			add_devastation = 25
+#			add_province_modifier = {
+#				name = ar_egypt_failed_harvest
+#				duration = 730
+#			}
+#		}
+#	}
+#}
 
-	picture = 19_Monsoon_eventPicture
-
-	trigger = {
-		any_owned_province = {
-			region = egypt_region
-			OR = {
-				trade_goods = grain
-				trade_goods = sugar
-				trade_goods = paper
-				trade_goods = livestock
-				has_terrain = farmlands
-			}
-			NOT = {
-				OR = {
-					has_province_modifier = ar_egypt_great_harvest
-					has_province_modifier = ar_egypt_failed_harvest
-					has_province_modifier = ar_egypt_worked_harvest
-				}
-			}
-		}
-	}
-
-	mean_time_to_happen = {
-		years = 10
-	}
-
-	immediate = {
-		hidden_effect = {
-			random_owned_province = {
-				limit = {
-					region = egypt_region
-					OR = {
-						trade_goods = grain
-						trade_goods = sugar
-						trade_goods = paper
-						trade_goods = livestock
-					}
-					NOT = {
-						OR = {
-							has_province_modifier = ar_egypt_great_harvest
-							has_province_modifier = ar_egypt_failed_harvest
-							has_province_modifier = ar_egypt_worked_harvest
-						}
-					}
-				}
-				save_event_target_as = ar_harvest_province
-				set_province_flag = ar_harvest_province_flag
-			}
-		}
-	}
-
-	goto = ar_harvest_province
-
-	option = { #Great!
-		name = ar_egypt.21.a 
-
-		add_years_of_income = 0.1
-	}
-
-	option = { #let the peasants enjoy their harvests!
-		name = ar_egypt.21.b
-
-		event_target:ar_harvest_province = {
-			add_local_autonomy = 10
-			add_province_modifier = {
-				name = ar_egypt_great_harvest
-				duration = 730
-			}
-		}
-	}
-
-	after = {
-		every_owned_province = {
-			limit = {
-				has_country_flag = ar_harvest_province_flag
-			}
-			clr_province_flag = ar_harvest_province_flag
-		}
-	}
-}
-
-country_event = { #Harvests flood in a province
-	id = ar_egypt.22
-	title = ar_egypt.22.title
-	desc = ar_egypt.22.desc
-
-	picture = COLONIZATION_eventPicture
-
-	trigger = {
-		any_owned_province = {
-			region = egypt_region
-			OR = {
-				trade_goods = grain
-				trade_goods = sugar
-				trade_goods = paper
-				trade_goods = livestock
-			}
-			NOT = {
-				OR = {
-					has_province_modifier = ar_egypt_great_harvest
-					has_province_modifier = ar_egypt_failed_harvest
-					has_province_modifier = ar_egypt_worked_harvest
-				}
-			}
-		}
-	}
-
-	mean_time_to_happen = {
-		years = 10
-	}
-
-	immediate = {
-		hidden_effect = {
-			random_owned_province = {
-				limit = {
-					region = egypt_region
-					OR = {
-						trade_goods = grain
-						trade_goods = sugar
-						trade_goods = paper
-						trade_goods = livestock
-					}
-					NOT = {
-						OR = {
-							has_province_modifier = ar_egypt_great_harvest
-							has_province_modifier = ar_egypt_failed_harvest
-							has_province_modifier = ar_egypt_worked_harvest
-						}
-					}
-				}
-				save_event_target_as = ar_flood_province
-			}
-		}
-	}
-
-	goto = ar_flood_province
-
-	option = { #We have to try to save all we can
-		name = ar_egypt.22.a
-
-		add_years_of_income = -0.25
-
-		event_target:ar_flood_province = {
-			add_devastation = 5
-		}
-	}
-
-	option = { #There is nothing we can do
-		name = ar_egypt.22.b
-
-		event_target:ar_flood_province = {
-			add_devastation = 25
-			add_province_modifier = {
-				name = ar_egypt_failed_harvest
-				duration = 730
-			}
-		}
-	}
-
-	option = { #Well...they are peasants
-		trigger = {
-			OR = {
-				ruler_has_personality = cruel_personality
-				ruler_has_personality = malevolent_personality
-				ruler_has_personality = embezzler_personality
-			}
-		}
-
-		name = ar_egypt.22.c
-
-		add_years_of_income = 1
-
-		event_target:ar_flood_province = {
-			spawn_rebels = {
-				size = 2
-				type = anti_tax_rebels
-				win = yes
-				should_take_capital = yes
-			}
-			add_devastation = 25
-			add_province_modifier = {
-				name = ar_egypt_failed_harvest
-				duration = 730
-			}
-		}
-	}
-}
-
-country_event = { #Banditry!
-	id = ar_egypt.23
-	title = ar_egypt.23.title
-	desc = ar_egypt.23.desc
-
-	picture = QIZILBASH_CAVALRY_CHARGING_eventPicture
-
-	trigger = {
-		OR = {
-			tag = EGP
-		}
-		any_owned_province = {
-			region = egypt_region
-			OR = {
-				trade_goods = gold
-				trade_goods = gems
-				trade_goods = copper
-				trade_goods = iron
-			}
-			NOT = {
-				OR = {
-					has_province_modifier = ar_egypt_banditry
-					has_province_modifier = ar_egypt_patrols
-				}
-			}
-		}
-	}
-
-	mean_time_to_happen = {
-		years = 5
-		modifier = {
-			factor = 0.5
-			NOT = {
-				stability = 0
-			}
-		}
-		modifier = {
-			factor = 0.5
-			war_exhaustion = 4
-		}
-	}
-
-	immediate = {
-		hidden_effect = {
-			random_owned_province = {
-				limit = {
-					OR = {
-						region = egypt_region
-						area = fezzan_area
-						area = dongola_area
-					}
-					OR = {
-						trade_goods = grain
-						trade_goods = sugar
-						trade_goods = paper
-						trade_goods = livestock
-					}
-					NOT = {
-						OR = {
-							has_province_modifier = ar_egypt_banditry
-							has_province_modifier = ar_egypt_patrols
-						}
-					}
-				}
-				save_event_target_as = ar_bandits_province
-			}
-		}
-	}
-
-	goto = ar_bandits_province
-
-	option = { #We have to stop these outlaws!
-		name = ar_egypt.23.a
-
-		add_mil_power = -50
-		add_manpower = -2
-
-		event_target:ar_bandits_province = {
-			add_province_modifier = {
-				name = ar_egypt_patrols 
-				duration = 1825
-			}
-		}
-	}
-
-	option = { #What's the worse that could happen?
-		name = ar_egypt.23.b
-
-		event_target:ar_bandits_province = {
-			add_unrest = 15
-			add_province_modifier = {
-				name = ar_egypt_banditry
-				duration = 1825
-			}
-		}
-	}
-}
-
+#country_event = { #Banditry!
+#	id = ar_egypt.23
+#	title = ar_egypt.23.title
+#	desc = ar_egypt.23.desc
+#
+#	picture = QIZILBASH_CAVALRY_CHARGING_eventPicture
+#
+#	trigger = {
+#		OR = {
+#			tag = EGP
+#		}
+#		any_owned_province = {
+#			region = egypt_region
+#			OR = {
+#				trade_goods = gold
+#				trade_goods = gems
+#				trade_goods = copper
+#				trade_goods = iron
+#			}
+#			NOT = {
+#				OR = {
+#					has_province_modifier = ar_egypt_banditry
+#					has_province_modifier = ar_egypt_patrols
+#				}
+#			}
+#		}
+#	}
+#
+#	mean_time_to_happen = {
+#		years = 5
+#		modifier = {
+#			factor = 0.5
+#			NOT = {
+#				stability = 0
+#			}
+#		}
+#		modifier = {
+#			factor = 0.5
+#			war_exhaustion = 4
+#		}
+#	}
+#
+#	immediate = {
+#		hidden_effect = {
+#			random_owned_province = {
+#				limit = {
+#					OR = {
+#						region = egypt_region
+#						area = fezzan_area
+#						area = dongola_area
+#					}
+#					OR = {
+#						trade_goods = grain
+#						trade_goods = sugar
+#						trade_goods = paper
+#						trade_goods = livestock
+#					}
+#					NOT = {
+#						OR = {
+#							has_province_modifier = ar_egypt_banditry
+#							has_province_modifier = ar_egypt_patrols
+#						}
+#					}
+#				}
+#				save_event_target_as = ar_bandits_province
+#			}
+#		}
+#	}
+#
+#	goto = ar_bandits_province
+#
+#	option = { #We have to stop these outlaws!
+#		name = ar_egypt.23.a
+#
+#		add_mil_power = -50
+#		add_manpower = -2
+#
+#		event_target:ar_bandits_province = {
+#			add_province_modifier = {
+#				name = ar_egypt_patrols 
+#				duration = 1825
+#			}
+#		}
+#	}
+#
+#	option = { #What's the worse that could happen?
+#		name = ar_egypt.23.b
+#
+#		event_target:ar_bandits_province = {
+#			add_unrest = 15
+#			add_province_modifier = {
+#				name = ar_egypt_banditry
+#				duration = 1825
+#			}
+#		}
+#	}
+}#
+#
 # country_event = { #Sandstorm - devastating all desert / dryland provinces in Egypt - hidden initiator and control event
 # 	id = ar_egypt.24
 # 	title = ar_egypt.24.title
@@ -717,7 +717,7 @@ country_event = { #Tomb found!
 			limit = {
 				religion = egyptian_religion
 			}
-			add_legitimacy_equivalent = { amount = -20  republican_tradition = -10 }
+			add_legitimacy = -20
 			add_estate_loyalty = {
 				estate = estate_church
 				loyalty = -10
@@ -752,7 +752,7 @@ country_event = { #Tomb found!
 			}
 		}
 
-		add_legitimacy_equivalent = { amount = 10  republican_tradition = 5 }
+		add_legitimacy = 10
 		add_prestige_or_monarch_power = {
 			amount = 20
 		}
@@ -909,7 +909,7 @@ country_event = {
 	option = { #Naaa
 		name = ar_egypt.30.b
 
-		add_legitimacy_equivalent = { amount = 10  republican_tradition = 5 }
+		add_legitimacy = 10
 
 		capital_scope = {
 			spawn_rebels = {
@@ -958,7 +958,7 @@ country_event = {
 
 		random_list = {
 			90 = {
-				add_legitimacy_equivalent = { amount = 5  republican_tradition = 2 }
+				add_legitimacy = 5
 				add_ruler_modifier = {
 					name = ar_egypt_heb_sed_successfull
 					duration = 1095
@@ -977,7 +977,7 @@ country_event = {
 	option = { #I have nothing to prove!
 		name = ar_egypt.31.b
 
-		add_legitimacy_equivalent = { amount = -25  republican_tradition = -10 }
+		add_legitimacy = -25
 
 		add_estate_loyalty = {
 			estate = all
@@ -1238,7 +1238,7 @@ country_event = {
 			loyalty = -15
 		}
 
-		add_legitimacy_equivalent = { amount = -10  republican_tradition = -5 }
+		add_legitimacy = -10
 
 		if = {
 			limit = {
@@ -1451,7 +1451,7 @@ country_event = {
 	option = { #We are grateful for their support!
 		name = ar_egypt.37.a
 
-		add_legitimacy_equivalent = { amount = 5 republican_tradition = 2 }
+		add_legitimacy = 5
 
 		add_heir_claim = 25
 
@@ -1526,7 +1526,7 @@ country_event = {
 	option = { #We can't deal with this...
 		name = ar_egypt.38.b
 
-		add_legitimacy_equivalent = { amount = -10  republican_tradition = -5 }
+		add_legitimacy = -10
 		add_prestige = -10
 
 		add_estate_loyalty = {
@@ -1607,7 +1607,7 @@ country_event = {
 				religion = egyptian_religion
 			}
 			add_prestige = 10
-			add_legitimacy_equivalent = { amount = 10  republican_tradition = 5 }
+			add_legitimacy = 10
 			change_innovativeness = 5
 			add_prestige_or_monarch_power = {
 				amount = 50
@@ -1781,7 +1781,7 @@ country_event = {
 	option = { #Appease tensions as best we can
 		name = ar_egypt.51.a
 
-		add_legitimacy_equivalent = { amount = -5  republican_tradition = -2 }
+		add_legitimacy = -5
 
 		add_estate_loyalty = {
 			estate = estate_nobles
@@ -1906,7 +1906,7 @@ country_event = {
 	option = { #Give them some autonomy
 		name = ar_egypt.52.b
 
-		add_legitimacy_equivalent = { amount = -10  republican_tradition = -5 }
+		add_legitimacy = -10
 
 		add_estate_influence_modifier = {
 			influence = 10
