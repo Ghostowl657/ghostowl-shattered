@@ -27,7 +27,7 @@ country_decisions = {
 				}
 			}
 			NOT = { exists = BYZ }
-			NOT = { exists = GRE }
+#			NOT = { exists = GRE }
 			NOT = { tag = LTE }
 			NOT = { tag = TSA }
 			NOT = { tag = HLR }
@@ -66,6 +66,8 @@ country_decisions = {
 			NOT = { owned_by = ROOT }
 		}
 		allow = {
+			OR = {
+			AND = {
 			owns = 149	# Edirne
 			owns = 144  # Epiros
 			owns = 147	# Salonica
@@ -79,6 +81,12 @@ country_decisions = {
 			owns = 1853	# Kozani
 			owns = 2296	# Biga
 			owns = 151  # Constantinople
+			}
+			AND = {
+			owns = 151
+			tag = GEO
+			}
+			}
 			is_at_war = no
 			dst_specialsetting_is_free_or_tributary_trigger = yes
 			is_nomad = no
