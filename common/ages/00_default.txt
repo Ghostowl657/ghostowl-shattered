@@ -134,8 +134,8 @@ age_of_discovery = {
 			}
 			modifier = {
 				num_of_age_rewards = 1
-				culture_conversion_cost = -0.5
-				culture_conversion_time = -0.25
+				expel_minorities_cost = -1
+				colonist_placement_chance = 0.1
 			}
 			ai_will_do = {
 				factor = 0 
@@ -689,7 +689,7 @@ age_of_absolutism = {
 			modifier = {
 				num_of_age_rewards = 1
 				autonomy_change_time = -0.3
-			 	min_autonomy_in_territories = -0.1
+			 	min_autonomy_in_territories = -0.05
 			}
 			ai_will_do = {
 				factor = 10
@@ -1126,7 +1126,7 @@ age_of_enlightenment = {
 				on_age_ability_taken = { age = age_of_enlightenment }
 			}
 			modifier = {
-			 	development_cost_in_primary_culture = -0.1
+			 	development_cost_in_primary_culture = -0.05
 			}
 			ai_will_do = {
 				factor = 10
@@ -1530,7 +1530,7 @@ age_of_revolutions = {
 			modifier = {
 				num_of_age_rewards = 1
 				force_march_free = yes
-				can_bypass_forts = yes
+#				can_bypass_forts = yes
 			}
 			ai_will_do = {
 				factor = 10
