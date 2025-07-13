@@ -1,0 +1,423 @@
+
+province_development_cost_10 = {
+	local_development_cost = -0.1
+}
+
+province_production_efficiency_10 = {
+	local_production_efficiency = 0.1
+}
+
+province_production_efficiency_20 = {
+	local_production_efficiency = 0.2
+}
+
+idea_cost_10 = {
+	idea_cost = -0.05
+}
+
+dse_centralization_mechanic_country_mod = {
+	picture = "chorapolis_modifier_icon"
+    development_cost_modifier = -0.1
+}
+
+dse_centralization_mechanic_province_mod = {
+	picture = "chorapolis_modifier_icon"
+	local_development_cost = -0.2
+}
+
+shipbuilding_everything_25 = {
+	local_ship_cost = -0.25
+	local_ship_repair = 0.25
+	ship_recruit_speed = -0.25
+}
+
+local_defensiveness_25 = {
+	local_defensiveness = 0.25
+}
+
+drilling_gain_25 = {
+	drill_gain_modifier = 0.25
+}
+
+ability_to_claim_states_modifier = {
+	can_claim_states = yes
+}
+
+# Britain Devolution
+britain_devolution_centralized_mod = {
+	max_absolutism = 10
+	yearly_absolutism = 1
+}
+
+
+# Idea modifiers
+# Fortress
+dse_fortress_local_mechanic_province_mod = {
+	local_monthly_devastation = -0.1
+	local_state_maintenance_modifier = -0.15
+}
+
+# _ME_Westernization_Events
+me_westernization = {
+	local_development_cost = -0.4
+}
+
+
+destroy_city_walls = { # For decision to destroy city walls
+	local_development_cost = -0.3
+	allowed_num_of_buildings = 2
+	local_defensiveness = -0.75
+}
+
+
+nationalist_fervor_mod = {
+	local_manpower_modifier = 0.2
+}
+
+# dst_events_general
+
+colony_african_advantage_mod = {
+	local_colonial_growth = 25
+}
+
+african_goldmine_mod = {
+	picture = "african_goldmine_mod_icon"
+	trade_goods_size = 1
+}
+
+# prices_marcin.7
+boldonis_efforts_modifier = {
+	trade_goods_size = 2
+}
+
+# prices_marcin.7
+orleans_saffron_demand_modifier = {
+	trade_goods_size = 2
+}
+
+# dse_events_general
+
+dse_events_general_mod_1_1 = {
+	sailor_maintenance_modifer = -0.1
+	sailors_recovery_speed = 0.1
+}
+
+dse_events_general_roadside_inn_mod = {
+	trade_value = 0.5
+	local_tax_modifier = 0.1
+	local_unrest = 1
+}
+
+dse_events_farmland_mismanagement_timer = {
+
+}
+
+dse_basic_timer_modifier = {
+
+}
+
+dse_events_general_farmland_mismanagement_mod_1 = {
+	local_development_cost = -0.1
+	local_tax_modifier = 0.2
+}
+
+dse_events_general_farmland_mismanagement_mod_2 = {
+	local_development_cost = -0.05
+	local_tax_modifier = 0.1
+}
+
+dse_events_general_farmland_mismanagement_mod_3 = {
+	local_development_cost = -0.05
+	local_tax_modifier = 0.1
+}
+
+dse_events_general_farmland_mismanagement_mod_4 = {
+	local_development_cost = 0.1
+	local_tax_modifier = -0.2
+}
+
+# _AI_meta_decisions
+meta_scuttle_doctrine_mod = {
+ 	capture_ship_chance = -5
+}
+
+
+# estate interaction
+
+estate_leaders_executed_place_new = {
+	all_estate_loyalty_equilibrium = 0.1
+}
+
+# pricechanges.txt
+
+HUAYNAPUTINA_PRODUCTION_REDUCTION_modifier = {
+	local_production_efficiency = -2
+	trade_goods_size_modifier = -0.5
+}
+
+COLD_AGE_PRODUCTION_REDUCTION_modifier = {
+	local_production_efficiency = -2
+	trade_goods_size_modifier = -0.5
+}
+
+# _DSE_flavour_heretic_catholics_events
+
+translated_bible_m = {
+	global_unrest = -2
+	tolerance_own = 1
+}
+reinterpreted_bible_m = {
+	advisor_cost = -0.1
+	advisor_pool = 1
+}
+
+# Land Forcelimit Scaler
+
+building_landforcelimit_1 = {
+	land_forcelimit = 0.5
+
+	picture = "land_fl_1"
+}
+
+building_landforcelimit_2 = {
+	land_forcelimit = 1
+
+	picture = "land_fl_2"
+}
+
+building_landforcelimit_3 = {
+	land_forcelimit = 1.5
+
+	picture = "land_fl_3"
+}
+
+building_landforcelimit_4 = {
+	land_forcelimit = 2
+
+	picture = "land_fl_4"
+}
+
+building_landforcelimit_5 = {
+	land_forcelimit = 2.5
+
+	picture = "land_fl_5"
+}
+
+building_landforcelimit_6 = {
+	land_forcelimit = 3
+
+	picture = "land_fl_6"
+}
+
+building_landforcelimit_7 = {
+	land_forcelimit = 3.5
+
+	picture = "land_fl_7"
+}
+
+building_landforcelimit_8 = {
+	land_forcelimit = 4
+
+	picture = "land_fl_8"
+}
+
+building_landforcelimit_9 = {
+	land_forcelimit = 4.5
+
+	picture = "land_fl_9"
+}
+
+building_landforcelimit_10 = {
+	land_forcelimit = 5
+
+	picture = "land_fl_10"
+}
+
+# Naval Forcelimit Scaler
+
+building_navyforcelimit_1 = {
+	naval_forcelimit = 0.5
+
+	picture = "navy_fl_1"
+}
+
+building_navyforcelimit_2 = {
+	naval_forcelimit = 1
+
+	picture = "navy_fl_2"
+}
+
+building_navyforcelimit_3 = {
+	naval_forcelimit = 1.5
+
+	picture = "navy_fl_3"
+}
+
+building_navyforcelimit_4 = {
+	naval_forcelimit = 2
+
+	picture = "navy_fl_4"
+}
+
+building_navyforcelimit_5 = {
+	naval_forcelimit = 2.5
+
+	picture = "navy_fl_5"
+}
+
+building_navyforcelimit_6 = {
+	naval_forcelimit = 3
+
+	picture = "navy_fl_6"
+}
+
+building_navyforcelimit_7 = {
+	naval_forcelimit = 3.5
+
+	picture = "navy_fl_7"
+}
+
+building_navyforcelimit_8 = {
+	naval_forcelimit = 4
+
+	picture = "navy_fl_8"
+}
+
+building_navyforcelimit_9 = {
+	naval_forcelimit = 4.5
+
+	picture = "navy_fl_9"
+}
+
+building_navyforcelimit_10 = {
+	naval_forcelimit = 5
+
+	picture = "navy_fl_10"
+}
+
+# Manufactory Goods Scaler
+
+building_manufactorygoods_1 = {
+	trade_goods_size = 0.5
+
+	picture = "manufactory_goods_scaler_1"
+}
+
+building_manufactorygoods_2 = {
+	trade_goods_size = 1
+
+	picture = "manufactory_goods_scaler_2"
+}
+
+building_manufactorygoods_3 = {
+	trade_goods_size = 1.5
+
+	picture = "manufactory_goods_scaler_3"
+}
+
+building_manufactorygoods_4 = {
+	trade_goods_size = 2
+
+	picture = "manufactory_goods_scaler_4"
+}
+
+building_manufactorygoods_5 = {
+	trade_goods_size = 2.5
+
+	picture = "manufactory_goods_scaler_5"
+}
+
+building_manufactorygoods_6 = {
+	trade_goods_size = 3
+
+	picture = "manufactory_goods_scaler_6"
+}
+
+building_manufactorygoods_7 = {
+	trade_goods_size = 3.5
+
+	picture = "manufactory_goods_scaler_7"
+}
+
+building_manufactorygoods_8 = {
+	trade_goods_size = 4
+
+	picture = "manufactory_goods_scaler_8"
+}
+
+building_manufactorygoods_9 = {
+	trade_goods_size = 4.5
+
+	picture = "manufactory_goods_scaler_9"
+}
+
+building_manufactorygoods_10 = {
+	trade_goods_size = 5
+
+	picture = "manufactory_goods_scaler_10"
+}
+
+# Amazon Rainforest
+amazon_rainforest = {
+	trade_value = 0.5
+	trade_goods_size = 0.5
+	picture = "amazon_forest_modifier_icon"
+}
+
+# Dead Sea
+dead_sea = {
+	trade_value = 0.25
+	trade_goods_size = 0.25
+	picture = "lake_modifier_icon"
+}
+
+
+# Black Forest
+black_forest = {
+	picture = "forest_modifier_icon"
+	trade_goods_size = 0.25
+	local_build_cost = -0.05
+}
+
+# Aurora (Polar Lights)
+polar_lights = {
+	picture = "aurora_modifier_icon"
+	trade_value = 0.1
+	idea_cost = -0.002
+	local_unrest = -0.25
+}
+
+# Lake Retba: 1113
+lake_retba = {
+	trade_value = 0.1
+	dip_tech_cost_modifier = -0.01
+	picture = "lake_pink_modifier_icon"
+}
+
+# Paubrasilia
+paubrasilia = {
+	picture = "paubrasilia_modifier_icon"
+	trade_value = 0.2
+	trade_goods_size = 0.2
+	trade_goods_size_modifier = 0.01
+}
+
+# Chernozem Soil
+chernozem_soil = {
+	picture = "chernozem_modifier_icon"
+	trade_value = 0.05
+	local_production_efficiency = 0.1
+}
+
+# Special Settings
+civilisationworld_base_modifiers = {
+	global_tax_income = 48
+	colonists = 3
+	may_explore = yes
+	range = -1
+	global_colonial_growth = 100
+}
+
+civilisationworld_migration_modifiers = {
+	migration_cost = -1
+}
