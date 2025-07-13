@@ -1,0 +1,35 @@
+HED_development_cost = {
+	development_cost = -0.1 
+}
+
+HED_pilgrims_arriving_en_masse = {
+	picture = "pilgrim_escort_modifier_icon"
+	local_development_cost = -0.15
+	local_tax_modifier = 0.15
+}
+
+HED_pilgrims_arriving_en_masse_2 = {
+	picture = "pilgrim_escort_modifier_icon"
+	local_development_cost = -0.3
+	local_tax_modifier = 0.3
+}
+
+HED_road = {
+	picture = "pilgrim_escort_modifier_icon"
+	trade_value = 4
+	province_trade_power_modifier = 0.25
+}
+
+HED_custodians = {
+	diplomatic_reputation = 2
+}
+
+HED_goods = {
+	trade_goods_size_modifier = 0.25
+	local_prosperity_growth = 2
+}
+
+HED_sponsors_of_the_holy_cities = {
+	tax_income = 18
+	tolerance_own = 1
+}
