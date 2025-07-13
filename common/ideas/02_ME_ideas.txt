@@ -1,0 +1,507 @@
+RST_ideas = {
+	start = {
+		global_heretic_missionary_strength = 0.03
+		may_perform_slave_raid = yes
+	}
+
+	bonus = {
+		warscore_cost_vs_other_religion = -0.1
+	}
+
+	trigger = {
+		tag = RST
+	}
+	free = yes
+
+	RST_small_community = {
+		development_cost = -0.05
+		global_prosperity_growth = 0.25
+	}
+	RST_convert_the_heretics = {
+		prestige_per_development_from_conversion = 0.25
+		missionary_maintenance_cost = -0.5
+	}
+	RST_persian_origins = {
+		prestige = 1
+	}
+	RST_learned_men = {
+		adm_advisor_cost = -0.25
+		innovativeness_gain = 0.25
+	}
+	RST_major_stop_along_trade_routes = {
+		caravan_power = 0.2
+		trade_efficiency = 0.1
+	}
+	RST_ibadi_isolate  = {
+		tolerance_own = 2
+		land_morale = 0.1
+	}
+	RST_berber_tribes  = {
+		global_manpower_modifier = 0.1
+		berbers_loyalty_modifier = 0.05
+	}
+}
+
+ABA_ideas = {
+	start = {
+		tolerance_own = 3
+		discipline = 0.05
+	}
+
+	bonus = {
+		global_manpower_modifier = 0.15
+	}
+
+	trigger = {
+		tag = ABA
+	}
+	free = yes
+
+	ABA_idea_1 = {
+		core_creation = -0.1
+		legitimacy = 1
+		republican_tradition = 0.5 #if you do this, you deserve it.
+	}
+	ABA_idea_2 = {
+		technology_cost = -0.05
+		innovativeness_gain = 0.5
+	}
+	ABA_idea_3 = {
+		build_cost = -0.1
+	}
+	ABA_idea_4 = {
+		global_missionary_strength = 0.02
+		church_loyalty_modifier = 0.05
+	}
+	ABA_idea_5 = {
+		diplomatic_reputation = 1
+	}
+	ABA_idea_6 = {
+		institution_spread_from_true_faith = 1
+	}
+	ABA_idea_7 = {
+		warscore_cost_vs_other_religion = -0.05
+		stability_cost_modifier = -0.1
+	}
+}
+
+ARB_ideas = {
+	start = {
+		core_creation = -0.2
+		tolerance_own = 2
+	}
+
+	bonus = {
+		discipline = 0.05
+	}
+
+	trigger = {
+		tag = ARB
+	}
+	free = yes
+
+	ARB_arabian_pincers = {
+		cavalry_flanking = 0.5
+		military_tactics = 0.1
+	}
+	ABA_pact_of_umar = {
+		dhimmi_loyalty_modifier = 0.1
+		global_tax_modifier = 0.2
+	}
+	ABA_engage_in_indian_ocean_trade = {
+		trade_steering = 0.2
+		trade_efficiency = 0.05
+	}
+	ABA_jihad = {
+		global_missionary_strength = 0.03
+		warscore_cost_vs_other_religion = -0.1
+	}
+	ABA_arabian_traditions = {
+		cavalry_power = 0.15
+		land_attrition = -0.2
+	}
+	ABA_new_caliphate_rising = {
+		governing_capacity_modifier = 0.2
+		war_exhaustion = -0.05
+	}
+	ABA_mubarizun = {
+		army_tradition_decay = -0.01
+	}
+}
+
+SUQ_ideas = {
+	start = {
+		global_trade_goods_size_modifier = 0.1
+		siege_blockade_progress = 1
+	}
+
+	bonus = {
+		fire_damage_received = -0.1
+	}
+
+	trigger = {
+		OR = {
+			tag = SUQ
+			has_country_flag = SUQ_flag
+		}
+	}
+	free = yes
+
+	SUQ_idea_1 = {
+		global_heathen_missionary_strength = 0.02
+	}
+	SUQ_idea_4 = {
+		num_accepted_cultures = 1
+		range = 0.25
+	}
+	SUQ_idea_3 = {
+		discipline = 0.05
+	}
+	SUQ_idea_2 = {
+		trade_efficiency = 0.1
+	}
+	SUQ_idea_5 = {
+		cavalry_power = 0.05
+		caravan_power = 0.15
+	}
+	SUQ_idea_6 = {
+		naval_morale = 0.15 
+	}
+	SUQ_idea_7 = {
+		diplomatic_reputation = 1
+	}
+}
+
+
+BYZ_BASE_ideas = { 
+	start = {
+		tolerance_own = 3 
+		advisor_pool = 1 
+	}
+	
+	bonus = {
+		defensiveness = 0.2 
+	}
+	
+	trigger = {
+		tag = BYZ 
+		has_country_flag = byz_may_change_ideas 
+	}
+	free = yes 
+	
+	BYZ_BASE_restored_roman_rule = {
+		same_culture_advisor_cost = -0.2
+		num_accepted_cultures = 1 
+	}
+	BYZ_BASE_centers_of_scholarly_studies = {
+		idea_cost = -0.1 
+		global_missionary_strength = 0.02 
+	}
+	BYZ_defenders_of_the_city_of_god = {
+		legitimacy = 1 
+		republican_tradition = 0.35 
+		devotion = 1 
+		horde_unity = 1 
+		papal_influence = 2 
+	}
+	BYZ_BASE_velveteen_reform = {
+		discipline = 0.05 
+	}
+	BYZ_BASE_imperial_territories = {
+		administrative_efficiency = 0.05
+	}
+	BYZ_BASE_organize_offices = {
+		possible_adm_policy = 1 
+		free_leader_pool = 1 
+	}
+	BYZ_BASE_byzantine_fire_techniques = {
+		leader_land_fire = 1  
+	}
+}
+
+
+TIM_improved_ideas = {
+	start = {
+		diplomatic_upkeep = 1
+		leader_land_shock = 1
+	}
+	bonus = {
+		discipline = 0.05
+	}
+	trigger = {
+		tag = TIM
+		has_country_flag = me_tim_upgraded_ideas
+	}
+	free = yes
+	TIM_shahrukh_empire = {
+		vassal_forcelimit_bonus = 0.5
+		vassal_income = 0.15
+	}
+	TIM_silk_road_domination = {
+		trade_efficiency = 0.05
+		caravan_power = 0.25
+	}
+	TIM_governors = {
+		reduced_liberty_desire = 15
+	}
+	TIM_war_elephants = {
+		cavalry_power = 0.15
+	}
+	TIM_legacy_of_timur = {
+		military_tactics = 0.1
+	}
+	TIM_chaghatai_Literature = {
+		legitimacy = 1
+		expand_administration_cost = -0.5
+	}
+	TIM_rennaisance = {
+		technology_cost = -0.05
+		idea_cost = -0.05
+	}
+}
+
+NAV_new_world_ideas = {
+	start = {
+		morale_damage = 0.1
+		global_colonial_growth = 25
+	}
+	bonus = {
+		leader_naval_fire = 1
+	}
+	trigger = {
+		tag = NAV
+		has_country_flag = NAV_improved_ideas
+	}
+	free = yes
+
+	fearless_seamen = {
+		ship_durability = 0.05
+		naval_morale = 0.15
+	}
+	NAV_global_empire = {
+		naval_forcelimit_modifier = 0.33
+		max_flagships = 1
+	}
+	NAV_ME_basque_ferocity = {
+		discipline = 0.05
+		land_morale = 0.15
+	}
+	camara_de_comptos = {
+		free_adm_policy = 1
+		inflation_reduction = 0.1
+	}
+	people_of_the_sea = {
+		allowed_marine_fraction = 0.2
+		global_sailors_modifier = 0.25
+	}
+	royal_basque_society = {
+		technology_cost = -0.1
+	}
+	NAV_ME_an_industrious_folk = {
+		culture_conversion_cost = -0.1
+		development_cost_in_primary_culture = -0.15
+		same_culture_advisor_cost = -0.1
+	}
+}
+
+CRN_dumnonian_ideas = {
+	start = {
+		fire_damage = 0.1
+		production_efficiency = 0.1
+	}
+	
+	bonus = {
+		land_morale = 0.10
+	}
+	
+	trigger = {
+		tag = CRN
+		has_country_flag = CRN_dumononian_ideas
+	}
+	free = yes
+	
+	crn_stannary_parliaments = {
+		global_unrest = -2
+	}
+	CRN_resurgence_of_dumnonia = {
+		infantry_power = 0.1
+		years_of_nationalism = -5
+	}
+	crn_prayer_book_traditionaliism = {
+		tolerance_own = 2
+	}
+	crn_pirates_of_penzance = {
+		capture_ship_chance = 0.1
+		privateer_efficiency = 0.2
+	}
+	crn_royalist_army = {
+		land_forcelimit_modifier = 0.2
+	}
+	crn_gear_rout = {
+		movement_speed = 0.15
+	}
+	crn_arthurian_romanticism = {
+		prestige_decay = -0.01
+	}
+}
+
+#######################################
+#Irish Endurance Buffed Irish Idea Set#
+#######################################
+EE_irish_endurance_buffed_ideas = {
+	start = {
+		land_morale = 0.1
+		trade_efficiency = 0.1
+	}
+	bonus = {
+		legitimacy = 1
+		republican_tradition = 0.3
+	}
+	trigger = {
+		tag = IRE
+		has_country_flag = EE_Minor_IRI_buff_irish_endurance
+		NOT = { has_country_flag = EE_Minor_IRI_improve_morale_tradition }
+	}
+	free = yes
+	EE_irish_endurance = {
+		shock_damage_received = -0.2
+	}
+	the_clanns = {
+		same_culture_advisor_cost = -0.2
+	}
+	more_than_irish = {
+		global_unrest = -2
+	}
+	loyal_catholics = {
+		papal_influence = 1
+		global_heretic_missionary_strength = 0.02
+	}
+	ire_abundant_harvests = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	unconquerable_ireland = {
+		war_exhaustion = -0.02
+ 	}
+	ire_gallowglasses = {
+		discipline = 0.05
+	}
+}
+##############################################
+#Irish Morale Tradition Buffed Irish Idea Set#
+##############################################
+EE_irish_morale_tradition_buffed_ideas = {
+	start = {
+		land_morale = 0.15
+		trade_efficiency = 0.1
+	}
+	bonus = {
+		legitimacy = 1
+		republican_tradition = 0.3
+	}
+	trigger = {
+		tag = IRE
+		has_country_flag = EE_Minor_IRI_improve_morale_tradition
+		NOT = { has_country_flag = EE_Minor_IRI_buff_irish_endurance }
+	}
+	free = yes
+	irish_endurance = {
+		shock_damage_received = -0.1
+	}
+	the_clanns = {
+		same_culture_advisor_cost = -0.2
+	}
+	more_than_irish = {
+		global_unrest = -2
+	}
+	loyal_catholics = {
+		papal_influence = 1
+		global_heretic_missionary_strength = 0.02
+	}
+	ire_abundant_harvests = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	unconquerable_ireland = {
+		war_exhaustion = -0.02
+ 	}
+	ire_gallowglasses = {
+		discipline = 0.05
+	}
+}
+#############################
+#Fully Buffed Irish Idea Set#
+#############################
+EE_irish_fully_buffed_ideas = {
+	start = {
+		land_morale = 0.15
+		trade_efficiency = 0.1
+	}
+	bonus = {
+		legitimacy = 1
+		republican_tradition = 0.3
+	}
+	trigger = {
+		tag = IRE
+		has_country_flag = EE_Minor_IRI_chose_isolationist
+	}
+	free = yes
+	EE_irish_endurance = {
+		shock_damage_received = -0.2
+	}
+	the_clanns = {
+		same_culture_advisor_cost = -0.2
+	}
+	more_than_irish = {
+		global_unrest = -2
+	}
+	loyal_catholics = {
+		papal_influence = 1
+		global_heretic_missionary_strength = 0.02
+	}
+	ire_abundant_harvests = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	unconquerable_ireland = {
+		war_exhaustion = -0.02
+ 	}
+	ire_gallowglasses = {
+		discipline = 0.05
+	}
+}
+###############################
+#Black Douglas Buffed Scotland#
+###############################
+EE_SCO_Ideas = {
+	start = {
+		leader_land_shock = 1
+		land_forcelimit_modifier = 0.33
+	}
+	bonus = {
+		land_maintenance_modifier = -0.05
+	}
+	trigger = {
+		tag = SCO
+		has_country_flag = EE_SCO_buff_prvivilege_and_NI_flag
+	}
+	free = yes
+	EE_break_the_black_douglas = {
+		global_unrest = -2
+	}
+	modernised_royal_scots_navy = {
+		global_ship_cost = -0.1
+	}
+	reign_in_the_clans = {
+		global_manpower_modifier = 0.2
+	}
+	comets = {
+		stability_cost_modifier = -0.10
+	}
+	royal_revenue = {
+		global_tax_modifier = 0.1
+	}
+	basilikon_doron = {
+		legitimacy = 1
+	}
+	act_of_revocation = {
+		ae_impact = -0.15
+	}
+}

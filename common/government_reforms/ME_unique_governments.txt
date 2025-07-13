@@ -1,0 +1,932 @@
+
+
+
+#West Slavic Monarchy
+west_slavic_legacy = {
+	icon = "west_slavic"
+	lock_level_when_selected = yes
+	allow_normal_conversion = no
+	valid_for_nation_designer = no
+	legacy_government = yes
+	valid_for_new_country = no
+	allow_convert = no
+	factions = {
+		west_slav_slovaks
+		west_slav_poles
+		west_slav_czechs
+	}
+	monarchy = yes
+	queen = no
+	heir = no
+
+	modifiers = {
+		num_accepted_cultures = 2
+		global_autonomy = -0.025
+		cavalry_cost = -0.15
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+west_slavic_monarchy = {
+	icon = "west_slavic"
+	lock_level_when_selected = yes
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			have_had_reform = west_slavic_monarchy
+			has_reform = west_slavic_monarchy
+		}
+	}
+	valid_for_nation_designer = no
+	legacy_equivalent = west_slavic_legacy
+	factions = {
+		west_slav_slovaks
+		west_slav_poles
+		west_slav_czechs
+	}
+	queen = no
+	heir = no
+	duration = 4
+	has_term_election = yes
+
+	modifiers = {
+		num_accepted_cultures = 2
+		global_autonomy = -0.025
+		cavalry_cost = -0.15
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+
+me_hofkammer_reform = {
+	icon = "crown"
+	lock_level_when_selected = yes
+	allow_normal_conversion = no
+	potential = {
+		has_country_flag = me_hab_hofkammer
+	}
+	valid_for_nation_designer = no
+
+	modifiers = {
+		development_cost = -0.05
+		build_cost = -0.075
+		interest = -0.5
+	}
+
+	custom_attributes = {
+		me_devving_has_50_chance_of_doubling = yes
+	}
+}
+
+# Greek League
+greek_league = {
+	icon = "crown"
+	allow_normal_conversion = no
+	legacy_government = yes
+	duration = 5
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+
+	republican_name = yes
+	royal_marriage = no
+
+	republic = yes
+
+	modifiers = {
+		shock_damage_received = -0.1
+		liberty_desire = -5
+		max_absolutism = -60
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+		}
+		has_parliament = yes
+	}
+
+	factions = {
+		gl_aristocrats
+		gl_democrats
+		gl_oligarchs
+	}
+
+	ai = {
+		factor = 0
+	}
+}
+
+greek_league_reform = {
+	icon = "crown"
+	allow_normal_conversion = no
+	potential = {
+		has_reform = greek_league_reform
+	}
+	duration = 5
+	factions = {
+		gl_aristocrats
+		gl_democrats
+		gl_oligarchs
+	}
+	legacy_equivalent = greek_league
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+	modifiers = {
+		shock_damage_received = -0.1
+		liberty_desire = -5
+		max_absolutism = -60
+	}
+
+	conditional = {
+		allow = { has_dlc = "Common Sense" }
+		has_parliament = yes
+	}
+}
+###############
+# LordVarangian's new Governments
+###############
+
+athenian_monarchy_legacy = {
+	icon = "athenian_democracy_icon"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+	allow_convert = no
+	valid_for_new_country = no
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 250
+	monarchy = yes
+	modifiers = {
+		drill_gain_modifier = 0.15
+		culture_conversion_cost = -0.15
+		vassal_income = 0.5
+		diplomats = 1
+		free_leader_pool = 2
+	}
+}
+
+athenian_monarchy = {
+	icon = "athenian_democracy_icon"
+	allow_normal_conversion = no
+	potential = {
+		has_reform = athenian_monarchy
+	}
+	valid_for_new_country = no
+	allow_convert = no
+	valid_for_new_country = no
+	legacy_equivalent = athenian_monarchy_legacy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 250
+	monarchy = yes
+	modifiers = {
+		drill_gain_modifier = 0.15
+		culture_conversion_cost = -0.15
+		vassal_income = 0.5
+		diplomats = 1
+		free_leader_pool = 2
+	}
+}
+
+athenian_republic_legacy = {
+	icon = "athenian_democracy_icon"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+	allow_convert = no
+	valid_for_new_country = no
+	nation_designer_cost = 250
+	factions = {
+		gl_aristocrats
+		gl_democrats
+		gl_oligarchs
+	}
+	republic = yes
+	modifiers = {
+		max_absolutism = -60
+		diplomatic_upkeep = 2
+		vassal_income = 0.5
+		reduced_liberty_desire = -20
+		naval_morale = 0.1
+		galley_power = 0.15
+		development_cost = -0.05
+		republican_tradition = 0.5
+		trade_efficiency = 0.1
+	}
+}
+
+athenian_republic = {
+	icon = "athenian_democracy_icon"
+	allow_normal_conversion = no
+	potential = {
+		has_reform = athenian_republic
+	}
+	valid_for_new_country = no
+	legacy_equivalent = athenian_republic_legacy
+	allow_convert = no
+	valid_for_new_country = no
+	nation_designer_cost = 250
+
+	factions = {
+		gl_aristocrats
+		gl_democrats
+		gl_oligarchs
+	}
+	republic = yes
+	modifiers = {
+		max_absolutism = -60
+		diplomatic_upkeep = 2
+		vassal_income = 0.5
+		reduced_liberty_desire = -20
+		naval_morale = 0.1
+		galley_power = 0.15
+		development_cost = -0.05
+		republican_tradition = 0.5
+		trade_efficiency = 0.1
+	}
+}
+
+
+
+# Caliphate
+caliphate_sunni_legacy = {
+	icon = "muslim_highlighted"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+	allow_convert = no
+
+	valid_for_new_country = no
+
+	valid_for_nation_designer = no
+
+	heir = no
+	queen = no
+	maintain_dynasty = yes
+	nation_designer_cost = 150
+	fixed_rank = 3
+
+	modifiers = {
+		monarch_diplomatic_power = 1
+		tolerance_own = 2
+		global_missionary_strength = 0.01
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+	}
+	conditional = {
+		allow = { 
+			has_dlc = "Cradle of Civilization"
+			is_or_was_tag = { tag = RUM }
+		}
+		has_janissaries = yes
+	}
+}
+
+caliphate_reform_sunni = {
+	lock_level_when_selected = yes
+	icon = "muslim_highlighted"
+	allow_normal_conversion = no
+	potential = {
+		is_subject = no
+		religion_group = muslim
+		has_reform = caliphate_reform_sunni
+	}
+	legacy_equivalent = caliphate_sunni_legacy
+	valid_for_nation_designer = no
+
+	heir = no
+	queen = no
+	maintain_dynasty = yes
+	nation_designer_cost = 150
+
+	fixed_rank = 3
+
+	modifiers = {
+		candidate_random_bonus = 2
+		tolerance_own = 2
+		global_missionary_strength = 0.01
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+	}
+	conditional = {
+		allow = { 
+			has_dlc = "Cradle of Civilization"
+			is_or_was_tag = { tag = RUM }
+		}
+		has_janissaries = yes
+	}
+	assimilation_cultures = {
+		altaic = {
+			artillery_cost = -0.1
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		baltic = {
+			naval_forcelimit_modifier = 0.05
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		british = {
+			ship_durability = 0.05
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		burman = {
+			free_leader_pool = 1
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		byzantine = {
+			legitimacy = 0.25
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		carpathian = {
+			mercenary_cost = -0.1
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		caucasian = {
+			mercenary_discipline = 0.05
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		gaelic = {
+			shock_damage = 0.05
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		central_indic = {
+			land_attrition = -0.1
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		east_asian = {
+			state_maintenance_modifier = -0.2
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		kongo_group = {
+			heir_chance = 0.5
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		cushitic = {
+			missionaries = 1
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		dravidian = {
+			global_trade_goods_size_modifier = 0.05
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		african = {
+			global_tax_income = 10
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		east_slavic = {
+			land_forcelimit_modifier = 0.1
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		eastern_aryan = {
+			production_efficiency = 0.05
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		evenks = {
+			cavalry_flanking = 0.2
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		french = {
+			diplomats = 1
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		germanic = {
+			global_institution_spread = 0.15
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		great_lakes_group = {
+			loot_amount = 0.5
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		hindusthani = {
+			core_creation = -0.1
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		iberian = {
+			global_colonial_growth = 10
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		iranian = {
+			advisor_cost = -0.1
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		japanese_g = {
+			land_morale = 0.1
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		kamchatkan_g = {
+			hostile_attrition = 1
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		korean_g = {
+			idea_cost = -0.05
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		latin = {
+			embracement_cost = -0.1
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		lost_cultures_group = {
+			discipline = 0.05
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		turko_semitic = {
+			cavalry_power = 0.1
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		maghrebi = {
+			privateer_efficiency = 0.25
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		malay = {
+			merchants = 1
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		mande = {
+			tolerance_heretic = 1
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		pacific = {
+			global_sailors_modifier = 0.1
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		sahelian = {
+			movement_speed = 0.1
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		scandinavian = {
+			mil_advisor_cost = -0.1
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		southeastasian_group = {
+			development_cost = -0.05
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		south_slavic = {
+			warscore_cost_vs_other_religion = -0.1
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		southern_african = {
+			inflation_reduction = 0.05
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		sudanese = {
+			caravan_power = 0.1
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		tartar = {
+			cavalry_cost = -0.15
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		thai_group = {
+			build_cost = -0.05
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		tibetan_group = {
+			prestige_per_development_from_conversion = 0.5
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		finno_ugric = {
+			prestige_decay = -0.01
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		west_african = {
+			global_autonomy = -0.05
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		west_slavic = {
+			leader_land_fire = 1
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		western_aryan = {
+			trade_efficiency = 0.05
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+		slavic = {
+			province_warscore_cost = -0.15
+			effect = { hidden_effect = { change_variable = { which = cultures_assimilated value = 1 } } }
+			removed_effect = { hidden_effect = { subtract_variable = { which = cultures_assimilated value = 1 } } }
+		}
+	}
+}
+
+EE_synthetic_monarchy = {
+	icon = "prussian_monarchy"
+	allow_normal_conversion = no
+	potential = {
+		has_reform = EE_synthetic_monarchy
+	}
+	trigger = {
+		has_reform = EE_synthetic_monarchy
+	}
+	valid_for_nation_designer = no
+
+	modifiers = {
+		stability_cost_to_declare_war = -5
+		technology_cost = -0.15
+	}
+}
+
+EE_synthetic_monarchy_militarized = {
+	icon = "prussian_monarchy"
+	allow_normal_conversion = no
+	potential = {
+		has_reform = EE_synthetic_monarchy_militarized
+	}
+	trigger = {
+		has_reform = EE_synthetic_monarchy_militarized
+	}
+	valid_for_nation_designer = no
+
+	modifiers = {
+		stability_cost_to_declare_war = -5
+		technology_cost = -0.15
+		discipline = 0.05
+	}
+
+	conditional = {
+		allow = { has_dlc = "Rights of Man" }
+		government_abilities = {
+			militarization_mechanic
+		}
+	}
+}
+
+
+EE_Minor_IRI_Gaelic_Kingship = {
+	icon = "all_under_tengri_reform"
+	custom_attributes = { locked_government_type = yes }
+	potential = {
+		has_reform = EE_Minor_IRI_Gaelic_Kingship
+		NOT = { has_country_flag = EE_IRE_enact_Irish_Kingdom_reform }
+	}
+	trigger = { has_reform = EE_Minor_IRI_Gaelic_Kingship }
+	valid_for_nation_designer = no
+	government_abilities = {
+		EE_mor_tuatha_loyalty
+	}
+	custom_attributes = {
+		EE_enables_mor_tuaths = yes
+	}
+	modifiers = {
+		development_cost_in_primary_culture = -0.1
+		global_manpower = 5
+		min_autonomy = 15
+	}
+}
+
+EE_Minor_IRI_Gaelic_Kingship_Parliament = {
+	icon = "all_under_tengri_reform"
+	custom_attributes = { locked_government_type = yes }
+	potential = {
+		has_reform = EE_Minor_IRI_Gaelic_Kingship_Parliament
+		NOT = { has_country_flag = EE_IRE_enact_Irish_Kingdom_reform }
+	}
+	trigger = { has_reform = EE_Minor_IRI_Gaelic_Kingship_Parliament }
+	valid_for_nation_designer = no
+	government_abilities = {
+		EE_mor_tuatha_loyalty
+	}
+	modifiers = {
+		development_cost_in_primary_culture = -0.1
+		global_manpower = 5
+		min_autonomy = 15
+	}
+	conditional = {
+		allow = { has_dlc = "Common Sense" }
+		has_parliament = yes
+	}
+	custom_attributes = {
+		EE_enables_mor_tuaths = yes
+	}
+}
+
+EE_IRE_Ardi_Heireann = {
+	icon = "national_assembly"
+	allow_normal_conversion = no
+	custom_attributes = { locked_government_type = yes }
+	potential = { 
+		NOT = { has_country_flag = EE_IRE_enact_Irish_Kingdom_reform }
+		OR = {
+			tag = IRE
+			was_tag = IRE
+			has_reform = EE_IRE_Ardi_Heireann
+		}
+	}
+	trigger = { has_reform = EE_IRE_Ardi_Heireann }
+	valid_for_nation_designer = no
+	government_abilities = {
+		EE_mor_tuatha_loyalty
+	}
+	modifiers = {
+		vassal_income = 0.2
+		estate_clans_loyalty_modifier = 0.05
+		min_autonomy = 15
+	}
+	custom_attributes = {
+		enable_blood_tax = yes
+		EE_enables_mor_tuaths = yes
+	}	
+}
+
+EE_IRE_Irish_Kingdom = {
+	icon = "king_highlighted"
+	allow_normal_conversion = no
+	custom_attributes = { locked_government_type = yes }
+	potential = { has_country_flag = EE_IRE_enact_Irish_Kingdom_reform }
+	trigger = { has_reform = EE_IRE_Irish_Kingdom }
+	valid_for_nation_designer = no
+	modifiers = {
+		local_autonomy = -0.025
+		global_tax_modifier = 0.1
+		production_efficiency = 0.05
+		estate_clans_loyalty_modifier = 0.05
+	}
+}
+
+ME_Celtic_High_Kingdom = {
+	icon = "irish_highkingdom"
+	allow_normal_conversion = no
+	potential = { has_reform = ME_Celtic_High_Kingdom }
+	trigger = { has_reform = ME_Celtic_High_Kingdom }
+	modifiers = {
+		same_culture_advisor_cost = -0.2
+		global_manpower_modifier = 0.2
+	}
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+	}
+}
+
+EE_modernize_industrial_sector = {
+	icon = "peasant_republic"
+	allow_normal_conversion = yes
+	potential = { has_country_flag = EE_CLT_modernize_industrial_sector_reform }
+	trigger = { has_country_flag = EE_CLT_modernize_industrial_sector_reform }
+	modifiers = {
+		build_time = -0.15
+		build_cost = -0.1
+	}
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				if = {
+					limit = { has_building = workshop }
+					add_province_modifier = { 
+						name = workshop_bonus_prod
+						duration = -1
+						hidden = yes
+					}
+				}
+				if = {
+					limit = { has_building = counting_house }
+					add_province_modifier = { 
+						name = counting_house_bonus_prod
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						has_province_modifier = workshop_bonus_prod
+						has_province_modifier = counting_house_bonus_prod
+					}
+				}
+				remove_province_modifier = workshop_bonus_prod
+				remove_province_modifier = counting_house_bonus_prod
+			}
+		}
+	}
+	custom_attributes = {
+		enable_industrialization_mechanic = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+EE_Modernize_economy = {
+	icon = "trading_city"
+	allow_normal_conversion = yes
+	potential = { has_reform = EE_Modernize_economy }
+	modifiers = {
+		production_efficiency = 0.1
+		build_cost = -0.15
+	}
+	effect = { enable_development_on_buildings_built = yes }
+}
+
+EE_Global_Celtic_Empire = {
+	icon = "english_monarchy"
+	allow_normal_conversion = yes
+	potential = { has_reform = EE_Global_Celtic_Empire }
+	modifiers = {
+		no_stability_loss_on_monarch_death = yes
+	}
+	effect = {
+		hidden_effect = { 
+			set_country_flag = EE_CLT_Reduce_OE_events
+			every_owned_province = {
+				limit = { culture_group = gaelic }
+				add_province_modifier = {
+					name = EE_CLT_reduce_gaelic_governing_cost
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	custom_attributes = {
+		enable_celtic_governors = yes
+		enable_overextension_control = yes
+		locked_government_type = yes
+	}
+	ai = {
+		factor = 2.5
+	}
+}
+
+EE_Unleash_Tribal_Horde = {
+	icon = "black_army_reform"
+	lock_level_when_selected = yes
+	potential = { has_reform = EE_Unleash_Tribal_Horde }
+	fixed_rank = 3
+	valid_for_nation_designer = no
+	raze_province = yes
+	modifiers = {
+		global_manpower_modifier = 0.2
+		land_forcelimit_modifier = 0.2
+		loot_amount = 0.50
+		reinforce_cost_modifier = -0.5
+		movement_speed = 0.2
+		years_of_nationalism = -5
+	}
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = { ME_Celtica_federation_mechanic }
+	}
+	custom_attributes = { locked_government_type = yes }
+	ai = {
+		factor = 1000
+	}
+}
+
+EE_Celtic_Union = {
+	icon = "council"
+	allow_normal_conversion = no
+	potential = { has_country_flag = EE_CLT_Celtic_Union_flag }
+	modifiers = {
+		diplomatic_reputation = 2
+		advisor_pool = 1
+		max_absolutism = 10
+	}
+	custom_attributes = {
+		enable_celtic_dominion_modifiers = yes
+	}
+	ai = {
+		factor = 2.5
+	}
+}
+
+ME_Celtica_tribal_federation = {
+	icon = "chieftain"
+	allow_normal_conversion = yes
+	potential = {
+		has_reform = ME_Celtica_tribal_federation
+	}
+	valid_for_nation_designer = no
+	legacy_equivalent = tribal_federation_legacy
+	lock_level_when_selected = yes
+	modifiers = { years_of_nationalism = -5 }
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = { ME_Celtica_federation_mechanic }
+	}
+	ai = {
+		factor = 0
+	}
+}
+
+FRX_frankish_monarchy = {
+	icon = "crown_highlighted"
+	allow_normal_conversion = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 100
+	nation_designer_trigger = {
+		
+	}
+	potential = {
+		OR = {
+			tag = FRX
+			has_country_flag = formed_francia_flag
+			has_reform = FRX_frankish_monarchy
+		}
+	}
+	lock_level_when_selected = yes
+	modifiers = {
+		max_absolutism = 10
+		unjustified_demands = -0.25
+	}
+
+	government_abilities = {
+		frankish_chivalry_mechanic
+	}
+
+	ai = {
+		factor = 1
+	}
+}
+
+me_enlightened_despotism_reform = {
+	icon = "austrian_archduchy_reform"
+	lock_level_when_selected = yes
+	allow_normal_conversion = no
+	potential = {
+		has_country_flag = me_allow_enlightened_despotism
+	}
+	valid_for_nation_designer = no
+
+	modifiers = {
+		administrative_efficiency = 0.05
+		max_absolutism = 30
+		yearly_absolutism = 0.5
+		reform_progress_growth = 0.25
+		chance_to_inherit = 0.5
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+		enables_enlightened_despot = yes
+	}
+
+	government_abilities = {
+		habsburg_glory
+	}
+}
