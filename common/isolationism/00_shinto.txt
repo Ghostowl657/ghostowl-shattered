@@ -43,6 +43,6 @@ closed_doors_isolation = {
 	modifier = {
 		tolerance_own = 1 
 		global_prosperity_growth = 0.5
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 }
