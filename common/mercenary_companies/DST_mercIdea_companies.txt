@@ -135,8 +135,10 @@ merc_idea_group_artillery_1 = {
 	}
 	modifier = {
         # Good
-		artillery_levels_available_vs_fort = 2
-        siege_ability = 0.25
+	#	artillery_levels_available_vs_fort = 2
+        #siege_ability = 0.25
+	fire_damage = 0.1
+	artillery_power = 0.15
         
         # Bad
         reinforce_speed = -0.33
