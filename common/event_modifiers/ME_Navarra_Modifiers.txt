@@ -25,7 +25,7 @@ NAV_fueros_of_navarra = {
 
 NAV_legacy_of_fermin = {
 	papal_influence = 0.5
-	local_development_cost = -0.3
+	local_development_cost = -0.15
 	local_tax_modifier = 0.5
 }
 
@@ -40,7 +40,7 @@ NAV_whaling_profits = {
 }
 
 NAV_landfall = {
-	local_development_cost = -0.25
+	local_development_cost = -0.125
 	local_tax_modifier = 0.5
 	local_manpower_modifier = 0.5
 	trade_goods_size_modifier = 0.5
