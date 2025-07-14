@@ -72,6 +72,6 @@ manchu_mongol_banners = {
 #Decisions
 manchu_great_clearance = {
 	local_monthly_devastation = 0.06
-	local_development_cost = 0.10
+	local_development_cost = 0.05
 	local_tax_modifier = -0.10
 }

@@ -161,7 +161,7 @@ TUN_jewish_tolerance = {
 
 TUN_djerba_jewish_community = {
 	local_unrest = -3
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 	local_production_efficiency = 0.5
 	trade_goods_size = 0.4
 }

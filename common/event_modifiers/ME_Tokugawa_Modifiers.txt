@@ -29,12 +29,12 @@ tokugawa_founding_the_metsukes_modifier = {
 }
 
 tokugawa_kyoto_modifier = {
-	development_cost = -0.1
+	development_cost = -0.05
 	global_unrest = -2
 }
 
 tokugawa_the_city_of_edo_province_modifier = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	province_trade_power_modifier = 0.1
 }
 

@@ -55,7 +55,7 @@ tex_professionalize_rangers = {
 }
 #Event Modifiers
 tex_influx_immigrants = {
-	local_development_cost = -0.10
+	local_development_cost = -0.05
 	local_production_efficiency = 0.1
 }
 tex_autonomous_cowboys = {

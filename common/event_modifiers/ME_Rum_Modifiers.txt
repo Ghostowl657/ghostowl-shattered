@@ -22,7 +22,7 @@ BEY_stop_on_the_silk_road_modifier = {
 }
 
 BEY_konya_modifier = {
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 	trade_goods_size_modifier = 0.33
 }
 
@@ -350,7 +350,7 @@ RUM_pasha_caliphate_modifier = {
 	local_missionary_strength = 0.02
 }
 RUM_pasha_roman_modifier = {
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 }
 RUM_pasha_seljuk_modifier = {
 	local_years_of_nationalism = -5
@@ -384,7 +384,7 @@ BKT_rule_of_the_bektashi_order = {
 
 RUM_perma_silk_buff = {
 	trade_goods_size = 0.5
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 #########
@@ -422,7 +422,7 @@ beylik_islamic_trade_networks = {
 }
 
 kar_expansion = {
-	development_cost = -0.1
+	development_cost = -0.05
 	core_creation = -0.1
 }
 
@@ -444,7 +444,7 @@ cnd_gen_markets = {
 }
 
 cnd_ven_markets = {
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 }
 
 ram_manpower = {
@@ -485,7 +485,7 @@ sru_ulucami = {
 }
 
 men_mosque = {
-	local_development_cost = -0.25
+	local_development_cost = -0.125
 	local_tax_modifier = 0.3
 }
 
@@ -502,7 +502,7 @@ MEN_knights_tactics = {
 }
 
 ere_expansion = {
-	development_cost = -0.1
+	development_cost = -0.05
 	core_creation = -0.1
 }
 
@@ -511,17 +511,17 @@ ERE_turkomen = {
 }
 
 ERE_masoleum = {
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 }
 
 ERE_tomb_modifier = {
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 }
 
 ERE_sepulcher = {
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 }
 
 ERE_vault = {
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 }

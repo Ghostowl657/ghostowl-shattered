@@ -15,7 +15,7 @@ spi_progressive_society = {
 	global_unrest = -2
 }
 spi_public_education = {
-	development_cost = -0.10
+	development_cost = -0.05
 	global_unrest = -2
 }
 spi_dismanter_empires = {

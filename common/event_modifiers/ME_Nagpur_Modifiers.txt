@@ -1,6 +1,6 @@
 #NAGPUR MODIFIERS#
 foundations_of_nagpur = {
-	local_development_cost = -0.20
+	local_development_cost = -0.10
 }
 
 nagpur_social_cohesion = {
@@ -49,7 +49,7 @@ nagpur_the_trunk_road = {
 	production_efficiency = 0.10
 }
 nagpur_local_developments = {
-	local_development_cost = -0.10
+	local_development_cost = -0.05
 	local_production_efficiency = 0.10
 }
 
@@ -117,6 +117,6 @@ nagpur_sapta_puri_mod = {
 nagpur_sapta_puri_local_center = {
 	province_trade_power_value = 2
 	local_tax_modifier = 0.25
-	local_development_cost = -0.10
+	local_development_cost = -0.05
 	picture = "tolerance_own"
 }

@@ -41,7 +41,7 @@ maz_shahanshan = {
 	global_unrest = -2
 }
 maz_stronghold_west = {
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 	local_defensiveness = 0.50
 }
 maz_naval_foundations = {
@@ -70,7 +70,7 @@ maz_military_focus = {
 }
 maz_production_focus = {
 	production_efficiency = 0.10
-	development_cost = -0.05
+	development_cost = -0.025
 }
 
 #Zoroastrian
@@ -90,9 +90,9 @@ maz_urban_development = {
 }
 maz_house_law = {
 	local_institution_spread = 0.25
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 }
 maz_indian_exchanges = {
 	province_trade_power_modifier = 0.25
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 }

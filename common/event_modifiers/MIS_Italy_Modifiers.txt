@@ -45,7 +45,7 @@ ita_padania = {
 	local_production_efficiency = 0.15
 }
 ita_rome = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_build_cost = -0.1
 	local_institution_spread = 0.1
 	defensiveness = 0.1

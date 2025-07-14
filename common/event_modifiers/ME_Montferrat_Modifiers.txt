@@ -13,7 +13,7 @@ mfa_genoese_maritime_industries = {
 	global_ship_cost = -0.15
 }
 mfa_center_renaissance = {
-	local_development_cost = -0.10
+	local_development_cost = -0.05
 	local_institution_spread = 0.25
 }
 mfa_destroyer_italian_lands = {

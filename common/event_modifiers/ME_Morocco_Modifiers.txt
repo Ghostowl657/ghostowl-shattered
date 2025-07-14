@@ -67,7 +67,7 @@ MOR_repel_the_europeans = {
 }
 
 MOR_berber_dev_cost = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_tax_modifier = -0.15
 }
 

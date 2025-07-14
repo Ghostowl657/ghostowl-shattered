@@ -183,7 +183,7 @@ saxony_westward_expansion_modifier = {
 }
 
 saxony_reunite_saxony_and_thuringia_province_modifier = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_build_cost = -0.1
 }
 
@@ -253,7 +253,7 @@ saxony_the_weimar_classic_modifier = {
 saxony_the_enlightenment_ideals_modifier = {
 	yearly_absolutism = 1
 	yearly_revolutionary_zeal = 2
-	min_autonomy_in_territories = -0.1
+	min_autonomy_in_territories = -0.05
 	legitimacy = 1
 	horde_unity = 1
 	devotion = 1

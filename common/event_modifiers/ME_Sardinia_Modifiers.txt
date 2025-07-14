@@ -57,7 +57,7 @@ sar_sardinian_renaissance = {
 	global_institution_spread = 0.20
 }
 sar_saxum = {
-	local_development_cost = -0.10
+	local_development_cost = -0.05
 	local_defensiveness = 0.15
 }
 
@@ -66,7 +66,7 @@ sar_zuighe = {
 	local_production_efficiency = 0.10
 }
 sar_afforte_arbaree = {
-	local_development_cost = -0.10
+	local_development_cost = -0.05
 	local_tax_modifier = 0.10
 }
 sar_renewed_economy = {

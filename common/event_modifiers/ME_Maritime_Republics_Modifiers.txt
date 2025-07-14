@@ -6,7 +6,7 @@ mr_production_quality_timber = {
 
 #Events
 mr_piles_supplies = {
-	local_development_cost = -0.30
+	local_development_cost = -0.15
 }
 mr_the_arsenal = {
 	ship_recruit_speed = -0.10
@@ -35,7 +35,7 @@ mr_cypriot_grains = {
 	local_production_efficiency = 0.1
 }
 mr_cypriot_grain_export = {
-	development_cost = -0.10
+	development_cost = -0.05
 }
 mr_wealth_orient = {
 	local_tax_modifier = 0.05

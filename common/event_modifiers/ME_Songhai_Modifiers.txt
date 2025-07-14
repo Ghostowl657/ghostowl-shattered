@@ -13,7 +13,7 @@ son_centre_of_gold = {
 }
 
 son_gao_city_of_songhay = {
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 }
 
 son_timbuktu_city_of_wealth = {

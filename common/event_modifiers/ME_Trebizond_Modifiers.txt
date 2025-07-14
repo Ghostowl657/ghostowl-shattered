@@ -29,7 +29,7 @@ TRE_naval_zeal = {
 	naval_maintenance_modifier = -0.25
 }
 TRE_phoenix_of_the_east = {
-	local_development_cost = -0.25
+	local_development_cost = -0.125
 }
 TRE_immigrants_from_the_west = {
 	advisor_cost = -0.1
@@ -73,7 +73,7 @@ TRE_quest_to_cross_the_strait = {
 	ship_recruit_speed = -0.33
 }
 TRE_the_komnenoi_restoration = {
-	development_cost = -0.1
+	development_cost = -0.05
 	global_autonomy = -0.025
 }
 TRE_bulgaria_defeated = {

@@ -25,7 +25,7 @@ swedish_kalmar = {
 }
 
 stockholm_ascendant = {
-	local_development_cost = -0.25
+	local_development_cost = -0.125
 	local_build_cost = -0.25
 	local_build_time = -0.25
 	prestige = 1
@@ -277,7 +277,7 @@ dan_pommerania_conquered = {
 }
 
 city_of_jorvik = {
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 	local_build_cost = -0.15
 	local_build_time = -0.15
 	prestige = 1
@@ -764,14 +764,14 @@ the_diocese_of_visby = {
 	horde_unity = 1
 	papal_influence = 2
 	church_power_modifier = 0.25
-	local_development_cost = -0.10
+	local_development_cost = -0.05
 	local_build_cost = -0.10
 	local_build_time = -0.10
 	local_tax_modifier = 0.25
 }
 
 seat_of_the_baltic = {
-	local_development_cost = -0.10
+	local_development_cost = -0.05
 	local_build_cost = -0.10
 	local_build_time = -0.10
 	prestige = 1
@@ -789,11 +789,11 @@ back_in_the_danelaw = {
 }
 
 dl_ireland = {
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 }
 
 dl_jewel_m = {
-	local_development_cost = -0.2
+	local_development_cost = -0.1
 	trade_goods_size = 0.15
 	local_build_cost = -0.15
 	local_build_time = -0.15
@@ -827,12 +827,12 @@ dl_norse_tech = {
 
 dl_suo_tech = {
 	land_attrition = -0.2
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 new_jorvik = {
 	trade_goods_size = 0.15
-	local_development_cost = -0.2
+	local_development_cost = -0.1
 	center_of_trade_upgrade_cost = -0.2
 	prestige = 1
 }
@@ -841,13 +841,13 @@ dl_institution_norb = {
 	technology_cost = -0.05
 	global_institution_spread = 0.2
 	advisor_cost = -0.10
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 dl_prosperity2 = {
 	trade_efficiency = 0.1
 	global_trade_goods_size_modifier = 0.05
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 dl_trade = {
@@ -858,7 +858,7 @@ dl_trade = {
 
 dublin_slaves = {
 	trade_goods_size = 1.5
-	development_cost = -0.15
+	development_cost = -0.075
 	center_of_trade_upgrade_cost = -0.2
 	allowed_num_of_buildings = 1
 }

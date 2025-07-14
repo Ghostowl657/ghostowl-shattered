@@ -123,7 +123,7 @@ russian_patriarchy = {
 }
 
 constantinople_reclaimed = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	local_missionary_strength = 0.01
 	local_autonomy = -0.05
 }

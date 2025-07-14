@@ -42,12 +42,12 @@ sweden_stora_kopparberget_modifier_improved = {
 }
 
 sweden_expand_dalaskogen_province_modifier = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 sweden_the_city_of_gothenburg_province_modifier = {
 	province_trade_power_value = 5
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 sweden_organizing_our_provinces_province_modifier = {

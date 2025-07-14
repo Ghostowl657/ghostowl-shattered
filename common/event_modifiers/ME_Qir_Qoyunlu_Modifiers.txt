@@ -13,7 +13,7 @@ QIR_wool_cloth_production_symbiosis = {
 
 QIR_tribal_herding_rights = {
 	trade_value_modifier = 0.25
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 }
 
 QIR_power_in_the_cities = {
@@ -51,7 +51,7 @@ QIR_supporting_the_tribes = {
 QIR_outpost_on_the_border = {
 	province_trade_power_value = 10
 	province_trade_power_modifier = 0.5
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	trade_value_modifier = 0.5
 }
 
@@ -67,7 +67,7 @@ QIR_supporting_islam = {
 QIR_mesopotamia = {
 	tax_income = 1
 	local_tax_modifier = 0.25
-	local_development_cost = -0.25
+	local_development_cost = -0.125
 }
 
 QIR_fertile_crescent_modifier = {
@@ -87,7 +87,7 @@ QIR_tribes_of_anatolia = {
 }
 
 QIR_constantinople = {
-	local_development_cost = -0.2
+	local_development_cost = -0.1
 	local_tax_modifier = 0.25
 }
 
@@ -105,11 +105,11 @@ QIR_new_capital = {
 QIR_old_capital = {
 	tax_income = 3
 	trade_value = 3
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 }
 
 QIR_persian_city_development = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 QIR_persian_land_modifier = {
@@ -118,12 +118,12 @@ QIR_persian_land_modifier = {
 }
 
 QIR_population_boost = {
-	development_cost = -0.1
+	development_cost = -0.05
 	manpower_recovery_speed = 0.25
 }
 
 QIR_gates_of_mesopotamia = {
-	local_development_cost = -0.3
+	local_development_cost = -0.15
 	province_trade_power_value = 10
 	trade_goods_size_modifier = 0.33
 }
@@ -164,7 +164,7 @@ QIR_settling = {
 }
 
 QIR_primary_culture = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 QIR_blow_to_the_ottoman_empire = {
@@ -229,7 +229,7 @@ QIR_amount_of_loot_2 = {
 }
 
 QIR_wasteland = {
-	local_development_cost_modifier = 1
+	local_development_cost_modifier = 0.5
 	local_friendly_movement_speed = -0.9
 	local_hostile_movement_speed = -0.9
 }

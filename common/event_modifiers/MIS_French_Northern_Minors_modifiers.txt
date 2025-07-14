@@ -43,7 +43,7 @@ nfm_powerful_punches_mod = {
 
 nfm_burgundian_unity_mod = {
     global_unrest = -2
-    development_cost = -0.1
+    development_cost = -0.05
 }
 
 nfm_preparing_army_mod = {
@@ -78,6 +78,6 @@ nfm_push_north_siege_mod = {
 
 nfm_worthy_capital_mod = {
     local_institution_spread = 0.2
-    local_development_cost = -0.15
+    local_development_cost = -0.075
  	province_trade_power_modifier = 0.5
 }

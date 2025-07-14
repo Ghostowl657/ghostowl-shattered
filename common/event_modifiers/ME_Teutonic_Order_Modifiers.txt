@@ -45,7 +45,7 @@ TEU_brandenburg_acquired = {
 
 TEU_amber_rights = {
 	trade_value_modifier = 0.25
-	local_development_cost = -0.05
+	local_development_cost = -0.025
 }
 
 TEU_piety = {

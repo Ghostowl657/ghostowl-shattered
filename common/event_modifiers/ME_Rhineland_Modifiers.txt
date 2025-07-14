@@ -94,7 +94,7 @@ RHN_hessian_optics = {
 }
 
 RHN_sole_source_of_tin = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 }
 
 RHN_supplying_the_industry = {
@@ -110,7 +110,7 @@ RHN_coal_debuff = {
 }
 
 RHN_coal_industry_coexisting = {
-	development_cost = -0.1
+	development_cost = -0.05
 }
 
 # RHN_munitions_tge = {
@@ -126,7 +126,7 @@ RHN_munitions = {
 }
 
 RHN_ruhrgebiet = {
-	local_development_cost_modifier = -0.1
+	local_development_cost_modifier = -0.05
 	trade_goods_size_modifier = 0.25
 	local_production_efficiency = 0.15
 }
@@ -179,7 +179,7 @@ RHN_hessian_crystal = {
 }
 
 RHN_centre_of_rhenish_alloy_works = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	trade_goods_size_modifier = 0.1
 }
 
@@ -224,7 +224,7 @@ RHN_unifying_germany = {
 }
 
 RHN_pearl_of_the_rhineland = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	trade_value_modifier = 0.1
 }
 
@@ -237,7 +237,7 @@ RHN_churches_not_own = {
 }
 
 RHN_industrial_park = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	trade_goods_size_modifier = 0.1
 	local_autonomy = 0.05
 }

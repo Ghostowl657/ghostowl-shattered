@@ -51,7 +51,7 @@ WLS_the_cambrian_main = {
 
 WLS_tywysog_cymru = {
 	monthly_splendor = 1
-	development_cost_in_primary_culture = -0.1
+	development_cost_in_primary_culture = -0.05
 }
 
 WLS_papal_intervention = {

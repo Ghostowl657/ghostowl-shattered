@@ -128,7 +128,7 @@ NED_fixed_garrison_system_modifier = {
 
 NED_fort_benefits = {
 	local_prosperity_growth = 2
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 	trade_goods_size = 0.2
 	trade_goods_size_modifier = 0.1
 }
@@ -152,13 +152,13 @@ NED_waal_and_rhine = {
 }
 
 NED_rerouted_merchants = {
-	local_development_cost = -0.1
+	local_development_cost = -0.05
 	naval_forcelimit = 3
 	province_trade_power_value = 5
 }
 
 NED_grain_from_baltic = {
-	development_cost_in_primary_culture = -0.05
+	development_cost_in_primary_culture = -0.025
 }
 
 NED_exploiting_eastern_markets = {
@@ -177,7 +177,7 @@ NED_flemish_draperies = {
 
 NED_center_of_cloth_production = {
 	trade_goods_size_modifier = 0.25
-	local_development_cost = -0.15
+	local_development_cost = -0.075
 	trade_goods_size = 1
 	picture = "demand_cloth_up"
 }
@@ -334,7 +334,7 @@ NED_lust_for_spice_4 = {
 
 NVC_developed_port = {
 	province_trade_power_value = 10
-	local_development_cost = -0.25
+	local_development_cost = -0.125
 }
 
 NVC_VOC_enroots_in_the_cape = {
