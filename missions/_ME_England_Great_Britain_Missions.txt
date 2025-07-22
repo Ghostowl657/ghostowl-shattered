@@ -1629,6 +1629,7 @@ ENG_missions_government_2 = {
 					is_year = 1475
 					has_heir = yes
 				}
+				government=republic
 			}
 		}
 		effect = {
@@ -4037,7 +4038,7 @@ ENG_missions_colonial_1 = {
 			
 			define_advisor = {
 				type = travelling_merchant
-				name = "Médard des Groseilliers"
+				name = "M dard des Groseilliers"
 				skill = 3
 				culture = francien
 				religion = catholic

@@ -179,9 +179,12 @@ italian_minor_misisons_1 = {
 		required_missions = { italian_minor_military_campaign }
 		position = 11
 		trigger = {
-			OR = {
-				barracks = 5
-				regimental_camp = 5
+			num_of_owned_provinces_with = {
+				OR = {
+					has_forcelimit_building_trigger = yes
+					has_manpower_building_trigger = yes
+				}
+				value = 5
 			}
 		}
 		effect = {
