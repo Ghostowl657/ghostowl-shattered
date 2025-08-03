@@ -138,7 +138,8 @@ hegemon_status_modifier = {
 }
 assyrian_cavalry_modifier = {
 	cav_to_inf_ratio = 0.25
-	cavalry_fire = 1
+	can_recruit_hussars = yes
+	#cavalry_fire = 1
 }
 
 # MACEDONIA MODIFIERS

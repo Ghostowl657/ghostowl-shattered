@@ -14574,7 +14574,8 @@ FKN_ideas = {
 	}
 	fkn_free_knights_of_franconia = {
 		cavalry_power = 0.1
-		cavalry_shock = 1
+		can_recruit_hussars = yes
+		#cavalry_shock = 1
 	}
 	franconian_wine = { #in WBG_ideas
 		#global_trade_goods_size_modifier = 0.1
@@ -15090,7 +15091,7 @@ SIA_ideas = {
 		adm_advisor_cost = -0.15
     }
     sia_advanced_elephant_warfare = {
-		cavalry_power = 0.1
+		can_recruit_hussars = yes
 		#cavalry_fire = 1
     }
     sia_experienced_ambassadors = {

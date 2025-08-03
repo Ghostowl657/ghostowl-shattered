@@ -1,0 +1,3 @@
+active_propaganda = {
+	war_exhaustion = 0.10
+}

@@ -1414,7 +1414,7 @@ industrial_age = {
 			modifier = {
 				num_of_age_rewards = 1
 				special_unit_forcelimit = 1
-			 	special_unit_manpower_cost_modifier = -0.5
+			 	special_unit_manpower_cost_modifier = -0.2
 			}
 			ai_will_do = {
 				factor = 0

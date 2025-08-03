@@ -42,6 +42,7 @@ man_mearas = {
 	cavalry_cost = -0.25
 	cavalry_flanking = 1
 #	cavalry_shock = 1
+	can_recruit_hussars = yes
 }
 man_milanese_knowledge = {
 	infantry_power = 0.05
