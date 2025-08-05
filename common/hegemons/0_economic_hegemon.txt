@@ -15,7 +15,7 @@ economic_hegemon = {
 	base = {
 		global_spy_defence = 0.3
 		war_exhaustion = -0.1
-		development_cost_modifier = -0.025
+		development_cost_modifier = -0.05
 	}
 	
 	# At max 100% tickup.

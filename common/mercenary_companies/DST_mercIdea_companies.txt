@@ -4,7 +4,7 @@
 
 # Elites
 merc_idea_group_infantry_1 = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.10
     cost_modifier = 0.75
 
     cavalry_cap = 0
@@ -33,7 +33,7 @@ merc_idea_group_infantry_1 = {
 
 # General Use
 merc_idea_group_infantry_2 = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.10
     cost_modifier = 0.75
     
     cavalry_cap = 0
@@ -62,7 +62,7 @@ merc_idea_group_infantry_2 = {
 ##################
 
 merc_idea_group_cavalry_1 = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.10
     cost_modifier = 0.75
 
     cavalry_cap = 40
@@ -86,7 +86,7 @@ merc_idea_group_cavalry_1 = {
 	}
 }
 merc_idea_group_cavalry_2 = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.10
     cost_modifier = 0.75
 
 	cavalry_cap = 40
@@ -118,7 +118,7 @@ merc_idea_group_cavalry_2 = {
 ##################
 
 merc_idea_group_artillery_1 = {
-    regiments_per_development = 0.05
+    regiments_per_development = 0.10
     cost_modifier = 0.75
 
 	cavalry_cap = 0

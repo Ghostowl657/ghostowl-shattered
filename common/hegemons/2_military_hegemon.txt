@@ -5,9 +5,9 @@ military_hegemon = {
 			limit = {
 				NOT = { has_country_flag = halve_hegemony_requirements }
 			}
-			army_size = 500
+			army_size = 300
 		}
-		else = { army_size = 250 } 
+		else = { army_size = 150 } 
 		
 		NOT = { any_other_great_power = { army_size = root } }
 		NOT = { has_country_modifier = lost_hegemony }

@@ -323,7 +323,7 @@ development = {
 	local_amount_of_banners = 0.066
 	local_amount_of_cawa = 0.125
 	local_amount_of_carolean = 0.1
-	local_amount_of_hussars = 0.01
+	local_amount_of_hussars = 0.02
 }
 
 development_scaled = {
@@ -1503,20 +1503,20 @@ in_golden_era = {
 
 absolutism = {
 	# Bonus
-	discipline = 0.1
+	discipline = 0.05
 	administrative_efficiency = 0.15
 	core_decay_on_your_own = -0.25
 	harsh_treatment_cost = -0.25
-	advisor_cost = -0.25
+	# advisor_cost = -0.25
 	legitimacy = 1
 	devotion = 1
 	prestige = 1
 	monthly_ottoman_decadence = -0.5
 
 	# Negative
-	global_unrest = 5
-	years_of_nationalism = 5
-	republican_tradition = -1.5
+	# global_unrest = 5
+	# years_of_nationalism = 5
+	# republican_tradition = -1.5
 	# absolutism_liberty_desire triggered modifier for liberty_desire increase
 
 }
