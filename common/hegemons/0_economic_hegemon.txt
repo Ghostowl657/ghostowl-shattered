@@ -5,9 +5,9 @@ economic_hegemon = {
 			limit = {
 				NOT = { has_country_flag = halve_hegemony_requirements }
 			}
-			monthly_income = 500 
+			monthly_income = 100 
 		}
-		else = { monthly_income = 250 } 
+		else = { monthly_income = 500 } 
 		NOT = { any_other_great_power = { monthly_income = root } }
 		NOT = { has_country_modifier = lost_hegemony }
 	}
