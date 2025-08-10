@@ -1,0 +1,221 @@
+# T5
+
+naval_interest_military_monarchy = {
+	icon = "ship_image_reform"
+	allow_normal_conversion = yes
+
+	potential = {
+	}
+	modifiers = {
+		monthly_naval_professionalism_power = 0.1
+	}
+	custom_attributes = {
+		enables_naval_vassal_support = yes
+
+	}
+	effect = {
+		hidden_effect = {
+			countryupdate_naval_vassal_support = yes
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			remove_country_modifier = DSE_naval_vassal_support_mod_6
+			remove_country_modifier = DSE_naval_vassal_support_mod_5
+			remove_country_modifier = DSE_naval_vassal_support_mod_4
+			remove_country_modifier = DSE_naval_vassal_support_mod_3
+			remove_country_modifier = DSE_naval_vassal_support_mod_2
+			remove_country_modifier = DSE_naval_vassal_support_mod_1
+		}
+	}
+	ai = {
+		factor = 0
+	}
+}
+
+naval_interest_military_republic = {
+	icon = "ship_image_reform"
+	allow_normal_conversion = yes
+
+	potential = {
+	}
+	modifiers = {
+		monthly_naval_professionalism_power = 0.1
+	}
+	custom_attributes = {
+		enables_naval_vassal_support = yes 
+	}
+	effect = {
+		hidden_effect = {
+			countryupdate_naval_vassal_support = yes
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			remove_country_modifier = DSE_naval_vassal_support_mod_6
+			remove_country_modifier = DSE_naval_vassal_support_mod_5
+			remove_country_modifier = DSE_naval_vassal_support_mod_4
+			remove_country_modifier = DSE_naval_vassal_support_mod_3
+			remove_country_modifier = DSE_naval_vassal_support_mod_2
+			remove_country_modifier = DSE_naval_vassal_support_mod_1
+		}
+	}
+	ai = {
+		factor = 0
+	}
+}
+
+
+naval_organization_marine_focus = {
+	icon = marine_focus_reform_icon
+	allow_normal_conversion = yes
+
+	potential = {
+		OR = { 
+			has_dlc = "Rule Britannia"
+			has_dlc = "Golden Century"
+		}
+	}
+	modifiers = {
+		global_sailors_modifier = 2
+		global_manpower_modifier = -0.8
+	 	regiment_disembark_speed = 0.25
+		transport_attrition = -0.5
+		allowed_marine_fraction = 1
+		monthly_naval_professionalism_power = 0.2
+	}
+	custom_attributes = {
+
+	}
+	ai = {
+		factor = 0
+	}
+}
+
+
+naval_organization_proud_navy = {
+	icon = proud_navy_reform_icon
+	allow_normal_conversion = yes
+
+	potential = {
+	}
+	effect = {
+	}
+	removed_effect = {
+	}
+	modifiers = {
+		navy_tradition_decay = -0.01
+		naval_tradition_from_battle = 0.5
+		monthly_naval_professionalism_power = 0.1
+	}
+	custom_attributes = {
+		enables_pride_of_the_navy = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+naval_organization_trade_salt_monopoly = {
+	icon = trade_salt_monopoly_reform_icon
+	allow_normal_conversion = yes
+
+	potential = {
+		NOT = { has_reform = levy_the_thirthieth_reform }
+	}
+	effect = {
+		hidden_effect = {
+			every_owned_province = {
+				ge_provinceupdate_salt_monopoly = yes
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				remove_province_modifier = ge_salt_monopoly_modifier
+			}
+		}
+	}
+	modifiers = {
+		trade_steering = 0.1
+		naval_tradition_from_trade = 0.1
+	}
+	custom_attributes = {
+		enables_salt_monopoly = yes
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+naval_organization_territorial_defence = {
+	icon = territorial_defence_reform_icon
+	allow_normal_conversion = yes
+
+	potential = {
+
+	}
+
+	modifiers = {
+	 	recover_navy_morale_speed = 0.1
+		global_ship_repair = 0.25
+		monthly_naval_professionalism_power = 0.15
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+naval_organization_adaptive_doctrine = {
+	icon = adaptive_doctrine_icon
+	allow_normal_conversion = yes
+
+	potential = {
+	}
+	effect = {
+	}
+	removed_effect = {
+	}
+	modifiers = {
+	}
+	custom_attributes = {
+		enables_unlock_all_naval_doctrines = yes
+	}
+	ai = {
+		factor = 0
+	}
+}
+
+naval_organization_merchants_monsoon = {
+	icon = merchants_monsoon_icon
+	allow_normal_conversion = yes
+
+	potential = {
+		culture_group = african #East Bantu
+	}
+	effect = {
+		hidden_effect = {
+			merchants_monsoon_scripted_applier = yes
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			remove_country_modifier = merchant_monsoon_modifier_1
+			remove_country_modifier = merchant_monsoon_modifier_2
+			remove_country_modifier = merchant_monsoon_modifier_3
+			remove_country_modifier = merchant_monsoon_modifier_4
+			remove_country_modifier = merchant_monsoon_modifier_5
+			remove_country_modifier = merchant_monsoon_modifier_6
+		}
+	}
+	modifiers = {
+		light_ship_power = 0.1
+	}
+	custom_attributes = {
+		enables_merchants_monsoon = yes
+	}
+	ai = {
+		factor = 10
+	}
+}
