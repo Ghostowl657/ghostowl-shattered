@@ -38,7 +38,7 @@ NDefines.NCountry.BREAK_VASSAL_PRESTIGE_PENALTY = -10 -- Default -25
 NDefines.NCountry.LEGITIMACY_DYNASTY_CHANGE = 40 -- Default 20
 
 -- For Ideas Expanded
-NDefines.NCountry.PS_BUY_IDEA = 300
+NDefines.NCountry.PS_BUY_IDEA = 250 -- was 300
 NDefines.NCountry.FREE_IDEA_GROUP_COST  = 7
 NDefines.NCountry.IDEA_TO_TECH = -0.01
 NDefines.NCountry.MAX_ACTIVE_POLICIES = 12

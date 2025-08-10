@@ -562,7 +562,7 @@ categories =  {
 		sound_type = desert
 
 		movement_cost = 1.0
-		local_development_cost = 0.35
+		local_development_cost = 0.15
 		local_colonial_growth = -10
 		nation_designer_cost_multiplier = 0.9		
 		supply_limit = 4
@@ -591,7 +591,7 @@ categories =  {
 		sound_type = sea
 
 		movement_cost = 1.0
-		local_development_cost = 0.15
+		local_development_cost = 0.05
 		nation_designer_cost_multiplier = 0.85		
 		supply_limit = 6 
 		

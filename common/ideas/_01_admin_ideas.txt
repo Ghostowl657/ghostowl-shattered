@@ -210,7 +210,7 @@ expansion_ideas = {
 	important = yes
 
 	bonus = {
-		min_autonomy_in_territories = -0.05
+		min_autonomy_in_territories = -0.10
 	}
 
 	additional_colonists = {
@@ -294,7 +294,7 @@ administrative_ideas = {
 
 	organised_mercenary_payment = {
 		autonomy_change_time = -0.15
-		min_autonomy_in_territories = -0.05
+		min_autonomy_in_territories = -0.10
 	}
 	adaptability = {
 		core_creation = -0.25

@@ -1614,7 +1614,7 @@ trade_company_strong = {
 
 large_colonial_nation = {
 	merchants = 1
-	global_trade_power = 0.05
+#	global_trade_power = 0.05
 	naval_forcelimit = 10
 	land_forcelimit = 5
 }
@@ -1629,18 +1629,18 @@ gbr_colonial_investment = {
 }
 
 crown_colony_overlord = {
-	global_trade_power = 0.075
+#	global_trade_power = 0.075
 	merchants = 1
 }
 
 private_enterprise_overlord = {
-	global_trade_power = 0.15
+	global_trade_power = 0.075
 	global_tariffs = -0.05
 	merchants = 1
 }
 
 self_governing_colony_overlord = {
-	global_trade_power = 0.075
+#	global_trade_power = 0.075
 	global_tariffs = -0.1
 	merchants = 1
 }
@@ -2031,7 +2031,8 @@ subject_sword_hunt = {
 }
 
 supply_depot_area = {
-	supply_limit_modifier = 0.5
+	supply_limit = 10
+	supply_limit_modifier = 2
 }
 
 ########################################

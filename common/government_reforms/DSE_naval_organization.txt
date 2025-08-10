@@ -66,31 +66,31 @@ naval_interest_military_republic = {
 }
 
 
-naval_organization_marine_focus = {
-	icon = marine_focus_reform_icon
-	allow_normal_conversion = yes
-
-	potential = {
-		OR = { 
-			has_dlc = "Rule Britannia"
-			has_dlc = "Golden Century"
-		}
-	}
-	modifiers = {
-		global_sailors_modifier = 2
-		global_manpower_modifier = -0.8
-	 	regiment_disembark_speed = 0.25
-		transport_attrition = -0.5
-		allowed_marine_fraction = 1
-		monthly_naval_professionalism_power = 0.2
-	}
-	custom_attributes = {
-
-	}
-	ai = {
-		factor = 0
-	}
-}
+#naval_organization_marine_focus = {
+#	icon = marine_focus_reform_icon
+#	allow_normal_conversion = yes
+#
+#	potential = {
+#		OR = { 
+#			has_dlc = "Rule Britannia"
+#			has_dlc = "Golden Century"
+#		}
+#	}
+#	modifiers = {
+#		global_sailors_modifier = 2
+#		global_manpower_modifier = -0.8
+#	 	regiment_disembark_speed = 0.25
+#		transport_attrition = -0.5
+#		allowed_marine_fraction = 1
+#		monthly_naval_professionalism_power = 0.2
+#	}
+#	custom_attributes = {
+#
+#	}
+#	ai = {
+#		factor = 0
+#	}
+#}
 
 
 naval_organization_proud_navy = {

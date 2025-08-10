@@ -2564,7 +2564,10 @@ KVR_ideas = {
 	}
 
 	KVR_the_cossacks_ride_with_us = {
-		cavalry_fire = 2
+#		cavalry_fire = 2
+		cavalry_power = 0.1
+		can_recruit_hussars = yes
+		
 	}
 
 	KVR_reestablishing_our_trade_hub_in_kyiv = {

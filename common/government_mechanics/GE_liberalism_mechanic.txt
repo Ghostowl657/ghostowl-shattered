@@ -32,7 +32,7 @@ liberalism_mechanic = {
 					has_government_attribute = enables_capitalism
 				}
 				modifier = {
-					global_trade_goods_size_modifier = 0.25
+					global_trade_goods_size_modifier = 0.125
 				}
 			}
 		}

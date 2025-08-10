@@ -409,46 +409,65 @@ province_event = { #The prosperous
 		#	}
 		#}
 		# This section increases frequency of development
-
-		# This section decreases frequency of development
 		modifier = {
-			factor =	1.1
+			factor =	0.83
 			development =	4
 		}
 		modifier = {
-			factor =	1.2
+			factor =	0.90
 			development =	8
 		}
 		modifier = {
-			factor =	1.3
+			factor =	0.98
 			development =	12
 		}
+
+		# This section decreases frequency of development
+#		modifier = {
+#			factor =	1.1
+#			development =	4
+#		}
+#		modifier = {
+#			factor =	1.2
+#			development =	8
+#		}
+#		modifier = {
+#			factor =	1.3
+#			development =	12
+#		}
 		modifier = {
-			factor =	1.4
+#			factor =	1.4
+			factor =	1.05
 			development =	16
 		}
 		modifier = {
-			factor =	1.5
+#			factor =	1.5
+			factor =	1.13
 			development =	20
 		}
 		modifier = {
-			factor =	2.5
+#			factor =	2.5
+			factor =	1.88
 			development =	22
 		}
 		modifier = {
-			factor =	3
+#			factor =	3
+			factor =	2.26
 			development =	24
 		}
 		modifier = {
-			factor = 	4
+#			factor = 	4
+			factor =	3.01
 			development =	26
 		}
 		modifier = {
-			factor =	5
+#			factor =	5
+			factor =	3.76
 			development =	28
 		}
 		modifier = {
-			factor =	10
+#			factor =	10
+			factor =	7.52
 			development =	30
 		}
 		# This section decreases frequency of development

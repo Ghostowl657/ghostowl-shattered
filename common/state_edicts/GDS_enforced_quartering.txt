@@ -1,0 +1,188 @@
+edict_enforced_quartering = {
+	potential = {
+		NOT = {
+			FROM = {
+				all_province_in_state = {
+					OR = {
+						has_building = town_hall
+						has_building = government_lvl_3
+						has_building = government_lvl_4
+					}
+				}
+			}
+		}
+	}
+
+	allow = {
+		custom_trigger_tooltip = {
+			tooltip = disable_state_edicts_active.tooltip
+			NOT = {
+				FROM = {
+					all_province_in_state = {
+						OR = {
+							has_building = town_hall
+							has_building = government_lvl_3
+							has_building = government_lvl_4
+						}
+					}
+				}
+			}
+			ROOT = {
+				NOT = {
+					has_country_flag = disable_state_edicts_active
+				}
+			}
+		}
+	}
+
+	modifier = {
+		supply_limit = 5
+	}
+
+	color = { 50 173 192 }
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+edict_enforced_quartering_2 = {
+	potential = {
+		FROM = {
+			all_province_in_state = {
+				OR = {
+					has_building = town_hall
+					has_building = government_lvl_3
+					has_building = government_lvl_4
+				}
+			}
+		}
+		NOT = {
+			FROM = {
+				all_province_in_state = {
+					OR = {
+						has_building = government_lvl_3
+						has_building = government_lvl_4
+					}
+				}
+			}
+		}
+	}
+
+	allow = {
+		custom_trigger_tooltip = {
+			tooltip = disable_state_edicts_active.tooltip
+			FROM = {
+				all_province_in_state = {
+					OR = {
+						has_building = town_hall
+						has_building = government_lvl_3
+						has_building = government_lvl_4
+					}
+				}
+			}
+			ROOT = {
+				NOT = {
+					has_country_flag = disable_state_edicts_active
+				}
+			}
+		}
+	}
+
+	modifier = {
+		supply_limit = 10
+	}
+
+	color = { 50 173 192 }
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+edict_enforced_quartering_3 = {
+	potential = {
+		FROM = {
+			all_province_in_state = {
+				OR = {
+					has_building = government_lvl_3
+					has_building = government_lvl_4
+				}
+			}
+		}
+		NOT = {
+			FROM = {
+				all_province_in_state = {
+					OR = {
+						has_building = government_lvl_4
+					}
+				}
+			}
+		}
+	}
+
+	allow = {
+		custom_trigger_tooltip = {
+			tooltip = disable_state_edicts_active.tooltip
+			FROM = {
+				all_province_in_state = {
+					OR = {
+						has_building = government_lvl_3
+						has_building = government_lvl_4
+					}
+				}
+			}
+			ROOT = {
+				NOT = {
+					has_country_flag = disable_state_edicts_active
+				}
+			}
+		}
+	}
+
+	modifier = {
+		supply_limit = 15
+	}
+
+	color = { 50 173 192 }
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+edict_enforced_quartering_4 = {
+	potential = {
+		FROM = {
+			all_province_in_state = {
+				has_building = government_lvl_4
+			}
+		}
+	}
+
+	allow = {
+		custom_trigger_tooltip = {
+			tooltip = disable_state_edicts_active.tooltip
+			FROM = {
+				all_province_in_state = {
+					has_building = government_lvl_4
+				}
+			}
+			ROOT = {
+				NOT = {
+					has_country_flag = disable_state_edicts_active
+				}
+			}
+		}
+	}
+
+	modifier = {
+		supply_limit = 20
+	}
+
+	color = { 50 173 192 }
+
+	ai_will_do = {
+		factor = 0
+	}
+}

@@ -14573,7 +14573,6 @@ FKN_ideas = {
 	 	garrison_size = 0.15
 	}
 	fkn_free_knights_of_franconia = {
-		cavalry_power = 0.1
 		can_recruit_hussars = yes
 		#cavalry_shock = 1
 	}
