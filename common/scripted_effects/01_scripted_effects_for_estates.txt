@@ -3,16 +3,6 @@
 # Will apply effect if estate is present
 # effect: Will apply effect to each estate present if defined
 # <estate>_effect: Will apply effect to specific estate present if defined
-
-# XORME
-select_xorme_ai_estate = {
-	set_country_flag = xorme_ai_estate_$flag$
-	[[estate_action]
-	$estate_action$ = xorme_ai_estate
-	]
-}
-
-
 each_estate_effect = {
 	if = {
 		limit = {
@@ -1958,7 +1948,7 @@ on_province_owner_change_estate_privileges_effect = {
                 add_province_modifier = { name = estate_burghers_mountain_expansion_penalty duration = -1 }
             }
         }
-	}	
+	}
 	if = {
 		limit = {
 			owner = {
@@ -2384,6 +2374,7 @@ on_province_tax_building_built_estate_privileges_effect = {
 			duration = -1
 		}
 	}
+
 }
 
 on_province_tax_building_destroyed_estate_privileges_effect = {
@@ -3237,6 +3228,7 @@ scaled_estate_ghulams_land_share_effect = {
 scaled_estate_ghulams = {
 	scaled_estate_land_share_reduce_effect = { estate = estate_ghulams }
 }
+
 #Based on those above, but you can choose which estate you use
 #example of usage: scaled_estate_land_share_add_effect = { estate = estate_nobles }
 scaled_estate_land_share_add_effect = {
@@ -3345,7 +3337,7 @@ seize_land_effect = {
 						}
 						highest_supply_limit_in_area = yes
 					}
-					spawn_rebels_from_unhappy_estate = { size = 4 }
+					spawn_rebels_from_unhappy_estate = { size = 2 }
 					area = {
 						limit = {
 							owned_by = ROOT
@@ -3376,7 +3368,7 @@ seize_land_effect = {
 						}
 						highest_supply_limit_in_area = yes
 					}
-					spawn_rebels_from_unhappy_estate = { size = 4 }
+					spawn_rebels_from_unhappy_estate = { size = 2 }
 					area = {
 						limit = {
 							owned_by = ROOT
@@ -3490,41 +3482,7 @@ spawn_rebels_from_unhappy_estate = {
 						totemism =      { PREV = { spawn_rebels = { type = totemism_rebels size = $size$ as_if_faction = yes } } }
 						vajrayana =     { PREV = { spawn_rebels = { type = vajrayana_rebels size = $size$ as_if_faction = yes } } }
 						zoroastrian =   { PREV = { spawn_rebels = { type = zoroastrian_rebels size = $size$ as_if_faction = yes } } }
-						dreamtime =     { PREV = { spawn_rebels = { type = dreamtime_rebels size = $size$ as_if_faction = yes } } }
-						# Added Religions
-						nestorian = 			{ PREV = { spawn_rebels = { type = nestorian_rebels size = $size$ as_if_faction = yes } } }
-						malankara = 			{ PREV = { spawn_rebels = { type = malankara_rebels size = $size$ as_if_faction = yes } } }
-						lollard = 				{ PREV = { spawn_rebels = { type = lollard_rebels size = $size$ as_if_faction = yes } } }
-						waldensian = 			{ PREV = { spawn_rebels = { type = waldensian_rebels size = $size$ as_if_faction = yes } } }
-						bogomilist = 			{ PREV = { spawn_rebels = { type = bogomilist_rebels size = $size$ as_if_faction = yes } } }
-
-						druze = 				{ PREV = { spawn_rebels = { type = druze_rebels size = $size$ as_if_faction = yes } } }
-						qarmatian = 			{ PREV = { spawn_rebels = { type = qarmatian_rebels size = $size$ as_if_faction = yes } } }
-
-						taoism = 				{ PREV = { spawn_rebels = { type = taoism_rebels size = $size$ as_if_faction = yes } } }
-						zen = 					{ PREV = { spawn_rebels = { type = zen_rebels size = $size$ as_if_faction = yes } } }
-						tantra = 				{ PREV = { spawn_rebels = { type = tantra_rebels size = $size$ as_if_faction = yes } } }
-						bon = 					{ PREV = { spawn_rebels = { type = bon_rebels size = $size$ as_if_faction = yes } } }
-
-						romuva = 				{ PREV = { spawn_rebels = { type = romuva_rebels size = $size$ as_if_faction = yes } } }
-						suomenusko = 			{ PREV = { spawn_rebels = { type = suomenusko_rebels size = $size$ as_if_faction = yes } } }
-						celtic = 				{ PREV = { spawn_rebels = { type = celtic_rebels size = $size$ as_if_faction = yes } } }
-						slavic = 				{ PREV = { spawn_rebels = { type = slavic_rebels size = $size$ as_if_faction = yes } } }
-						hellenic_pagan = 		{ PREV = { spawn_rebels = { type = hellenic_pagan_rebels size = $size$ as_if_faction = yes } } }
-						solar_monism = 			{ PREV = { spawn_rebels = { type = solar_monism_rebels size = $size$ as_if_faction = yes } } }
-
-						egyptian_religion = 	{ PREV = { spawn_rebels = { type = egyptian_religion_rebels size = $size$ as_if_faction = yes } } }
-						bidaism = 				{ PREV = { spawn_rebels = { type = bidaism_rebels size = $size$ as_if_faction = yes } } }
-						siguism = 				{ PREV = { spawn_rebels = { type = siguism_rebels size = $size$ as_if_faction = yes } } }
-						akoism = 				{ PREV = { spawn_rebels = { type = akoism_rebels size = $size$ as_if_faction = yes } } }
-						orisanism = 			{ PREV = { spawn_rebels = { type = orisanism_rebels size = $size$ as_if_faction = yes } } }
-						rooganism = 			{ PREV = { spawn_rebels = { type = rooganism_rebels size = $size$ as_if_faction = yes } } }
-						bornoism = 				{ PREV = { spawn_rebels = { type = bornoism_rebels size = $size$ as_if_faction = yes } } }
-						sanism = 				{ PREV = { spawn_rebels = { type = sanism_rebels size = $size$ as_if_faction = yes } } }
-						kalenjinism = 			{ PREV = { spawn_rebels = { type = kalenjinism_rebels size = $size$ as_if_faction = yes } } }
-
-						dayawism = 				{ PREV = { spawn_rebels = { type = dayawism_rebels size = $size$ as_if_faction = yes } } }
-						polynesian_religion = 	{ PREV = { spawn_rebels = { type = polynesian_religion_rebels size = $size$ as_if_faction = yes } } }
+						dreamtime =      { PREV = { spawn_rebels = { type = dreamtime_rebels size = $size$ as_if_faction = yes } } }
 					}
 				}
 			}
@@ -3788,6 +3746,27 @@ spawn_rebels_from_unhappy_estate = {
 					as_if_faction = yes
 				}
 			}
+			#Peasants
+			1 = { 
+				trigger = {
+					owner = {
+						NOT = { disabled_rebels_from_seized_land_for_estate = { estate = estate_peasants } }
+						has_estate = estate_peasants
+						NOT = {
+							estate_loyalty = {
+								estate = estate_peasants
+								loyalty = 30
+							}
+						}
+					}
+				}
+				spawn_rebels = {
+					type = leadered_peasant_rebels
+					size = $size$
+					estate = estate_peasants
+					as_if_faction = yes
+				}
+			}
 		}
 	}
 }
@@ -3944,101 +3923,18 @@ pick_random_estate_if_present = {
 			$estate_action$ = estate_ghulams
 			]
 		}
-		# Doge Shattered
 		1 = { 
 			trigger = {
-				has_estate = estate_nationalist
-				NOT = { has_country_flag = estate_nationalist_$flag$ }
+				has_estate = estate_peasants
+				NOT = { has_country_flag = estate_peasants_$flag$ }
 			}
-			set_country_flag = estate_nationalist_$flag$
+			set_country_flag = estate_peasants_$flag$
 			[[estate_action]
-			$estate_action$ = estate_nationalist
-			]
-		}
-		# Europa Expanded
-		1 = { 
-			trigger = {
-				has_estate = me_estate_cultural_minorities 
-				NOT = { has_country_flag = me_estate_cultural_minorities_$flag$ }
-			}
-			set_country_flag = me_estate_cultural_minorities_$flag$
-			[[estate_action]
-			$estate_action$ = me_estate_cultural_minorities 
-			]
-		}
-		1 = {
-			trigger = {
-				has_estate = estate_turkic_tribes
-				NOT = { has_country_flag = estate_turkic_tribes_$flag$ }
-			}
-			set_country_flag = estate_turkic_tribes_$flag$
-			[[estate_action]
-			$estate_action$ = estate_turkic_tribes
-			]
-		}
-		1 = {
-			trigger = {
-				has_estate = estate_berbers
-				NOT = { has_country_flag = estate_berbers_$flag$ }
-			}
-			set_country_flag = estate_berbers_$flag$
-			[[estate_action]
-			$estate_action$ = estate_berbers
-			]
-		}
-		1 = {
-			trigger = {
-				has_estate = estate_clans
-				NOT = { has_country_flag = estate_clans_$flag$ }
-			}
-			set_country_flag = estate_clans_$flag$
-			[[estate_action]
-			$estate_action$ = estate_clans
-			]
-		}
-		1 = {
-			trigger = {
-				has_estate = estate_settlers
-				NOT = { has_country_flag = estate_settlers_$flag$ }
-			}
-			set_country_flag = estate_settlers_$flag$
-			[[estate_action]
-			$estate_action$ = estate_settlers
-			]
-		}
-		1 = {
-			trigger = {
-				has_estate = estate_industrial
-				NOT = { has_country_flag = estate_industrial_$flag$ }
-			}
-			set_country_flag = estate_industrial_$flag$
-			[[estate_action]
-			$estate_action$ = estate_industrial
-			]
-		}
-		1 = {
-			trigger = {
-				has_estate = estate_parliament
-				NOT = { has_country_flag = estate_parliament_$flag$ }
-			}
-			set_country_flag = estate_parliament_$flag$
-			[[estate_action]
-			$estate_action$ = estate_parliament
-			]
-		}
-		1 = {
-			trigger = {
-				has_estate = estate_french
-				NOT = { has_country_flag = estate_french_$flag$ }
-			}
-			set_country_flag = estate_french_$flag$
-			[[estate_action]
-			$estate_action$ = estate_french
+			$estate_action$ = estate_peasants
 			]
 		}
 	}
 }
-
 
 seize_land_estate_effect = {
 	take_estate_land_share_massive = { estate = $estate$ }
@@ -4068,7 +3964,7 @@ seize_land_estate_effect = {
 			loyalty = -20
 			short = yes
 		}
-	}
+	} 
 	if = {
 		limit = { NOT = { has_government_attribute = seizing_land_no_rebels } }
 		custom_tooltip = seize_land_rebels_tt
@@ -4769,6 +4665,7 @@ auto_complete_estate_agenda = {
 clr_auto_complete_flag = {
 	hidden_effect = {
 		clr_country_flag = auto_complete_estate_agenda_estate_nobles
+		clr_country_flag = auto_complete_estate_agenda_estate_peasants
 		clr_country_flag = auto_complete_estate_agenda_estate_brahmins
 		clr_country_flag = auto_complete_estate_agenda_estate_burghers
 		clr_country_flag = auto_complete_estate_agenda_estate_church
@@ -5018,14 +4915,6 @@ add_estate_loyalty_by_class_mil = {
 			loyalty = $loyalty$
 		}
 	}
-	# Shattered
-	if = {
-		limit = { has_estate = estate_nationalist }
-		add_estate_loyalty = {
-			estate = estate_nationalist
-			loyalty = $loyalty$
-		}
-	}
 }
 
 
@@ -5205,10 +5094,10 @@ estate_action_GRANT_NEW_WORLD_CHARTER_BURGHERS = {
 	}
 }
 estate_action_COMISSION_MERCHANT_SHIPS_FOR_WAR_BURGHERS = {
-	add_estate_loyalty = {
-		estate = estate_burghers
-		loyalty = -15
-	}
+	#add_estate_loyalty = {
+	#	estate = estate_burghers
+	#	loyalty = -15
+	#}
 	if = {
 		limit = {
 			has_country_flag = SUN_draft_ships_for_war_flag
@@ -5220,9 +5109,6 @@ estate_action_COMISSION_MERCHANT_SHIPS_FOR_WAR_BURGHERS = {
 			type = heavy_ship
 		}
 	}
-	#add_ship_construction_scaled_to_ports = {
-	#	type = galley
-	#}
 }
 estate_action_MAKE_GENEROUS_DONATION_CHURCH = {
 	add_years_of_income = -0.25
@@ -5958,16 +5844,15 @@ estate_action_GRANT_GENERALSHIP_NOBLES = {
 			type = army
 		}
 	}
-	if = {
-		limit = {
-			NOT = {
-				mission_completed = EE_Celtica_conflicting_interest
-			}
-		}
-		add_estate_loyalty = {
-			estate = estate_nobles
-			loyalty = -10
-		}
+	#add_estate_influence_modifier = {
+	#	estate = estate_nobles
+	#	desc = EST_VAL_GRANTED_GENERALSHIP
+	#	influence = 20
+	#	duration = 3650
+	#}
+	add_estate_loyalty = {
+		estate = estate_nobles
+		loyalty = -10
 	}
 	if = {
 		limit = {
@@ -6094,21 +5979,17 @@ estate_action_RECRUIT_MINISTER_NOBLES = {
 	}
 }
 estate_action_DEMAND_MORE_TROOPS_NOBLES = {
+	#estate_action_yearly_manpower = {
+	#	estate = estate_nobles
+	#}
 	estate_action_scaling_modifier = {
 		estate = estate_nobles
 		name = DEMAND_MORE_TROOPS_NOBLES
 		duration = 7300
 	}
-	if = {
-		limit = {
-			NOT = {
-				mission_completed = EE_Celtica_conflicting_interest
-			}
-		}
-		add_estate_loyalty = {
-			estate = estate_nobles
-			loyalty = -15
-		}
+	add_estate_loyalty = {
+		estate = estate_nobles
+		loyalty = -15
 	}
 }
 estate_action_SUPPORT_TRIBES_NOMADIC_TRIBES = {
@@ -6357,15 +6238,14 @@ estate_action_RECRUIT_MINISTER_VAISYAS = {
 	}
 }
 estate_action_COMISSION_MERCHANT_SHIPS_FOR_WAR_VAISYAS = {
-	add_estate_loyalty = {
-		estate = estate_vaisyas
-		loyalty = -15
-	}
+	#add_estate_loyalty = {
+	#	estate = estate_vaisyas
+	#	loyalty = -15
+	#}
 	add_ship_construction_scaled_to_ports = {
 		type = heavy_ship
 	}
 }
-
 estate_action_GRANT_QIZILBASH_HORSES = {
 	capital_scope = {
 		create_units_of_type_in_province = {
@@ -6580,7 +6460,6 @@ scaling_with_loyalty_privilege_tooltip = {
 	}
 }
 
-
 block_estate_removing_reforms = {
 	custom_tooltip = block_estate_removing_reforms_tt
 	hidden_effect = {
@@ -6594,7 +6473,6 @@ unblock_estate_removing_reforms = {
 		clr_country_flag = block_$estate$_removing_reform
 	}
 }
-
 
 #Just write here a custom tooltip
 transfer_crownland_share = {

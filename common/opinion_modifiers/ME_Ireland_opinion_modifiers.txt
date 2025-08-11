@@ -1,3 +1,0 @@
-EE_increased_same_religion = {
-	opinion = 50
-}

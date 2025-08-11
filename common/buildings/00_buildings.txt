@@ -42,6 +42,7 @@ marketplace = {
 		}
 	}
 	on_built = {
+		on_province_trade_building_built_estate_privilege_effect = yes #Peasants
 		add_development_from_building = {
 			building = marketplace
 			type = production
@@ -58,6 +59,7 @@ marketplace = {
 		}
 	}
 	on_destroyed = {
+		on_province_trade_building_destroyed_estate_privilege_effect = yes #Peasants
 		remove_development_from_building = {
 			building = marketplace
 			type = production
@@ -1783,6 +1785,7 @@ trade_depot = {
 		}
 	}
 	on_built = {
+		on_province_trade_building_built_estate_privilege_effect = yes #Peasants
 		add_development_from_upgrading_or_building = {
 			building = trade_depot
 			obsolete_building = marketplace
@@ -1792,6 +1795,7 @@ trade_depot = {
 		}
 	}
 	on_destroyed = {
+		on_province_trade_building_destroyed_estate_privilege_effect = yes #Peasants
 		remove_development_from_building = {
 			building = trade_depot
 			type = production
@@ -2347,6 +2351,7 @@ stock_exchange = {
 		}
 	}
 	on_built = {
+		on_province_trade_building_built_estate_privilege_effect = yes #Peasants
 		if = {
 			limit = {
 				has_province_flag = built_dev_trade_depot
@@ -2380,6 +2385,7 @@ stock_exchange = {
 		}
 	}
 	on_destroyed = {
+		on_province_trade_building_destroyed_estate_privilege_effect = yes #Peasants
 		remove_development_from_building = {
 			building = stock_exchange
 			type = production

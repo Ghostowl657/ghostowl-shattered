@@ -1,0 +1,1586 @@
+namespace = peasants_estate_event
+
+#Peasants vs Nobles
+country_event = {
+	id = peasants_estate_events.1
+	title = peasants_estate_events.1.t
+	desc = peasants_estate_events.1.d
+	picture = NOBLE_ESTATE_eventPicture
+
+	trigger = {
+		has_estate = estate_peasants
+		has_estate = estate_nobles
+		estate_influence = {
+			estate = estate_nobles
+			influence = 60
+		}
+		NOT = {
+			has_estate_influence_modifier = {
+				estate = estate_peasants
+				modifier = EST_VAL_GRANT_CONCESSIONS
+			}
+		}
+		NOT = {
+			has_estate_influence_modifier = {
+				estate = estate_peasants
+				modifier = EST_VAL_ENFORCE_NEW_TRADITIIONS
+			}
+		}
+	}
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = peasants_estate_events.1.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_loyalty = {
+						estate = estate_peasants
+						loyalty = 45
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				estate_influence = {
+					estate = estate_peasants
+					influence = 65
+				}
+			}
+			modifier = {
+				factor = 0.5
+				NOT = {
+					estate_loyalty = {
+						estate = estate_nobles
+						loyalty = 45 
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				estate_influence = {
+					estate = estate_nobles
+					influence = 65
+				}
+			}
+		}
+		add_estate_loyalty = {
+			estate = estate_peasants
+			loyalty = 15
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -15
+		}
+		add_estate_influence_modifier = {
+			estate = estate_peasants
+			desc = EST_VAL_ENFORCE_NEW_TRADITIIONS
+			influence = 10
+			duration = 5475
+		}
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			desc = EST_VAL_ENFORCE_NEW_TRADITIIONS
+			influence = -10
+			duration = 5475
+		}
+	}
+	option = {
+		name = peasants_estate_events.1.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.5
+				NOT = {
+					estate_loyalty = {
+						estate = estate_peasants
+						loyalty = 45
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				estate_influence = {
+					estate = estate_peasants
+					influence = 65
+				}
+			}
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_loyalty = {
+						estate = estate_nobles
+						loyalty = 45 
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				estate_influence = {
+					estate = estate_nobles
+					influence = 65
+				}
+			}
+		}
+		add_estate_loyalty = {
+			estate = estate_peasants
+			loyalty = -15
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 15
+		}
+		add_estate_influence_modifier = {
+			estate = estate_peasants
+			desc = EST_VAL_GRANT_CONCESSIONS
+			influence = -10
+			duration = 5475
+		}
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			desc = EST_VAL_GRANT_CONCESSIONS
+			influence = 10
+			duration = 5475
+		}
+	}
+}
+
+#Peasants vs Burghers
+country_event = {
+	id = peasants_estate_events.2
+	title = peasants_estate_events.2.t
+	desc = peasants_estate_events.2.d
+	picture = test 
+
+	trigger = {
+		has_estate = estate_peasants
+		estate_influence = {
+			estate = estate_burghers
+			influence = 60
+		}
+		NOT = {
+			has_estate_influence_modifier = {
+				estate = estate_peasants
+				modifier = EST_VAL_CONTINUE_MISTREASTMENT
+			}
+		}
+		NOT = {
+			has_estate_influence_modifier = {
+				estate = estate_peasants
+				modifier = EST_VAL_END_MISTREASTMENT
+			}
+		}
+	}
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = peasants_estate_events.2.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_loyalty = {
+						estate = estate_peasants
+						loyalty = 45
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				estate_influence = {
+					estate = estate_peasants
+					influence = 65
+				}
+			}
+			modifier = {
+				factor = 0.5
+				NOT = {
+					estate_loyalty = {
+						estate = estate_burghers
+						loyalty = 45 
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				estate_influence = {
+					estate = estate_burghers
+					influence = 65
+				}
+			}
+		}
+		add_estate_loyalty = {
+			estate = estate_peasants
+			loyalty = 15
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -15
+		}
+		add_estate_influence_modifier = {
+			estate = estate_peasants
+			desc = EST_VAL_END_MISTREASTMENT
+			influence = 10
+			duration = 5475
+		}
+		add_estate_influence_modifier = {
+			estate = estate_burghers
+			desc = EST_VAL_END_MISTREASTMENT
+			influence = -10
+			duration = 5475
+		}
+	}
+	option = {
+		name = peasants_estate_events.2.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.5
+				NOT = {
+					estate_loyalty = {
+						estate = estate_peasants
+						loyalty = 45
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				estate_influence = {
+					estate = estate_peasants
+					influence = 65
+				}
+			}
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_loyalty = {
+						estate = estate_burghers
+						loyalty = 45 
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				estate_influence = {
+					estate = estate_burghers
+					influence = 65
+				}
+			}
+		}
+		add_estate_loyalty = {
+			estate = estate_peasants
+			loyalty = -15
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 15
+		}
+		add_estate_influence_modifier = {
+			estate = estate_peasants
+			desc = EST_VAL_CONTINUE_MISTREASTMENT
+			influence = -10
+			duration = 5475
+		}
+		add_estate_influence_modifier = {
+			estate = estate_burghers
+			desc = EST_VAL_CONTINUE_MISTREASTMENT
+			influence = 10
+			duration = 5475
+		}
+	}
+}
+
+#Peasants vs Clergy
+country_event = {
+	id = peasants_estate_events.3
+	title = peasants_estate_events.3.t
+	desc = peasants_estate_events.3.d
+	picture = test 
+
+	trigger = {
+		has_estate = estate_peasants
+		estate_influence = {
+			estate = estate_church
+			influence = 60
+		}
+		NOT = {
+			has_estate_influence_modifier = {
+				estate = estate_peasants
+				modifier = EST_VAL_NEW_RULES
+			}
+		}
+		NOT = {
+			has_estate_influence_modifier = {
+				estate = estate_peasants
+				modifier = EST_VAL_OLD_RULES
+			}
+		}
+	}
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = peasants_estate_events.3.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.5
+				NOT = {
+					estate_loyalty = {
+						estate = estate_peasants
+						loyalty = 45
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				estate_influence = {
+					estate = estate_peasants
+					influence = 65
+				}
+			}
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 45 
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				estate_influence = {
+					estate = estate_church
+					influence = 65
+				}
+			}
+		}
+		add_estate_loyalty = {
+			estate = estate_peasants
+			loyalty = 15
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -15
+		}
+		add_estate_influence_modifier = {
+			estate = estate_peasants
+			desc = EST_VAL_NEW_RULES
+			influence = 10
+			duration = 5475
+		}
+		add_estate_influence_modifier = {
+			estate = estate_church
+			desc = EST_VAL_NEW_RULES
+			influence = -10
+			duration = 5475
+		}
+	}
+	option = {
+		name = peasants_estate_events.3.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.5
+				NOT = {
+					estate_loyalty = {
+						estate = estate_peasants
+						loyalty = 45
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				estate_influence = {
+					estate = estate_peasants
+					influence = 65
+				}
+			}
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 45 
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				estate_influence = {
+					estate = estate_church
+					influence = 65
+				}
+			}
+		}
+		add_estate_loyalty = {
+			estate = estate_peasants
+			loyalty = -15
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 15
+		}
+		add_estate_influence_modifier = {
+			estate = estate_peasants
+			desc = EST_VAL_OLD_RULES
+			influence = -10
+			duration = 5475
+		}
+		add_estate_influence_modifier = {
+			estate = estate_church
+			desc = EST_VAL_OLD_RULES
+			influence = 10
+			duration = 5475
+		}
+	}
+}
+
+#Province revolt
+province_event = {
+	id = peasants_estate_events.4
+	title = peasants_estate_events.4.t
+	desc = peasants_estate_events.4.d
+	picture = test 
+
+	is_triggered_only = yes
+
+	option = {
+		name = peasants_estate_events.4.a 
+	}
+
+}
+
+#Tax exodus
+country_event = {
+	id = peasants_estate_events.5
+	title = peasants_estate_events.5.t
+	desc = peasants_estate_events.5.d
+	picture = EUROPEAN_REFUGEES_eventPicture 
+
+	trigger = {
+		has_estate = estate_peasants
+		NOT = {
+			estate_loyalty = {
+				estate = estate_peasants
+				loyalty = 30
+			}
+		}
+		AND = {
+			inflation = 10
+		}
+		NOT = {
+			has_estate_influence_modifier = {
+				estate = estate_peasants
+				modifier = EST_VAL_TAX_EXODUS
+			}
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_overseas = no
+					is_city = yes
+					base_tax = 2
+				}
+				save_event_target_as = event_province_1
+			}
+			if = {
+				limit = {
+					has_saved_event_target = event_province_1
+				}
+				random_owned_province = {
+					limit = {
+						is_overseas = no
+						is_city = yes
+						base_tax = 2
+						NOT = { province_id = event_target:event_province_1 }
+					}
+					save_event_target_as = event_province_2
+				}
+			}
+			if = {
+				limit = {
+					has_saved_event_target = event_province_2
+				}
+				random_owned_province = {
+					limit = {
+						is_overseas = no
+						is_city = yes
+						base_tax = 2
+						NOT = { province_id = event_target:event_province_1 }
+						NOT = { province_id = event_target:event_province_2 }
+					}
+					save_event_target_as = event_province_3
+				}
+			}
+			if = {
+				limit = {
+					has_saved_event_target = event_province_3
+				}
+				random_owned_province = {
+					limit = {
+						is_overseas = no
+						is_city = yes
+						base_tax = 2
+						NOT = { province_id = event_target:event_province_1 }
+						NOT = { province_id = event_target:event_province_2 }
+						NOT = { province_id = event_target:event_province_3 }
+					}
+					save_event_target_as = event_province_4
+				}
+			}
+			if = {
+				limit = {
+					has_saved_event_target = event_province_4
+				}
+				random_owned_province = {
+					limit = {
+						is_overseas = no
+						is_city = yes
+						base_tax = 2
+						NOT = { province_id = event_target:event_province_1 }
+						NOT = { province_id = event_target:event_province_2 }
+						NOT = { province_id = event_target:event_province_3 }
+						NOT = { province_id = event_target:event_province_4 }
+					}
+					save_event_target_as = event_province_5
+				}
+			}
+			random_neighbor_country = {
+				limit = {
+					is_at_war = no
+				}
+				save_event_target_as = event_country			
+			}
+		}
+	}
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = peasants_estate_events.5.a #Get this under control!
+		event_target:event_province_1 = {
+			add_base_tax = -1
+		}
+		event_target:event_province_2 = {
+			add_base_tax = -1
+		}
+		event_target:event_province_3 = {
+			add_base_tax = -1
+		}
+		event_target:event_province_4 = {
+			add_base_tax = -1
+		}
+		event_target:event_province_5 = {
+			add_base_tax = -1
+		}
+		add_estate_influence_modifier = {
+			estate = estate_peasants
+			desc = EST_VAL_TAX_EXODUS
+			influence = -10
+			duration = 5475
+		}
+		hidden_effect = {
+			event_target:event_country = { country_event = { id = peasants_estate_events.8 days = 1 } }
+		}
+	}
+}
+#Goods exodus
+country_event = {
+	id = peasants_estate_events.6
+	title = peasants_estate_events.6.t
+	desc = peasants_estate_events.6.d
+	picture = EUROPEAN_REFUGEES_eventPicture
+
+	trigger = {
+		has_estate = estate_peasants
+		NOT = {
+			estate_loyalty = {
+				estate = estate_peasants
+				loyalty = 30
+			}
+		}
+		AND = {
+			num_of_loans = 15
+		}
+		NOT = {
+			has_estate_influence_modifier = {
+				estate = estate_peasants
+				modifier = EST_VAL_GOODS_EXODUS
+			}
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_overseas = no
+					is_city = yes
+					base_production = 2
+				}
+				save_event_target_as = event_province_1
+			}
+			if = {
+				limit = {
+					has_saved_event_target = event_province_1
+				}
+				random_owned_province = {
+					limit = {
+						is_overseas = no
+						is_city = yes
+						base_production = 2
+						NOT = { province_id = event_target:event_province_1 }
+					}
+					save_event_target_as = event_province_2
+				}
+			}
+			if = {
+				limit = {
+					has_saved_event_target = event_province_2
+				}
+				random_owned_province = {
+					limit = {
+						is_overseas = no
+						is_city = yes
+						base_production = 2
+						NOT = { province_id = event_target:event_province_1 }
+						NOT = { province_id = event_target:event_province_2 }
+					}
+					save_event_target_as = event_province_3
+				}
+			}
+			if = {
+				limit = {
+					has_saved_event_target = event_province_3
+				}
+				random_owned_province = {
+					limit = {
+						is_overseas = no
+						is_city = yes
+						base_production = 2
+						NOT = { province_id = event_target:event_province_1 }
+						NOT = { province_id = event_target:event_province_2 }
+						NOT = { province_id = event_target:event_province_3 }
+					}
+					save_event_target_as = event_province_4
+				}
+			}
+			if = {
+				limit = {
+					has_saved_event_target = event_province_4
+				}
+				random_owned_province = {
+					limit = {
+						is_overseas = no
+						is_city = yes
+						base_production = 2
+						NOT = { province_id = event_target:event_province_1 }
+						NOT = { province_id = event_target:event_province_2 }
+						NOT = { province_id = event_target:event_province_3 }
+						NOT = { province_id = event_target:event_province_4 }
+					}
+					save_event_target_as = event_province_5
+				}
+			}
+			random_neighbor_country = {
+				limit = {
+					is_at_war = no
+				}
+				save_event_target_as = event_country			
+			}
+		}
+	}
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = peasants_estate_events.6.a #Get this under control!
+		event_target:event_province_1 = {
+			add_base_production = -1
+		}
+		event_target:event_province_2 = {
+			add_base_production = -1
+		}
+		event_target:event_province_3 = {
+			add_base_production = -1
+		}
+		event_target:event_province_4 = {
+			add_base_production = -1
+		}
+		event_target:event_province_5 = {
+			add_base_production = -1
+		}
+		add_estate_influence_modifier = {
+			estate = estate_peasants
+			desc = EST_VAL_GOODS_EXODUS
+			influence = -10
+			duration = 5475
+		}
+		hidden_effect = {
+			event_target:event_country = { country_event = { id = peasants_estate_events.9 days = 1 } }
+		}
+	}
+}
+#Manpower exodus
+country_event = {
+	id = peasants_estate_events.7
+	title = peasants_estate_events.7.t
+	desc = peasants_estate_events.7.d
+	picture = EUROPEAN_REFUGEES_eventPicture
+
+	trigger = {
+		has_estate = estate_peasants
+		NOT = {
+			estate_loyalty = {
+				estate = estate_peasants
+				loyalty = 30
+			}
+		}
+		AND = {
+			war_exhaustion = 10
+		}
+		NOT = {
+			has_estate_influence_modifier = {
+				estate = estate_peasants
+				modifier = EST_VAL_MANPOWER_EXODUS
+			}
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_overseas = no
+					is_city = yes
+					base_manpower = 2
+				}
+				save_event_target_as = event_province_1
+			}
+			if = {
+				limit = {
+					has_saved_event_target = event_province_1
+				}
+				random_owned_province = {
+					limit = {
+						is_overseas = no
+						is_city = yes
+						base_manpower = 2
+						NOT = { province_id = event_target:event_province_1 }
+					}
+					save_event_target_as = event_province_2
+				}
+			}
+			if = {
+				limit = {
+					has_saved_event_target = event_province_2
+				}
+				random_owned_province = {
+					limit = {
+						is_overseas = no
+						is_city = yes
+						base_manpower = 2
+						NOT = { province_id = event_target:event_province_1 }
+						NOT = { province_id = event_target:event_province_2 }
+					}
+					save_event_target_as = event_province_3
+				}
+			}
+			if = {
+				limit = {
+					has_saved_event_target = event_province_3
+				}
+				random_owned_province = {
+					limit = {
+						is_overseas = no
+						is_city = yes
+						base_manpower = 2
+						NOT = { province_id = event_target:event_province_1 }
+						NOT = { province_id = event_target:event_province_2 }
+						NOT = { province_id = event_target:event_province_3 }
+					}
+					save_event_target_as = event_province_4
+				}
+			}
+			if = {
+				limit = {
+					has_saved_event_target = event_province_4
+				}
+				random_owned_province = {
+					limit = {
+						is_overseas = no
+						is_city = yes
+						base_manpower = 2
+						NOT = { province_id = event_target:event_province_1 }
+						NOT = { province_id = event_target:event_province_2 }
+						NOT = { province_id = event_target:event_province_3 }
+						NOT = { province_id = event_target:event_province_4 }
+					}
+					save_event_target_as = event_province_5
+				}
+			}
+			random_neighbor_country = {
+				limit = {
+					is_at_war = no
+				}
+				save_event_target_as = event_country			
+			}
+		}
+	}
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = peasants_estate_events.7.a #Get this under control!
+		event_target:event_province_1 = {
+			add_base_manpower = -1
+		}
+		event_target:event_province_2 = {
+			add_base_manpower = -1
+		}
+		event_target:event_province_3 = {
+			add_base_manpower = -1
+		}
+		event_target:event_province_4 = {
+			add_base_manpower = -1
+		}
+		event_target:event_province_5 = {
+			add_base_manpower = -1
+		}
+		add_estate_influence_modifier = {
+			estate = estate_peasants
+			desc = EST_VAL_MANPOWER_EXODUS
+			influence = -10
+			duration = 5475
+		}
+		hidden_effect = {
+			event_target:event_country = { country_event = { id = peasants_estate_events.10 days = 1 } }
+		}
+	}
+} 
+#Tax immagnation
+country_event = {
+	id = peasants_estate_events.8
+	title = peasants_estate_events.8.t
+	desc = peasants_estate_events.8.d
+	picture = EUROPEAN_REFUGEES_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_overseas = no
+				}
+				save_event_target_as = event_province_1
+			}
+			if = {
+				limit = {
+					has_saved_event_target = event_province_1
+				}
+				random_owned_province = {
+					limit = {
+						is_overseas = no
+						NOT = { province_id = event_target:event_province_1 }
+					}
+					save_event_target_as = event_province_2
+				}
+			}
+			if = {
+				limit = {
+					has_saved_event_target = event_province_2
+				}
+				random_owned_province = {
+					limit = {
+						is_overseas = no
+						NOT = { province_id = event_target:event_province_1 }
+						NOT = { province_id = event_target:event_province_2 }
+					}
+					save_event_target_as = event_province_3
+				}
+			}
+			if = {
+				limit = {
+					has_saved_event_target = event_province_3
+				}
+				random_owned_province = {
+					limit = {
+						is_overseas = no
+						NOT = { province_id = event_target:event_province_1 }
+						NOT = { province_id = event_target:event_province_2 }
+						NOT = { province_id = event_target:event_province_3 }
+					}
+					save_event_target_as = event_province_4
+				}
+			}
+			if = {
+				limit = {
+					has_saved_event_target = event_province_4
+				}
+				random_owned_province = {
+					limit = {
+						is_overseas = no
+						NOT = { province_id = event_target:event_province_1 }
+						NOT = { province_id = event_target:event_province_2 }
+						NOT = { province_id = event_target:event_province_3 }
+						NOT = { province_id = event_target:event_province_4 }
+					}
+					save_event_target_as = event_province_5
+				}
+			}
+		}
+	}
+
+	option = {
+		name = peasants_estate_events.8.a
+		event_target:event_province_1 = {
+			add_base_tax = 1
+		}
+		event_target:event_province_2 = {
+			add_base_tax = 1
+		}
+		event_target:event_province_3 = {
+			add_base_tax = 1
+		}
+		event_target:event_province_4 = {
+			add_base_tax = 1
+		}
+		event_target:event_province_5 = {
+			add_base_tax = 1
+		}
+	}
+}
+#Goods immagnation 
+country_event = {
+	id = peasants_estate_events.9
+	title = peasants_estate_events.9.t
+	desc = peasants_estate_events.9.d
+	picture = EUROPEAN_REFUGEES_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_overseas = no
+				}
+				save_event_target_as = event_province_1
+			}
+			if = {
+				limit = {
+					has_saved_event_target = event_province_1
+				}
+				random_owned_province = {
+					limit = {
+						is_overseas = no
+						NOT = { province_id = event_target:event_province_1 }
+					}
+					save_event_target_as = event_province_2
+				}
+			}
+			if = {
+				limit = {
+					has_saved_event_target = event_province_2
+				}
+				random_owned_province = {
+					limit = {
+						is_overseas = no
+						NOT = { province_id = event_target:event_province_1 }
+						NOT = { province_id = event_target:event_province_2 }
+					}
+					save_event_target_as = event_province_3
+				}
+			}
+			if = {
+				limit = {
+					has_saved_event_target = event_province_3
+				}
+				random_owned_province = {
+					limit = {
+						is_overseas = no
+						NOT = { province_id = event_target:event_province_1 }
+						NOT = { province_id = event_target:event_province_2 }
+						NOT = { province_id = event_target:event_province_3 }
+					}
+					save_event_target_as = event_province_4
+				}
+			}
+			if = {
+				limit = {
+					has_saved_event_target = event_province_4
+				}
+				random_owned_province = {
+					limit = {
+						is_overseas = no
+						NOT = { province_id = event_target:event_province_1 }
+						NOT = { province_id = event_target:event_province_2 }
+						NOT = { province_id = event_target:event_province_3 }
+						NOT = { province_id = event_target:event_province_4 }
+					}
+					save_event_target_as = event_province_5
+				}
+			}
+		}
+	}
+
+	option = {
+		name = peasants_estate_events.9.a
+		event_target:event_province_1 = {
+			add_base_production = 1
+		}
+		event_target:event_province_2 = {
+			add_base_production = 1
+		}
+		event_target:event_province_3 = {
+			add_base_production = 1
+		}
+		event_target:event_province_4 = {
+			add_base_production = 1
+		}
+		event_target:event_province_5 = {
+			add_base_production = 1
+		}
+	}
+}
+#Manpower immagnation
+country_event = {
+	id = peasants_estate_events.10
+	title = peasants_estate_events.10.t
+	desc = peasants_estate_events.10.d
+	picture = EUROPEAN_REFUGEES_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_overseas = no
+				}
+				save_event_target_as = event_province_1
+			}
+			if = {
+				limit = {
+					has_saved_event_target = event_province_1
+				}
+				random_owned_province = {
+					limit = {
+						is_overseas = no
+						NOT = { province_id = event_target:event_province_1 }
+					}
+					save_event_target_as = event_province_2
+				}
+			}
+			if = {
+				limit = {
+					has_saved_event_target = event_province_2
+				}
+				random_owned_province = {
+					limit = {
+						is_overseas = no
+						NOT = { province_id = event_target:event_province_1 }
+						NOT = { province_id = event_target:event_province_2 }
+					}
+					save_event_target_as = event_province_3
+				}
+			}
+			if = {
+				limit = {
+					has_saved_event_target = event_province_3
+				}
+				random_owned_province = {
+					limit = {
+						is_overseas = no
+						NOT = { province_id = event_target:event_province_1 }
+						NOT = { province_id = event_target:event_province_2 }
+						NOT = { province_id = event_target:event_province_3 }
+					}
+					save_event_target_as = event_province_4
+				}
+			}
+			if = {
+				limit = {
+					has_saved_event_target = event_province_4
+				}
+				random_owned_province = {
+					limit = {
+						is_overseas = no
+						NOT = { province_id = event_target:event_province_1 }
+						NOT = { province_id = event_target:event_province_2 }
+						NOT = { province_id = event_target:event_province_3 }
+						NOT = { province_id = event_target:event_province_4 }
+					}
+					save_event_target_as = event_province_5
+				}
+			}
+		}
+	}
+
+	option = {
+		name = peasants_estate_events.9.a
+		event_target:event_province_1 = {
+			add_base_manpower = 1
+		}
+		event_target:event_province_2 = {
+			add_base_manpower = 1
+		}
+		event_target:event_province_3 = {
+			add_base_manpower = 1
+		}
+		event_target:event_province_4 = {
+			add_base_manpower = 1
+		}
+		event_target:event_province_5 = {
+			add_base_manpower = 1
+		}
+	}
+}
+#Capital Roits
+country_event = {
+	id = peasants_estate_events.11
+	title = peasants_estate_events.11.t
+	desc = peasants_estate_events.11.d
+	picture = ANGRY_MOB_eventPicture
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	trigger = {
+		has_estate = estate_peasants
+		OR = {
+			NOT = {
+				estate_influence = {
+					estate = estate_peasants
+					influence = 30
+					}
+				}
+			NOT = {
+				estate_loyalty = {
+					estate = estate_peasants
+					loyalty = 30
+				}
+			}	
+		}
+		NOT = {
+			stability = 0
+		}
+		NOT = {
+			has_estate_influence_modifier = {
+				estate = estate_peasants
+				modifier = EST_VAL_CAPITAL_CONCESSIONS
+			}
+		}
+		NOT = {
+			has_country_modifier = estate_peasants_capital_riots
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_capital = yes
+				}
+				save_event_target_as = event_province
+			}
+		}
+	}
+	option = {
+		name = peasants_estate_events.11.a #Send in the Military!
+		ai_chance = {
+			factor = 33
+		}
+		event_target:event_province = {
+			spawn_rebels = {
+				type = leadered_peasant_rebels
+				size = 2
+			}
+		}
+		add_country_modifier = {
+			name = estate_peasants_capital_riots
+			duration = 1461
+		}
+	}
+	option = {
+		name = peasants_estate_events.11.b #Grant concessions...
+		ai_chance = {
+			factor = 66
+		}
+		add_estate_influence_modifier = {
+			estate = estate_peasants
+			desc = EST_VAL_CAPITAL_CONCESSIONS
+			influence = 10
+			duration = 3653
+		}
+		add_prestige = -20
+	}
+}
+#Workers strikes
+country_event = {
+	id = peasants_estate_events.12
+	title = peasants_estate_events.12.t
+	desc = peasants_estate_events.12.d
+	picture = ANGRY_MOB_eventPicture
+
+	trigger = {
+		has_estate = estate_peasants
+		OR = {
+			NOT = {
+				estate_influence = {
+					estate = estate_peasants
+					influence = 30
+					}
+				}
+			NOT = {
+				estate_loyalty = {
+					estate = estate_peasants
+					loyalty = 30
+				}
+			}	
+		}
+		AND = {
+			war_exhaustion = 15
+		}
+		NOT = {
+			has_country_modifier = estate_peasants_riots
+		}
+		NOT = {
+			has_estate_influence_modifier = {
+				estate = estate_peasants
+				modifier = EST_VAL_WORKERS_RIGHTS
+			}
+		}
+	}
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_overseas = no
+					is_city = yes
+					base_production = 5
+				}
+				save_event_target_as = event_province_1
+			}
+			if = {
+				limit = {
+					has_saved_event_target = event_province_1
+				}
+				random_owned_province = {
+					limit = {
+						is_overseas = no
+						is_city = yes
+						base_production = 5
+						NOT = { province_id = event_target:event_province_1 }
+					}
+					save_event_target_as = event_province_2
+				}
+			}
+			if = {
+				limit = {
+					has_saved_event_target = event_province_2
+				}
+				random_owned_province = {
+					limit = {
+						is_overseas = no
+						is_city = yes
+						base_production = 5
+						NOT = { province_id = event_target:event_province_1 }
+						NOT = { province_id = event_target:event_province_2 }
+					}
+					save_event_target_as = event_province_3
+				}
+			}
+			if = {
+				limit = {
+					has_saved_event_target = event_province_3
+				}
+				random_owned_province = {
+					limit = {
+						is_overseas = no
+						is_city = yes
+						base_production = 5
+						NOT = { province_id = event_target:event_province_1 }
+						NOT = { province_id = event_target:event_province_2 }
+						NOT = { province_id = event_target:event_province_3 }
+					}
+					save_event_target_as = event_province_4
+				}
+			}
+		}
+	}
+
+	option = {
+		name = peasants_estate_events.12.a #Send in the Military
+		ai_chance = {
+			factor = 33
+		}		
+		event_target:event_province_1 = {
+			spawn_rebels = {
+				type = leadered_peasant_rebels
+				size = 1
+			}
+		}
+		event_target:event_province_2 = {
+			spawn_rebels = {
+				type = leadered_peasant_rebels
+				size = 1
+			}
+		}
+		event_target:event_province_3 = {
+			spawn_rebels = {
+				type = leadered_peasant_rebels
+				size = 1
+			}
+		}
+		event_target:event_province_4 = {
+			spawn_rebels = {
+				type = leadered_peasant_rebels
+				size = 1
+			}
+		}
+		add_country_modifier = {
+			name = estate_peasants_riots
+			duration = 1826
+		}
+	}
+	option = {
+		name = peasants_estate_events.12.b #Grant concessions
+		ai_chance = {
+			factor = 66
+		}
+		add_estate_influence_modifier = {
+			estate = estate_peasants
+			desc = EST_VAL_WORKERS_RIGHTS
+			influence = 10
+			duration = 3653
+		}
+		event_target:event_province_1 = {
+			add_province_modifier = {
+				name = estate_peasants_workers_right
+				duration = 1826
+			}
+		}
+		event_target:event_province_2 = {
+			add_province_modifier = {
+				name = estate_peasants_workers_right
+				duration = 1826
+			}
+		}
+		event_target:event_province_3 = {
+			add_province_modifier = {
+				name = estate_peasants_workers_right
+				duration = 1826
+			}
+		}
+		event_target:event_province_4 = {
+			add_province_modifier = {
+				name = estate_peasants_workers_right
+				duration = 1826
+			}
+		}
+	}
+}
+
+#Faime stricks
+#country_event = {
+#	id = peasants_estate_events.15
+#	title = peasants_estate_events.15.t
+#	desc = peasants_estate_events.15.d
+#	picture = x
+#	trigger = {
+#		has_estate = estate_peasants
+#	}
+#
+#	is_triggered_only = yes
+#
+#	mean_time_to_happen = {
+#		days = 1
+#	}
+#
+#	option = {
+#		name = peasants_estate_events.15.a
+#	}
+#}
+
+#Local festivals
+country_event = {
+	id = peasants_estate_events.13
+	title = peasants_estate_events.13.t
+	desc = peasants_estate_events.13.d
+	picture = CITY_VIEW_eventPicture
+	trigger = {
+		has_estate = estate_peasants
+		AND = {
+			stability = 1
+			estate_loyalty = {
+			estate = estate_peasants
+			loyalty = 45
+			}
+		}
+		any_owned_province = {
+			NOT = { has_province_modifier = estate_peasants_local_festivals }
+		}
+	}
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_overseas = no
+					is_city = yes
+					base_manpower = 2
+				}
+				save_event_target_as = event_province_1
+			}
+			if = {
+				limit = {
+					has_saved_event_target = event_province_1
+				}
+				random_owned_province = {
+					limit = {
+						is_overseas = no
+						is_city = yes
+						base_manpower = 2
+						NOT = { province_id = event_target:event_province_1 }
+					}
+					save_event_target_as = event_province_2
+				}
+			}
+			if = {
+				limit = {
+					has_saved_event_target = event_province_2
+				}
+				random_owned_province = {
+					limit = {
+						is_overseas = no
+						is_city = yes
+						base_manpower = 2
+						NOT = { province_id = event_target:event_province_1 }
+						NOT = { province_id = event_target:event_province_2 }
+					}
+					save_event_target_as = event_province_3
+				}
+			}
+		}
+	}
+
+	option = {
+		name = peasants_estate_events.13.a
+		event_target:event_province_1 = {
+			add_province_modifier = {
+				name = estate_peasants_local_festivals
+				duration = 1827
+			}
+		}
+		event_target:event_province_2 = {
+			add_province_modifier = {
+				name = estate_peasants_local_festivals
+				duration = 1827
+			}
+		}
+		event_target:event_province_3 = {
+			add_province_modifier = {
+				name = estate_peasants_local_festivals
+				duration = 1827
+			}
+		}
+	}
+}
+#The Nation's fair
+country_event = {
+	id = peasants_estate_events.14
+	title = peasants_estate_events.14.t
+	desc = peasants_estate_events.14.d
+	picture = CITY_VIEW_eventPicture
+	trigger = {
+		has_estate = estate_peasants
+		stability = 3
+		estate_loyalty = {
+			estate = estate_peasants
+			loyalty = 7
+		}
+		any_owned_province = {
+			NOT = { has_province_modifier = estate_peasants_national_fair }
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_overseas = no
+					is_city = yes
+					is_capital = no
+					development = 20
+				}
+				save_event_target_as = event_province
+			}
+		}
+	}
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = peasants_estate_events.14.a
+		add_years_of_income = -0.25
+		event_target:event_province = {
+			add_province_modifier = {
+				name = estate_peasants_national_fair
+				duration = -1
+			}
+		}
+	}
+}
+
+#IMPORTANT
+

@@ -1,0 +1,87 @@
+estate_peasants =
+{
+	icon = 20
+
+	# if true, country will get the estate
+	trigger = {	
+		NOT = { has_government_attribute = disables_estate_peasants }
+		NOT = { has_disabled_estate = { estate = estate_peasants } }
+		OR ={
+			has_government_attribute = enables_estate_peasants
+			has_enabled_estate = { estate = estate_peasants }
+			has_unlocked_estate = { estate = estate_peasants }
+		
+			AND = {
+				NOT = {has_government_attribute = is_pirate_republic_reform} 
+				NOT = { government = native }
+				NOT = { has_reform = siberian_tribe }
+				is_nomad = no
+				is_colonial_nation = no
+			}
+		}
+	}
+	
+	country_modifier_happy = {
+		build_time = -0.1
+		build_cost = -0.1
+	}
+	country_modifier_neutral = {
+		build_time = -0.1
+	}
+	country_modifier_angry = {
+		stability_cost_modifier = 0.3
+		global_supply_limit_modifier = -1
+		global_unrest = 4
+	}
+	land_ownership_modifier = {
+		peasants_loyalty_modifier = 0.2
+	}
+
+	province_independence_weight = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			culture_group = owner
+			religion_group = owner
+		}
+		modifier = {
+			factor = 1.5
+			base_manpower = 5
+		}
+		modifier = {
+			factor = 0.75
+			development = 20
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { is_state_core = owner }
+		}
+	}
+
+	base_influence = 10
+
+	color = { 0 155 0}
+
+	influence_from_dev_modifier = 2.0
+
+	privileges = {
+		estate_peasants_land_rights
+		estate_peasants_granaries
+		estate_peasants_educated_poor
+		estate_peasants_amendment
+		estate_peasants_army
+		estate_peasants_movenment
+		#estate_peasants_farmering_provinces
+		estate_peasants_merchant_labor
+		estate_peasants_supply_caravans
+	}
+
+	agendas = {
+		estate_peasants_fire_advisor
+		estate_peasants_develop_x
+		estate_peasants_increase_autonomy_in_province_x
+		estate_peasants_build_fort_building_in_y
+		estate_peasants_increase_stability
+		estate_peasants_build_university_in_y
+	}
+}

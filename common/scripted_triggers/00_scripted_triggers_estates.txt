@@ -29,10 +29,6 @@ has_any_estates = {
 			has_estate = estate_eunuchs
 			has_estate = estate_qizilbash
 			has_estate = estate_ghulams
-
-			# Shattered
-			has_estate = estate_nationalist
-			has_estate = estate_industrial
 		}
 	}
 }
@@ -44,7 +40,6 @@ disabled_rebels_from_seized_land_for_estate = {
 		has_country_flag = disabled_rebels_from_seized_land_for_$estate$
 	}
 }
-
 
 has_exempt_from_seize_land_for_estate_nobles = {
 	OR = {
@@ -284,7 +279,7 @@ has_not_own_estate_disaster_active = {
 
 has_absolutism_reduction_for_estate_privileges = {
 	OR = {
-		#has_idea = respected_authority # Vanilla Court Ideas
+		has_idea = respected_authority
 		has_country_flag = has_halved_absolutism_reduction
 		has_government_attribute = has_halved_absolutism_reduction_gov
 	}
@@ -742,11 +737,21 @@ has_estate_agenda_of_estate_ghulams = {
 		has_active_estate_agenda = estate_ghulams_build_fort_building_in_y
 	}
 }
+#peasants
+has_estate_agenda_of_estate_peasants = {
+	OR = {
+		has_active_estate_agenda = estate_peasants_develop_x
+		has_active_estate_agenda = estate_peasants_fire_advisor
+		has_active_estate_agenda = estate_peasants_increase_autonomy_in_province_x
+		has_active_estate_agenda = estate_peasants_build_fort_building_in_y
+		has_active_estate_agenda = estate_peasants_increase_stability
+		has_active_estate_agenda = estate_peasants_build_university_in_y
+	}
+}
 
 has_estate_agenda_of_estate = {
 	has_estate_agenda_of_$estate$ = yes
 }
-
 
 is_not_blocked_by_estate_privilege = {
 	if = {
@@ -759,7 +764,6 @@ is_not_blocked_by_estate_privilege = {
 		}
 	}
 }
-
 
 can_select_adm_privilege_for_estate_nobles = {
 	NOT = { has_estate_privilege = estate_brahmins_brahmin_governance }
