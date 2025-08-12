@@ -1,0 +1,49 @@
+namespace = peasants_disaster_event
+
+#PEASANTS DISASTER (COUP)
+
+# Peasants take control
+country_event = {
+	id = estates_disasters.303
+	title = estates_disasters.303.t
+	desc = estates_disasters.303.d
+	picture = ANGRY_MOB_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = estate_peasants_in_power
+			set_country_flag = has_estate_disaster_flag
+		}
+	}
+
+	option = {
+		name = "estates_disasters.303.a"
+		add_stability = -1
+		custom_tooltip = estates_disasters.303.a.tt
+	}
+}
+
+# Peasant Crushed
+country_event = {
+	id = estates_disasters.304
+	title = estates_disasters.304.t
+	desc = estates_disasters.304.d
+	picture = ANGRY_MOB_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = has_estate_disaster_flag
+		}
+	}
+
+	option = {
+		name = "estates_disasters.304.a"
+	}
+
+}
