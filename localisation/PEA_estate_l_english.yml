@@ -133,6 +133,7 @@
   estate_peasants_national_fair: "National Fairgrounds"
   desc_estate_peasants_national_fair: "No matter the time of year, the people have a place of fun"
 
+ # disaster
   estates_disasters.303.t: "The Peasantry Seize Power"
   estates_disasters.303.d: "$MONARCH$ has allowed the Peasantry of $COUNTRY$ to grow too powerful and now they have made their move. Making use of their many hard-earned privileges as well as the many debts owed to them, they have effectively seized the reins of government and turned the $MONARCHTITLE$ into little more than their puppet."
   estates_disasters.303.a.tt: "[Root.GetName] will now be controlled by the §YPeasants§! until the §Y'Curtail the Peasantry'§! decision is taken."
@@ -148,3 +149,9 @@
 
   curtail_estate_peasants_title: "Curtail the Peasantry"
   curtail_estate_peasants_desc: "Through bribery and corruption, the Peasantry have a stranglehold on our government. To seize control back from these merchants we will need to curtail their power and privileges."
+  
+  # seize and sell land
+  iv_estate_events.61.t: "Sale of Titles to the §TPeasants§!"
+  iv_estate_events.sale.o24: "Sale of Titles to the §TPeasants§!"
+  iv_estate_events.39.t: "Seize land from the §TPeasants§!"
+  iv_estate_events.seize.o24: "Seize land from the §TPeasants§!"
