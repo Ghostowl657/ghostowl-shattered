@@ -42,7 +42,7 @@
   estate_peasants_increase_stability: "Boost National Stability"
   estate_peasants_increase_stability_desc: "The Peasantry see the stability of [Root.GetUsableName] as paramount. They insist that we must improve the nation's governance so that our nation may be free from instability."
 
-  #scirpted effects
+  #scripted effects
   estate_peasants_merchant_labor_mod_gt: "Every owned province with a §Ytrade building§! will gains the following bonus:"
   estate_peasants_merchant_labor_mod_rt: "The modifer '§YIncrease Merchan Labor§!' is removed from all provinces"
   estate_peasants_merchant_labor_mod: "Increase Merchant Labor"
@@ -152,6 +152,6 @@
   
   # seize and sell land
   iv_estate_events.61.t: "Sale of Titles to the §TPeasants§!"
-  iv_estate_events.sale.o24: "Sale of Titles to the §TPeasants§!"
+  iv_estate_events.sale.o24: "Sell Land to the §TPeasants§!"
   iv_estate_events.39.t: "Seize land from the §TPeasants§!"
   iv_estate_events.seize.o24: "Seize land from the §TPeasants§!"
