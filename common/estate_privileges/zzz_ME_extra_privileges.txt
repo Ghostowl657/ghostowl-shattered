@@ -1368,7 +1368,6 @@ ME_estate_dhimmi_MAM_dhimmi_in_high_places = {
 	on_granted = {
 		custom_tooltip = GRA_2_infantry_per_heathen
 	}
-	
 	conditional_modifier = {
 		trigger = {
 			has_global_modifier_value = {
@@ -1385,7 +1384,6 @@ ME_estate_dhimmi_MAM_dhimmi_in_high_places = {
 		modifier = {
 			infantry_power = 0.02
 		}
-		is_bad = no
 	}
 	conditional_modifier = {
 		trigger = {
@@ -1403,7 +1401,6 @@ ME_estate_dhimmi_MAM_dhimmi_in_high_places = {
 		modifier = {
 			infantry_power = 0.04
 		}
-		is_bad = no
 	}
 	conditional_modifier = {
 		trigger = {
@@ -1421,7 +1418,6 @@ ME_estate_dhimmi_MAM_dhimmi_in_high_places = {
 		modifier = {
 			infantry_power = 0.06
 		}
-		is_bad = no
 	}
 	conditional_modifier = {
 		trigger = {
@@ -1439,7 +1435,6 @@ ME_estate_dhimmi_MAM_dhimmi_in_high_places = {
 		modifier = {
 			infantry_power = 0.08
 		}
-		is_bad = no
 	}
 	conditional_modifier = {
 		trigger = {
@@ -1455,9 +1450,8 @@ ME_estate_dhimmi_MAM_dhimmi_in_high_places = {
 			}
 		}
 		modifier = {
-			infantry_power = 0.1
+			infantry_power = 0.10
 		}
-		is_bad = no
 	}
 	conditional_modifier = {
 		trigger = {
@@ -1475,7 +1469,6 @@ ME_estate_dhimmi_MAM_dhimmi_in_high_places = {
 		modifier = {
 			infantry_power = 0.12
 		}
-		is_bad = no
 	}
 	conditional_modifier = {
 		trigger = {
@@ -1493,7 +1486,6 @@ ME_estate_dhimmi_MAM_dhimmi_in_high_places = {
 		modifier = {
 			infantry_power = 0.14
 		}
-		is_bad = no
 	}
 	conditional_modifier = {
 		trigger = {
@@ -1511,7 +1503,6 @@ ME_estate_dhimmi_MAM_dhimmi_in_high_places = {
 		modifier = {
 			infantry_power = 0.16
 		}
-		is_bad = no
 	}
 	conditional_modifier = {
 		trigger = {
@@ -1529,7 +1520,6 @@ ME_estate_dhimmi_MAM_dhimmi_in_high_places = {
 		modifier = {
 			infantry_power = 0.18
 		}
-		is_bad = no
 	}
 	conditional_modifier = {
 		trigger = {
@@ -1541,7 +1531,6 @@ ME_estate_dhimmi_MAM_dhimmi_in_high_places = {
 		modifier = {
 			infantry_power = 0.2
 		}
-		is_bad = no
 	}
 	ai_will_do = {
 		factor = 0

@@ -627,13 +627,13 @@ on_province_religion_converted_estate_privileges_effect = {
 		limit = {
 			owner = {
 				has_estate_privilege = estate_dhimmi_manpower
+				NOT = { has_country_flag = GRA_strengthen_the_dhimmi_privilege_flag }
 			}
 		}
 		if = {
 			limit = {
 				NOT = { religion_group = muslim }
 				NOT = { has_province_modifier = estate_dhimmi_manpower_mod }
-				owner = { NOT = { has_country_flag = GRA_strengthen_the_dhimmi_privilege_flag } }
 			}
 			add_province_modifier = {
 				name = estate_dhimmi_manpower_mod
@@ -642,9 +642,23 @@ on_province_religion_converted_estate_privileges_effect = {
 		}
 		else_if = {
 			limit = {
+				religion_group = muslim
+				has_province_modifier = estate_dhimmi_manpower_mod
+			}
+			remove_province_modifier = estate_dhimmi_manpower_mod
+		}
+	}
+	if = { # EE
+		limit = {
+			owner = {
+				has_estate_privilege = estate_dhimmi_manpower
+				has_country_flag = GRA_strengthen_the_dhimmi_privilege_flag
+			}
+		}
+		if = {
+			limit = {
 				NOT = { religion_group = muslim }
 				NOT = { has_province_modifier = GRA_estate_dhimmi_manpower_mod }
-				owner = { has_country_flag = GRA_strengthen_the_dhimmi_privilege_flag }
 			}
 			add_province_modifier = {
 				name = GRA_estate_dhimmi_manpower_mod
@@ -654,12 +668,8 @@ on_province_religion_converted_estate_privileges_effect = {
 		else_if = {
 			limit = {
 				religion_group = muslim
-				OR = {
-					has_province_modifier = estate_dhimmi_manpower_mod
-					has_province_modifier = GRA_estate_dhimmi_manpower_mod
-				}
+				has_province_modifier = GRA_estate_dhimmi_manpower_mod
 			}
-			remove_province_modifier = estate_dhimmi_manpower_mod
 			remove_province_modifier = GRA_estate_dhimmi_manpower_mod
 		}
 	}
@@ -4150,6 +4160,7 @@ re_add_loyalty_from_seized_land = {
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_eunuchs } }		add_estate_loyalty = { estate = estate_eunuchs			 loyalty = 15 } }
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_qizilbash } }		add_estate_loyalty = { estate = estate_qizilbash		 loyalty = 15 } }
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_ghulams } }		add_estate_loyalty = { estate = estate_ghulams			 loyalty = 15 } }
+			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_peasants } }		add_estate_loyalty = { estate = estate_peasants			 loyalty = 15 } }
 		}
 		else = {
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_nobles } }			add_estate_loyalty = { estate = estate_nobles			 loyalty = 20 } }
@@ -4167,6 +4178,7 @@ re_add_loyalty_from_seized_land = {
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_eunuchs } }		add_estate_loyalty = { estate = estate_eunuchs			 loyalty = 20 } }
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_qizilbash } }		add_estate_loyalty = { estate = estate_qizilbash		 loyalty = 20 } }
 			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_ghulams } }		add_estate_loyalty = { estate = estate_ghulams			 loyalty = 20 } }
+			if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_peasants } }		add_estate_loyalty = { estate = estate_peasants			 loyalty = 15 } }
 		}
 	}
 }

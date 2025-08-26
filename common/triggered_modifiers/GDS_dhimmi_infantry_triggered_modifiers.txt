@@ -1,0 +1,174 @@
+dhimmi_infantry_power_bonus_1 = {
+    potential = {
+		has_estate_privilege = ME_estate_dhimmi_MAM_dhimmi_in_high_places
+	}
+    trigger = {
+        has_global_modifier_value = {
+			which = tolerance_heathen
+			value = 1
+		}
+        NOT = {
+			has_global_modifier_value = {
+				which = tolerance_heathen
+				value = 2
+			}
+		}
+    }
+    infantry_power = 0.02
+}
+dhimmi_infantry_power_bonus_2 = {
+    potential = {
+		has_estate_privilege = ME_estate_dhimmi_MAM_dhimmi_in_high_places
+	}
+    trigger = {
+        has_global_modifier_value = {
+			which = tolerance_heathen
+			value = 2
+		}
+        NOT = {
+			has_global_modifier_value = {
+				which = tolerance_heathen
+				value = 3
+			}
+		}
+    }
+    infantry_power = 0.04
+}
+dhimmi_infantry_power_bonus_3 = {
+    potential = { 
+		has_estate_privilege = ME_estate_dhimmi_MAM_dhimmi_in_high_places
+	}
+    trigger = {
+        has_global_modifier_value = {
+			which = tolerance_heathen
+			value = 3
+		}
+        NOT = {
+			has_global_modifier_value = {
+				which = tolerance_heathen
+				value = 4
+			}
+		}
+    }
+    infantry_power = 0.06
+}
+dhimmi_infantry_power_bonus_4 = {
+    potential = {
+		has_estate_privilege = ME_estate_dhimmi_MAM_dhimmi_in_high_places
+	}
+    trigger = {
+        has_global_modifier_value = {
+			which = tolerance_heathen
+			value = 4
+		}
+        NOT = {
+			has_global_modifier_value = {
+				which = tolerance_heathen
+				value = 5
+			}
+		}
+    }
+    infantry_power = 0.08
+}
+dhimmi_infantry_power_bonus_5 = {
+    potential = {
+		has_estate_privilege = ME_estate_dhimmi_MAM_dhimmi_in_high_places
+	}
+    trigger = {
+        has_global_modifier_value = {
+			which = tolerance_heathen
+			value = 5
+		}
+        NOT = {
+			has_global_modifier_value = {
+				which = tolerance_heathen
+				value = 6
+			}
+		}
+    }
+    infantry_power = 0.10
+}
+dhimmi_infantry_power_bonus_6 = {
+    potential = {
+		has_estate_privilege = ME_estate_dhimmi_MAM_dhimmi_in_high_places
+	}
+    trigger = {
+        has_global_modifier_value = {
+			which = tolerance_heathen
+			value = 6
+		}
+        NOT = {
+			has_global_modifier_value = {
+				which = tolerance_heathen
+				value = 7
+			}
+		}
+    }
+    infantry_power = 0.12
+}
+dhimmi_infantry_power_bonus_7 = {
+    potential = {
+		has_estate_privilege = ME_estate_dhimmi_MAM_dhimmi_in_high_places
+	}
+    trigger = {
+        has_global_modifier_value = {
+			which = tolerance_heathen
+			value = 7
+		}
+        NOT = {
+			has_global_modifier_value = {
+				which = tolerance_heathen
+				value = 8
+			}
+		}
+    }
+    infantry_power = 0.14
+}
+dhimmi_infantry_power_bonus_8 = {
+    potential = {
+		has_estate_privilege = ME_estate_dhimmi_MAM_dhimmi_in_high_places
+	}
+    trigger = {
+        has_global_modifier_value = {
+			which = tolerance_heathen
+			value = 8
+		}
+        NOT = {
+			has_global_modifier_value = {
+				which = tolerance_heathen
+				value = 9
+			}
+		}
+    }
+    infantry_power = 0.16
+}
+dhimmi_infantry_power_bonus_9 = {
+    potential = {
+		has_estate_privilege = ME_estate_dhimmi_MAM_dhimmi_in_high_places
+	}
+    trigger = {
+        has_global_modifier_value = {
+			which = tolerance_heathen
+			value = 9
+		}
+        NOT = {
+			has_global_modifier_value = {
+				which = tolerance_heathen
+				value = 10
+			}
+		}
+    }
+    infantry_power = 0.18
+}
+dhimmi_infantry_power_bonus_10 = {
+    potential = {
+		has_estate_privilege = ME_estate_dhimmi_MAM_dhimmi_in_high_places
+	}
+    trigger = {
+        has_global_modifier_value = {
+			which = tolerance_heathen
+			value = 10
+		}
+    }
+    infantry_power = 0.20
+}

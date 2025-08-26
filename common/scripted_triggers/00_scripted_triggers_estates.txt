@@ -29,6 +29,7 @@ has_any_estates = {
 			has_estate = estate_eunuchs
 			has_estate = estate_qizilbash
 			has_estate = estate_ghulams
+			has_estate = estate_peasants #peasants
 		}
 	}
 }
@@ -118,7 +119,9 @@ has_exempt_from_seize_land_for_estate_qizilbash = {
 has_exempt_from_seize_land_for_estate_ghulams = {
 	always = no
 }
-
+has_exempt_from_seize_land_for_estate_peasants = {
+	has_estate_privilege = estate_peasants_educated_poor
+}
 estate_has_exempt_from_seize_land_privilege = {
 	has_estate = $estate$
 	has_exempt_from_seize_land_for_$estate$ = yes

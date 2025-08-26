@@ -62,7 +62,7 @@ estate_peasants =
 
 	color = { 0 155 0}
 
-	influence_from_dev_modifier = 2.0
+	influence_from_dev_modifier = 1.0
 
 	privileges = {
 		estate_peasants_land_rights
