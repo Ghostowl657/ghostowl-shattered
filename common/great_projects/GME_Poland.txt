@@ -11,7 +11,10 @@ gme_cathedral_poznan = {
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
 		culture_group = west_slavic
-		religion = catholic
+		OR = {
+			religion = catholic
+			religion = jewish
+		}
 		has_owner_religion = yes
 		OR = {
 			has_owner_culture = yes
@@ -124,7 +127,10 @@ gme_jagielon_university = {
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
 		culture_group = west_slavic
-		religion = catholic
+		OR = {
+			religion = catholic
+			religion = jewish
+		}
 		has_owner_religion = yes
 		OR = {
 			has_owner_culture = yes
@@ -360,7 +366,10 @@ gme_saint_mary_basilica = {
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
 		culture_group = west_slavic
-		religion = catholic
+		OR = {
+			religion = catholic
+			religion = jewish
+		}
 		has_owner_religion = yes
 		OR = {
 			has_owner_culture = yes

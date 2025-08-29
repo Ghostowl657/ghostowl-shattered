@@ -1827,7 +1827,8 @@ lubeck_missions_4 = {
 			area = newfoundland_area 
 		}
 		trigger = {
-			exploration_ideas = 1
+#			exploration_ideas = 1
+			has_activated_colonial_idea_groups
 			navy_size = 55
 		}
 		effect = {

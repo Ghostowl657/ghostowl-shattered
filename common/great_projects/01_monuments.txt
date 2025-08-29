@@ -13422,8 +13422,11 @@ prague = {
 	type = monument
 
 	build_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = christian
+		OR = {
+			province_is_or_accepts_religion_group = {
+				religion_group = christian
+			}
+			religion = jewish
 		}
 	}
 
@@ -13434,14 +13437,20 @@ prague = {
 	}
 
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = christian
+		OR = {
+			province_is_or_accepts_religion_group = {
+				religion_group = christian
+			}
+			religion = jewish
 		}
 	}
 
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = christian
+		OR = {
+			province_is_or_accepts_religion_group = {
+				religion_group = christian
+			}
+			religion = jewish
 		}
 	}
 
