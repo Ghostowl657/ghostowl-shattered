@@ -1208,7 +1208,9 @@ serbia_fourth_group = {
 				development = 25
 			}
 			4239 = {
-				has_tax_building_trigger = yes
+				OR = { owner = { religion = bogomilist }
+					has_tax_building_trigger = yes
+				}
 			}
 			4239 = {
 				has_trade_building_trigger = yes
