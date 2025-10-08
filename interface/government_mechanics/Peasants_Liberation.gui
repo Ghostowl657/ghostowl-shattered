@@ -1,0 +1,26 @@
+guiTypes = { 
+	windowType = {
+		name = "Peasant_Liberation_power"
+		size = { x = 300 y = 100 }
+		moveable = 0
+
+		iconType = {
+			name = "government_power_bar"
+			spriteType = "GFX_single_government_power_bar"
+			position = { x = 32 y = 72 }
+		}
+		iconType = {
+			name = "government_power_bar_frame"
+			spriteType = "GFX_single_government_power_bar_frame"
+			alwaystransparent = yes
+			position = { x = 24 y = 72 }
+		}
+		guiButtonType = {
+			name = "government_interaction_button"
+			quadTextureSprite = "GFX_russian_ability_ADM"
+			position = { x = 0 y = -5 }
+			buttonFont = "vic_18"
+			clicksound = back_click
+		}
+	}
+}

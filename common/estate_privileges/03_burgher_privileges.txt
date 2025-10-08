@@ -4860,3 +4860,51 @@ estate_burghers_TIM_gulf_toll = {
 		factor = 1
 	}
 }
+
+#peasants
+estate_burghers_limited_privileges_to_peasantry = {
+	icon = privilege_peasant
+	max_absolutism = -5
+	influence = 0.05
+
+	is_valid = {
+		has_estate_privilege = estate_peasants_unpaid_labor_of_burghers
+		has_unlocked_estate_privilege = { estate_privilege = estate_burghers_limited_privileges_to_peasantry }
+		NOT = { has_country_flag = peasants_in_revolt }
+	}
+	on_granted = {
+		custom_tooltip = influencial_peasant_fear.tt
+	}
+	benefits = {
+		peasants_privilege_slots = 1
+		peasants_loyalty_modifier = 0.05
+	}
+	on_revoked = {
+		if = {
+			limit = {
+				has_estate_privilege = estate_limited_peasants_burgher_educated
+			}
+			remove_estate_privilege = estate_limited_peasants_burgher_educated
+		}
+		if = {
+			limit = {
+				has_estate_privilege = estate_limited_peasants_Naval_Officers
+			}
+			remove_estate_privilege = estate_limited_peasants_Naval_Officers
+		}
+		if = {
+			limit = {
+				has_estate_privilege = estate_limited_peasants_trading_port_labor
+			}
+			remove_estate_privilege = estate_limited_peasants_trading_port_labor
+		}
+		add_estate_loyalty = {
+			estate = estate_peasants
+			loyalty = -20
+		}
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}

@@ -3,6 +3,36 @@ estate_peasants_merchant_labor_mod = {
 	province_trade_power_value = 5
 }
 
+to_uniform_modifier = {
+	global_regiment_recruit_speed = -0.5
+}
+
+to_uniform_modifier_weaken = {
+	global_regiment_recruit_speed = -0.2
+}
+
+to_the_sea_modifier = {
+	global_ship_recruit_speed = -0.5
+}
+
+to_the_sea_modifier_weaken = {
+	global_ship_recruit_speed = -0.2	
+}
+
+seize_food_stores = {
+	global_supply_limit_modifier = 1.5
+	movement_speed = 0.30
+}
+
+seize_food_stores_weaken = {
+	global_supply_limit_modifier = 0.75
+	movement_speed = 0.15
+}
+
+trust_broken = { }
+
+peasants_revolt_event = { }
+
 estate_peasants_riots = {
 	production_efficiency = -0.25
 }
@@ -16,14 +46,87 @@ estate_peasants_capital_riots = {
 }
 
 estate_peasants_local_festivals = {
-	local_production_efficiency = 0.33
-	local_tax_modifier = 0.15
+	local_tax_modifier = 0.33
 	local_unrest = -2
 }
 
 estate_peasants_national_fair = {
-	local_production_efficiency = 0.66
+	local_production_efficiency = 0.20
 	local_development_cost_modifier = -0.1
-	local_unrest = -2
 	peasants_loyalty_modifier = 0.1
+}
+
+broken_second_chance = {
+	global_unrest = 2
+}
+
+economic_crisis = {
+	production_efficiency = -0.33
+	trade_efficiency = -0.15
+}
+
+down_the_path_absolute = {
+	max_absolutism = 5
+	yearly_absolutism = 0.10
+}
+
+liberated_peasants = {
+	local_manpower_modifier = -1
+}
+
+officer_approach_fails_timer = { }
+
+reeducated_timer = { }
+
+lighten_feadulism_timer = { }
+
+peasants_propaganda_timer = { }
+
+The_New_Status_Quo_Agreement_a = {
+	province_trade_power_modifier = -0.18
+}
+The_New_Status_Quo_Agreement_b = {
+	trade_efficiency = -0.1
+}
+The_New_Status_Quo_Agreement_c = {
+	production_efficiency = -0.15
+}
+The_New_Status_Quo_Agreement_d = {
+	global_tax_modifier = -0.25
+}
+The_New_Status_Quo_Agreement_e = {
+	tolerance_heretic = -4
+	tolerance_heathen = -4
+}
+The_New_Status_Quo_Agreement_f = {
+	mercenary_manpower = -0.20
+}
+The_New_Status_Quo_Agreement_g = {
+	advisor_cost = 0.1
+}
+The_New_Status_Quo_Agreement_h = {
+	monthly_reform_progress_modifier = -0.20
+}
+The_New_Status_Quo_Agreement_i = {
+	global_manpower_modifier = -10
+}
+
+negotiate_modifier_1 = {
+	global_tax_modifier = -0.6
+}
+
+negotiate_modifier_2 = {
+	trade_efficiency = -0.25
+}
+
+negotiate_modifier_3 = {
+	production_efficiency = -0.4
+}
+
+negotiate_modifier_4 = {
+	prestige_decay = -0.5
+}
+
+negotiate_modifier_5 = {
+	global_manpower_modifier = -0.25
 }

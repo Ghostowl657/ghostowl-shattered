@@ -1,0 +1,18 @@
+liberation_of_peasants = {
+    icon = "peasants"
+    valid_for_nation_designer = no
+    lock_level_when_selected = yes
+    allow_normal_conversion = no
+
+    potential = {
+        has_reform = liberation_of_peasants
+    }
+    modifiers = {
+        global_unrest = -2
+        peasants_loyalty_modifier = 0.10
+        peasants_influence_modifier = 0.05
+    }
+    government_abilities = {
+        peasant_liberation
+    }
+}

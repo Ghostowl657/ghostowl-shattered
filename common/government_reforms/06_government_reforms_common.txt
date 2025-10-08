@@ -70,7 +70,9 @@ parliamentary_reform = {
 				has_reform = parliamentary_reform
 			}
 			is_not_blocked_by_estate_privilege = { estate = estate_nobles }
-		}	
+		}
+		#peasants
+		NOT = { has_estate_privilege = estate_peasants_property_of_nobles }
 		NOT = { has_reform = elective_monarchy }
 		NOT = { has_reform = polish_great_sejm }
 		NOT = { has_reform = polish_elective_monarchy }
@@ -1082,7 +1084,7 @@ strengthen_the_ulema_reform = {
 	conditional = {
 		allow = { has_dlc = "Cradle of Civilization" }
 		custom_attributes = {
-			allow_piety_switch_decision = yes	#Enables a decision which gives 1 stabhit, but turns your piety 180°
+			allow_piety_switch_decision = yes	#Enables a decision which gives 1 stabhit, but turns your piety 180ï¿½
 		}
 	}
 	
@@ -1771,7 +1773,7 @@ legacy_of_the_safavid_reform = {
 	conditional = {
 		allow = { has_dlc = "Cradle of Civilization" }
 		custom_attributes = {
-			allow_piety_switch_decision = yes	#Enables a decision which gives 1 stabhit, but turns your piety 180°
+			allow_piety_switch_decision = yes	#Enables a decision which gives 1 stabhit, but turns your piety 180ï¿½
 		}
 	}
 	ai = {

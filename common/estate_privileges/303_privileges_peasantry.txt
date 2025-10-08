@@ -5,6 +5,15 @@ estate_peasants_land_rights = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.05
 	influence = 0.05
+
+	is_valid = {
+		NOT = {
+			has_country_flag = yeah_no_you_dont
+		}
+		NOT = {
+			has_country_flag = influence_over_peasants
+		}
+	}
 	can_select = {
 	}
 	penalties = {
@@ -47,6 +56,12 @@ estate_peasants_amendment = {
 	influence = 0
 
 	is_valid = {
+		NOT = {
+			has_country_flag = yeah_no_you_dont
+		}
+		NOT = {
+			has_country_flag = influence_over_peasants
+		}
 	}
 	can_select = {
 	}
@@ -79,6 +94,12 @@ estate_peasants_educated_poor = {
 	influence = 0.15
 	
 	is_valid = {
+		NOT = {
+			has_country_flag = yeah_no_you_dont
+		}
+		NOT = {
+			has_country_flag = influence_over_peasants
+		}
 	}
 	can_select = {
 	}
@@ -117,6 +138,12 @@ estate_peasants_army = {
 	influence = 0.1
 
 	is_valid = {
+		NOT = {
+			has_country_flag = yeah_no_you_dont
+		}
+		NOT = {
+			has_country_flag = influence_over_peasants
+		}
 	}
 	can_select = {
 	}
@@ -131,7 +158,7 @@ estate_peasants_army = {
 		trigger = {
 			always = yes
 		}
-		modifier = { land_morale = 0.10 }
+		modifier = { land_forcelimit_modifier = 0.20 }
 	}
 	conditional_modifier = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
@@ -147,6 +174,15 @@ estate_peasants_movenment = {
 	max_absolutism = -5
 	loyalty = 0.15
 
+	is_valid = {
+		NOT = {
+			has_country_flag = yeah_no_you_dont
+		}
+		NOT = {
+			has_country_flag = influence_over_peasants
+		}
+	}
+
 	conditional_modifier = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.03 }
@@ -161,6 +197,15 @@ estate_peasants_merchant_labor = {
 	max_absolutism = -10
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	influence = 0.1
+
+	is_valid = {
+		NOT = {
+			has_country_flag = yeah_no_you_dont
+		}
+		NOT = {
+			has_country_flag = influence_over_peasants
+		}
+	}
 
 	on_granted = {
 		custom_tooltip = estate_peasants_merchant_labor_mod_gt
@@ -210,6 +255,15 @@ estate_peasants_supply_caravans = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.10
 	influence = 0.10
+
+	is_valid = {
+		NOT = {
+			has_country_flag = yeah_no_you_dont
+		}
+		NOT = {
+			has_country_flag = influence_over_peasants
+		}
+	}
 	can_select = {
 	}
 	penalties = {
@@ -241,6 +295,15 @@ estate_peasants_granaries = {
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = 0.10
 	influence = 0.10
+	
+	is_valid = {
+		NOT = {
+			has_country_flag = yeah_no_you_dont
+		}
+		NOT = {
+			has_country_flag = influence_over_peasants
+		}
+	}
 	can_select = {
 	}
 	penalties = {
@@ -257,4 +320,1804 @@ estate_peasants_granaries = {
 		factor = 0
 	}
 	
+}
+
+estate_limited_peasants_officers_corp = {
+	icon = privilege_army_tradition
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+
+	is_valid = {
+		has_estate_privilege = estate_nobles_limited_privileges_to_peasantry
+	}
+	on_granted = {
+		custom_tooltip = limited_privileges_1.ct
+		if = {
+			limit = {
+				has_estate_privilege = estate_limited_peasants_military_trainers
+			}
+			remove_estate_privilege = estate_limited_peasants_military_trainers
+		}
+		if = {
+			limit = {
+				has_estate_privilege = estate_limited_peasants_nobility_educated
+			}
+			remove_estate_privilege = estate_limited_peasants_nobility_educated
+		}
+	}
+	loyalty_scaled_conditional_modifier = {
+		trigger = { 
+			estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 60
+			}
+		}
+		modifier = { 
+			land_morale = 0.10
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_limited_peasants_military_trainers = {
+	icon = privilege_discipline
+	max_absolutism = -10
+	loyalty = 0.05
+	influence = 0.1
+
+	is_valid = {
+		has_estate_privilege = estate_nobles_limited_privileges_to_peasantry
+	}
+	on_granted = {
+		custom_tooltip = limited_privileges_2.ct
+		if = {
+			limit = {
+				has_estate_privilege = estate_limited_peasants_officers_corp
+			}
+			remove_estate_privilege = estate_limited_peasants_officers_corp
+		}
+		if = {
+			limit = {
+				has_estate_privilege = estate_limited_peasants_nobility_educated
+			}
+			remove_estate_privilege = estate_limited_peasants_nobility_educated
+		}
+	}
+	loyalty_scaled_conditional_modifier = {
+		trigger = { 
+			estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 70
+			}
+		}
+		modifier = { 
+			discipline = 0.05
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+	}	
+}
+
+estate_limited_peasants_nobility_educated = {
+	icon = privilege_ideas
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+
+	is_valid = {
+		has_estate_privilege = estate_nobles_limited_privileges_to_peasantry
+	}
+	on_granted = {
+		custom_tooltip = limited_privileges_3.ct
+		if = {
+			limit = {
+				has_estate_privilege = estate_limited_peasants_officers_corp
+			}
+			remove_estate_privilege = estate_limited_peasants_officers_corp
+		}
+		if = {
+			limit = {
+				has_estate_privilege = estate_limited_peasants_military_trainers
+			}
+			remove_estate_privilege = estate_limited_peasants_military_trainers
+		}
+	}
+	loyalty_scaled_conditional_modifier = {
+		trigger = { 
+			estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 40
+			}
+		}
+		modifier = { 
+			global_institution_spread = 1
+			embracement_cost = -0.5
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_limited_peasants_trading_port_labor = { 
+	icon = privilege_monopoly
+	max_absolutism = -10
+	loyalty = 0.05
+	influence = 0.1
+
+	is_valid = {
+		has_estate_privilege = estate_burghers_limited_privileges_to_peasantry
+	}
+	on_granted = {
+		custom_tooltip = limited_privileges_4.ct
+		if = {
+			limit = {
+				has_estate_privilege = estate_limited_peasants_burgher_educated
+			}
+			remove_estate_privilege = estate_limited_peasants_burgher_educated
+		}
+		if = {
+			limit = {
+				has_estate_privilege = estate_limited_peasants_Naval_Officers
+			}
+			remove_estate_privilege = estate_limited_peasants_Naval_Officers
+		}
+	}
+	loyalty_scaled_conditional_modifier = {
+		trigger = { 
+			estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 60
+			}
+		}
+		modifier = { 
+			trade_efficiency = 0.15
+			province_trade_power_modifier = 0.25
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_limited_peasants_Naval_Officers = {
+	icon = privilege_navy_tradition
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+
+	is_valid = {
+		has_estate_privilege = estate_burghers_limited_privileges_to_peasantry
+	}
+	on_granted = {
+		custom_tooltip = limited_privileges_5.ct
+		if = {
+			limit = {
+				has_estate_privilege = estate_limited_peasants_trading_port_labor
+			}
+			remove_estate_privilege = estate_limited_peasants_trading_port_labor
+		}
+		if = {
+			limit = {
+				has_estate_privilege = estate_limited_peasants_burgher_educated
+			}
+			remove_estate_privilege = estate_limited_peasants_burgher_educated
+		}
+	}
+	loyalty_scaled_conditional_modifier = {
+		trigger = { 
+			estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 40
+			}
+		}
+		modifier = { 
+			naval_morale = 0.15
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_limited_peasants_burgher_educated = { 
+	icon = privilege_ideas
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+
+	is_valid = {
+		has_estate_privilege = estate_burghers_limited_privileges_to_peasantry
+	}
+	on_granted = {
+		custom_tooltip = limited_privileges_6.ct
+		if = {
+			limit = {
+				has_estate_privilege = estate_limited_peasants_trading_port_labor
+			}
+			remove_estate_privilege = estate_limited_peasants_trading_port_labor
+		}
+		if = {
+			limit = {
+				has_estate_privilege = estate_limited_peasants_Naval_Officers
+			}
+			remove_estate_privilege = estate_limited_peasants_Naval_Officers
+		}
+	}
+	loyalty_scaled_conditional_modifier = {
+		trigger = { 
+			estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 50
+			}
+		}
+		modifier = { 
+			idea_cost = -0.05
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_limited_peasants_loyalty_to_church = {
+	icon = privilege_infantry
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+
+	is_valid = {
+		has_estate_privilege = estate_church_limited_privileges_to_peasantry
+	}
+	on_granted = {
+		custom_tooltip = limited_privileges_7.ct
+		if = {
+			limit = {
+				has_estate_privilege = estate_limited_peasants_church_educated
+			}
+			remove_estate_privilege = estate_limited_peasants_church_educated
+		}
+		if = {
+			limit = {
+				has_estate_privilege = estate_limited_peasants_calls_for_war
+			}
+			remove_estate_privilege = estate_limited_peasants_calls_for_war
+		}
+	}
+	loyalty_scaled_conditional_modifier = {
+		trigger = { 
+			estate_loyalty = {
+				estate = estate_church
+				loyalty = 50
+			}
+		}
+		modifier = { 
+			merc_maintenance_modifier = -0.20
+			mercenary_manpower = 0.10
+			mercenary_discipline = 0.05
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_limited_peasants_calls_for_war = {
+	icon = privilege_manpower_of_true_faith
+	max_absolutism = -10
+	loyalty = 0.05
+	influence = 0.10
+
+	is_valid = {
+		has_estate_privilege = estate_church_limited_privileges_to_peasantry	
+	}
+	on_granted = {
+		custom_tooltip = limited_privileges_8.ct
+		if = {
+			limit = {
+				has_estate_privilege = estate_limited_peasants_church_educated
+			}
+			remove_estate_privilege = estate_limited_peasants_church_educated
+		}
+		if = {
+			limit = {
+				has_estate_privilege = estate_limited_peasants_loyalty_to_church
+			}
+			remove_estate_privilege = estate_limited_peasants_loyalty_to_church
+		}
+	}
+	loyalty_scaled_conditional_modifier = {
+		trigger = { 
+			estate_loyalty = {
+				estate = estate_church
+				loyalty = 40
+			}
+		}
+		modifier = { 
+			manpower_in_true_faith_provinces = 0.15
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_limited_peasants_church_educated = {
+	icon = privilege_technology
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+
+	is_valid = {
+		has_estate_privilege = estate_church_limited_privileges_to_peasantry
+	}
+	on_granted = {
+		custom_tooltip = limited_privileges_9.ct
+		if = {
+			limit = {
+				has_estate_privilege = estate_limited_peasants_calls_for_war
+			}
+			remove_estate_privilege = estate_limited_peasants_calls_for_war
+		}
+		if = {
+			limit = {
+				has_estate_privilege = estate_limited_peasants_loyalty_to_church
+			}
+			remove_estate_privilege = estate_limited_peasants_loyalty_to_church
+		}
+	}
+	loyalty_scaled_conditional_modifier = {
+		trigger = { 
+			estate_loyalty = {
+				estate = estate_church
+				loyalty = 60
+			}
+		}
+		modifier = { 
+			technology_cost = 0.05
+		}
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_peasants_sheep_of_clergy = {
+	icon = privilege_tolerance_own
+	max_absolutism = 10
+	conditional_modifier = { trigger = { has_country_flag = new_peasantry_status_quo } modifier = { max_absolutism = -5 } }
+	conditional_modifier = { trigger = { has_country_flag = take_a_mile } modifier = { max_absolutism = -10 } }
+	is_valid = {
+		has_estate_privilege = estate_peasants_sheep_of_clergy
+	}
+	on_granted = {
+		custom_tooltip = estate_influence_over_peasantry.tt
+	}
+	conditional_modifier = {
+		trigger = {
+			OR = {
+				has_country_flag = new_peasantry_status_quo
+				has_country_flag = take_a_mile
+			}
+		}
+		modifier = {
+			manpower_in_true_faith_provinces = 0.10		
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			OR = {
+				NOT = { has_country_flag = new_peasantry_status_quo }
+				NOT = { has_country_flag = take_a_mile }		
+			}
+			current_age = age_of_discovery
+		}
+		modifier = {
+			global_unrest = 0.25
+		}
+		is_bad = yes
+	}
+	conditional_modifier = {
+		trigger = {
+			OR = {
+				NOT = { has_country_flag = new_peasantry_status_quo }
+				NOT = { has_country_flag = take_a_mile }		
+			}
+			current_age = age_of_reformation
+		}
+		modifier = {
+			global_unrest = 0.5
+		}
+		is_bad = yes
+	}
+	conditional_modifier = {
+		trigger = {
+			OR = {
+				NOT = { has_country_flag = new_peasantry_status_quo }
+				NOT = { has_country_flag = take_a_mile }		
+			}
+			current_age = age_of_absolutism
+		}
+		modifier = {
+			global_unrest = 1
+		}
+		is_bad = yes
+	}
+	conditional_modifier = {
+		trigger = {
+			OR = {
+				NOT = { has_country_flag = new_peasantry_status_quo }
+				NOT = { has_country_flag = take_a_mile }		
+			}
+			current_age = age_of_revolutions
+		}
+		modifier = {
+			global_unrest = 2
+		}
+		is_bad = yes
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = new_peasantry_status_quo
+			current_age = age_of_reformation
+		}
+		modifier = {
+			global_unrest = 0.25
+		}
+		is_bad = yes
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = new_peasantry_status_quo
+			current_age = age_of_absolutism
+		}
+		modifier = {
+			global_unrest = 0.5
+		}
+		is_bad = yes
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = give_an_inch_flag
+			current_age = age_of_absolutism
+		}
+		modifier = {
+			global_unrest = 2
+		}
+		is_bad = yes
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = give_an_inch_flag
+			current_age = age_of_revolutions
+		}
+		modifier = {
+			global_unrest = 4
+		}
+		is_bad = yes
+	}
+	conditional_modifier = {
+		trigger = {
+			absolutism = 25
+			NOT = { absolutism = 50 }
+		}
+		modifier = {
+			global_unrest = 1
+		}
+		is_bad = yes
+	}
+	conditional_modifier = {
+		trigger = {
+			absolutism = 50
+			NOT = { absolutism = 80 }
+		}
+		modifier = {
+			global_unrest = 2
+		}
+		is_bad = yes
+	}
+	conditional_modifier = {
+		trigger = {
+			absolutism = 80
+		}
+		modifier = {
+			global_unrest = 3
+		}
+		is_bad = yes
+	}
+	influence_scaled_conditional_modifier = {
+		trigger = {
+			always = yes
+		}
+		modifier = { 
+			church_loyalty_modifier = -0.30
+		}
+	}
+	can_revoke = {
+		always = no
+	}
+	ai_will_do = {
+		factor = -300
+	}
+}
+
+estate_peasants_property_of_nobles = {
+	icon = privilege_serf
+	max_absolutism = 10
+	conditional_modifier = { trigger = { has_country_flag = new_peasantry_status_quo } modifier = { max_absolutism = -5 } }
+	conditional_modifier = { trigger = { has_country_flag = take_a_mile } modifier = { max_absolutism = -10 } }
+	is_valid = {
+		has_estate_privilege = estate_peasants_property_of_nobles
+	}
+	on_granted = {
+		custom_tooltip = estate_influence_over_peasantry.tt
+	}
+	penalties = {
+		peasants_privilege_slots = -2
+	}
+	conditional_modifier = {
+		trigger = {
+			OR = {
+				has_country_flag = new_peasantry_status_quo
+				has_country_flag = take_a_mile
+			}
+		}
+		modifier = {
+			manpower_recovery_speed = 0.15		
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			OR = {
+				NOT = { has_country_flag = new_peasantry_status_quo }
+				NOT = { has_country_flag = take_a_mile }		
+			}
+			current_age = age_of_discovery
+		}
+		modifier = {
+			global_unrest = 0.25
+		}
+		is_bad = yes
+	}
+	conditional_modifier = {
+		trigger = {
+			OR = {
+				NOT = { has_country_flag = new_peasantry_status_quo }
+				NOT = { has_country_flag = take_a_mile }		
+			}
+			current_age = age_of_reformation
+		}
+		modifier = {
+			global_unrest = 0.5
+		}
+		is_bad = yes
+	}
+	conditional_modifier = {
+		trigger = {
+			OR = {
+				NOT = { has_country_flag = new_peasantry_status_quo }
+				NOT = { has_country_flag = take_a_mile }		
+			}
+			current_age = age_of_absolutism
+		}
+		modifier = {
+			global_unrest = 1
+		}
+		is_bad = yes
+	}
+	conditional_modifier = {
+		trigger = {
+			OR = {
+				NOT = { has_country_flag = new_peasantry_status_quo }
+				NOT = { has_country_flag = take_a_mile }		
+			}
+			current_age = age_of_revolutions
+		}
+		modifier = {
+			global_unrest = 2
+		}
+		is_bad = yes
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = new_peasantry_status_quo
+			current_age = age_of_reformation
+		}
+		modifier = {
+			global_unrest = 0.25
+		}
+		is_bad = yes
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = new_peasantry_status_quo
+			current_age = age_of_absolutism
+		}
+		modifier = {
+			global_unrest = 0.5
+		}
+		is_bad = yes
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = give_an_inch_flag
+			current_age = age_of_absolutism
+		}
+		modifier = {
+			global_unrest = 2
+		}
+		is_bad = yes
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = give_an_inch_flag
+			current_age = age_of_revolutions
+		}
+		modifier = {
+			global_unrest = 4
+		}
+		is_bad = yes
+	}
+	conditional_modifier = {
+		trigger = {
+			absolutism = 25
+			NOT = { absolutism = 50 }
+		}
+		modifier = {
+			global_unrest = 1
+		}
+		is_bad = yes
+	}
+	conditional_modifier = {
+		trigger = {
+			absolutism = 50
+			NOT = { absolutism = 80 }
+		}
+		modifier = {
+			global_unrest = 2
+		}
+		is_bad = yes
+	}
+	conditional_modifier = {
+		trigger = {
+			absolutism = 80
+		}
+		modifier = {
+			global_unrest = 3
+		}
+		is_bad = yes
+	}
+	influence_scaled_conditional_modifier = {
+		trigger = {
+			always = yes
+		}
+		modifier = { 
+			nobles_loyalty_modifier = -0.30
+		}
+	}
+	can_revoke = {
+		always = no
+	}
+	ai_will_do = {
+		factor = -300
+	}
+}
+
+estate_peasants_unpaid_labor_of_burghers = {
+	icon = privilege_give_money
+	max_absolutism = 10
+	conditional_modifier = { trigger = { has_country_flag = new_peasantry_status_quo } modifier = { max_absolutism = -5 } }
+	conditional_modifier = { trigger = { has_country_flag = take_a_mile } modifier = { max_absolutism = -10 } }
+	is_valid = {
+		has_estate_privilege = estate_peasants_unpaid_labor_of_burghers
+	}
+	on_granted = {
+		custom_tooltip = estate_influence_over_peasantry.tt
+	}
+	conditional_modifier = {
+		trigger = {
+			OR = {
+				has_country_flag = new_peasantry_status_quo
+				has_country_flag = take_a_mile
+			}
+		}
+		modifier = {
+			production_efficiency = 0.10			
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			OR = {
+				NOT = { has_country_flag = new_peasantry_status_quo }
+				NOT = { has_country_flag = take_a_mile }		
+			}
+			current_age = age_of_discovery
+		}
+		modifier = {
+			global_unrest = 0.25
+		}
+		is_bad = yes
+	}
+	conditional_modifier = {
+		trigger = {
+			OR = {
+				NOT = { has_country_flag = new_peasantry_status_quo }
+				NOT = { has_country_flag = take_a_mile }		
+			}
+			current_age = age_of_reformation
+		}
+		modifier = {
+			global_unrest = 0.5
+		}
+		is_bad = yes
+	}
+	conditional_modifier = {
+		trigger = {
+			OR = {
+				NOT = { has_country_flag = new_peasantry_status_quo }
+				NOT = { has_country_flag = take_a_mile }		
+			}
+			current_age = age_of_absolutism
+		}
+		modifier = {
+			global_unrest = 1
+		}
+		is_bad = yes
+	}
+	conditional_modifier = {
+		trigger = {
+			OR = {
+				NOT = { has_country_flag = new_peasantry_status_quo }
+				NOT = { has_country_flag = take_a_mile }		
+			}
+			current_age = age_of_revolutions
+		}
+		modifier = {
+			global_unrest = 2
+		}
+		is_bad = yes
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = new_peasantry_status_quo
+			current_age = age_of_reformation
+		}
+		modifier = {
+			global_unrest = 0.25
+		}
+		is_bad = yes
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = new_peasantry_status_quo
+			current_age = age_of_absolutism
+		}
+		modifier = {
+			global_unrest = 0.5
+		}
+		is_bad = yes
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = give_an_inch_flag
+			current_age = age_of_absolutism
+		}
+		modifier = {
+			global_unrest = 2
+		}
+		is_bad = yes
+	}
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = give_an_inch_flag
+			current_age = age_of_revolutions
+		}
+		modifier = {
+			global_unrest = 4
+		}
+		is_bad = yes
+	}
+	conditional_modifier = {
+		trigger = {
+			absolutism = 25
+			NOT = { absolutism = 50 }
+		}
+		modifier = {
+			global_unrest = 1
+		}
+		is_bad = yes
+	}
+	conditional_modifier = {
+		trigger = {
+			absolutism = 50
+			NOT = { absolutism = 80 }
+		}
+		modifier = {
+			global_unrest = 2
+		}
+		is_bad = yes
+	}
+	conditional_modifier = {
+		trigger = {
+			absolutism = 80
+		}
+		modifier = {
+			global_unrest = 3
+		}
+		is_bad = yes
+	}
+	influence_scaled_conditional_modifier = {
+		trigger = {
+			always = yes
+		}
+		modifier = { 
+			burghers_loyalty_modifier = -0.30
+		}
+	}
+	can_revoke = {
+		always = no
+	}
+	ai_will_do = {
+		factor = -300
+	}
+}
+
+estate_oppression_peasants_forced_draft = {
+	icon = privilege_infantry
+	loyalty = -0.15
+
+	is_valid = {
+		has_country_flag = influence_over_peasants
+		NOT = { has_government_mechanic = peasant_liberation }
+	}
+	can_select = {
+		estate_loyalty = {
+			estate = estate_peasants
+			loyalty = 30
+		}
+	}
+	penalties = {
+		nobles_influence_modifier = 0.1
+		global_unrest = 3
+		land_morale = -0.05
+		manpower_recovery_speed = -0.1
+		production_efficiency = -0.33
+	}
+	cooldown_years = 25
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_oppression_peasants_forced_draft
+	}
+	on_granted = {
+		if = {
+			limit = {
+				NOT = { has_country_flag = new_peasantry_status_quo }
+				NOT = { has_country_flag = a_breaking_point }
+			}
+			custom_tooltip = oppression_forced_draft.tt
+			hidden_effect = {
+				add_owned_provinces_development_manpower = {
+					multiplier = 0.125
+					trigger = {
+						is_state = yes
+					}
+				}
+			}	
+		}
+		else = {
+			custom_tooltip = oppression_forced_draft_weaken.tt
+			hidden_effect = {
+				add_owned_provinces_development_manpower = {
+					multiplier = 0.075
+					trigger = {
+						is_state = yes
+					}
+				}		
+			}			
+		}
+
+	}
+
+	ai_will_do = {
+		factor = 0
+	}	
+}
+
+estate_oppression_peasants_forced_naval_draft = {
+	icon = privilege_sailors
+	loyalty = -0.15
+
+	is_valid = {
+		has_country_flag = influence_over_peasants
+		NOT = { has_government_mechanic = peasant_liberation }		
+	}
+	can_select = {
+		estate_loyalty = {
+			estate = estate_peasants
+			loyalty = 30
+		}
+	}
+	penalties = {
+		burghers_influence_modifier = 0.1
+		global_unrest = 3
+		naval_morale = -0.05
+		sailors_recovery_speed = -0.1
+		trade_efficiency = -0.20
+	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_oppression_peasants_forced_naval_draft
+	}
+	on_granted = {
+		if = {
+			limit = { 
+				NOT = { has_country_flag = new_peasantry_status_quo }
+				NOT = { has_country_flag = a_breaking_point }				
+			}
+			custom_tooltip = oppression_forced_naval_draft.tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						has_port = yes
+						is_state = yes
+					}
+					ROOT = {
+						add_sailors = 1
+					}
+				}
+			}
+		}
+		else = {
+			custom_tooltip = oppression_forced_naval_draft_weaken.tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						has_port = yes
+						is_state = yes
+					}
+					ROOT = {
+						add_sailors = 0.5
+					}
+				}
+			}			
+		}
+
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_oppression_peasants_seize_assets = {
+	icon = privilege_loot
+	loyalty = -0.15
+
+	is_valid = {
+		has_country_flag = influence_over_peasants
+		NOT = { has_government_mechanic = peasant_liberation }		
+	}
+	can_select = {
+		estate_loyalty = {
+			estate = estate_peasants
+			loyalty = 30
+		}
+	}
+	penalties = {
+		church_influence_modifier = 0.1
+		global_unrest = 3
+		global_tax_modifier = -0.40
+	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_oppression_peasants_seize_assets
+	}
+	on_granted = {
+		if = {
+			limit = { 
+				NOT = { has_country_flag = new_peasantry_status_quo }
+				NOT = { has_country_flag = a_breaking_point }
+			}
+			custom_tooltip = oppression_seize_assets.tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						always = yes
+						is_state = yes
+					}
+					ROOT = {
+						add_treasury = 20
+					}
+				}
+			}
+		}
+		else = {
+			custom_tooltip = oppression_seize_assets_weaken.tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						always = yes
+						is_state = yes
+					}
+					ROOT = {
+						add_treasury = 10
+					}
+				}
+			}			
+		}
+	}
+
+	ai_will_do = {
+		factor = 0
+	}	
+}
+
+estate_oppression_peasants_seize_food_stores = {
+	icon = privilege_monopoly
+	loyalty = -0.1
+
+	is_valid = {
+		has_country_flag = influence_over_peasants
+		NOT = { has_government_mechanic = peasant_liberation }		
+	}
+	can_select = {
+		estate_loyalty = {
+			estate = estate_peasants
+			loyalty = 30
+		}
+	}
+	penalties = {
+		nobles_influence_modifier = 0.1
+		global_unrest = 2
+	}
+	cooldown_years = 5
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_oppression_peasants_seize_food_stores
+	}
+	on_granted = {
+		if = {
+			limit = { 
+				NOT = { has_country_flag = new_peasantry_status_quo }
+				NOT = { has_country_flag = a_breaking_point }				
+			}
+			add_country_modifier = {
+				name = seize_food_stores
+				duration = 365
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = seize_food_stores_weaken
+				duration = 365
+			}
+		}
+	}
+
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_oppression_peasants_to_uniform = {
+	icon = privilege_multiple_professions
+	loyalty = -0.1
+
+	is_valid = {
+		has_country_flag = influence_over_peasants
+		NOT = { has_government_mechanic = peasant_liberation }		
+	}
+	can_select = {
+		estate_loyalty = {
+			estate = estate_peasants
+			loyalty = 30
+		}
+	}
+	penalties = {
+		nobles_influence_modifier = 0.1
+		global_unrest = 2
+	}
+	cooldown_years = 5
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_oppression_peasants_to_uniform
+	}
+	on_granted = {
+		if = {
+			limit = { 
+				NOT = { has_country_flag = new_peasantry_status_quo }
+				NOT = { has_country_flag = a_breaking_point }
+			}
+			add_country_modifier = {
+				name = to_uniform_modifier
+				duration = 31
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = to_uniform_modifier_weaken
+				duration = 31
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 0
+	}	
+}
+
+estate_oppression_peasants_to_the_seas = {
+	icon = estate_burghers_reliance_on_republics
+	loyalty = -0.1
+
+	is_valid = {
+		has_country_flag = influence_over_peasants
+		NOT = { has_government_mechanic = peasant_liberation }		
+	}
+	can_select = {
+		estate_loyalty = {
+			estate = estate_peasants
+			loyalty = 30
+		}
+	}
+	penalties = {
+		burghers_influence_modifier = 0.1
+		global_unrest = 2
+	}
+	cooldown_years = 5
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_oppression_peasants_to_uniform
+	}
+	on_granted = {
+		if = {
+			limit = { 
+				NOT = { has_country_flag = new_peasantry_status_quo }
+				NOT = { has_country_flag = a_breaking_point }
+			}
+			add_country_modifier = {
+				name = to_the_sea_modifier
+				duration = 31
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = to_the_sea_modifier_weaken
+				duration = 31
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 0
+	}	
+}
+
+estate_peasants_trust_in_state = {
+	icon = privilege_peasant
+	max_absolutism = -5
+	loyalty = 0.1
+
+	is_valid = {
+		has_estate_privilege = estate_peasants_trust_in_state
+	}
+	benefits = {
+		legitimacy = 0.5
+		republican_tradition = 0.5
+		devotion = 0.5
+	}
+	on_granted = {
+		custom_tooltip = estate_peasants_trust_in_state.tt
+		hidden_effect = {
+			set_country_flag = trust_in_state_flag			
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			had_country_flag = {
+				flag = trust_in_state_flag
+				days = 1826
+			}
+		}
+		modifier = {
+			global_unrest = -2
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			had_country_flag = {
+				flag = trust_in_state_flag
+				days = 3652
+			}			
+		}
+		modifier = {
+			prestige = 0.25
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			had_country_flag = {
+				flag = trust_in_state_flag
+				days = 7305
+			}
+		}
+		modifier = {
+			development_cost_modifier = -0.025
+		}
+	}
+	can_revoke = {
+		always = no
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+######
+estate_peasant_surrounded_by_butchers = {
+	icon = privilege_spawn_rajput_regiments
+	max_absolutism = -20
+	is_valid = {
+		has_estate_privilege = estate_peasant_surrounded_by_butchers
+	}
+	benefits = {
+
+	}
+	penalties = {
+
+	}
+	can_revoke = {
+		always = no
+	}
+	ai_will_do = {
+		factor = -300
+	}
+}
+
+estate_peasant_surrounded_by_enslavers = {
+	icon = privilege_discipline
+	max_absolutism = -20
+	is_valid = {
+		has_estate_privilege = estate_peasant_surrounded_by_enslavers
+	}
+	benefits = {
+
+	}
+	penalties = {
+
+	}
+	can_revoke = {
+		always = no
+	}
+	ai_will_do = {
+		factor = -300
+	}	
+}
+
+estate_peasant_surrounded_by_conquerors = {
+	icon = privilege_limited_war_support
+	max_absolutism = -20
+	is_valid = {
+		has_estate_privilege = estate_peasant_surrounded_by_conquerors
+	}
+	benefits = {
+
+	}
+	penalties = {
+
+	}
+	can_revoke = {
+		always = no
+	}
+	ai_will_do = {
+		factor = -300
+	}
+}
+######
+estate_propaganda_peasant_nobles = {
+	icon = privilege_infantry
+
+	is_valid = {
+		has_estate_privilege = estate_propaganda_peasant_nobles
+	}
+	on_granted = {
+		custom_tooltip = estate_propaganda_peasant_nobles.tt
+	}
+	conditional_modifier = {
+		trigger = {
+			had_country_flag = {
+				flag = propaganda_of_the_nobles
+				days = 1826
+			}
+			NOT = {
+				had_country_flag = {
+					flag = propaganda_of_the_nobles
+					days = 3652
+				}
+			}
+		}
+		modifier = {
+			max_absolutism = -5
+			burghers_loyalty_modifier = -0.025
+			church_loyalty_modifier = -0.025
+		}
+		is_bad = yes
+	}
+	conditional_modifier = {
+		trigger = {
+			had_country_flag = {
+				flag = propaganda_of_the_nobles
+				days = 3652
+			}
+			NOT = {
+				had_country_flag = {
+					flag = propaganda_of_the_nobles
+					days = 7300
+				}
+			}
+		}
+		modifier = {
+			max_absolutism = -10
+			production_efficiency = -0.15
+			burghers_loyalty_modifier = -0.05
+			church_loyalty_modifier = -0.05
+		}
+		is_bad = yes
+	}
+	conditional_modifier = {
+		trigger = {
+			had_country_flag = {
+				flag = propaganda_of_the_nobles
+				days = 7300
+			}
+			NOT = {
+				had_country_flag = {
+					flag = propaganda_of_the_nobles
+					days = 9125
+				}
+			}
+		}
+		modifier = {
+			max_absolutism = -10
+			production_efficiency = -0.3
+			idea_cost = 0.0125
+			burghers_loyalty_modifier = -0.1
+			church_loyalty_modifier = -0.1
+		}
+		is_bad = yes
+	}
+
+	conditional_modifier = {
+		trigger = {
+			had_country_flag = {
+				flag = propaganda_of_the_nobles
+				days = 9125
+			}
+		}
+		modifier = {
+			max_absolutism = -10
+			production_efficiency = -0.45
+			idea_cost = 0.025
+			development_cost_modifier = 0.02
+			burghers_loyalty_modifier = -0.1
+			church_loyalty_modifier = -0.1
+		}
+	}
+
+	conditional_modifier = {
+		trigger = {
+			estate_influence = {
+				estate = estate_nobles
+				influence = 20
+			}
+			NOT = {
+				estate_influence = {
+					estate = estate_peasants
+					influence = 34
+				}
+			}
+			estate_loyalty = {
+				estate = estate_peasants
+				loyalty = 30
+			}
+		}
+		modifier = {
+			land_morale = 0.03
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			had_country_flag = {
+				flag = propaganda_of_the_nobles
+				days = 1826
+			}
+			estate_influence = {
+				estate = estate_nobles
+				influence = 35
+			}
+			NOT = {
+				estate_influence = {
+					estate = estate_nobles
+					influence = 49
+				}
+			}
+			estate_loyalty = {
+				estate = estate_peasants
+				loyalty = 30
+			}
+		}
+		modifier = {
+			land_morale = 0.06
+			global_manpower_modifier = 0.05
+			peasants_privilege_slots = -1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			had_country_flag = {
+				flag = propaganda_of_the_nobles
+				days = 3652
+			} 
+			estate_influence = {
+				estate = estate_nobles
+				influence = 50
+			}
+			estate_loyalty = {
+				estate = estate_peasants
+				loyalty = 30
+			}
+		}
+		modifier = {
+			land_morale = 0.10
+			global_manpower_modifier = 0.10
+			discipline = 0.02
+			peasants_privilege_slots = -2
+		}
+	}
+	can_revoke = {
+		always = no
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_propaganda_peasant_burghers = {
+	icon = privilege_monopoly
+
+	is_valid = {
+		has_estate_privilege = estate_propaganda_peasant_burghers
+	}
+	on_granted = {
+		custom_tooltip = estate_propaganda_peasant_burghers.tt
+	}
+	conditional_modifier = {
+		trigger = {
+			had_country_flag = {
+				flag = propaganda_of_the_burghers
+				days = 1826
+			}
+			NOT = {
+				had_country_flag = {
+					flag = propaganda_of_the_burghers
+					days = 3652
+				}
+			}
+		}
+		modifier = {
+			max_absolutism = -5
+			nobles_loyalty_modifier = -0.025
+			church_loyalty_modifier = -0.025
+		}
+		is_bad = yes
+	}
+	conditional_modifier = {
+		trigger = {
+			had_country_flag = {
+				flag = propaganda_of_the_burghers
+				days = 3652
+			}
+			NOT = {
+				had_country_flag = {
+					flag = propaganda_of_the_burghers
+					days = 7300
+				}
+			}
+		}
+		modifier = {
+			max_absolutism = -10
+			land_morale = -0.02
+			nobles_loyalty_modifier = -0.05
+			church_loyalty_modifier = -0.05
+		}
+		is_bad = yes
+	}
+	conditional_modifier = {
+		trigger = {
+			had_country_flag = {
+				flag = propaganda_of_the_burghers
+				days = 7300
+			}
+			NOT = {
+				had_country_flag = {
+					flag = propaganda_of_the_burghers
+					days = 9125
+				}
+			}
+		}
+		modifier = {
+			max_absolutism = -10
+			land_morale = -0.04
+			idea_cost = 0.0125
+			nobles_loyalty_modifier = -0.1
+			church_loyalty_modifier = -0.1
+		}
+		is_bad = yes
+	}
+
+	conditional_modifier = {
+		trigger = {
+			had_country_flag = {
+				flag = propaganda_of_the_burghers
+				days = 9125
+			}
+		}
+		modifier = {
+			max_absolutism = -10
+			land_morale = -0.08
+			idea_cost = 0.025
+			development_cost_modifier = 0.02
+			nobles_loyalty_modifier = -0.1
+			church_loyalty_modifier = -0.1
+		}
+	}
+
+	conditional_modifier = {
+		trigger = {
+			estate_influence = {
+				estate = estate_burghers
+				influence = 20
+			}
+			estate_influence = {
+				estate = estate_burghers
+				influence = 34
+			}
+			estate_loyalty = {
+				estate = estate_peasants
+				loyalty = 30
+			}
+		}
+		modifier = {
+			production_efficiency = 0.133
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			had_country_flag = {
+				flag = propaganda_of_the_burghers
+				days = 1826
+			}
+			estate_influence = {
+				estate = estate_burghers
+				influence = 35
+			}
+			NOT = {
+				estate_influence = {
+					estate = estate_burghers
+					influence = 49
+				}
+			}
+			estate_loyalty = {
+				estate = estate_peasants
+				loyalty = 30
+			}
+		}
+		modifier = {
+			production_efficiency = 0.266
+			trade_efficiency = 0.075
+			peasants_privilege_slots = -1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			had_country_flag = {
+				flag = propaganda_of_the_burghers
+				days = 3652
+			} 
+			estate_influence = {
+				estate = estate_burghers
+				influence = 50
+			}
+			estate_loyalty = {
+				estate = estate_peasants
+				loyalty = 30
+			}
+		}
+		modifier = {
+			production_efficiency = 0.40
+			trade_efficiency = 0.15
+			naval_morale = 0.10
+			peasants_privilege_slots = -2
+		}
+	}
+	can_revoke = {
+		always = no
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_propaganda_peasant_clergy = {
+	icon = privilege_development_efficiency
+
+	is_valid = {
+		has_estate_privilege = estate_propaganda_peasant_clergy
+	}
+	on_granted = {
+		custom_tooltip = estate_propaganda_peasant_clergy.tt
+	}
+	conditional_modifier = {
+		trigger = {
+			had_country_flag = {
+				flag = propaganda_of_the_clergy
+				days = 1826
+			}
+			NOT = {
+				had_country_flag = {
+					flag = propaganda_of_the_clergy
+					days = 3652
+				}
+			}
+		}
+		modifier = {
+			max_absolutism = -5
+			nobles_loyalty_modifier = -0.025
+			burghers_loyalty_modifier = -0.025
+		}
+		is_bad = yes
+	}
+	conditional_modifier = {
+		trigger = {
+			had_country_flag = {
+				flag = propaganda_of_the_clergy
+				days = 3652
+			}
+			NOT = {
+				had_country_flag = {
+					flag = propaganda_of_the_clergy
+					days = 7300
+				}
+			}
+		}
+		modifier = {
+			max_absolutism = -10
+			land_morale = -0.02
+			nobles_loyalty_modifier = -0.05
+			burghers_loyalty_modifier = -0.05
+		}
+		is_bad = yes
+	}
+	conditional_modifier = {
+		trigger = {
+			had_country_flag = {
+				flag = propaganda_of_the_clergy
+				days = 7300
+			}
+			NOT = {
+				had_country_flag = {
+					flag = propaganda_of_the_clergy
+					days = 9125
+				}
+			}
+		}
+		modifier = {
+			max_absolutism = -10
+			land_morale = -0.04
+			trade_efficiency = -0.1
+			nobles_loyalty_modifier = -0.1
+			burghers_loyalty_modifier = -0.1
+		}
+		is_bad = yes
+	}
+
+	conditional_modifier = {
+		trigger = {
+			had_country_flag = {
+				flag = propaganda_of_the_clergy
+				days = 9125
+			}
+		}
+		modifier = {
+			max_absolutism = -10
+			land_morale = -0.08
+			trade_efficiency = -0.2
+			discipline = -0.01
+			nobles_loyalty_modifier = -0.1
+			burghers_loyalty_modifier = -0.1
+		}
+	}
+
+	conditional_modifier = {
+		trigger = {
+			estate_influence = {
+				estate = estate_church
+				influence = 20
+			}
+			NOT = {
+				estate_influence = {
+					estate = estate_church
+					influence = 34
+				}
+			}
+			estate_loyalty = {
+				estate = estate_peasants
+				loyalty = 30
+			}
+		}
+		modifier = {
+			advisor_cost = -0.05
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			had_country_flag = {
+				flag = propaganda_of_the_clergy
+				days = 1826
+			}
+			estate_influence = {
+				estate = estate_church
+				influence = 35
+			}
+			NOT = {
+				estate_influence = {
+					estate = estate_church
+					influence = 49
+				}
+			}
+			estate_loyalty = {
+				estate = estate_peasants
+				loyalty = 30
+			}
+		}
+		modifier = {
+			advisor_cost = -0.10
+			idea_cost = -0.0125
+			peasants_privilege_slots = -1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			had_country_flag = {
+				flag = propaganda_of_the_clergy
+				days = 3652
+			} 
+			estate_influence = {
+				estate = estate_church
+				influence = 50
+			}
+			estate_loyalty = {
+				estate = estate_peasants
+				loyalty = 30
+			}
+		}
+		modifier = {
+			advisor_cost = -0.15
+			idea_cost = -0.025
+			development_cost_modifier = -0.02
+			peasants_privilege_slots = -2
+		}
+	}
+	can_revoke = {
+		always = no
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
 }

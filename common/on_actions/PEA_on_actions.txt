@@ -1,0 +1,7 @@
+on_startup = {
+    events = {
+        influence_peasant_events.1
+        #troubling_peasant_republic.1
+        global_peasant_event.1
+    }
+}

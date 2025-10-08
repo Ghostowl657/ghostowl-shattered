@@ -4,33 +4,31 @@ estate_peasants =
 
 	# if true, country will get the estate
 	trigger = {	
-		NOT = { has_government_attribute = disables_estate_peasants }
-		NOT = { has_disabled_estate = { estate = estate_peasants } }
-		OR ={
-			has_government_attribute = enables_estate_peasants
-			has_enabled_estate = { estate = estate_peasants }
-			has_unlocked_estate = { estate = estate_peasants }
-		
-			AND = {
-				NOT = {has_government_attribute = is_pirate_republic_reform} 
-				NOT = { government = native }
-				NOT = { has_reform = siberian_tribe }
-				is_nomad = no
-				is_colonial_nation = no
-			}
+		OR = {
+			has_unlocked_estate = { estate = estate_peasants }		
+			has_institution = feudalism
 		}
+		OR = {
+			NOT = {has_government_attribute = is_pirate_republic_reform} 
+			NOT = { government = native }
+			NOT = { has_reform = siberian_tribe }
+			is_nomad = no
+			is_colonial_nation = no
+		}
+		
 	}
 	
 	country_modifier_happy = {
-		build_time = -0.1
-		build_cost = -0.1
+		global_unrest = -8
+		stability_cost_modifier = -0.4
+		global_supply_limit_modifier = 1
 	}
 	country_modifier_neutral = {
-		build_time = -0.1
+		global_unrest = -4
 	}
 	country_modifier_angry = {
 		stability_cost_modifier = 0.3
-		global_supply_limit_modifier = -1
+		global_supply_limit_modifier = -1.50
 		global_unrest = 4
 	}
 	land_ownership_modifier = {
@@ -55,16 +53,43 @@ estate_peasants =
 		modifier = {
 			factor = 0.5
 			NOT = { is_state_core = owner }
-		}
+		} 
 	}
 
 	base_influence = 10
+	influence_modifier = {
+		desc = influence_over_the_peasantry
+		influence = -10
+		trigger = { 
+			has_country_flag = influence_over_peasants
+		}
+	}
+
+	custom_desc = {
+		desc = "underinfluenceDESC"
+		trigger = { 
+			has_country_flag = influence_over_peasants
+		}
+	}
 
 	color = { 0 155 0}
 
 	influence_from_dev_modifier = 1.0
 
 	privileges = {
+		estate_peasants_trust_in_state
+		estate_propaganda_peasant_nobles
+		estate_propaganda_peasant_burghers
+		estate_propaganda_peasant_clergy
+		estate_peasants_unpaid_labor_of_burghers
+		estate_peasants_property_of_nobles
+		estate_peasants_sheep_of_clergy
+		estate_oppression_peasants_forced_draft
+		estate_oppression_peasants_forced_naval_draft
+		estate_oppression_peasants_seize_assets
+		estate_oppression_peasants_seize_food_stores
+		estate_oppression_peasants_to_uniform
+		estate_oppression_peasants_to_the_seas
 		estate_peasants_land_rights
 		estate_peasants_granaries
 		estate_peasants_educated_poor
@@ -74,6 +99,18 @@ estate_peasants =
 		#estate_peasants_farmering_provinces
 		estate_peasants_merchant_labor
 		estate_peasants_supply_caravans
+		estate_limited_peasants_officers_corp
+		estate_limited_peasants_military_trainers
+		estate_limited_peasants_nobility_educated
+		estate_limited_peasants_trading_port_labor
+		estate_limited_peasants_Naval_Officers
+		estate_limited_peasants_burgher_educated
+		estate_limited_peasants_loyalty_to_church
+		estate_limited_peasants_calls_for_war
+		estate_limited_peasants_church_educated
+		#estate_peasant_surrounded_by_butchers
+		#estate_peasant_surrounded_by_enslavers
+		#estate_peasant_surrounded_by_conquerors
 	}
 
 	agendas = {
@@ -82,6 +119,6 @@ estate_peasants =
 		estate_peasants_increase_autonomy_in_province_x
 		estate_peasants_build_fort_building_in_y
 		estate_peasants_increase_stability
-		estate_peasants_build_university_in_y
+		estate_peasants_build_university_in_y	
 	}
 }

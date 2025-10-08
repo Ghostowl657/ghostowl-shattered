@@ -1,0 +1,62 @@
+peasant_liberation = {
+	alert_icon_gfx = GFX_alerticons_government_mechanics
+	alert_icon_index = 17
+
+	available = {
+		has_reform = liberation_of_peasants
+	}
+
+	powers = {
+		liberation_points = {
+			show_before_interactions = yes
+			max = 100
+			base_monthly_growth = 0.5
+			scaled_modifier = {
+				modifier = {
+					nobles_loyalty_modifier = -0.1
+					burghers_loyalty_modifier = -0.1
+					church_loyalty_modifier = -0.1
+				}
+			}
+		}
+	}
+
+	interactions = {
+		peasant_liberation = {
+			icon = GFX_russian_ability_DIP
+			gui = Peasant_Liberation_power
+			cost_type = liberation_points
+			cost = 100
+
+			trigger = {
+
+			}
+
+			effect = {
+				if = {
+					limit = { 
+						has_estate_privilege = estate_peasants_sheep_of_clergy
+					}
+					country_event = {
+						id = negotiate_events.1
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = { has_estate_privilege = estate_peasants_sheep_of_clergy }
+						has_estate_privilege = estate_peasants_unpaid_labor_of_burghers
+					}
+					country_event = {
+						id = negotiate_events.2
+					}
+				}
+				else = {
+					country_event = {
+						id = negotiate_events.3
+					}
+				}
+			}
+		}
+	}
+
+}

@@ -1,13 +1,18 @@
 ﻿l_english:
   estate_peasants: "Peasantry"
-  estate_peasants_desc: ""
+  estate_peasants_desc: "The Peasantry the lowest class of the people. They make up over 90% of the nation's population but almost none of the power "
+  underinfluenceDESC: "The Peasantry a group heavily mistreated, despite making up over 90% of the nation's population they yeild none of the power. The very limited privileges are handed to them by the other estates. To the Nobles they are nothing but property made to tend the land; To the Clergy they are simply sheep and an easy tax base to exploit; and to the Burgher the city peasants are free labor, money flows as long as they remain poor."
 
   peasants_influence_modifier: "Peasantry Influence Modifier"
   peasants_loyalty_modifier: "Peasantry Loyalty Equilibrium"
   peasants_privilege_slots: "Peasantry Max Privileges"
   estate_peasants_ownership: "Peasantry Land Ownership"
+  unlock_estate_peasants_tt: "Unlock the Peasantry Estate"
+  influence_over_the_peasantry: "Estate Influence Over the Peasantry"
+
 
   #privileges
+    #old privileges
   estate_peasants_land_rights: "Peasantry Land Rights"
   estate_peasants_land_rights_desc: "To keep our subjects happy was must concede land to our underlings"
   estate_peasants_educated_poor: "An Educated Poor"
@@ -24,6 +29,181 @@
   estate_peasants_supply_caravans_desc: ""
   estate_peasants_granaries: "Upkeep Granaries"
   estate_peasants_granaries_desc: ""
+  estate_peasants_trust_in_state: "Trust in the State"
+  estate_peasants_trust_in_state_desc: ""
+  estate_peasants_trust_in_state.tt: "As the years march on the Peasantry will grow more and more trusting of the state, giving more and more modifiers.\nBut be cautious if the loyalty of the Peasantry drops below §R30§!, you will have to regain the trust."
+    #Propaganda privileges
+  estate_propaganda_peasant_nobles: "Noblity Propaganda"
+  estate_propaganda_peasant_nobles_desc: ""
+  estate_propaganda_peasant_nobles.tt: "This Privilege will grant you 3 modifiers. \n§YX§! - §Garmy morale§! \n§YY§! - §Gmanpower modifier§! \n§YZ§! - §Gdiscipline§! \n\n To earn these modifiers, \nyou will receive §YX§! as long as the influence of the nobles is at least §Y20§! and the loyalty of the Peasantry is at least §Y30§!. \nyou will receive §YX§! and §YY§! after 5 years of having this privilege and as long as the influence of the nobles is at least §Y35§! and the loyalty of the Peasantry is at least §Y30§!. \nyou will recieve §Yall 3 modifers§! after 10 years of having this privilege and as long as the influence of the nobles is at least §Y50§! and the loyalty of the Peasantry is at least §Y30§!. \n§YBut do be cautious§! §Rthe longer you keep this privilege the more debuffs you will get§! \nThe timer will reset after you change progaganda."
+  estate_propaganda_peasant_burghers: "Burgher Propaganda"
+  estate_propaganda_peasant_burghers_desc: ""
+  estate_propaganda_peasant_burghers.tt: "This Privilege will grant you 3 modifiers. \n§YX§! - §Gproduction efficiency§! \n§YY§! - §Gtrade efficiency§! \n§YZ§! - §Gnaval morale§! \n\n To earn these modifiers, \nyou will receive §YX§! as long as the influence of the nobles is at least §Y20§! and the loyalty of the Peasantry is at least §Y30§!. \nyou will receive §YX§! and §YY§! after 5 years of having this privilege and as long as the influence of the nobles is at least §Y35§! and the loyalty of the Peasantry is at least §Y30§!. \nyou will recieve §Yall 3 modifers§! after 10 years of having this privilege and as long as the influence of the nobles is at least §Y50§! and the loyalty of the Peasantry is at least §Y30§!. \n§YBut do be cautious§! §Rthe longer you keep this privilege the more debuffs you will get§! \nThe timer will reset after you change progaganda."
+  estate_propaganda_peasant_clergy: "Clergy Propaganda"
+  estate_propaganda_peasant_clergy_desc: ""
+  estate_propaganda_peasant_clergy.tt: "This Privilege will grant you 3 modifiers. \n§YX§! - §Gadvisor cost§! \n§YY§! - §Gidea cost§! \n§YZ§! - §Gdev cost§! \n\n To earn these modifiers, \nyou will receive §YX§! as long as the influence of the nobles is at least §Y20§! and the loyalty of the Peasantry is at least §Y30§!. \nyou will receive §YX§! and §YY§! after 5 years of having this privilege and as long as the influence of the nobles is at least §Y35§! and the loyalty of the Peasantry is at least §Y30§!. \nyou will recieve §Yall 3 modifers§! after 10 years of having this privilege and as long as the influence of the nobles is at least §Y50§! and the loyalty of the Peasantry is at least §Y30§!. \n§YBut do be cautious§! §Rthe longer you keep this privilege the more debuffs you will get§! \nThe timer will reset after you change progaganda."
+    #oppression privilgee
+  estate_oppression_peasants_forced_draft: "Forced Draft"
+  estate_oppression_peasants_forced_draft_desc: ""
+  oppression_forced_draft.tt: "Gain §G125§! £icon_manpower£ Manpower for every owned development that is in a §Ystate§!."
+  oppression_forced_draft_weaken.tt: "Gain §G75§! £icon_manpower£ Manpower for every owned development that is in a §Ystate§!."
+  estate_oppression_peasants_forced_naval_draft: "Naval Draft"
+  estate_oppression_peasants_forced_naval_draft_desc: ""
+  oppression_forced_naval_draft.tt: "Gain §G1000§! £icon_sailors£ Sailors for every owned coastal province in a §Ystate§!."
+  oppression_forced_naval_draft_weaken.tt: "Gain §G500§! £icon_sailors£ Sailors for every owned coastal province in a §Ystate§!."
+  estate_oppression_peasants_seize_assets: "Sieze Assets"
+  estate_oppression_peasants_seize_assets_desc: ""
+  oppression_seize_assets.tt: "Gain §G20§! ¤ Ducats for every owned province in a §Ystate§!."
+  oppression_seize_assets_weaken.tt: "Gain §G10§! ¤ Ducats for every owned province in a §Ystate§!."
+  estate_oppression_peasants_to_uniform: "To The Uniform"
+  estate_oppression_peasants_to_uniform_desc: ""
+  estate_oppression_peasants_to_the_seas: "To The Sea"
+  estate_oppression_peasants_to_the_seas_desc: ""
+  estate_oppression_peasants_seize_food_stores: "Seize Food Stores"
+  estate_oppression_peasants_seize_food_stores_desc: ""
+
+  influencial_peasant_fear.tt: "Be cautious of the Peasantry crossing over §R30§! influence, or §Rfear§! could spread to this §Yestate§!."
+    #nobility/peasantry limited privileges
+  estate_nobles_limited_privileges_to_peasantry: "Limited Peasantry Privileges (nobles)"
+  estate_nobles_limited_privileges_to_peasantry_desc: ""
+  estate_limited_peasants_officers_corp: "Peasant Officer Corp."
+  estate_limited_peasants_officers_corp_desc: ""
+  limited_privileges_1.ct: "The §YNobles§! need to be at §Y60§! loyalty, for the loyalty scalable modifer of §G10%§! army morale."
+  estate_limited_peasants_military_trainers: "Military Trainers"
+  estate_limited_peasants_military_trainers_desc: ""
+  limited_privileges_2.ct: "The §YNobles§! need to be at §Y70§! loyalty, for the loyalty scalable modifer of §G5%§! discipline."
+  estate_limited_peasants_nobility_educated: "Nobility Education"
+  estate_limited_peasants_nobility_educated_desc: ""
+  limited_privileges_3.ct: "The §YNobles§! need to be at §Y40§! loyalty, for the loyalty scalable modifer of §G100%§! institution spread and §G50%§! embracement cost."
+    #burghers/peasantry limited privileges
+  estate_burghers_limited_privileges_to_peasantry: "Limited Peasantry Privileges (burghers)"
+  estate_burghers_limited_privileges_to_peasantry_desc: ""
+  estate_limited_peasants_trading_port_labor: "Trade Port Labor"
+  estate_limited_peasants_trading_port_labor_desc: ""
+  limited_privileges_4.ct: "The §YBurghers§! need to be at §Y60§! loyalty, for the loyalty scalable modifer of §G15%§! trade efficiency and §G25%§! porvincal trade power."
+  estate_limited_peasants_Naval_Officers: "Peasant Naval Officers"
+  estate_limited_peasants_Naval_Officers_desc: ""
+  limited_privileges_5.ct: "The §YBurghers§! need to be at §Y40§! loyalty, for the loyalty scalable modifer of §G15%§! naval morale."
+  estate_limited_peasants_burgher_educated: "Burgher Education"
+  estate_limited_peasants_burgher_educated_desc: ""
+  limited_privileges_6.ct: "The §YBurghers§! need to be at §Y50§! loyalty, for the loyalty scalable modifer of §G5%§! idea cost."
+    #clergy/peasantry limited privileges
+  estate_church_limited_privileges_to_peasantry: "Limited Peasantry Privileges (clergy)"
+  estate_church_limited_privileges_to_peasantry_desc: ""
+  estate_limited_peasants_loyalty_to_church: "Outside Help"
+  estate_limited_peasants_loyalty_to_church_desc: ""
+  limited_privileges_7.ct: "The §YClergy§! need to be at §Y50§! loyalty, for the loyalty scalable modifer of §G20%§! merc Maintenance, §G10%§! merc manpower, and §G5%§! merc discipline."
+  estate_limited_peasants_calls_for_war: "Call for War"
+  estate_limited_peasants_calls_for_war_desc: ""
+  limited_privileges_8.ct: "The §YClergy§! need to be at §Y40§! loyalty, for the loyalty scalable modifer of §G15%§! manpower from provinces of the true faith"
+  estate_limited_peasants_church_educated: "Clergy Education"
+  estate_limited_peasants_church_educated_desc: ""
+  limited_privileges_9.ct: "The §YClergy§! need to be at §Y60§! loyalty, for the loyalty scalable modifer of §G5%§! techology cost."
+    #influence over the peasants
+  estate_peasants_sheep_of_clergy: "Sheep of the Clergy"
+  estate_peasants_sheep_of_clergy_desc: ""
+  estate_peasants_property_of_nobles: "Property of the Nobles"
+  estate_peasants_property_of_nobles_desc: ""
+  estate_peasants_unpaid_labor_of_burghers: "Unpaid Labor of the Burghers"
+  estate_peasants_unpaid_labor_of_burghers_desc: ""
+  estate_influence_over_peasantry.tt: "as long as the Influence of the estate remains over §Y50§! if the Peasantry's loyalty drops below §R30§!. Any revolts against the offending estate §Ywill not happen§!.\n\nAs the centuries tick by the Peasantry will grow §Rmore and more restless.§!"
+    #trouble in a peasants republic
+  estate_peasant_surrounded_by_butchers: "Surrounded by Butchers"
+  estate_peasant_surrounded_by_butchers_desc: ""
+  estate_peasant_surrounded_by_enslavers: "Surrounded by Enslavers"
+  estate_peasant_surrounded_by_enslavers_desc: ""
+  estate_peasant_surrounded_by_conquerors: "Surrounded by Conquerors"
+  estate_peasant_surrounded_by_conquerors_desc: ""
+    #Peasant's Republic for Burghers
+  estate_burghers_factionalism: "Factionalism"
+  estate_burghers_factionalism_desc: "When in the face of the public, they stand united. but behind the curtain, factionalsim divides the government into a dysfunctional mess"
+  estate_burghers_maintenance_of_power: "Maintenance of Power"
+  estate_burghers_maintenance_of_power_desc: "Without any checks when it come to power, members in power would always hire their family members to ensure of there own power. no matter how incompetent"
+
+
+  #decisions
+
+  begin_to_lighten_feudalism_title: "begin to Lighten Feudalism"
+  begin_to_lighten_feudalism_desc: ""
+  lighten_feudalism_title: "Lighten Feudalism"
+  lighten_feudalism_desc: ""
+  Liberation_of_Peasantry_title: "Liberation of the Peasantry"
+  Liberation_of_Peasantry_desc: ""
+  progaganda_of_the_estates_title: "Progaganda of the Estates"
+  progaganda_of_the_estates_desc: ""
+
+  ######
+  end_factionalism_1_pr_title: "Begin to End Factionalism"
+  end_factionalism_1_pr_desc: "This factionalism has made our government stuck in the past, unwilling to change out of fear of a lost of power. creating an old dysfunctional system that needs to change"
+  end_factionalism_2_pr_title: "Continue Towards the end of Factionalism"
+  end_factionalism_2_pr_desc: "This factionalism has made our government stuck in the past, unwilling to change out of fear of a lost of power. creating an old dysfunctional system that needs to change"
+  end_factionalism_3_pr_title: "Continue Towards the end of Factionalism"
+  end_factionalism_3_pr_desc: "This factionalism has made our government stuck in the past, unwilling to change out of fear of a lost of power. creating an old dysfunctional system that needs to change"
+  end_factionalism_4_pr_title: "End Factionalism"
+  end_factionalism_4_pr_desc: "The time has come to create a united front in government policy"
+  the_end_pr.tt: "§YRemoves one negative modifier§!"
+  new_checks_pr_title: "Implement New Changes"
+  new_checks_pr_desc: "A want to maintain power has allowed us to hire some cheap advisors, but has lead to corruption that cant last anymore."
+  reeducate_peasants_title: "Reeducate the Peasantry"
+  reeducate_peasants_desc: "We cannot let these old fears spiral out of control"
+  ######
+
+  #event modifier
+  to_uniform_modifier: "To The Uniform"
+  desc_to_uniform_modifier: ""
+  to_uniform_modifier_weaken: "To The Uniform"
+  desc_to_uniform_modifier_weaken: ""
+  to_the_sea_modifier: "To The Sea"
+  desc_to_the_sea_modifier: ""
+  to_the_sea_modifier_weaken: "To The Sea"
+  desc_to_the_sea_modifier_weaken: ""
+  seize_food_stores: "Seize Food Stores"
+  desc_seize_food_stores: ""
+  seize_food_stores_weaken: "Seize Food Stores"
+  desc_seize_food_stores_weaken: ""
+
+  reeducated_timer: "Time to Educate"
+  desc_reeducated_timer: "It takes a long time to educate the Peasantry"
+  The_New_Status_Quo_Agreement_a: "The Burgher Agreement"
+  desc_The_New_Status_Quo_Agreement_a: ""
+  The_New_Status_Quo_Agreement_b: "The Burgher Agreement"
+  desc_The_New_Status_Quo_Agreement_b: ""
+  The_New_Status_Quo_Agreement_c: "The Burgher Agreement"
+  desc_The_New_Status_Quo_Agreement_c: ""
+  The_New_Status_Quo_Agreement_d: "The Clergy Agreement"
+  desc_The_New_Status_Quo_Agreement_d: ""
+  The_New_Status_Quo_Agreement_e: "The Clergy Agreement"
+  desc_The_New_Status_Quo_Agreement_e: ""
+  The_New_Status_Quo_Agreement_f: "The Clergy Agreement"
+  desc_The_New_Status_Quo_Agreement_f: ""
+  The_New_Status_Quo_Agreement_g: "The Nobles Agreement"
+  desc_The_New_Status_Quo_Agreement_g: ""
+  The_New_Status_Quo_Agreement_h: "The Nobles Agreement"
+  desc_The_New_Status_Quo_Agreement_h: ""
+  The_New_Status_Quo_Agreement_i: "The Nobles Agreement"
+  desc_The_New_Status_Quo_Agreement_i: ""
+  negotiate_modifier_1: "Tax Concession"
+  desc_negotiate_modifier_1: ""
+  negotiate_modifier_2: "Trade Concession"
+  desc_negotiate_modifier_2: ""
+  negotiate_modifier_3: "Production Concession"
+  desc_negotiate_modifier_3: ""
+  negotiate_modifier_4: "Prestige Concession"
+  desc_negotiate_modifier_4: ""
+  negotiate_modifier_5: "Manpower Concession"
+  desc_negotiate_modifier_5: ""
+
+  #gov reforms
+  liberation_of_peasants: "March to Liberation"
+  liberation_of_peasants_desc: "The Peasantry has made up its mind, and seeks for the state to liberate them from the influencing estates."  
+
+  #gov mechanics
+  ability_peasant_liberation: "Peasant Liberation Mechanic"
+  liberation_points: "Peasantry Liberation"
+  liberation_points_gain_modifier: "Peasantry Liberation Gain Modifier"
+  monthly_liberation_points: "Monthly Liberation"
+  peasant_liberation: "Negotiate Liberation"
+  peasant_liberation_desc: ""
 
   #agendas
   estate_privileges_and_agendas_events.3.p: "The Proposal of the Peasantry"
@@ -42,13 +222,15 @@
   estate_peasants_increase_stability: "Boost National Stability"
   estate_peasants_increase_stability_desc: "The Peasantry see the stability of [Root.GetUsableName] as paramount. They insist that we must improve the nation's governance so that our nation may be free from instability."
 
-  #scripted effects
+  #scirpted effects
   estate_peasants_merchant_labor_mod_gt: "Every owned province with a §Ytrade building§! will gains the following bonus:"
   estate_peasants_merchant_labor_mod_rt: "The modifer '§YIncrease Merchan Labor§!' is removed from all provinces"
   estate_peasants_merchant_labor_mod: "Increase Merchant Labor"
   desc_estate_peasants_merchant_labor_mod: "The realm has requested the assistances of the Peasantry in Merchant Labor"
 
   #Events
+
+  ######
   estate_privileges_and_agendas_events.7.z: "Seize it from the Peasantry"
   estate_privileges_and_agendas_events.6.z: "Sell it to the Peasantry"
   peasants_estate_events.1.t: "A Feudal Realm"
@@ -132,8 +314,8 @@
   peasants_estate_events.14.a: "Happy times are here"
   estate_peasants_national_fair: "National Fairgrounds"
   desc_estate_peasants_national_fair: "No matter the time of year, the people have a place of fun"
-
- # disaster
+  ######
+  # disaster
   estates_disasters.303.t: "The Peasantry Seize Power"
   estates_disasters.303.d: "$MONARCH$ has allowed the Peasantry of $COUNTRY$ to grow too powerful and now they have made their move. Making use of their many hard-earned privileges as well as the many debts owed to them, they have effectively seized the reins of government and turned the $MONARCHTITLE$ into little more than their puppet."
   estates_disasters.303.a.tt: "[Root.GetName] will now be controlled by the §YPeasants§! until the §Y'Curtail the Peasantry'§! decision is taken."
@@ -149,7 +331,87 @@
 
   curtail_estate_peasants_title: "Curtail the Peasantry"
   curtail_estate_peasants_desc: "Through bribery and corruption, the Peasantry have a stranglehold on our government. To seize control back from these merchants we will need to curtail their power and privileges."
-  
+
+  #influence_peasant_events
+  influence_peasant_events.1.t: "A Feudal Realm"
+  influence_peasant_events.1.d: "The three estate of the Nobility, Burghers, and Clergy have always held a great influence over the lowest class. treating them as nothing more but as stepping stone to ensure of their own money, influence, and power only to be thrown to the side when done with."
+  influence_peasant_events.1.a: "There influence is great..."
+
+  influence_peasant_events.2.t: "A New Status Quo"
+  influence_peasant_events.2.d: "The estates and the $MONARCHTITLE$ have came to an agreement over the question of a new lighten feudal system. but they wish to continue to retain their heavy hand over the peasants. The peasants will be grants privileges but only with the consent of the influencing estates."
+  influence_peasant_events.2.a: "Very good..."
+  EST_VAL_NEW_QUO: "A New Status Quo"
+
+  influence_peasant_events.3.t: "Give an Inch"
+  influence_peasant_events.3.d: "The decades of this new Peasantry status quo has seen the new privileges granted to them. But they now come demanding more from the estates and the $MONARCHTITLE$."
+  influence_peasant_events.3.a: "They'll take a mile..."
+  influence_peasant_events.3.b: "There's a line"
+  influence_peasant_events.3.tt: "be aware choosing to ignore could lead to §Rconsequences.§!"
+
+  influence_peasant_events.4.t: "Shattered Chains"
+  influence_peasant_events.4.d: ""
+  influence_peasant_events.4.a: "A Freedom like no other..."
+
+  influence_peasant_events.5.t: "Progaganda of The Estates"
+  influence_peasant_events.5.d: ""
+  influence_peasant_events.5.a: "Nobility"
+  influence_peasant_events.5.b: "Burgher"
+  influence_peasant_events.5.c: "Clergy"
+  influence_peasant_events.5.e: "No one..."
+
+  #6 is hidden
+
+  influence_peasant_events.7.t: "Peasants in Revolt"
+  influence_peasant_events.7.d: "The Oppression of the influencing estate has caused the peasants to get fed up leading to a revolt."
+  influence_peasant_events.7.a: "Oh dear..."
+
+  #simple_request_events
+  simple_request_events.abc.tt: "the estates will reach finally agreement in a few days..."
+
+  simple_request_events.1.t: "Burghers at the Table"
+  simple_request_events.1.d: "Sitting with the $MONARCHTITLE$ the Burghers are looking for concession form the $MONARCHTITLE$ as a way to offset the downsides of giving up their heavy hand over the Peasantry"
+  simple_request_events.1.a: "trade across the nation"
+  simple_request_events.1.a.tt: "§YYou are choosing to give a§! §R-20%§! §Yprovincal trade power modifer as a concession to the Burghers in the finally agreement§!"
+  simple_request_events.1.b: "Trade from the Ports"
+  simple_request_events.1.b.tt: "§YYou are choosing to give a§! §R-10%§! §Ytrade efficiency modifier as a concession to the Burghers in the finally agreement§!"
+  simple_request_events.1.c: "Goods of Cities"
+  simple_request_events.1.c.tt: "§YYou are choosing to give a§! §R-15%§! §Yproduction efficiency modifier as a concession to the Burghers in the finally agreement§!"
+
+  simple_request_events.2.t: "Clergy at the Table"
+  simple_request_events.2.d: "Sitting with the $MONARCHTITLE$ the Clergy are looking for concession form the $MONARCHTITLE$ as a way to offset the downsides of giving up their heavy hand over the Peasantry"
+  simple_request_events.2.a: "Grant Tax Cuts"
+  simple_request_events.2.a.tt: "§YYou are choosing to give a§! §R-20%§! §Ynational tax modifier as a concession to the Clergy in the finally agreement§!"
+  simple_request_events.2.b: "Crush the non-believers"
+  simple_request_events.2.b.tt: "§YYou are choosing to give a§! §R-4§! §Ytolrances of heretics and a§! §R-4§! §Ytolrances of heathens as a concession to the Clergy in the finally agreement§!"
+  simple_request_events.2.c: "Men of the Church"
+  simple_request_events.2.c.tt: "§YYou are choosing to give a§! §R-30%§! §Ymerc manpower modifier as a concession to the Clergy in the finally agreement§!"
+
+  simple_request_events.3.t: "Nobles at the Table"
+  simple_request_events.3.d: "Sitting with the $MONARCHTITLE$ the Nobles are looking for concession form the $MONARCHTITLE$ as a way to offset the downsides of giving up their heavy hand over the Peasantry"
+  simple_request_events.3.a: "bonuses to the court advisors"
+  simple_request_events.3.a.tt: "§YYou are choosing to give a§! §R+10%§! §Yadvisor cost as a concession to the Noblity in the finally agreement§!"
+  simple_request_events.3.b: "push back reforms"
+  simple_request_events.3.b.tt: "§YYou are choosing to give a§! §R-20%§! §Yreform progress modifier as a concession to the Noblity in the finally agreement§!"
+  simple_request_events.3.c: "Rural Men"
+  simple_request_events.3.c.tt: "§YYou are choosing to give a§! §R-15%§! §Ymanpower modifier as a concession to the Noblity in the finally agreement§!"
+
+  #negotiate_events
+  negotiate_events.main.t: "Table Negotiates"
+  negotiate_events.main.d: ""
+  negotiate_events.main.c: "offer cash"
+  negotiate_events.main.e.tt: "It is unknown when the estate will come to claim this promise."
+  negotiate_events.main.e: "offer a future concession"
+  negotiate_events.main.f: "Sieze The Privilege"
+  EST_VAL_SEIZED_PRIVILEGES: "Siezed our rightful influence"
+
+  negotiate_events.a.1: "Tax Concessions"
+  negotiate_events.b.1: "grant influence"
+
+  negotiate_events.a.2: "Trade Concessions"
+  negotiate_events.b.2: "Production Concessions"
+
+  negotiate_events.a.3: "Manpower Concessions"
+  negotiate_events.b.3: "Prestige Concessions"
   # seize and sell land
   iv_estate_events.61.t: "Sale of Titles to the §TPeasants§!"
   iv_estate_events.sale.o24: "Sell Land to the §TPeasants§!"

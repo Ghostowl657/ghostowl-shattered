@@ -5013,3 +5013,48 @@ estate_nobles_austrian_nobility_privileges = {
 		factor = 1
 	}
 }
+
+#peasants
+estate_nobles_limited_privileges_to_peasantry = {
+	icon = privilege_peasant
+	max_absolutism = -5
+	influence = 0.05
+	is_valid = {
+		has_estate_privilege = estate_peasants_property_of_nobles
+		has_unlocked_estate_privilege = { estate_privilege = estate_nobles_limited_privileges_to_peasantry }
+		NOT = { has_country_flag = peasants_in_revolt }
+	}
+	on_granted = {
+		custom_tooltip = influencial_peasant_fear.tt
+	}
+	benefits = {
+		peasants_loyalty_modifier = 0.05
+	}
+	on_revoked = {
+		if = {
+			limit = {
+				has_estate_privilege = estate_limited_peasants_military_trainers
+			}
+			remove_estate_privilege = estate_limited_peasants_military_trainers
+		}
+		if = {
+			limit = {
+				has_estate_privilege = estate_limited_peasants_nobility_educated
+			}
+			remove_estate_privilege = estate_limited_peasants_nobility_educated
+		}
+		if = {
+			limit = {
+				has_estate_privilege = estate_limited_peasants_officers_corp
+			}
+			remove_estate_privilege = estate_limited_peasants_officers_corp
+		}
+		add_estate_loyalty = {
+			estate = estate_peasants
+			loyalty = -20
+		}
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
