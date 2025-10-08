@@ -1,0 +1,1288 @@
+namespace = global_peasant_event
+
+namespace = influence_peasant_events
+
+namespace = simple_request_events
+
+namespace = negotiate_events
+
+country_event = {
+	id = global_peasant_event.1
+	title = global_peasant_event.1.t
+	desc = global_peasant_event.1.d
+	picture = CITY_VIEW_eventPicture
+
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		ai = no
+	}
+
+	option = {
+		set_global_flag = global_peasant_flag
+	}
+}
+
+#Start (Feudal Realm)
+country_event = {
+	id = influence_peasant_events.1
+	title = influence_peasant_events.1.t
+	desc = influence_peasant_events.1.d
+	picture = CITY_VIEW_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			has_estate = estate_peasants
+			has_institution = feudalism
+		}
+		NOT = { has_country_flag = influence_over_peasants }
+		NOT = { has_country_flag = PEA_liberated_peasants }
+		NOT = {
+			has_reform = peasants_republic
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_estate_privilege = estate_peasants_sheep_of_clergy
+			set_estate_privilege = estate_peasants_property_of_nobles
+			set_estate_privilege = estate_peasants_unpaid_labor_of_burghers
+			set_country_flag = influence_over_peasants
+			clr_country_flag = yeah_no_you_dont
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = influence_peasant_events.1.a
+		hidden_effect = {
+			change_estate_land_share = {
+				estate = estate_peasants
+				share = -20
+			}
+			add_estate_loyalty = {
+				estate = estate_peasants
+				loyalty = -20
+			}
+		}
+	}
+}
+
+#a new peasantry status quo
+country_event = {
+	id = influence_peasant_events.2
+	title = influence_peasant_events.2.t
+	desc = influence_peasant_events.2.d
+	picture = CITY_VIEW_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = influence_peasant_events.2.a
+		unlock_estate_privilege = { estate_privilege = estate_burghers_limited_privileges_to_peasantry }
+		unlock_estate_privilege = { estate_privilege = estate_church_limited_privileges_to_peasantry }
+		unlock_estate_privilege = { estate_privilege = estate_nobles_limited_privileges_to_peasantry }
+		add_estate_loyalty_modifier = {
+			estate = estate_peasants
+			desc = EST_VAL_NEW_QUO
+			loyalty = 0.15
+			duration = 14610
+		}
+		if = {
+			limit = {
+				has_country_flag = gain_concessions_burghers_1
+			}
+			add_country_modifier = {
+				name = The_New_Status_Quo_Agreement_a
+				duration = 14610
+			}
+			clr_country_flag = gain_concessions_burghers_1
+		}
+		if = {
+			limit = {
+				has_country_flag = gain_concessions_burghers_2
+			}
+			add_country_modifier = {
+				name = The_New_Status_Quo_Agreement_b
+				duration = 14610
+			}
+			clr_country_flag = gain_concessions_burghers_2
+		}
+		if = {
+			limit = {
+				has_country_flag = gain_concessions_burghers_3
+			}
+			add_country_modifier = {
+				name = The_New_Status_Quo_Agreement_c
+				duration = 14610
+			}
+			clr_country_flag = gain_concessions_burghers_3
+		}
+		if = {
+			limit = {
+				has_country_flag = gain_concessions_clergy_1
+			}
+			add_country_modifier = {
+				name = The_New_Status_Quo_Agreement_d
+				duration = 14610
+			}
+			clr_country_flag = gain_concessions_clergy_1
+		}
+		if = {
+			limit = {
+				has_country_flag = gain_concessions_clergy_2
+			}
+			add_country_modifier = {
+				name = The_New_Status_Quo_Agreement_e
+				duration = 14610
+			}
+			clr_country_flag = gain_concessions_clergy_2
+		}
+		if = {
+			limit = {
+				has_country_flag = gain_concessions_clergy_3
+			}
+			add_country_modifier = {
+				name = The_New_Status_Quo_Agreement_f
+				duration = 14610
+			}
+			clr_country_flag = gain_concessions_clergy_3
+		}
+		if = {
+			limit = {
+				has_country_flag = gain_concessions_nobility_1
+			}
+			add_country_modifier = {
+				name = The_New_Status_Quo_Agreement_g
+				duration = 14610
+			}
+			clr_country_flag = gain_concessions_nobility_1
+		}
+		if = {
+			limit = {
+				has_country_flag = gain_concessions_nobility_2
+			}
+			add_country_modifier = {
+				name = The_New_Status_Quo_Agreement_h
+				duration = 14610
+			}
+			clr_country_flag = gain_concessions_nobility_2
+		}
+		if = {
+			limit = {
+				has_country_flag = gain_concessions_nobility_3
+			}
+			add_country_modifier = {
+				name = The_New_Status_Quo_Agreement_i
+				duration = 14610
+			}
+			clr_country_flag = gain_concessions_nobility_3
+		}
+	}
+}
+
+country_event = {
+	id = influence_peasant_events.3
+	title = influence_peasant_events.3.t
+	desc = influence_peasant_events.3.d
+	picture = CITY_VIEW_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		had_country_flag = {
+			flag = new_peasantry_status_quo
+			days = 18262
+		}
+		current_age = age_of_absolutism
+		if = {
+			limit = {
+				tag = RUS
+			}
+			has_estate_privilege = estate_burghers_the_new_middle_class
+		}
+	}
+
+	immediate = {
+		clr_country_flag = new_peasantry_status_quo
+		set_country_flag = a_breaking_point
+	}
+
+	option = {
+		name = influence_peasant_events.3.a
+		add_government_reform = liberation_of_peasants
+		set_country_flag = take_a_mile
+	}
+
+	option = {
+		name = influence_peasant_events.3.b
+		custom_tooltip = influence_peasant_events.3.tt
+		set_country_flag = give_an_inch_flag
+	}
+}
+
+country_event = {
+	id = influence_peasant_events.4
+	title = influence_peasant_events.4.t
+	desc = influence_peasant_events.4.d
+	picture = CITY_VIEW_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			remove_estate_privilege = estate_burghers_limited_privileges_to_peasantry
+			remove_estate_privilege = estate_church_limited_privileges_to_peasantry
+			remove_estate_privilege = estate_nobles_limited_privileges_to_peasantry
+			add_estate_loyalty = {
+				estate = estate_peasants
+				loyalty = 0.30
+			}
+		}
+	}
+
+	option = {
+		name = influence_peasant_events.4.a
+		remove_government_reform = liberation_of_peasants
+		set_estate_privilege = estate_peasants_trust_in_state
+		clr_country_flag = a_breaking_point
+		clr_country_flag = take_a_mile
+		clr_country_flag = influence_over_peasants
+		set_country_flag = PEA_liberated_peasants
+	}
+}
+
+country_event = {
+	id = influence_peasant_events.5
+	title = influence_peasant_events.5.t
+	desc = influence_peasant_events.5.d
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		add_country_modifier = {
+			hidden = yes
+			name = peasants_propaganda_timer
+			duration = 1826
+		}
+	}
+
+	option = {
+		name = influence_peasant_events.5.a
+		trigger = {
+			has_estate = estate_nobles
+			NOT = { has_estate_privilege = estate_propaganda_peasant_nobles }
+		}
+		set_estate_privilege = estate_propaganda_peasant_nobles
+		hidden_effect = {
+			remove_estate_privilege = estate_propaganda_peasant_burghers
+			remove_estate_privilege = estate_propaganda_peasant_clergy
+		}
+		set_country_flag = propaganda_of_the_nobles
+		clr_country_flag = propaganda_of_the_burghers
+		clr_country_flag = propaganda_of_the_clergy
+	}
+	option = {
+		name = influence_peasant_events.5.b
+		trigger = {
+			has_estate = estate_burghers
+			NOT = { has_estate_privilege = estate_propaganda_peasant_burghers }
+		}
+		set_estate_privilege = estate_propaganda_peasant_burghers
+		hidden_effect = {
+			remove_estate_privilege = estate_propaganda_peasant_nobles
+			remove_estate_privilege = estate_propaganda_peasant_clergy		
+		}
+		set_country_flag = propaganda_of_the_burghers
+		clr_country_flag = propaganda_of_the_nobles
+		clr_country_flag = propaganda_of_the_clergy
+	}
+	option = {
+		name = influence_peasant_events.5.c
+		trigger = {
+			has_estate = estate_church
+			NOT = { has_estate_privilege = estate_propaganda_peasant_clergy }
+		}
+		set_estate_privilege = estate_propaganda_peasant_clergy
+		hidden_effect = {
+			remove_estate_privilege = estate_propaganda_peasant_burghers
+			remove_estate_privilege = estate_propaganda_peasant_nobles
+		}
+		set_country_flag = propaganda_of_the_clergy
+		clr_country_flag = propaganda_of_the_burghers
+		clr_country_flag = propaganda_of_the_nobles
+	}
+	option = {
+		name = influence_peasant_events.5.e
+		hidden_effect = {
+			remove_estate_privilege = estate_propaganda_peasant_nobles
+			remove_estate_privilege = estate_propaganda_peasant_burghers
+			remove_estate_privilege = estate_propaganda_peasant_clergy
+		}
+		clr_country_flag = propaganda_of_the_burghers
+		clr_country_flag = propaganda_of_the_nobles
+		clr_country_flag = propaganda_of_the_clergy
+	}
+}
+
+country_event = {
+	id = influence_peasant_events.6
+	title = influence_peasant_events.6.t
+	desc = influence_peasant_events.6.d
+	picture = CITY_VIEW_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	trigger = {
+		has_country_flag = trust_in_state_flag
+		NOT = {
+			estate_loyalty = {
+				estate = estate_peasants
+				loyalty = 30
+			}
+		}
+		NOT = {
+			has_country_modifier = trust_broken
+		}
+	}
+
+	immediate = {
+		clr_country_flag = trust_in_state_flag
+		add_country_modifier = {
+			name = trust_broken
+			duration = 1826
+		}
+	}
+
+	option = {
+		set_country_flag = trust_in_state_flag
+	}
+}
+
+country_event = {
+	id = influence_peasant_events.7
+	title = influence_peasant_events.7.t
+	desc = influence_peasant_events.7.d
+	picture = ANGRY_MOB_eventPicture
+
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	trigger = {
+		has_country_flag = influence_over_peasants
+		NOT = {
+			estate_loyalty = {
+				estate = estate_peasants
+				loyalty = 30
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					has_estate_privilege = estate_oppression_peasants_forced_draft
+					has_estate_privilege = estate_oppression_peasants_seize_food_stores
+					has_estate_privilege = estate_oppression_peasants_to_uniform
+				}
+			}
+			NOT = {
+				estate_influence = {
+					estate = estate_nobles
+					influence = 50
+				}
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					has_estate_privilege = estate_oppression_peasants_forced_naval_draft
+					has_estate_privilege = estate_oppression_peasants_to_the_seas	
+				}			
+			}
+			NOT = {
+				estate_influence = {
+					estate = estate_burghers
+					influence = 50
+				}				
+			}
+		}
+		if = {
+			limit = {
+				has_estate_privilege = estate_oppression_peasants_seize_assets
+			}
+			NOT = {
+				estate_influence = {
+					estate = estate_church
+					influence = 50
+				}				
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { 
+					has_global_flag = global_peasant_flag
+				}
+				random_owned_province = {
+					limit = {
+						is_state = yes
+					}
+					save_event_target_as = peasants_upset_prov_1
+				}
+			}
+			if = {
+				limit = { 
+					had_global_flag = {
+						flag = global_peasant_flag
+						days = 18262
+					}
+					has_saved_event_target = peasants_upset_prov_1
+				}
+				random_owned_province = {
+					limit = {
+						is_state = yes
+						NOT = { province_id = event_target:peasants_upset_prov_1 }
+					}
+					save_event_target_as = peasants_upset_prov_2
+				}
+			}
+			if = {
+				limit = { 
+					had_global_flag = {
+						flag = global_peasant_flag
+						days = 36525
+					}
+					has_saved_event_target = peasants_upset_prov_2
+				}
+				random_owned_province = {
+					limit = {
+						is_state = yes
+						NOT = { province_id = event_target:peasants_upset_prov_1 }
+						NOT = { province_id = event_target:peasants_upset_prov_2 }
+					}
+					save_event_target_as = peasants_upset_prov_3
+				}
+			}
+			if = {
+				limit = { 
+					had_global_flag = {
+						flag = global_peasant_flag
+						days = 54750
+					}
+					has_saved_event_target = peasants_upset_prov_3
+				}
+				random_owned_province = {
+					limit = {
+						is_state = yes
+						NOT = { province_id = event_target:peasants_upset_prov_1 }
+						NOT = { province_id = event_target:peasants_upset_prov_2 }
+						NOT = { province_id = event_target:peasants_upset_prov_3 }
+					}
+					save_event_target_as = peasants_upset_prov_4
+				}
+			}
+			if = {
+				limit = { 
+					had_global_flag = {
+						flag = global_peasant_flag
+						days = 73000
+					}
+					has_saved_event_target = peasants_upset_prov_4
+				}
+				random_owned_province = {
+					limit = {
+						is_state = yes
+						NOT = { province_id = event_target:peasants_upset_prov_1 }
+						NOT = { province_id = event_target:peasants_upset_prov_2 }
+						NOT = { province_id = event_target:peasants_upset_prov_3 }
+						NOT = { province_id = event_target:peasants_upset_prov_4 }
+					}
+					save_event_target_as = peasants_upset_prov_5
+				}
+			}
+			if = {
+				limit = { 
+					had_global_flag = {
+						flag = global_peasant_flag
+						days = 73000
+					}
+					has_saved_event_target = peasants_upset_prov_5
+				}
+				random_owned_province = {
+					limit = {
+						is_state = yes
+						NOT = { province_id = event_target:peasants_upset_prov_1 }
+						NOT = { province_id = event_target:peasants_upset_prov_2 }
+						NOT = { province_id = event_target:peasants_upset_prov_3 }
+						NOT = { province_id = event_target:peasants_upset_prov_4 }
+						NOT = { province_id = event_target:peasants_upset_prov_5 }
+					}
+					save_event_target_as = peasants_upset_prov_6
+				}
+			}
+			if = {
+				limit = { 
+					had_global_flag = {
+						flag = global_peasant_flag
+						days = 91250
+					}
+					has_saved_event_target = peasants_upset_prov_6
+				}
+				random_owned_province = {
+					limit = {
+						is_state = yes
+						NOT = { province_id = event_target:peasants_upset_prov_1 }
+						NOT = { province_id = event_target:peasants_upset_prov_2 }
+						NOT = { province_id = event_target:peasants_upset_prov_3 }
+						NOT = { province_id = event_target:peasants_upset_prov_4 }
+						NOT = { province_id = event_target:peasants_upset_prov_5 }
+						NOT = { province_id = event_target:peasants_upset_prov_6 }
+					}
+					save_event_target_as = peasants_upset_prov_7
+				}
+			}
+			if = {
+				limit = { 
+					had_global_flag = {
+						flag = global_peasant_flag
+						days = 91250
+					}
+					has_saved_event_target = peasants_upset_prov_7
+				}
+				random_owned_province = {
+					limit = {
+						is_state = yes
+						NOT = { province_id = event_target:peasants_upset_prov_1 }
+						NOT = { province_id = event_target:peasants_upset_prov_2 }
+						NOT = { province_id = event_target:peasants_upset_prov_3 }
+						NOT = { province_id = event_target:peasants_upset_prov_4 }
+						NOT = { province_id = event_target:peasants_upset_prov_5 }
+						NOT = { province_id = event_target:peasants_upset_prov_6 }
+						NOT = { province_id = event_target:peasants_upset_prov_7 }
+					}
+					save_event_target_as = peasants_upset_prov_8
+				}
+			}
+			if = {
+				limit = { 
+					had_global_flag = {
+						flag = global_peasant_flag
+						days = 109500
+					}
+					has_saved_event_target = peasants_upset_prov_8
+				}
+				random_owned_province = {
+					limit = {
+						is_state = yes
+						NOT = { province_id = event_target:peasants_upset_prov_1 }
+						NOT = { province_id = event_target:peasants_upset_prov_2 }
+						NOT = { province_id = event_target:peasants_upset_prov_3 }
+						NOT = { province_id = event_target:peasants_upset_prov_4 }
+						NOT = { province_id = event_target:peasants_upset_prov_5 }
+						NOT = { province_id = event_target:peasants_upset_prov_6 }
+						NOT = { province_id = event_target:peasants_upset_prov_7 }
+						NOT = { province_id = event_target:peasants_upset_prov_8 }
+					}
+					save_event_target_as = peasants_upset_prov_9
+				}
+			}
+			if = {
+				limit = { 
+					had_global_flag = {
+						flag = global_peasant_flag
+						days = 109500
+					}
+					has_saved_event_target = peasants_upset_prov_9
+				}
+				random_owned_province = {
+					limit = {
+						is_state = yes
+						NOT = { province_id = event_target:peasants_upset_prov_1 }
+						NOT = { province_id = event_target:peasants_upset_prov_2 }
+						NOT = { province_id = event_target:peasants_upset_prov_3 }
+						NOT = { province_id = event_target:peasants_upset_prov_4 }
+						NOT = { province_id = event_target:peasants_upset_prov_5 }
+						NOT = { province_id = event_target:peasants_upset_prov_6 }
+						NOT = { province_id = event_target:peasants_upset_prov_7 }
+						NOT = { province_id = event_target:peasants_upset_prov_8 }
+						NOT = { province_id = event_target:peasants_upset_prov_9 }
+					}
+					save_event_target_as = peasants_upset_prov_10
+				}
+			}
+		}
+	}
+
+	option = {
+		name = influence_peasant_events.7.a
+		add_country_modifier = {
+			name = peasants_revolt_event
+			duration = 3652
+			hidden = yes
+		}
+		hidden_effect = {
+			event_target:peasants_upset_prov_1 = {
+				add_devastation = 2
+				if = {
+					limit = {
+						NOT = {
+							had_global_flag = {
+								flag = global_peasant_flag
+								days = 18262
+							}
+						}
+					}
+					spawn_rebels = {
+						type = leadered_peasant_rebels
+						size = 0.5
+					}
+				}
+				else_if = {
+					limit = { 
+						had_global_flag = {
+							flag = global_peasant_flag
+							days = 18262
+						}
+						NOT = {
+							had_global_flag = {
+								flag = global_peasant_flag
+								days = 54750
+							}
+						}
+					}
+					spawn_rebels = {
+						type = leadered_peasant_rebels
+						size = 1
+					}
+				}
+				else_if = {
+					limit = { 
+						had_global_flag = {
+							flag = global_peasant_flag
+							days = 54750
+						}
+						NOT = {
+							had_global_flag = {
+								flag = global_peasant_flag
+								days = 73000
+							}
+						}
+					}
+					spawn_rebels = {
+						type = leadered_peasant_rebels
+						size = 1.5
+					}
+				}
+				else = {
+					spawn_rebels = {
+						type = leadered_peasant_rebels
+						size = 2
+					}					
+				}
+			}
+			event_target:peasants_upset_prov_2 = {
+				add_devastation = 2
+				if = {
+					limit = { 
+						had_global_flag = {
+							flag = global_peasant_flag
+							days = 18262
+						}
+						NOT = {
+							had_global_flag = {
+								flag = global_peasant_flag
+								days = 54750
+							}
+						}
+					}
+					spawn_rebels = {
+						type = leadered_peasant_rebels
+						size = 1
+					}
+				}
+				else_if = {
+					limit = { 
+						had_global_flag = {
+							flag = global_peasant_flag
+							days = 54750
+						}
+						NOT = {
+							had_global_flag = {
+								flag = global_peasant_flag
+								days = 73000
+							}
+						}
+					}
+					spawn_rebels = {
+						type = leadered_peasant_rebels
+						size = 1.5
+					}
+				}
+				else = {
+					spawn_rebels = {
+						type = leadered_peasant_rebels
+						size = 2
+					}					
+				}
+			}
+			event_target:peasants_upset_prov_3 = {
+				add_devastation = 2
+				if = {
+					limit = { 
+						had_global_flag = {
+							flag = global_peasant_flag
+							days = 18262
+						}
+						NOT = {
+							had_global_flag = {
+								flag = global_peasant_flag
+								days = 54750
+							}
+						}
+					}
+					spawn_rebels = {
+						type = leadered_peasant_rebels
+						size = 1
+					}
+				}
+				else_if = {
+					limit = { 
+						had_global_flag = {
+							flag = global_peasant_flag
+							days = 54750
+						}
+						NOT = {
+							had_global_flag = {
+								flag = global_peasant_flag
+								days = 73000
+							}
+						}
+					}
+					spawn_rebels = {
+						type = leadered_peasant_rebels
+						size = 1.5
+					}
+				}
+				else = {
+					spawn_rebels = {
+						type = leadered_peasant_rebels
+						size = 2
+					}					
+				}
+			}
+			event_target:peasants_upset_prov_4 = {
+				add_devastation = 2
+				if = {
+					limit = { 
+						had_global_flag = {
+							flag = global_peasant_flag
+							days = 54750
+						}
+						NOT = {
+							had_global_flag = {
+								flag = global_peasant_flag
+								days = 73000
+							}
+						}
+					}
+					spawn_rebels = {
+						type = leadered_peasant_rebels
+						size = 1.5
+					}
+				}
+				else = {
+					spawn_rebels = {
+						type = leadered_peasant_rebels
+						size = 2
+					}					
+				}
+			}
+			event_target:peasants_upset_prov_5 = {
+				add_devastation = 2
+				spawn_rebels = {
+					type = leadered_peasant_rebels
+					size = 2
+				}					
+			}
+			event_target:peasants_upset_prov_6 = {
+				add_devastation = 2
+				spawn_rebels = {
+					type = leadered_peasant_rebels
+					size = 2
+				}					
+			}
+			event_target:peasants_upset_prov_7 = {
+				add_devastation = 2
+				spawn_rebels = {
+					type = leadered_peasant_rebels
+					size = 2
+				}	
+			}
+			event_target:peasants_upset_prov_8 = {
+				add_devastation = 2
+				spawn_rebels = {
+					type = leadered_peasant_rebels
+					size = 2
+				}	
+			}
+			event_target:peasants_upset_prov_9 = {
+				add_devastation = 2
+				spawn_rebels = {
+					type = leadered_peasant_rebels
+					size = 2
+				}	
+			}
+			event_target:peasants_upset_prov_10 = {
+				add_devastation = 2
+				spawn_rebels = {
+					type = leadered_peasant_rebels
+					size = 2
+				}					
+			}
+		}
+	}
+}
+country_event = { #request from burghers
+	id = simple_request_events.1
+	title = simple_request_events.1.t
+	desc = simple_request_events.1.d
+	picture = CITY_VIEW_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = simple_request_events.1.a
+		custom_tooltip = simple_request_events.1.a.tt
+		set_country_flag = gain_concessions_burghers_1
+		if = {
+			limit = {
+				has_country_flag = church_accept_limits
+				has_country_flag = noble_accept_limits
+			}
+			custom_tooltip = simple_request_events.abc.tt
+			clr_country_flag = church_accept_limits
+			clr_country_flag = noble_accept_limits
+			clr_country_flag = began_to_lighten_feudalism
+			set_country_flag = new_peasantry_status_quo
+			hidden_effect = {
+				country_event = {
+					id = influence_peasant_events.2
+					days = 12
+				}
+			}
+		}
+		else = {
+			set_country_flag = burghers_accept_limits			
+		}
+	}
+	option = {
+		name = simple_request_events.1.b
+		custom_tooltip = simple_request_events.1.b.tt
+		set_country_flag = gain_concessions_burghers_2
+		if = {
+			limit = {
+				has_country_flag = church_accept_limits
+				has_country_flag = noble_accept_limits
+			}
+			custom_tooltip = simple_request_events.abc.tt
+			clr_country_flag = church_accept_limits
+			clr_country_flag = noble_accept_limits
+			clr_country_flag = began_to_lighten_feudalism
+			set_country_flag = new_peasantry_status_quo
+			hidden_effect = {
+				country_event = {
+					id = influence_peasant_events.2
+					days = 12
+				}
+			}
+		}
+		else = {
+			set_country_flag = burghers_accept_limits			
+		}
+	}
+	option = {
+		name = simple_request_events.1.c
+		custom_tooltip = simple_request_events.1.c.tt
+		set_country_flag = gain_concessions_burghers_3
+		if = {
+			limit = {
+				has_country_flag = church_accept_limits
+				has_country_flag = noble_accept_limits
+			}
+			custom_tooltip = simple_request_events.abc.tt
+			clr_country_flag = church_accept_limits
+			clr_country_flag = noble_accept_limits
+			clr_country_flag = began_to_lighten_feudalism
+			set_country_flag = new_peasantry_status_quo
+			hidden_effect = {
+				country_event = {
+					id = influence_peasant_events.2
+					days = 12
+				}
+			}
+		}
+		else = {
+			set_country_flag = burghers_accept_limits			
+		}
+	}
+}
+
+country_event = { #request from church
+	id = simple_request_events.2
+	title = simple_request_events.2.t
+	desc = simple_request_events.2.d
+	picture = CITY_VIEW_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = simple_request_events.2.a
+		custom_tooltip = simple_request_events.2.a.tt
+		set_country_flag = gain_concessions_clergy_1
+		if = {
+			limit = {
+				has_country_flag = burghers_accept_limits
+				has_country_flag = noble_accept_limits
+			}
+			custom_tooltip = simple_request_events.abc.tt
+			clr_country_flag = burghers_accept_limits
+			clr_country_flag = noble_accept_limits
+			clr_country_flag = began_to_lighten_feudalism
+			set_country_flag = new_peasantry_status_quo
+			hidden_effect = {
+				country_event = {
+					id = influence_peasant_events.2
+					days = 12
+				}
+			}
+		}
+		else = {
+			set_country_flag = church_accept_limits			
+		}
+	}
+	option = {
+		name = simple_request_events.2.b
+		custom_tooltip = simple_request_events.2.b.tt
+		set_country_flag = gain_concessions_clergy_2
+		if = {
+			limit = {
+				has_country_flag = burghers_accept_limits
+				has_country_flag = noble_accept_limits
+			}
+			custom_tooltip = simple_request_events.abc.tt
+			clr_country_flag = burghers_accept_limits
+			clr_country_flag = noble_accept_limits
+			clr_country_flag = began_to_lighten_feudalism
+			set_country_flag = new_peasantry_status_quo
+			hidden_effect = {
+				country_event = {
+					id = influence_peasant_events.2
+					days = 12
+				}
+			}
+		}
+		else = {
+			set_country_flag = church_accept_limits			
+		}
+	}
+	option = {
+		name = simple_request_events.2.c
+		custom_tooltip = simple_request_events.2.c.tt
+		set_country_flag = gain_concessions_clergy_3
+		if = {
+			limit = {
+				has_country_flag = burghers_accept_limits
+				has_country_flag = noble_accept_limits
+			}
+			custom_tooltip = simple_request_events.abc.tt
+			clr_country_flag = burghers_accept_limits
+			clr_country_flag = noble_accept_limits
+			clr_country_flag = began_to_lighten_feudalism
+			set_country_flag = new_peasantry_status_quo
+			hidden_effect = {
+				country_event = {
+					id = influence_peasant_events.2
+					days = 12
+				}
+			}
+		}
+		else = {
+			set_country_flag = church_accept_limits			
+		}
+	}
+}
+
+country_event = { #request from nobles
+	id = simple_request_events.3
+	title = simple_request_events.3.t
+	desc = simple_request_events.3.d
+	picture = CITY_VIEW_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = simple_request_events.3.a
+		custom_tooltip = simple_request_events.3.a.tt
+		set_country_flag = gain_concessions_nobility_1
+		if = {
+			limit = { 
+				has_country_flag = burghers_accept_limits
+				has_country_flag = church_accept_limits
+			}
+			custom_tooltip = simple_request_events.abc.tt
+			clr_country_flag = burghers_accept_limits
+			clr_country_flag = church_accept_limits
+			clr_country_flag = began_to_lighten_feudalism
+			set_country_flag = new_peasantry_status_quo	
+			hidden_effect = {
+				country_event = {
+					id = influence_peasant_events.2
+					days = 12
+				}
+			}		
+		}
+		else = {
+			set_country_flag = noble_accept_limits
+		}
+	}
+	option = {
+		name = simple_request_events.3.b
+		custom_tooltip = simple_request_events.3.b.tt
+		set_country_flag = gain_concessions_nobility_2
+		if = {
+			limit = { 
+				has_country_flag = burghers_accept_limits
+				has_country_flag = church_accept_limits
+			}
+			custom_tooltip = simple_request_events.abc.tt
+			clr_country_flag = burghers_accept_limits
+			clr_country_flag = church_accept_limits
+			clr_country_flag = began_to_lighten_feudalism
+			set_country_flag = new_peasantry_status_quo	
+			hidden_effect = {
+				country_event = {
+					id = influence_peasant_events.2
+					days = 12
+				}
+			}		
+		}
+		else = {
+			set_country_flag = noble_accept_limits
+		}
+	}
+	option = {
+		name = simple_request_events.3.c
+		custom_tooltip = simple_request_events.3.c.tt
+		set_country_flag = gain_concessions_nobility_3
+		if = {
+			limit = { 
+				has_country_flag = burghers_accept_limits
+				has_country_flag = church_accept_limits
+			}
+			custom_tooltip = simple_request_events.abc.tt
+			clr_country_flag = burghers_accept_limits
+			clr_country_flag = church_accept_limits
+			clr_country_flag = began_to_lighten_feudalism
+			set_country_flag = new_peasantry_status_quo	
+			hidden_effect = {
+				country_event = {
+					id = influence_peasant_events.2
+					days = 12
+				}
+			}		
+		}
+		else = {
+			set_country_flag = noble_accept_limits
+		}
+	}
+}
+
+country_event = {
+	id = negotiate_events.1
+	title = negotiate_events.main.t
+	desc = negotiate_events.main.d
+	picture = CITY_VIEW_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			remove_estate_privilege = estate_peasants_sheep_of_clergy
+			if = {
+				limit = {
+					has_estate_privilege = estate_church_limited_privileges_to_peasantry
+				}
+				remove_estate_privilege = estate_church_limited_privileges_to_peasantry
+				add_estate_loyalty = {
+					estate = estate_peasants
+					loyalty = 0.20
+				}
+			}
+		}
+	}
+
+	option = {
+		name = negotiate_events.a.1
+		add_country_modifier = {
+			name = negotiate_modifier_1
+			duration = 18262
+		}
+	}
+	option = {
+		name = negotiate_events.b.1
+		add_estate_influence_modifier = {
+			estate = estate_church
+			influence = 0.25
+			duration = 21915
+		}
+	}
+	option = {
+		name = negotiate_events.main.c
+		add_years_of_income = -3
+	}
+	option = {
+		name = negotiate_events.main.e
+		custom_tooltip = negotiate_events.main.e.tt
+		set_country_flag = church_promise_flag
+	}
+	option = {
+		name = negotiate_events.main.f
+		add_estate_loyalty_modifier = {
+			estate = estate_church
+			desc = EST_VAL_SEIZED_PRIVILEGES
+			loyalty = -0.15
+			duration = 36525
+		}
+	}
+}
+
+country_event = {
+	id = negotiate_events.2
+	title = negotiate_events.main.t
+	desc = negotiate_events.main.d
+	picture = CITY_VIEW_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			remove_estate_privilege = estate_peasants_unpaid_labor_of_burghers
+			if = {
+				limit = {
+					has_estate_privilege = estate_burghers_limited_privileges_to_peasantry
+				}
+				remove_estate_privilege = estate_burghers_limited_privileges_to_peasantry
+				add_estate_loyalty = {
+					estate = estate_peasants
+					loyalty = 0.20
+				}
+			}
+		}
+	}
+
+	option = {
+		name = negotiate_events.a.2
+		add_country_modifier = {
+			name = negotiate_modifier_2
+			duration = 10957
+		}
+	}
+	option = {
+		name = negotiate_events.b.2
+		add_country_modifier = {
+			name = negotiate_modifier_3
+			duration = 16436
+		}
+	}
+	option = {
+		name = negotiate_events.main.c
+		add_years_of_income = -3
+	}
+	option = {
+		name = negotiate_events.main.e
+		custom_tooltip = negotiate_events.main.e.tt
+		set_country_flag = burgher_promise_flag
+	}
+	option = {
+		name = negotiate_events.main.f
+		add_estate_loyalty_modifier = {
+			estate = estate_burghers
+			desc = EST_VAL_SEIZED_PRIVILEGES
+			loyalty = -0.15
+			duration = 36525
+		}
+	}
+}
+
+country_event = {
+	id = negotiate_events.3
+	title = negotiate_events.main.t
+	desc = negotiate_events.main.d
+	picture = CITY_VIEW_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			remove_estate_privilege = estate_peasants_property_of_nobles
+			if = {
+				limit = {
+					has_estate_privilege = estate_nobles_limited_privileges_to_peasantry
+				}
+				remove_estate_privilege = estate_nobles_limited_privileges_to_peasantry
+				add_estate_loyalty = {
+					estate = estate_peasants
+					loyalty = 0.20
+				}
+			}
+		}
+	}
+
+	option = {
+		name = negotiate_events.a.3
+		add_country_modifier = {
+			name = negotiate_modifier_5
+			duration = 10957
+		}
+	}
+	option = {
+		name = negotiate_events.b.3
+		add_country_modifier = {
+			name = negotiate_modifier_4
+			duration = 16436
+		}
+	}
+	option = {
+		name = negotiate_events.main.c
+		add_years_of_income = -3
+	}
+	option = {
+		name = negotiate_events.main.e
+		custom_tooltip = negotiate_events.main.e.tt
+		set_country_flag = noble_promise_flag
+	}
+	option = {
+		name = negotiate_events.main.f
+		add_estate_loyalty_modifier = {
+			estate = estate_nobles
+			desc = EST_VAL_SEIZED_PRIVILEGES
+			loyalty = -0.15
+			duration = 36525
+		}
+	}
+}
