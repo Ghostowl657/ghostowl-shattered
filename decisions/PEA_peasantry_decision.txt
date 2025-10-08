@@ -1,5 +1,6 @@
 country_decisions = {
-	curtail_estate_peasants = { #peasants
+	#Peasant's Coup decision
+	curtail_estate_peasants = {
 		major = yes
 		potential = {
 			has_country_flag = estate_peasants_in_power
@@ -22,6 +23,238 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+	}
+}
+	#Influence over the Peasantry
+country_decisions = {
+	begin_to_lighten_feudalism = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = began_to_lighten_feudalism }
+			NOT = { has_country_flag = new_peasantry_status_quo }
+			NOT = { has_country_flag = a_breaking_point }
+			if = {
+				limit = {
+					tag = RUS
+				}
+				has_estate_privilege = estate_burghers_the_new_middle_class
+			}
+		}
+		allow = {
+			OR = {
+				adm = 4
+				ruler_has_personality = reformist_personality
+			}
+		}
+		effect = {
+			set_country_flag = began_to_lighten_feudalism
+			if = {
+				limit = {
+					ruler_has_personality = reformist_personality
+					adm = 4			
+				}
+				add_stability = -1
+			}
+			else = {
+				add_stability = -2
+				add_adm_power = -100
+			}
+		}
+	}
+	lighten_feudalism = {
+		major = yes
+		potential = {
+			has_country_flag = began_to_lighten_feudalism
+			NOT = { has_country_flag = new_peasantry_status_quo }
+		}
+		allow = {
+			legitimacy = 100
+			stability = 1
+			NOT = { has_country_modifier = lighten_feadulism_timer }
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = burghers_accept_limits
+					}
+				}
+				estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 50
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = church_accept_limits
+					}
+				}
+				estate_loyalty = {
+					estate = estate_church
+					loyalty = 50
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = noble_accept_limits
+					}
+				}
+				estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 50
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = lighten_feadulism_timer
+				duration = 3652
+			}
+			add_legitimacy = -10
+			if = { 
+				limit = {
+					NOT = { has_country_flag = burghers_accept_limits }
+					NOT = { has_country_flag = church_accept_limits }
+					NOT = { has_country_flag = noble_accept_limits }
+				}
+				random_list = {
+					33 = {
+						country_event = {
+							id = simple_request_events.1
+						}
+					}
+					33 = {
+						country_event = {
+							id = simple_request_events.2
+						}
+					}
+					33 = {
+						country_event = {
+							id = simple_request_events.3
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = { 
+					has_country_flag = noble_accept_limits
+					NOT = { has_country_flag = burghers_accept_limits }
+					NOT = { has_country_flag = church_accept_limits }					
+				}
+				random_list = {
+					50 = {
+						country_event = {
+							id = simple_request_events.1
+						}
+					}
+					50 = {
+						country_event = {
+							id = simple_request_events.2
+						}
+					}					
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = burghers_accept_limits
+					NOT = { has_country_flag = church_accept_limits }
+					NOT = { has_country_flag = noble_accept_limits }					
+				}
+				random_list = {
+					50 = {
+						country_event = {
+							id = simple_request_events.2
+						}
+					}
+					50 = {
+						country_event = {
+							id = simple_request_events.3
+						}
+					}					
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = church_accept_limits
+					NOT = { has_country_flag = burghers_accept_limits }
+					NOT = { has_country_flag = noble_accept_limits }					
+				}
+				random_list = {
+					50 = {
+						country_event = {
+							id = simple_request_events.1
+						}
+					}
+					50 = {
+						country_event = {
+							id = simple_request_events.3
+						}
+					}
+				}		
+			}
+			else_if = {
+				limit = { 
+					has_country_flag = noble_accept_limits
+					has_country_flag = burghers_accept_limits
+					NOT = { has_country_flag = church_accept_limits }						
+				}
+				country_event = {
+					id = simple_request_events.2
+				}
+			}
+			else_if = {
+				limit = { 
+					has_country_flag = noble_accept_limits
+					has_country_flag = church_accept_limits
+					NOT = { has_country_flag = burghers_accept_limits }					
+				}
+				country_event = {
+					id = simple_request_events.1
+				}
+			}
+			else_if = {
+				limit = { 
+					has_country_flag = church_accept_limits
+					has_country_flag = burghers_accept_limits
+					NOT = { has_country_flag = noble_accept_limits }					
+				}
+				country_event = {
+					id = simple_request_events.3
+				}
+			}
+		}
+	}
+	Liberation_of_Peasantry = {
+		major = yes
+		potential = {
+			has_country_flag = give_an_inch_flag
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			add_government_reform = liberation_of_peasants
+			clr_country_flag = give_an_inch_flag
+			set_country_flag = take_a_mile
+		}
+	}
+	progaganda_of_the_estates = {
+		major = yes
+		potential = {
+			had_country_flag = {
+				flag = PEA_liberated_peasants
+				days = 1826
+			}
+			NOT = { has_country_modifier = peasants_propaganda_timer }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			country_event = {
+				id = influence_peasant_events.5
+			}
 		}
 	}
 }
