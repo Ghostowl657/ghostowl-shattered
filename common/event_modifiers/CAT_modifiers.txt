@@ -1,0 +1,7 @@
+multi_cultural_empire_7 = { manpower_in_accepted_culture_provinces = 0.35 }
+multi_cultural_empire_6 = { manpower_in_accepted_culture_provinces = 0.30 }
+multi_cultural_empire_5 = { manpower_in_accepted_culture_provinces = 0.25 }
+multi_cultural_empire_4 = { manpower_in_accepted_culture_provinces = 0.20 }
+multi_cultural_empire_3 = { manpower_in_accepted_culture_provinces = 0.15 }
+multi_cultural_empire_2 = { manpower_in_accepted_culture_provinces = 0.10 }
+multi_cultural_empire_1 = { manpower_in_accepted_culture_provinces = 0.05 }

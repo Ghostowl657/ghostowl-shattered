@@ -1,0 +1,11 @@
+on_culture_promoted = {
+	multi_cultural_nation = yes 
+}
+
+on_culture_demoted = {
+	multi_cultural_nation = yes 
+}
+
+on_primary_culture_changed = {
+	multi_cultural_nation = yes 	
+}

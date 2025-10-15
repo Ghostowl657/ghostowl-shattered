@@ -1,0 +1,2423 @@
+multi_cultural_nation = {
+	remove_country_modifier = multi_cultural_empire_1
+	remove_country_modifier = multi_cultural_empire_2
+	remove_country_modifier = multi_cultural_empire_3
+	remove_country_modifier = multi_cultural_empire_4
+	remove_country_modifier = multi_cultural_empire_5
+	remove_country_modifier = multi_cultural_empire_6
+	remove_country_modifier = multi_cultural_empire_7
+	set_variable = {
+		which = multicultural_counting
+		value = 0
+	}
+	#Gaelic (10)
+	if = { limit = { NOT = { culture_group = gaelic } }
+		if = {
+			limit = { 
+				accepted_culture = irish
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = highland_scottish
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = welsh_celtic
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = cornish_celtic
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = manx
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = breton_celtic
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = scottish_celtic
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = brythons
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = gallic
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = galleaci
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#British (14)
+	if = { limit = { NOT = { culture_group = british } } 
+		if = {
+			limit = { 
+				accepted_culture = english
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = welsh
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = cornish
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = scottish
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = northumbrian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = anglo_irish
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = cosmopolitan_french_UKS
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = gascon_UKS
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = normand_UKS
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = aquitaine_UKS
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = burgundian_UKS
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = occitain_UKS
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = wallonian_UKS
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = breton_UKS
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}	
+	}
+	#French (10)
+	if = { limit = { NOT = { culture_group = french } }
+		if = {
+			limit = { 
+				accepted_culture = cosmopolitan_french
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = gascon
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = normand
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = aquitaine
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = burgundian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = occitain
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = wallonian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = breton
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = { 
+			limit = { 
+				accepted_culture = anglois
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = frankish
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#Iberian (11)
+	if = { limit = { NOT = { culture_group = iberian } }
+		if = {
+			limit = { 
+				accepted_culture = castillian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = leonese
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = aragonese
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = catalan
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = galician
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = andalucian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = portugese
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = basque
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = { 
+			limit = { 
+				accepted_culture = asturian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = mozarabic
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = sephardic
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#Germanic (17)
+	if = { limit = { NOT = { culture_group = germanic } }
+		if = {
+			limit = { 
+				accepted_culture = pommeranian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = prussian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = baltic_german
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = lower_saxon
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = hannoverian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = franconian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = swabian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = swiss
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = { 
+			limit = { 
+				accepted_culture = bavarian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = austrian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = dutch
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = flemish
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = frisian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = gothic_ger
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = { 
+			limit = { 
+				accepted_culture = sudeten
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = sorbian_german
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = hessian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}	
+	#Latin (12)
+	if = { limit = { NOT = { culture_group = latin } }
+		if = {
+			limit = { 
+				accepted_culture = lombard
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = tuscan
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = sardinian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = romagnan
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = maltese
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = ligurian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = venetian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = dalmatian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = { 
+			limit = { 
+				accepted_culture = neapolitan
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = piedmontese
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = umbrian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = sicilian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#Scandinavian (10)
+	if = { limit = { NOT = { culture_group = scandinavian } }
+		if = {
+			limit = { 
+				accepted_culture = swedish
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = danish
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = sapmi
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = norwegian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = finnish
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = icelandic
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = norse
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = geats
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = { 
+			limit = { 
+				accepted_culture = scanian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = karelian_scandinavia
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#Baltic (3)
+	if = { limit = { NOT = { culture_group = baltic } }
+		if = {
+			limit = { 
+				accepted_culture = estonian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = lithuanian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = latvian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#Western Slavic (5)
+	if = { limit = { NOT = { culture_group = west_slavic } }
+		if = {
+			limit = { 
+				accepted_culture = czech
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = polish
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = schlesian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = sorbian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = slovak
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}	
+	#Carpathian (4)
+	if = { limit = { NOT = { culture_group = west_slavic } }
+		if = {
+			limit = { 
+				accepted_culture = transylvanian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = romanian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = hungarian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = cuman
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#Southern Slavic (8)
+	if = { limit = { NOT = { culture_group = south_slavic } }
+		if = {
+			limit = { 
+				accepted_culture = croatian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = serbian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = slovene
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = bosnian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = bulgarian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = albanian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = jadranian_culture
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = talian_culture
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#Byzantine (7)
+	if = { limit = { NOT = { culture_group = byzantine } }
+		if = {
+			limit = { 
+				accepted_culture = greek
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = pontic_greek
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = cappadocian_greek
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = goths
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = griko
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = georgian_new
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = sclavinian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#Eastern Slavic (6)
+	if = { limit = { NOT = { culture_group = east_slavic } }
+		if = {
+			limit = { 
+				accepted_culture = russian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = novgorodian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = ryazanian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = byelorussian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = ruthenian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = karelian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#Caucasian (4)
+	if = { limit = { NOT = { culture_group = caucasian } }
+		if = {
+			limit = { 
+				accepted_culture = georgian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = circassian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = dagestani
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = armenian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#Finno Ugric (4)
+	if = { limit = { NOT = { culture_group = finno_ugric } }
+		if = {
+			limit = { 
+				accepted_culture = uralic
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = samoyed
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = ingrian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = ostyaki
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#turko_semitic [Arabian] (11)
+	if = { limit = { NOT = { culture_group = turko_semitic } }
+		if = {
+			limit = { 
+				accepted_culture = assyrian_culture
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = turkish
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = al_misr_arabic
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = al_suryah_arabic
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = al_iraqiya_arabic
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = gulf_arabic
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = mahri_culture
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = bedouin_arabic
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = { 
+			limit = { 
+				accepted_culture = hejazi_culture
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = omani_culture
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = yemeni_culture
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#Maghrebi (5)
+	if = { limit = { NOT = { culture_group = maghrebi } }
+		if = {
+			limit = { 
+				accepted_culture = moroccan
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = tunisian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = algerian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = berber
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = sicilian_arabic
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#Iranian (13)
+	if = { limit = { NOT = { culture_group = iranian } } 
+		if = {
+			limit = { 
+				accepted_culture = persian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = luri
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = azerbaijani
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = khorasani
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = baluchi
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = afghani
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = kurdish
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = mazandarani
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = turco_iranian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = khwarezmians
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = tajiks
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = al_iraqiya_arabic_PER
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = dagestani_PER
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}	
+	}
+	#Altaic (9)
+	if = { limit = { NOT = { culture_group = altaic } }
+		if = {
+			limit = { 
+				accepted_culture = mongol
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = chahar
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = khalkha
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = oirats
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = uzbehk
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = turkmeni
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = uyghur
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = khazak
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = { 
+			limit = { 
+				accepted_culture = kirgiz
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#East Asian (21)
+	if = { limit = { NOT = { culture_group = east_asian } }
+		if = {
+			limit = { 
+				accepted_culture = vietnamese_new
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = korean_new
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = tibetan_new
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = altaic_new
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = zhuang_new
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = manchu_new
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = chihan
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = cantonese
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = { 
+			limit = { 
+				accepted_culture = jin
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = wu
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = chimin
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = hakka
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = gan
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = xiang
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = { 
+			limit = { 
+				accepted_culture = sichuanese
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = jianghuai
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = xibei
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = hubei
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = { 
+			limit = { 
+				accepted_culture = zhongyuan
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = shandong_culture
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = chaoxian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#Korean g (1)
+	if = { limit = { NOT = { culture_group = korean_g } }
+		if = {
+			limit = { 
+				accepted_culture = korean
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}	
+	#Japanese g (3)
+	if = { limit = { NOT = { culture_group = japanese_g } }
+		if = {
+			limit = { 
+				accepted_culture = japanese
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = togoku
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = kyushuan
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#Tibetan group (4)
+	if = { limit = { NOT = { culture_group = tibetan_group } }
+		if = {
+			limit = { 
+				accepted_culture = tibetan
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = yi
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = bai
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = miao
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#Malay (12)
+	if = { limit = { NOT = { culture_group = malay } } 
+		if = {
+			limit = { 
+				accepted_culture = malayan
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = sumatran
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = acehnese
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = javanese
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = sundanese
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = filipino
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = bornean
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = madagascan
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = sulawesi
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = moluccan
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = nusa_tenggara
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = cham
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#Thai group (4)
+	if = { limit = { NOT = { culture_group = thai_group } }
+		if = {
+			limit = { 
+				accepted_culture = central_thai
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = northern_thai
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = shan
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = zhuang
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#Southeastasian group (3)
+	if = { limit = { NOT = { culture_group = southeastasian_group } }
+		if = {
+			limit = { 
+				accepted_culture = khmer
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = mon
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = vietnamese
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#Burman (5)
+	if = { limit = { NOT = { culture_group = burman } }
+		if = {
+			limit = { 
+				accepted_culture = burmese
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = chin
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = karen
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = kachin
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = arakanese
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#Eastern Aryan (8)
+	if = { limit = { NOT = { culture_group = eastern_aryan } }
+		if = {
+			limit = { 
+				accepted_culture = assamese
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = bengali
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = kochi
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = bihari
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = pahari
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = nepali
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = oriya
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = sinhala
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#Hindusthani (5)
+	if = { limit = { NOT = { culture_group = hindusthani } }
+		if = {
+			limit = { 
+				accepted_culture = avadhi
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = kanauji
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = vindhyan
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = panjabi
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = kashmiri
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#Western Aryan (7)
+	if = { limit = { NOT = { culture_group = western_aryan } }
+		if = {
+			limit = { 
+				accepted_culture = gujarati
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = parsi
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = saurashtri
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = marathi
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = sindhi
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = rajput
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = malvi
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#Dravidian (4)
+	if = { limit = { NOT = { culture_group = dravidian } }
+		if = {
+			limit = { 
+				accepted_culture = kannada
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = malayalam
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = tamil
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = telegu
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#Central Indic (3)
+	if = { limit = { NOT = { culture_group = central_indic } }
+		if = {
+			limit = { 
+				accepted_culture = gondi
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = garjati
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = jharkhandi
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#Mande (6)
+	if = { limit = { NOT = { culture_group = mande } }
+		if = {
+			limit = { 
+				accepted_culture = mali
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = songhai
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = soninke
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = bambara
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = bozo
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = dyola
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#Sahelian (7)
+	if = { limit = { NOT = { culture_group = sahelian } }
+		if = {
+			limit = { 
+				accepted_culture = hausa
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = kanuri
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = bilala
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = tunjur
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = tuareg
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = senegambian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = fulani
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#West African (6)
+	if = { limit = { NOT = { culture_group = west_african } }
+		if = {
+			limit = { 
+				accepted_culture = yorumba
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = aka
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = nupe
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = fon
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = mossi
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = dagomba
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#South African (6)
+	if = { limit = { NOT = { culture_group = southern_african } }
+		if = {
+			limit = { 
+				accepted_culture = makua
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = nguni
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = bemba
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = khoisan
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = shona
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = nyasa
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#Kongo group (10)
+	if = { limit = { NOT = { culture_group = kongo_group } }
+		if = {
+			limit = { 
+				accepted_culture = lunda
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = luba
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = kongolese
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = yaka
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = kuba
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = mbundu
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = chokwe
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = mbangala
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = { 
+			limit = { 
+				accepted_culture = jukun
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = sawabantu
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#African (5)
+	if = { limit = { NOT = { culture_group = african } }
+		if = {
+			limit = { 
+				accepted_culture = madagasque
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = takama
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = bena
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = bantu
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = swahili
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#Cushitic (7)
+	if = { limit = { NOT = { culture_group = cushitic } }
+		if = {
+			limit = { 
+				accepted_culture = somali
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = harari
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = afar
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = oromo
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = tigray
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = sidamo
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = amhara
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#Sudanese (3)
+	if = { limit = { NOT = { culture_group = sudanese } }
+		if = {
+			limit = { 
+				accepted_culture = acholi
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = nubian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = beja
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#Great Lakes group (3)
+	if = { limit = { NOT = { culture_group = great_lakes_group } }
+		if = {
+			limit = { 
+				accepted_culture = rwandan
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = ganda
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = masaba
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#Evenks (6)
+	if = { limit = { NOT = { culture_group = evenks } }
+		if = {
+			limit = { 
+				accepted_culture = evenk
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = yakut
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = yukagyr
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = buryat
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = tungus
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = manchu
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#Kamchatkan g (3)
+	if = { limit = { NOT = { culture_group = kamchatkan_g } }
+		if = {
+			limit = { 
+				accepted_culture = ainu
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = kamchatkan
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = nivkh
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+	#Tartar (7)
+	if = { limit = { NOT = { culture_group = tartar } }
+		if = {
+			limit = { 
+				accepted_culture = astrakhani
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = bashkir
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = crimean
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = kazani
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = mishary
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = nogaybak
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+		if = {
+			limit = { 
+				accepted_culture = siberian
+				NOT = { check_variable = { which = multicultural_counting value = 7 } }
+			}
+			change_variable = { which = multicultural_counting value = 1 }
+		}
+	}
+
+
+	if = {
+		limit = {
+			has_government_attribute = multi_cultural
+			num_accepted_cultures = 1
+		}
+		if = {
+			limit = {  
+				check_variable = {
+					which = multicultural_counting
+					value = 7
+				}
+			}
+			add_country_modifier = {
+				name = multi_cultural_empire_7
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = { 
+				check_variable = {
+					which = multicultural_counting
+					value = 6
+				}
+			}
+			add_country_modifier = {
+				name = multi_cultural_empire_6
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {  
+				check_variable = {
+					which = multicultural_counting
+					value = 5
+				}
+			}
+			add_country_modifier = {
+				name = multi_cultural_empire_5
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {  
+				check_variable = {
+					which = multicultural_counting
+					value = 4
+				}
+			}
+			add_country_modifier = {
+				name = multi_cultural_empire_4
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {  
+				check_variable = {
+					which = multicultural_counting
+					value = 3
+				}
+			}
+			add_country_modifier = {
+				name = multi_cultural_empire_3
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {  
+				check_variable = {
+					which = multicultural_counting
+					value = 2
+				}
+			}
+			add_country_modifier = {
+				name = multi_cultural_empire_2
+				duration = -1
+			}
+		}
+		else = {
+			if = {
+				limit = {  
+					check_variable = {
+						which = multicultural_counting
+						value = 1
+					}
+				}
+				add_country_modifier = {
+					name = multi_cultural_empire_1
+					duration = -1
+				}
+			}
+		}
+	}
+}

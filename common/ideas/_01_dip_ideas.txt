@@ -904,9 +904,9 @@ assimilation0 = {
     }
 }
 
-# Moved from Adm
+# CAT
 # MULTICULTURAL FOCUS
-humanist_ideas = {
+Multicultural = {
     category = DIP
 
     trigger = {
@@ -914,47 +914,41 @@ humanist_ideas = {
 		    has_idea_group = assimilation0
 	    }
     }
+	
+	bonus = { diplomatic_reputation = 2 }
 
-    bonus = {
-        diplomatic_reputation = 2
-    }
-
-    benevolence = {
-        num_accepted_cultures = 5
-        promote_culture_cost = -0.33
-    }
-
-    local_traditions = {
-        religious_unity = 0.15
-        tolerance_heathen = 2
-        tolerance_heretic = 2
-    }
-
-    ecumenism = {
+	Multi1 = {
         culture_conversion_cost = 0.25
         culture_conversion_time = 1
         min_autonomy_in_territories = -0.05
-    }
+	}
 
-    humanist_tolerance = {
-        years_of_nationalism = -5
-        global_unrest = -2
-    }
+	Multi2 = {
+		num_accepted_cultures = 3
+		promote_culture_cost = -0.33	
+	}
 
-    cultural_ties_2 = {
+	Multi3 = {
         native_uprising_chance = -0.5
-        native_assimilation = 0.3
-    }
+        native_assimilation = 0.3			
+	}
 
-    indirect_rule = {
-        land_forcelimit_modifier = 0.05
-        manpower_in_accepted_culture_provinces = 0.2
-    }
+	Multi4 = {
+        years_of_nationalism = -5		
+	}
 
-    tolerance_idea_2 = {
+	Multi5 = {
+		global_foreign_trade_power = 0.15
+	}
+
+	Multi6 = {
+		manpower_in_culture_group_provinces = 0.05
+	}
+
+	Multi7 = {
         reform_progress_growth = 0.1
-        stability_cost_modifier = -0.15
-    }
+        stability_cost_modifier = -0.15		
+	}
 }
 
 

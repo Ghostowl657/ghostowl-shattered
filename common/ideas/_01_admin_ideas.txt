@@ -373,6 +373,43 @@ administrative_ideas = {
 	}
 }
 
+# CAT
+humanist_ideas = {
+    category = ADM
+
+    bonus = {
+		idea_cost = -0.05
+    }
+
+	humanist_1 = {
+		tolerance_heretic = 2
+		tolerance_of_heretics_capacity = 1
+	}
+	humanist_2 = {
+		tolerance_heathen = 2
+		tolerance_of_heathens_capacity = 1
+	}
+	humanist_3 = {
+		min_autonomy_in_territories = -0.05
+	}
+	humanist_4 = {
+		years_of_nationalism = -5
+		religious_unity = 0.15
+	}
+	humanist_5 = {
+		interest = -0.5
+	}
+	humanist_6 = {
+		global_unrest = -2
+	}
+	humanist_7 = {
+		monthly_karma = 0.5
+		yearly_harmony = 1
+		monthly_church_power = 0.5
+		papal_influence = 0.5
+	}
+}
+
 
 # Moved from MIL
 indigenous_ideas = {

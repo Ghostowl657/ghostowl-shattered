@@ -444,6 +444,8 @@ monarchy = {
 				inca_mountain_farms
 				#peasants
 				liberation_of_peasants
+				#CAT
+				multi_cultural_empire
 			}
 		}
 		state_and_religion = {

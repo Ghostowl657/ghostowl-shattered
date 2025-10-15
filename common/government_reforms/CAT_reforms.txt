@@ -1,0 +1,41 @@
+multi_cultural_empire = {
+	icon = "german_cultural_disunity_reform"
+
+	potential = {
+
+	}
+
+	modifiers = {
+		global_unrest = -2
+		num_accepted_cultures = 2
+
+	}
+
+	trigger = { 
+		has_idea = Multi6
+	}
+
+	custom_attributes = {
+		multi_cultural = yes
+	}
+	effect = {
+		hidden_effect = {	
+			multi_cultural_nation = yes 
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			remove_country_modifier = multi_cultural_empire_1
+			remove_country_modifier = multi_cultural_empire_2
+			remove_country_modifier = multi_cultural_empire_3
+			remove_country_modifier = multi_cultural_empire_4
+			remove_country_modifier = multi_cultural_empire_5
+			remove_country_modifier = multi_cultural_empire_6
+			remove_country_modifier = multi_cultural_empire_7
+			set_variable = {
+				which = multicultural_counting
+				value = 0
+			}
+		}
+	}
+}
