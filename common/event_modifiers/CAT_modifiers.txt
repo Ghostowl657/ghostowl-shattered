@@ -5,3 +5,9 @@ multi_cultural_empire_4 = { manpower_in_accepted_culture_provinces = 0.20 }
 multi_cultural_empire_3 = { manpower_in_accepted_culture_provinces = 0.15 }
 multi_cultural_empire_2 = { manpower_in_accepted_culture_provinces = 0.10 }
 multi_cultural_empire_1 = { manpower_in_accepted_culture_provinces = 0.05 }
+
+soldiers_household_scale_5 = { local_manpower = 1.250 }
+soldiers_household_scale_4 = { local_manpower = 1.000 }
+soldiers_household_scale_3 = { local_manpower = 0.750 }
+soldiers_household_scale_2 = { local_manpower = 0.500 }
+soldiers_household_scale_1 = { local_manpower = 0.250 }

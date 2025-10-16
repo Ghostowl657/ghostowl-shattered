@@ -9,3 +9,23 @@ on_culture_demoted = {
 on_primary_culture_changed = {
 	multi_cultural_nation = yes 	
 }
+
+on_mil_exploited = {
+	soldiers_household_scale_remover = yes
+	soldiers_household_scale_giver = yes
+}
+
+on_mil_development = {
+	soldiers_household_scale_remover = yes
+	soldiers_household_scale_giver = yes
+}
+
+on_raze = {
+	soldiers_household_scale_remover = yes
+	soldiers_household_scale_giver = yes
+}
+
+on_concentrate_development = {
+	soldiers_household_scale_remover = yes
+	soldiers_household_scale_giver = yes	
+}

@@ -18,6 +18,17 @@
   desc_multi_cultural_empire_6: ""
   desc_multi_cultural_empire_7: ""
 
+	soldiers_household_scale_1: "Soldiers Household bonus I"
+	soldiers_household_scale_2: "Soldiers Household bonus II"
+	soldiers_household_scale_3: "Soldiers Household bonus III"
+	soldiers_household_scale_4: "Soldiers Household bonus IV"
+	soldiers_household_scale_5: "Soldiers Household bonus V"
+	desc_soldiers_household_scale_1: ""
+	desc_soldiers_household_scale_2: ""
+	desc_soldiers_household_scale_3: ""
+	desc_soldiers_household_scale_4: ""
+	desc_soldiers_household_scale_5: ""
+
   Multicultural: "§VMulticultural Focus§!"
   Multicultural_bonus: "Multicultural Focus Bonus"
 	Multi1: "Cultural self-governance"
