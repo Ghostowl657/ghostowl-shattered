@@ -378,7 +378,7 @@ humanist_ideas = {
     category = ADM
 
     bonus = {
-		idea_cost = -0.05
+		idea_cost = -0.10
     }
 
 	humanist_1 = {
@@ -390,7 +390,8 @@ humanist_ideas = {
 		tolerance_of_heathens_capacity = 1
 	}
 	humanist_3 = {
-		min_autonomy_in_territories = -0.05
+		adm_tech_cost_modifier = -0.05
+		church_influence_modifier = -0.1
 	}
 	humanist_4 = {
 		years_of_nationalism = -5
