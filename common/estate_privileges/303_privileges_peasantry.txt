@@ -1725,7 +1725,7 @@ estate_propaganda_peasant_nobles = {
 			}
 		}
 		modifier = {
-			land_morale = 0.03
+			global_manpower_modifier = 0.10
 		}
 	}
 	conditional_modifier = {
@@ -1750,8 +1750,8 @@ estate_propaganda_peasant_nobles = {
 			}
 		}
 		modifier = {
-			land_morale = 0.06
-			global_manpower_modifier = 0.05
+			global_manpower_modifier = 0.20
+			land_maintenance_modifier = 0.1
 			peasants_privilege_slots = -1
 		}
 	}
@@ -1771,8 +1771,8 @@ estate_propaganda_peasant_nobles = {
 			}
 		}
 		modifier = {
-			land_morale = 0.10
-			global_manpower_modifier = 0.10
+			global_manpower_modifier = 0.30
+			land_maintenance_modifier = 0.20
 			discipline = 0.02
 			peasants_privilege_slots = -2
 		}
@@ -1940,7 +1940,7 @@ estate_propaganda_peasant_burghers = {
 		modifier = {
 			production_efficiency = 0.40
 			trade_efficiency = 0.15
-			naval_morale = 0.10
+			navy_tradition = 0.25
 			peasants_privilege_slots = -2
 		}
 	}
@@ -2061,7 +2061,7 @@ estate_propaganda_peasant_clergy = {
 			}
 		}
 		modifier = {
-			advisor_cost = -0.05
+			idea_cost = -0.0333
 		}
 	}
 	conditional_modifier = {
@@ -2086,8 +2086,8 @@ estate_propaganda_peasant_clergy = {
 			}
 		}
 		modifier = {
-			advisor_cost = -0.10
-			idea_cost = -0.0125
+			idea_cost = -0.0666
+			technology_cost = -0.025
 			peasants_privilege_slots = -1
 		}
 	}
@@ -2107,9 +2107,9 @@ estate_propaganda_peasant_clergy = {
 			}
 		}
 		modifier = {
-			advisor_cost = -0.15
-			idea_cost = -0.025
-			development_cost_modifier = -0.02
+			idea_cost = -0.1
+			technology_cost = -0.05
+			advisor_cost = -0.20
 			peasants_privilege_slots = -2
 		}
 	}
