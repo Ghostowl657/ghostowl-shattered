@@ -3115,6 +3115,637 @@ dst_policy_104 = {
 	}
 }
 
+dst_policy_105 = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = humanist_ideas
+		has_idea_group = spy_ideas
+	}
+	allow = {
+		full_idea_group = humanist_ideas
+		full_idea_group = spy_ideas
+	}
+
+	# Modifier
+	global_spy_defence = 0.2
+	spy_offence = 0.1
+
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+dst_policy_106 = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = humanist_ideas
+		has_idea_group = influence_ideas
+	}
+	allow = {
+		full_idea_group = humanist_ideas
+		full_idea_group = influence_ideas
+	}
+
+	# Modifier
+	global_unrest = -2
+
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+dst_policy_107 = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = humanist_ideas
+		has_idea_group = trade_ideas
+	}
+	allow = {
+		full_idea_group = humanist_ideas
+		full_idea_group = trade_ideas
+	}
+
+	# Modifier
+	mercantilism_cost = -0.075
+
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+dst_policy_108 = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = humanist_ideas
+		has_idea_group = exploration_ideas
+	}
+	allow = {
+		full_idea_group = humanist_ideas
+		full_idea_group = exploration_ideas
+	}
+
+	# Modifier
+	native_assimilation = 0.25
+	native_uprising_chance = -0.25
+
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+dst_policy_109 = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = humanist_ideas
+		has_idea_group = maritime_ideas
+	}
+	allow = {
+		full_idea_group = humanist_ideas
+		full_idea_group = maritime_ideas
+	}
+
+	# Modifier
+	sailors_recovery_speed = 0.1
+
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+dst_policy_110 = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = humanist_ideas
+		has_idea_group = flottenbasis0
+	}
+	allow = {
+		full_idea_group = humanist_ideas
+		full_idea_group = flottenbasis0
+	}
+
+	# Modifier
+	global_sailors_modifier = 0.15
+
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+dst_policy_111 = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = humanist_ideas
+		has_idea_group_any_fleet_focus_trigger = yes
+	}
+	allow = {
+		full_idea_group = humanist_ideas
+		full_idea_group_any_fleet_focus_trigger = yes
+		has_navalmorale_limiter_trigger = yes
+	}
+
+	# Modifier
+	naval_morale = 0.1
+
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { navy_size = 20 }
+		}
+	}
+}
+
+dst_policy_112 = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = humanist_ideas
+		has_idea_group = kolonialimperium0
+	}
+	allow = {
+		full_idea_group = humanist_ideas
+		full_idea_group = kolonialimperium0
+	}
+
+	# Modifier
+	diplomatic_reputation = 1
+	improve_relation_modifier = 0.1
+
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+dst_policy_113 = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = humanist_ideas
+		has_idea_group_any_culture_focus_trigger = yes
+	}
+	allow = {
+		full_idea_group = humanist_ideas
+		full_idea_group_any_culture_focus_trigger = yes
+	}
+
+	# Modifier
+	num_accepted_cultures = 2
+
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+dst_policy_114 = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = humanist_ideas
+		has_idea_group = gesellschaft0
+	}
+	allow = {
+		full_idea_group = humanist_ideas
+		full_idea_group = gesellschaft0
+		has_estateloyaltybalance_limiter_trigger = yes
+	}
+
+	# Modifier
+	all_estate_loyalty_equilibrium = 0.05
+
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+dst_policy_115 = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = humanist_ideas
+		has_idea_group = propaganda0
+	}
+	allow = {
+		full_idea_group = humanist_ideas
+		full_idea_group = propaganda0
+	}
+
+	# Modifier
+	global_tax_modifier = 0.15
+
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { tax_income_percentage = 0.15 }
+		}
+		modifier = {
+			factor = 1.5
+			tax_income_percentage = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			tax_income_percentage = 0.45
+		}
+		modifier = {
+			factor = 1.5
+			tax_income_percentage = 0.6
+		}
+		modifier = {
+			factor = 1.5
+			tax_income_percentage = 0.75
+		}
+	}
+}
+
+dst_policy_116 = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = humanist_ideas
+		has_idea_group = nationalismus0
+	}
+	allow = {
+		full_idea_group = humanist_ideas
+		full_idea_group = nationalismus0
+	}
+
+	# Modifier
+	culture_conversion_cost = -0.1
+
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+dst_policy_117 = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = humanist_ideas
+		has_idea_group = imperialismus0
+	}
+	allow = {
+		full_idea_group = humanist_ideas
+		full_idea_group = imperialismus0
+	}
+
+	# Modifier
+	prestige = 1
+	prestige_decay = -0.005
+
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+dst_policy_118 = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = humanist_ideas
+		has_idea_group = quality_ideas
+	}
+	allow = {
+		full_idea_group = humanist_ideas
+		full_idea_group = quality_ideas
+	}
+
+	# Modifier
+	cavalry_power = 0.1
+
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			has_global_modifier_value = {
+				which = cavalry_power
+				value = 0.3
+			}
+		}
+	}
+}
+
+dst_policy_119 = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = humanist_ideas
+		has_idea_group = quantity_ideas
+	}
+	allow = {
+		full_idea_group = humanist_ideas
+		full_idea_group = quantity_ideas
+	}
+
+	# Modifier
+	global_manpower_modifier = 0.1
+
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+dst_policy_120 = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = humanist_ideas
+		has_idea_group = offensive_ideas
+	}
+	allow = {
+		full_idea_group = humanist_ideas
+		full_idea_group = offensive_ideas
+	}
+
+	# Modifier
+	allow_client_states = yes
+	vassal_forcelimit_bonus = 0.25
+
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			is_subject = yes
+		}
+		modifier = {
+			factor = 1.5
+			has_global_modifier_value = {
+				which = vassal_forcelimit_bonus
+				value = 1
+			}
+		}
+		modifier = {
+			factor = 1.5
+			num_of_subjects = 2
+		}
+		modifier = {
+			factor = 1.5
+			num_of_subjects = 4
+		}
+		modifier = {
+			factor = 1.5
+			num_of_subjects = 6
+		}
+	}
+}
+
+dst_policy_121 = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = humanist_ideas
+		has_idea_group = defensive_ideas
+	}
+	allow = {
+		full_idea_group = humanist_ideas
+		full_idea_group = defensive_ideas
+		has_moraledamagereceived_limiter_trigger = yes
+	}
+
+	# Modifier
+	morale_damage_received = -0.075
+
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+dst_policy_122 = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = humanist_ideas
+		has_idea_group = generalstab0
+	}
+	allow = {
+		full_idea_group = humanist_ideas
+		full_idea_group = generalstab0
+	}
+
+	# Modifier
+	army_tradition = 0.5
+
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+dst_policy_123 = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = humanist_ideas
+		has_idea_group_any_army_doctrine_trigger = yes
+	}
+	allow = {
+		full_idea_group = humanist_ideas
+		full_idea_group_any_army_doctrine_trigger = yes
+	}
+
+	# Modifier
+	global_unrest = -2
+
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+dst_policy_124 = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = humanist_ideas
+		has_idea_group = mercenary0
+	}
+	allow = {
+		full_idea_group = humanist_ideas
+		full_idea_group = mercenary0
+	}
+
+	# Modifier
+	mercenary_discipline = 0.05
+
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+dst_policy_125 = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = humanist_ideas
+		has_idea_group = waffenqualitat0
+	}
+	allow = {
+		full_idea_group = humanist_ideas
+		full_idea_group = waffenqualitat0
+	}
+
+	# Modifier
+	defensiveness = 0.075
+	siege_ability = 0.15
+
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+dst_policy_126 = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = humanist_ideas
+		has_idea_group = festung0
+	}
+	allow = {
+		full_idea_group = humanist_ideas
+		full_idea_group = festung0
+	}
+
+	# Modifier
+	defensiveness = 0.15
+	siege_ability = 0.075
+
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+dst_policy_127 = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = humanist_ideas
+		has_idea_group = kriegsproduktion0
+	}
+	allow = {
+		full_idea_group = humanist_ideas
+		full_idea_group = kriegsproduktion0
+		has_army_focus_cap_trigger = yes
+	}
+
+	# Modifier
+	shock_damage_received = -0.05
+
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 1.5
+			has_global_modifier_value = {
+				which = shock_damage_received
+				value = 0.2
+			}
+		}
+		modifier = {
+			factor = 1.5
+			is_at_war = yes
+			has_global_modifier_value = {
+				which = shock_damage_received
+				value = 0.2
+			}
+		}
+	}
+}
+
+#dst_policy_128 = {
+#	monarch_power = ADM
+#
+#	potential = {
+#		has_idea_group = humanist_ideas
+#		has_idea_group = logistics0
+#	}
+#	allow = {
+#		full_idea_group = humanist_ideas
+#		full_idea_group = logistics0
+#	}
+#
+#	# Modifier
+#	num_accepted_cultures = 2
+#
+#
+#	ai_will_do = {
+#		factor = 0
+#	}
+#}
+
+dst_policy_129 = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = humanist_ideas
+		has_idea_group = militarismus0
+	}
+	allow = {
+		full_idea_group = humanist_ideas
+		full_idea_group = militarismus0
+	}
+
+	# Modifier
+	reinforce_speed = 0.15
+	reinforce_cost_modifier = -0.15
+
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+dst_policy_130 = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = humanist_ideas
+		has_idea_group_any_army_focus_trigger = yes
+	}
+	allow = {
+		full_idea_group = humanist_ideas
+		full_idea_group_any_army_focus_trigger = yes
+		has_stability_limiter_trigger = yes
+	}
+
+	# Modifier
+	stability_cost_modifier = -0.15
+
+
+	ai_will_do = {
+		factor = 0
+	}
+}
 
 dst_policy_131 = {
 	monarch_power = ADM
