@@ -125,23 +125,6 @@ full_idea_group_any_state_focus_trigger = {
 }
 
 
-# State Power
-has_idea_group_any_state_power_trigger = {
-    OR = {
-        has_idea_group = any_state_power_idea
-        has_idea_group = konigreich0
-        has_idea_group = imperialismus0
-    }
-}
-full_idea_group_any_state_power_trigger = {
-    OR = {
-        full_idea_group = any_state_power_idea
-        full_idea_group = konigreich0
-        full_idea_group = imperialismus0
-    }
-}
-
-
 # Culture Focus
 has_idea_group_any_culture_focus_trigger = {
     OR = {
@@ -157,7 +140,6 @@ full_idea_group_any_culture_focus_trigger = {
         full_idea_group = humanist_ideas
     }
 }
-
 
 
 # Religious

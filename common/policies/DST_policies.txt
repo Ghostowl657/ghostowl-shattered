@@ -331,11 +331,11 @@ dst_policy_13 = {
 
 	potential = {
 		has_idea_group = innovativeness_ideas
-		has_idea_group_any_state_power_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = innovativeness_ideas
-		full_idea_group_any_state_power_trigger = yes
+		full_idea_group = imperialismus0
 		has_innovativeness_limiter_trigger = yes
 	}
 
@@ -611,37 +611,39 @@ dst_policy_22 = {
 	}
 }
 
-dst_policy_23 = {
-	monarch_power = ADM
-
-	potential = {
-		has_idea_group = innovativeness_ideas
-		has_idea_group = kriegsproduktion0
-	}
-	allow = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = kriegsproduktion0
-		has_wartaxescost_limiter_trigger = yes
-	}
-
-	# Modifier
-	war_taxes_cost_modifier = -1
-
-	ai_will_do = {
-		factor = 0
-	}
-}
+#dst_policy_23 = {
+#	monarch_power = ADM
+#
+#	potential = {
+#		has_idea_group = innovativeness_ideas
+#		has_idea_group = kriegsproduktion0
+#	}
+#	allow = {
+#		full_idea_group = innovativeness_ideas
+#		full_idea_group = kriegsproduktion0
+#		has_wartaxescost_limiter_trigger = yes
+#	}
+#
+#	# Modifier
+#	war_taxes_cost_modifier = -1
+#
+#	ai_will_do = {
+#		factor = 0
+#	}
+#}
 
 dst_policy_24 = {
 	monarch_power = MIL
 
 	potential = {
 		has_idea_group = innovativeness_ideas
-		has_idea_group = logistics0
+#		has_idea_group = logistics0
+		has_idea_group = kriegsproduktion0
 	}
 	allow = {
 		full_idea_group = innovativeness_ideas
-		full_idea_group = logistics0
+#		full_idea_group = logistics0
+		full_idea_group = kriegsproduktion0
 		has_movementspeed_limiter_trigger = yes
 	}
 
@@ -1127,11 +1129,11 @@ dst_policy_39 = {
 
 	potential = {
 		has_idea_group = economic_ideas
-		has_idea_group_any_state_power_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = economic_ideas
-		full_idea_group_any_state_power_trigger = yes
+		full_idea_group = imperialismus0
 		has_dev_cap_trigger = yes
 	}
 
@@ -1446,40 +1448,39 @@ dst_policy_49 = {
 	}
 }
 
-dst_policy_50 = {
-	monarch_power = ADM
-
-	potential = {
-		has_idea_group = economic_ideas
-		has_idea_group = logistics0
-	}
-	allow = {
-		full_idea_group = economic_ideas
-		full_idea_group = logistics0
-		has_fortmaintenance_limiter_trigger = yes
-	}
-
-	# Modifier
-	fort_maintenance_modifier = -0.15
-
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			any_owned_province = {
-				NOT = {
-					OR = {
-						has_building = fort_15th
-						has_building = fort_16th
-						has_building = fort_17th
-						has_building = fort_18th
-					}
-				}
-			}
-		}
-	}
-}
+#dst_policy_50 = {
+#	monarch_power = ADM
+#
+#	potential = {
+#		has_idea_group = economic_ideas
+#		has_idea_group = logistics0
+#	}
+#	allow = {
+#		full_idea_group = economic_ideas
+#		full_idea_group = logistics0
+#		has_fortmaintenance_limiter_trigger = yes
+#	}
+#
+#	# Modifier
+#	fort_maintenance_modifier = -0.15
+#
+#	ai_will_do = {
+#		factor = 1
+#		modifier = {
+#			factor = 0
+#			any_owned_province = {
+#				NOT = {
+#					OR = {
+#						has_building = fort_15th
+#						has_building = fort_16th
+#						has_building = fort_17th
+#						has_building = fort_18th
+#					}
+#				}
+#			}
+#		}
+#	}
+#}
 
 dst_policy_51 = {
 	monarch_power = ADM
@@ -1938,11 +1939,11 @@ dst_policy_65 = {
 
 	potential = {
 		has_idea_group = expansion_ideas
-		has_idea_group_any_state_power_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = expansion_ideas
-		full_idea_group_any_state_power_trigger = yes
+		full_idea_group = imperialismus0
 	}
 
 	# Modifier
@@ -2250,38 +2251,40 @@ dst_policy_74 = {
 	}
 }
 
-dst_policy_75 = {
-	monarch_power = MIL
-
-	potential = {
-		has_idea_group = expansion_ideas
-		has_idea_group = kriegsproduktion0
-	}
-	allow = {
-		full_idea_group = expansion_ideas
-		full_idea_group = kriegsproduktion0
-	}
-
-	# Modifier
-	cavalry_power = 0.05
-	cav_to_inf_ratio = 0.1
-
-
-	ai_will_do = {
-		factor = 0
-	}
-}
+#dst_policy_75 = {
+#	monarch_power = MIL
+#
+#	potential = {
+#		has_idea_group = expansion_ideas
+#		has_idea_group = kriegsproduktion0
+#	}
+#	allow = {
+#		full_idea_group = expansion_ideas
+#		full_idea_group = kriegsproduktion0
+#	}
+#
+#	# Modifier
+#	cavalry_power = 0.05
+#	cav_to_inf_ratio = 0.1
+#
+#
+#	ai_will_do = {
+#		factor = 0
+#	}
+#}
 
 dst_policy_76 = {
 	monarch_power = MIL
 
 	potential = {
 		has_idea_group = expansion_ideas
-		has_idea_group = logistics0
+#		has_idea_group = logistics0
+		has_idea_group = kriegsproduktion0
 	}
 	allow = {
 		full_idea_group = expansion_ideas
-		full_idea_group = logistics0
+#		full_idea_group = logistics0
+		full_idea_group = kriegsproduktion0
 		has_movementspeed_limiter_trigger = yes
 	}
 
@@ -2721,11 +2724,11 @@ dst_policy_91 = {
 
 	potential = {
 		has_idea_group = administrative_ideas
-		has_idea_group_any_state_power_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = administrative_ideas
-		full_idea_group_any_state_power_trigger = yes
+		full_idea_group = imperialismus0
 		has_absolutism_limiter_trigger = yes
 	}
 
@@ -2985,57 +2988,59 @@ dst_policy_100 = {
 	}
 }
 
-dst_policy_101 = {
-	monarch_power = ADM
-
-	potential = {
-		has_idea_group = administrative_ideas
-		has_idea_group = kriegsproduktion0
-	}
-	allow = {
-		full_idea_group = administrative_ideas
-		full_idea_group = kriegsproduktion0
-	}
-
-	# Modifier
-	production_efficiency = 0.15
-
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = { production_income_percentage = 0.15 }
-		}
-		modifier = {
-			factor = 1.5
-			production_income_percentage = 0.3
-		}
-		modifier = {
-			factor = 1.5
-			production_income_percentage = 0.45
-		}
-		modifier = {
-			factor = 1.5
-			production_income_percentage = 0.6
-		}
-		modifier = {
-			factor = 1.5
-			production_income_percentage = 0.75
-		}
-	}
-}
+#dst_policy_101 = {
+#	monarch_power = ADM
+#
+#	potential = {
+#		has_idea_group = administrative_ideas
+#		has_idea_group = kriegsproduktion0
+#	}
+#	allow = {
+#		full_idea_group = administrative_ideas
+#		full_idea_group = kriegsproduktion0
+#	}
+#
+#	# Modifier
+#	production_efficiency = 0.15
+#
+#
+#	ai_will_do = {
+#		factor = 1
+#		modifier = {
+#			factor = 0
+#			NOT = { production_income_percentage = 0.15 }
+#		}
+#		modifier = {
+#			factor = 1.5
+#			production_income_percentage = 0.3
+#		}
+#		modifier = {
+#			factor = 1.5
+#			production_income_percentage = 0.45
+#		}
+#		modifier = {
+#			factor = 1.5
+#			production_income_percentage = 0.6
+#		}
+#		modifier = {
+#			factor = 1.5
+#			production_income_percentage = 0.75
+#		}
+#	}
+#}
 
 dst_policy_102 = {
 	monarch_power = MIL
 
 	potential = {
 		has_idea_group = administrative_ideas
-		has_idea_group = logistics0
+#		has_idea_group = logistics0
+		has_idea_group = kriegsproduktion0
 	}
 	allow = {
 		full_idea_group = administrative_ideas
-		full_idea_group = logistics0
+#		full_idea_group = logistics0
+		full_idea_group = kriegsproduktion0
 		has_supplylimit_limiter_trigger = yes
 	}
 
@@ -3385,11 +3390,11 @@ dst_policy_143 = {
 
 	potential = {
 		has_idea_group = justiz0
-		has_idea_group_any_state_power_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = justiz0
-		full_idea_group_any_state_power_trigger = yes
+		full_idea_group = imperialismus0
 	}
 
 	# Modifier
@@ -3668,26 +3673,26 @@ dst_policy_153 = {
 	}
 }
 
-dst_policy_154 = {
-	monarch_power = MIL
-
-	potential = {
-		has_idea_group = justiz0
-		has_idea_group = logistics0
-	}
-	allow = {
-		full_idea_group = justiz0
-		full_idea_group = logistics0
-	}
-
-	# Modifier
-	mercenary_manpower = 0.1
-
-
-	ai_will_do = {
-		factor = 0
-	}
-}
+#dst_policy_154 = {
+#	monarch_power = MIL
+#
+#	potential = {
+#		has_idea_group = justiz0
+#		has_idea_group = logistics0
+#	}
+#	allow = {
+#		full_idea_group = justiz0
+#		full_idea_group = logistics0
+#	}
+#
+#	# Modifier
+#	mercenary_manpower = 0.1
+#
+#
+#	ai_will_do = {
+#		factor = 0
+#	}
+#}
 
 dst_policy_155 = {
 	monarch_power = ADM
@@ -4140,11 +4145,11 @@ dst_policy_169 = {
 
 	potential = {
 		has_idea_group = entwicklung0
-		has_idea_group_any_state_power_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = entwicklung0
-		full_idea_group_any_state_power_trigger = yes
+		full_idea_group = imperialismus0
 	}
 
 	# Modifier
@@ -4514,27 +4519,27 @@ dst_policy_179 = {
 	}
 }
 
-dst_policy_180 = {
-	monarch_power = MIL
-
-	potential = {
-		has_idea_group = entwicklung0
-		has_idea_group = logistics0
-	}
-	allow = {
-		full_idea_group = entwicklung0
-		full_idea_group = logistics0
-		has_movementspeed_limiter_trigger = yes
-	}
-
-	# Modifier
-	movement_speed = 0.25
-
-
-	ai_will_do = {
-		factor = 1
-	}
-}
+#dst_policy_180 = {
+#	monarch_power = MIL
+#
+#	potential = {
+#		has_idea_group = entwicklung0
+#		has_idea_group = logistics0
+#	}
+#	allow = {
+#		full_idea_group = entwicklung0
+#		full_idea_group = logistics0
+#		has_movementspeed_limiter_trigger = yes
+#	}
+#
+#	# Modifier
+#	movement_speed = 0.25
+#
+#
+#	ai_will_do = {
+#		factor = 1
+#	}
+#}
 
 dst_policy_181 = {
 	monarch_power = MIL
@@ -5017,11 +5022,11 @@ dst_policy_195 = {
 
 	potential = {
 		has_idea_group = gesundheit0
-		has_idea_group_any_state_power_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = gesundheit0
-		full_idea_group_any_state_power_trigger = yes
+		full_idea_group = imperialismus0
 	}
 
 	# Modifier
@@ -5372,27 +5377,27 @@ dst_policy_205 = {
 	}
 }
 
-dst_policy_206 = {
-	monarch_power = MIL
-
-	potential = {
-		has_idea_group = gesundheit0
-		has_idea_group = logistics0
-	}
-	allow = {
-		full_idea_group = gesundheit0
-		full_idea_group = logistics0
-		has_landattrition_limiter_trigger = yes
-	}
-
-	# Modifier
-	land_attrition = -0.15
-
-
-	ai_will_do = {
-		factor = 0
-	}
-}
+#dst_policy_206 = {
+#	monarch_power = MIL
+#
+#	potential = {
+#		has_idea_group = gesundheit0
+#		has_idea_group = logistics0
+#	}
+#	allow = {
+#		full_idea_group = gesundheit0
+#		full_idea_group = logistics0
+#		has_landattrition_limiter_trigger = yes
+#	}
+#
+#	# Modifier
+#	land_attrition = -0.15
+#
+#
+#	ai_will_do = {
+#		factor = 0
+#	}
+#}
 
 dst_policy_207 = {
 	monarch_power = ADM
@@ -5777,11 +5782,11 @@ dst_policy_220 = {
 #	monarch_power = ADM
 #
 #	potential = {
-#		has_idea_group_any_state_power_trigger = yes
+#		has_idea_group = imperialismus0
 #		has_idea_group_any_government_type_trigger = yes
 #	}
 #	allow = {
-#		full_idea_group_any_state_power_trigger = yes
+#		full_idea_group = imperialismus0
 #		full_idea_group_any_government_type_trigger = yes
 #	}
 #
@@ -6111,27 +6116,27 @@ dst_policy_231 = {
 	}
 }
 
-dst_policy_232 = {
-	monarch_power = ADM
-
-	potential = {
-		has_idea_group = logistics0
-		has_idea_group_any_government_type_trigger = yes
-	}
-	allow = {
-		full_idea_group = logistics0
-		full_idea_group_any_government_type_trigger = yes
-		has_adminefficiency_limiter_trigger = yes
-	}
-
-	# Modifier
-	administrative_efficiency = 0.05
-
-
-	ai_will_do = {
-		factor = 1
-	}
-}
+#dst_policy_232 = {
+#	monarch_power = ADM
+#
+#	potential = {
+#		has_idea_group = logistics0
+#		has_idea_group_any_government_type_trigger = yes
+#	}
+#	allow = {
+#		full_idea_group = logistics0
+#		full_idea_group_any_government_type_trigger = yes
+#		has_adminefficiency_limiter_trigger = yes
+#	}
+#
+#	# Modifier
+#	administrative_efficiency = 0.05
+#
+#
+#	ai_will_do = {
+#		factor = 1
+#	}
+#}
 
 dst_policy_233 = {
 	monarch_power = ADM
@@ -6607,11 +6612,11 @@ dst_policy_247 = {
 
 	potential = {
 		has_idea_group = trademanagement0
-		has_idea_group_any_state_power_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = trademanagement0
-		full_idea_group_any_state_power_trigger = yes
+		full_idea_group = imperialismus0
 	}
 
 	# Modifier
@@ -6884,38 +6889,40 @@ dst_policy_256 = {
 	}
 }
 
-dst_policy_257 = {
-	monarch_power = MIL
-
-	potential = {
-		has_idea_group = trademanagement0
-		has_idea_group = kriegsproduktion0
-	}
-	allow = {
-		full_idea_group = trademanagement0
-		full_idea_group = kriegsproduktion0
-	}
-
-	# Modifier
-	reinforce_speed = 0.15
-	reinforce_cost_modifier = -0.15
-
-
-	ai_will_do = {
-		factor = 1
-	}
-}
+#dst_policy_257 = {
+#	monarch_power = MIL
+#
+#	potential = {
+#		has_idea_group = trademanagement0
+#		has_idea_group = kriegsproduktion0
+#	}
+#	allow = {
+#		full_idea_group = trademanagement0
+#		full_idea_group = kriegsproduktion0
+#	}
+#
+#	# Modifier
+#	reinforce_speed = 0.15
+#	reinforce_cost_modifier = -0.15
+#
+#
+#	ai_will_do = {
+#		factor = 1
+#	}
+#}
 
 dst_policy_258 = {
 	monarch_power = ADM
 
 	potential = {
 		has_idea_group = trademanagement0
-		has_idea_group = logistics0
+#		has_idea_group = logistics0
+		has_idea_group = kriegsproduktion0
 	}
 	allow = {
 		full_idea_group = trademanagement0
-		full_idea_group = logistics0
+#		full_idea_group = logistics0
+		full_idea_group = kriegsproduktion0
 		has_colonyboost_limiter_trigger = yes
 	}
 
@@ -7013,11 +7020,11 @@ dst_policy_261 = {
 
 	potential = {
 		has_idea_group = spy_ideas
-		has_idea_group_any_state_focus_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = spy_ideas
-		full_idea_group_any_state_focus_trigger = yes
+		full_idea_group = imperialismus0
 	}
 
 	# Modifier
@@ -7035,11 +7042,11 @@ dst_policy_262 = {
 
 	potential = {
 		has_idea_group = influence_ideas
-		has_idea_group_any_state_focus_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = influence_ideas
-		full_idea_group_any_state_focus_trigger = yes
+		full_idea_group = imperialismus0
 	}
 
 	# Modifier
@@ -7056,11 +7063,11 @@ dst_policy_263 = {
 
 	potential = {
 		has_idea_group = trade_ideas
-		has_idea_group_any_state_focus_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = trade_ideas
-		full_idea_group_any_state_focus_trigger = yes
+		full_idea_group = imperialismus0
 	}
 
 	# Modifier
@@ -7098,11 +7105,11 @@ dst_policy_264 = {
 
 	potential = {
 		has_idea_group = exploration_ideas
-		has_idea_group_any_state_focus_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = exploration_ideas
-		full_idea_group_any_state_focus_trigger = yes
+		full_idea_group = imperialismus0
 		has_estateloyaltybalance_limiter_trigger = yes
 	}
 
@@ -7120,11 +7127,11 @@ dst_policy_265 = {
 
 	potential = {
 		has_idea_group = maritime_ideas
-		has_idea_group_any_state_focus_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = maritime_ideas
-		full_idea_group_any_state_focus_trigger = yes
+		full_idea_group = imperialismus0
 	}
 
 	# Modifier
@@ -7161,11 +7168,11 @@ dst_policy_266 = {
 
 	potential = {
 		has_idea_group = flottenbasis0
-		has_idea_group_any_state_focus_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = flottenbasis0
-		full_idea_group_any_state_focus_trigger = yes
+		full_idea_group = imperialismus0
 	}
 
 	# Modifier
@@ -7181,11 +7188,11 @@ dst_policy_266 = {
 #	monarch_power = ADM
 #
 #	potential = {
-#		has_idea_group_any_state_focus_trigger = yes
-#		has_idea_group_any_fleet_focus_trigger = yes
+#		has_idea_group = imperialismus0
+#		has_idea_group_any_fleet_focus_trigger
 #	}
 #	allow = {
-#		full_idea_group_any_state_focus_trigger = yes
+#		full_idea_group = imperialismus0
 #		full_idea_group_any_fleet_focus_trigger = yes
 #		has_governingcapacity_cap_trigger = yes
 #	}
@@ -7204,11 +7211,11 @@ dst_policy_268 = {
 
 	potential = {
 		has_idea_group = kolonialimperium0
-		has_idea_group_any_state_focus_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = kolonialimperium0
-		full_idea_group_any_state_focus_trigger = yes
+		full_idea_group = imperialismus0
 	}
 
 	# Modifier
@@ -7243,11 +7250,11 @@ dst_policy_269 = {
 
 	potential = {
 		has_idea_group_any_culture_focus_trigger = yes
-		has_idea_group_any_state_focus_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group_any_culture_focus_trigger = yes
-		full_idea_group_any_state_focus_trigger = yes
+		full_idea_group = imperialismus0
 		has_dev_cap_trigger = yes
 	}
 
@@ -7265,11 +7272,11 @@ dst_policy_270 = {
 
 	potential = {
 		has_idea_group = gesellschaft0
-		has_idea_group_any_state_focus_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = gesellschaft0
-		full_idea_group_any_state_focus_trigger = yes
+		full_idea_group = imperialismus0
 		has_reformprogress_limiter_trigger = yes
 	}
 
@@ -7287,11 +7294,11 @@ dst_policy_271 = {
 
 	potential = {
 		has_idea_group = propaganda0
-		has_idea_group_any_state_focus_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = propaganda0
-		full_idea_group_any_state_focus_trigger = yes
+		full_idea_group = imperialismus0
 	}
 
 	# Modifier
@@ -7309,11 +7316,11 @@ dst_policy_272 = {
 
 	potential = {
 		has_idea_group = nationalismus0
-		has_idea_group_any_state_focus_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = nationalismus0
-		full_idea_group_any_state_focus_trigger = yes
+		full_idea_group = imperialismus0
 		has_dev_cap_trigger = yes
 	}
 
@@ -7342,12 +7349,12 @@ dst_policy_272 = {
 #	monarch_power = ADM
 #
 #	potential = {
-#		has_idea_group_any_state_focus_trigger = yes
-#		has_idea_group_any_state_power_trigger = yes
+#		has_idea_group = imperialismus0
+#		has_idea_group = imperialismus0
 #	}
 #	allow = {
-#		full_idea_group_any_state_focus_trigger = yes
-#		full_idea_group_any_state_power_trigger = yes
+#		full_idea_group = imperialismus0
+#		full_idea_group = imperialismus0
 #		has_governingcapacity_cap_trigger = yes
 #	}
 #
@@ -7365,11 +7372,11 @@ dst_policy_274 = {
 
 	potential = {
 		has_idea_group = quality_ideas
-		has_idea_group_any_state_focus_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = quality_ideas
-		full_idea_group_any_state_focus_trigger = yes
+		full_idea_group = imperialismus0
 		has_army_focus_cap_trigger = yes
 	}
 
@@ -7406,11 +7413,11 @@ dst_policy_275 = {
 
 	potential = {
 		has_idea_group = quantity_ideas
-		has_idea_group_any_state_focus_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = quantity_ideas
-		full_idea_group_any_state_focus_trigger = yes
+		full_idea_group = imperialismus0
 		has_governingcapacity_cap_trigger = yes
 	}
 
@@ -7428,11 +7435,11 @@ dst_policy_276 = {
 
 	potential = {
 		has_idea_group = offensive_ideas
-		has_idea_group_any_state_focus_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = offensive_ideas
-		full_idea_group_any_state_focus_trigger = yes
+		full_idea_group = imperialismus0
 		has_buildcosts_limiter_trigger = yes
 	}
 
@@ -7450,11 +7457,11 @@ dst_policy_277 = {
 
 	potential = {
 		has_idea_group = defensive_ideas
-		has_idea_group_any_state_focus_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = defensive_ideas
-		full_idea_group_any_state_focus_trigger = yes
+		full_idea_group = imperialismus0
 		has_doctrine_cap_trigger = yes
 	}
 
@@ -7491,11 +7498,11 @@ dst_policy_278 = {
 
 	potential = {
 		has_idea_group = generalstab0
-		has_idea_group_any_state_focus_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = generalstab0
-		full_idea_group_any_state_focus_trigger = yes
+		full_idea_group = imperialismus0
 	}
 
 	# Modifier
@@ -7518,11 +7525,11 @@ dst_policy_278 = {
 #	monarch_power = MIL
 #
 #	potential = {
-#		has_idea_group_any_state_focus_trigger = yes
+#		has_idea_group = imperialismus0
 #		has_idea_group_any_army_doctrine_trigger = yes
 #	}
 #	allow = {
-#		full_idea_group_any_state_focus_trigger = yes
+#		full_idea_group = imperialismus0
 #		full_idea_group_any_army_doctrine_trigger = yes
 #		has_army_focus_cap_trigger = yes
 #	}
@@ -7541,11 +7548,11 @@ dst_policy_280 = {
 
 	potential = {
 		has_idea_group = mercenary0
-		has_idea_group_any_state_focus_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = mercenary0
-		full_idea_group_any_state_focus_trigger = yes
+		full_idea_group = imperialismus0
 	}
 
 	# Modifier
@@ -7562,11 +7569,11 @@ dst_policy_281 = {
 
 	potential = {
 		has_idea_group = waffenqualitat0
-		has_idea_group_any_state_focus_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = waffenqualitat0
-		full_idea_group_any_state_focus_trigger = yes
+		full_idea_group = imperialismus0
 		has_army_focus_cap_trigger = yes
 	}
 
@@ -7603,11 +7610,11 @@ dst_policy_282 = {
 
 	potential = {
 		has_idea_group = festung0
-		has_idea_group_any_state_focus_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = festung0
-		full_idea_group_any_state_focus_trigger = yes
+		full_idea_group = imperialismus0
 	}
 
 	# Modifier
@@ -7631,11 +7638,11 @@ dst_policy_283 = {
 
 	potential = {
 		has_idea_group = kriegsproduktion0
-		has_idea_group_any_state_focus_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = kriegsproduktion0
-		full_idea_group_any_state_focus_trigger = yes
+		full_idea_group = imperialismus0
 		has_buildcosts_limiter_trigger = yes
 	}
 
@@ -7648,37 +7655,37 @@ dst_policy_283 = {
 	}
 }
 
-dst_policy_284 = {
-	monarch_power = ADM
-
-	potential = {
-		has_idea_group = logistics0
-		has_idea_group_any_state_focus_trigger = yes
-	}
-	allow = {
-		full_idea_group = logistics0
-		full_idea_group_any_state_focus_trigger = yes
-	}
-
-	# Modifier
-	global_unrest = -2
-
-
-	ai_will_do = {
-		factor = 0
-	}
-}
+#dst_policy_284 = {
+#	monarch_power = ADM
+#
+#	potential = {
+#		has_idea_group = logistics0
+#		has_idea_group = imperialismus0
+#	}
+#	allow = {
+#		full_idea_group = logistics0
+#		full_idea_group = imperialismus0
+#	}
+#
+#	# Modifier
+#	global_unrest = -2
+#
+#
+#	ai_will_do = {
+#		factor = 0
+#	}
+#}
 
 dst_policy_285 = {
 	monarch_power = MIL
 
 	potential = {
 		has_idea_group = militarismus0
-		has_idea_group_any_state_focus_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = militarismus0
-		full_idea_group_any_state_focus_trigger = yes
+		full_idea_group = imperialismus0
 	}
 
 	# Modifier
@@ -7695,11 +7702,11 @@ dst_policy_285 = {
 #	monarch_power = MIL
 #
 #	potential = {
-#		has_idea_group_any_state_focus_trigger = yes
+#		has_idea_group = imperialismus0
 #		has_idea_group_any_army_focus_trigger = yes
 #	}
 #	allow = {
-#		full_idea_group_any_state_focus_trigger = yes
+#		full_idea_group = imperialismus0
 #		full_idea_group_any_army_focus_trigger = yes
 #		has_army_focus_cap_trigger = yes
 #	}
@@ -8033,11 +8040,11 @@ dst_policy_299 = {
 
 	potential = {
 		has_idea_group = stateaffairs0
-		has_idea_group_any_state_power_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = stateaffairs0
-		full_idea_group_any_state_power_trigger = yes
+		full_idea_group = imperialismus0
 	}
 
 	# Modifier
@@ -8370,46 +8377,46 @@ dst_policy_309 = {
 	}
 }
 
-dst_policy_310 = {
-	monarch_power = ADM
-
-	potential = {
-		has_idea_group = stateaffairs0
-		has_idea_group = logistics0
-	}
-	allow = {
-		full_idea_group = stateaffairs0
-		full_idea_group = logistics0
-	}
-
-	# Modifier
-	production_efficiency = 0.15
-
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = { production_income_percentage = 0.15 }
-		}
-		modifier = {
-			factor = 1.5
-			production_income_percentage = 0.3
-		}
-		modifier = {
-			factor = 1.5
-			production_income_percentage = 0.45
-		}
-		modifier = {
-			factor = 1.5
-			production_income_percentage = 0.6
-		}
-		modifier = {
-			factor = 1.5
-			production_income_percentage = 0.75
-		}
-	}
-}
+#dst_policy_310 = {
+#	monarch_power = ADM
+#
+#	potential = {
+#		has_idea_group = stateaffairs0
+#		has_idea_group = logistics0
+#	}
+#	allow = {
+#		full_idea_group = stateaffairs0
+#		full_idea_group = logistics0
+#	}
+#
+#	# Modifier
+#	production_efficiency = 0.15
+#
+#
+#	ai_will_do = {
+#		factor = 1
+#		modifier = {
+#			factor = 0
+#			NOT = { production_income_percentage = 0.15 }
+#		}
+#		modifier = {
+#			factor = 1.5
+#			production_income_percentage = 0.3
+#		}
+#		modifier = {
+#			factor = 1.5
+#			production_income_percentage = 0.45
+#		}
+#		modifier = {
+#			factor = 1.5
+#			production_income_percentage = 0.6
+#		}
+#		modifier = {
+#			factor = 1.5
+#			production_income_percentage = 0.75
+#		}
+#	}
+#}
 
 dst_policy_311 = {
 	monarch_power = MIL
@@ -8888,11 +8895,11 @@ dst_policy_324 = {
 #
 #	potential = {
 #		has_idea_group_any_religious_trigger = yes
-#		has_idea_group_any_state_power_trigger = yes
+#		has_idea_group = imperialismus0
 #	}
 #	allow = {
 #		full_idea_group_any_religious_trigger = yes
-#		full_idea_group_any_state_power_trigger = yes
+#		full_idea_group = imperialismus0
 #		has_religiousunity_limiter_trigger = yes
 #	}
 #
@@ -9180,26 +9187,26 @@ dst_policy_335 = {
 	}
 }
 
-dst_policy_336 = {
-	monarch_power = MIL
-
-	potential = {
-		has_idea_group = logistics0
-		has_idea_group_any_religious_trigger = yes
-	}
-	allow = {
-		full_idea_group = logistics0
-		full_idea_group_any_religious_trigger = yes
-	}
-
-	# Modifier
-	manpower_recovery_speed = 0.1
-
-
-	ai_will_do = {
-		factor = 1
-	}
-}
+#dst_policy_336 = {
+#	monarch_power = MIL
+#
+#	potential = {
+#		has_idea_group = logistics0
+#		has_idea_group_any_religious_trigger = yes
+#	}
+#	allow = {
+#		full_idea_group = logistics0
+#		full_idea_group_any_religious_trigger = yes
+#	}
+#
+#	# Modifier
+#	manpower_recovery_speed = 0.1
+#
+#
+#	ai_will_do = {
+#		factor = 1
+#	}
+#}
 
 dst_policy_337 = {
 	monarch_power = MIL
@@ -9662,11 +9669,11 @@ dst_policy_351 = {
 
 	potential = {
 		has_idea_group = quality_ideas
-		has_idea_group_any_state_power_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = quality_ideas
-		full_idea_group_any_state_power_trigger = yes
+		full_idea_group = imperialismus0
 		has_army_focus_cap_trigger = yes
 	}
 
@@ -10032,11 +10039,11 @@ dst_policy_364 = {
 
 	potential = {
 		has_idea_group = quantity_ideas
-		has_idea_group_any_state_power_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = quantity_ideas
-		full_idea_group_any_state_power_trigger = yes
+		full_idea_group = imperialismus0
 	}
 
 	# Modifier
@@ -10387,11 +10394,11 @@ dst_policy_377 = {
 
 	potential = {
 		has_idea_group = offensive_ideas
-		has_idea_group_any_state_power_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = offensive_ideas
-		full_idea_group_any_state_power_trigger = yes
+		full_idea_group = imperialismus0
 		has_army_focus_cap_trigger = yes
 	}
 
@@ -10797,11 +10804,11 @@ dst_policy_390 = {
 
 	potential = {
 		has_idea_group = defensive_ideas
-		has_idea_group_any_state_power_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = defensive_ideas
-		full_idea_group_any_state_power_trigger = yes
+		full_idea_group = imperialismus0
 	}
 
 	# Modifier
@@ -11150,11 +11157,11 @@ dst_policy_403 = {
 
 	potential = {
 		has_idea_group = generalstab0
-		has_idea_group_any_state_power_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = generalstab0
-		full_idea_group_any_state_power_trigger = yes
+		full_idea_group = imperialismus0
 		has_doctrine_cap_trigger = yes
 	}
 
@@ -11579,11 +11586,11 @@ dst_policy_415 = {
 #
 #	potential = {
 #		has_idea_group_any_army_doctrine_trigger = yes
-#		has_idea_group_any_state_power_trigger = yes
+#		has_idea_group = imperialismus0
 #	}
 #	allow = {
 #		full_idea_group_any_army_doctrine_trigger = yes
-#		full_idea_group_any_state_power_trigger = yes
+#		full_idea_group = imperialismus0
 #		has_moraledamage_limiter_trigger = yes
 #	}
 #
@@ -11867,11 +11874,11 @@ dst_policy_429 = {
 
 	potential = {
 		has_idea_group = mercenary0
-		has_idea_group_any_state_power_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = mercenary0
-		full_idea_group_any_state_power_trigger = yes
+		full_idea_group = imperialismus0
 	}
 
 	# Modifier
@@ -12235,11 +12242,11 @@ dst_policy_442 = {
 
 	potential = {
 		has_idea_group = waffenqualitat0
-		has_idea_group_any_state_power_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = waffenqualitat0
-		full_idea_group_any_state_power_trigger = yes
+		full_idea_group = imperialismus0
 	}
 
 	# Modifier
@@ -12563,11 +12570,11 @@ dst_policy_455 = {
 
 	potential = {
 		has_idea_group = festung0
-		has_idea_group_any_state_power_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = festung0
-		full_idea_group_any_state_power_trigger = yes
+		full_idea_group = imperialismus0
 	}
 
 	# Modifier
@@ -12580,33 +12587,33 @@ dst_policy_455 = {
 	}
 }
 
-dst_policy_456 = {
-	monarch_power = MIL
-
-	potential = {
-		has_idea_group = kriegsproduktion0
-		has_idea_group = spy_ideas
-	}
-	allow = {
-		full_idea_group = kriegsproduktion0
-		full_idea_group = spy_ideas
-	}
-
-	# Modifier
-	cavalry_power = 0.1
-
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			has_global_modifier_value = {
-				which = cavalry_power
-				value = 0.3
-			}
-		}
-	}
-}
+#dst_policy_456 = {
+#	monarch_power = MIL
+#
+#	potential = {
+#		has_idea_group = kriegsproduktion0
+#		has_idea_group = spy_ideas
+#	}
+#	allow = {
+#		full_idea_group = kriegsproduktion0
+#		full_idea_group = spy_ideas
+#	}
+#
+#	# Modifier
+#	cavalry_power = 0.1
+#
+#
+#	ai_will_do = {
+#		factor = 1
+#		modifier = {
+#			factor = 1.5
+#			has_global_modifier_value = {
+#				which = cavalry_power
+#				value = 0.3
+#			}
+#		}
+#	}
+#}
 
 dst_policy_457 = {
 	monarch_power = MIL
@@ -12649,26 +12656,26 @@ dst_policy_457 = {
 	}
 }
 
-dst_policy_458 = {
-	monarch_power = DIP
-
-	potential = {
-		has_idea_group = kriegsproduktion0
-		has_idea_group = trade_ideas
-	}
-	allow = {
-		full_idea_group = kriegsproduktion0
-		full_idea_group = trade_ideas
-	}
-
-	# Modifier
-	mercantilism_cost = -0.075
-
-
-	ai_will_do = {
-		factor = 0
-	}
-}
+#dst_policy_458 = {
+#	monarch_power = DIP
+#
+#	potential = {
+#		has_idea_group = kriegsproduktion0
+#		has_idea_group = trade_ideas
+#	}
+#	allow = {
+#		full_idea_group = kriegsproduktion0
+#		full_idea_group = trade_ideas
+#	}
+#
+#	# Modifier
+#	mercantilism_cost = -0.075
+#
+#
+#	ai_will_do = {
+#		factor = 0
+#	}
+#}
 
 dst_policy_459 = {
 	monarch_power = MIL
@@ -12735,36 +12742,36 @@ dst_policy_460 = {
 	}
 }
 
-dst_policy_461 = {
-	monarch_power = DIP
-
-	potential = {
-		has_idea_group = kriegsproduktion0
-		has_idea_group = flottenbasis0
-	}
-	allow = {
-		full_idea_group = kriegsproduktion0
-		full_idea_group = flottenbasis0
-		has_galleypower_limiter_trigger = yes
-	}
-
-	# Modifier
-	galley_power = 0.1
-
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			NOT = { navy_size = 20 }
-			NOT = { galley_fraction = 0.25 }
-		}
-		modifier = {
-			factor = 1.5
-			has_idea_group = galle0
-		}
-	}
-}
+#dst_policy_461 = {
+#	monarch_power = DIP
+#
+#	potential = {
+#		has_idea_group = kriegsproduktion0
+#		has_idea_group = flottenbasis0
+#	}
+#	allow = {
+#		full_idea_group = kriegsproduktion0
+#		full_idea_group = flottenbasis0
+#		has_galleypower_limiter_trigger = yes
+#	}
+#
+#	# Modifier
+#	galley_power = 0.1
+#
+#
+#	ai_will_do = {
+#		factor = 1
+#		modifier = {
+#			factor = 0
+#			NOT = { navy_size = 20 }
+#			NOT = { galley_fraction = 0.25 }
+#		}
+#		modifier = {
+#			factor = 1.5
+#			has_idea_group = galle0
+#		}
+#	}
+#}
 
 dst_policy_462 = {
 	monarch_power = DIP
@@ -12836,26 +12843,26 @@ dst_policy_463 = {
 	}
 }
 
-dst_policy_464 = {
-	monarch_power = MIL
-
-	potential = {
-		has_idea_group = kriegsproduktion0
-		has_idea_group_any_culture_focus_trigger = yes
-	}
-	allow = {
-		full_idea_group = kriegsproduktion0
-		full_idea_group_any_culture_focus_trigger = yes
-	}
-
-	# Modifier
-	global_manpower_modifier = 0.1
-
-
-	ai_will_do = {
-		factor = 1
-	}
-}
+#dst_policy_464 = {
+#	monarch_power = MIL
+#
+#	potential = {
+#		has_idea_group = kriegsproduktion0
+#		has_idea_group_any_culture_focus_trigger = yes
+#	}
+#	allow = {
+#		full_idea_group = kriegsproduktion0
+#		full_idea_group_any_culture_focus_trigger = yes
+#	}
+#
+#	# Modifier
+#	global_manpower_modifier = 0.1
+#
+#
+#	ai_will_do = {
+#		factor = 1
+#	}
+#}
 
 dst_policy_465 = {
 	monarch_power = DIP
@@ -12891,58 +12898,58 @@ dst_policy_465 = {
 	}
 }
 
-dst_policy_466 = {
-	monarch_power = DIP
+#dst_policy_466 = {
+#	monarch_power = DIP
+#
+#	potential = {
+#		has_idea_group = kriegsproduktion0
+#		has_idea_group = propaganda0
+#	}
+#	allow = {
+#		full_idea_group = kriegsproduktion0
+#		full_idea_group = propaganda0
+#	}
+#
+#	# Modifier
+#	mercantilism_cost = -0.075
+#
+#
+#	ai_will_do = {
+#		factor = 0
+#	}
+#}
 
-	potential = {
-		has_idea_group = kriegsproduktion0
-		has_idea_group = propaganda0
-	}
-	allow = {
-		full_idea_group = kriegsproduktion0
-		full_idea_group = propaganda0
-	}
-
-	# Modifier
-	mercantilism_cost = -0.075
-
-
-	ai_will_do = {
-		factor = 0
-	}
-}
-
-dst_policy_467 = {
-	monarch_power = MIL
-
-	potential = {
-		has_idea_group = kriegsproduktion0
-		has_idea_group = nationalismus0
-	}
-	allow = {
-		full_idea_group = kriegsproduktion0
-		full_idea_group = nationalismus0
-	}
-
-	# Modifier
-	manpower_recovery_speed = 0.1
-
-
-	ai_will_do = {
-		factor = 1
-	}
-}
+#dst_policy_467 = {
+#	monarch_power = MIL
+#
+#	potential = {
+#		has_idea_group = kriegsproduktion0
+#		has_idea_group = nationalismus0
+#	}
+#	allow = {
+#		full_idea_group = kriegsproduktion0
+#		full_idea_group = nationalismus0
+#	}
+#
+#	# Modifier
+#	manpower_recovery_speed = 0.1
+#
+#
+#	ai_will_do = {
+#		factor = 1
+#	}
+#}
 
 dst_policy_468 = {
 	monarch_power = DIP
 
 	potential = {
 		has_idea_group = kriegsproduktion0
-		has_idea_group_any_state_power_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = kriegsproduktion0
-		full_idea_group_any_state_power_trigger = yes
+		full_idea_group = imperialismus0
 		has_dev_cap_trigger = yes
 	}
 
@@ -12959,11 +12966,13 @@ dst_policy_469 = {
 	monarch_power = MIL
 
 	potential = {
-		has_idea_group = logistics0
+#		has_idea_group = logistics0
+		has_idea_group = kriegsproduktion0
 		has_idea_group = spy_ideas
 	}
 	allow = {
-		full_idea_group = logistics0
+#		full_idea_group = logistics0
+		full_idea_group = kriegsproduktion0
 		full_idea_group = spy_ideas
 		has_movementspeed_limiter_trigger = yes
 	}
@@ -12977,36 +12986,38 @@ dst_policy_469 = {
 	}
 }
 
-dst_policy_470 = {
-	monarch_power = MIL
-
-	potential = {
-		has_idea_group = logistics0
-		has_idea_group = influence_ideas
-	}
-	allow = {
-		full_idea_group = logistics0
-		full_idea_group = influence_ideas
-	}
-
-	# Modifier
-	mercenary_discipline = 0.05
-
-
-	ai_will_do = {
-		factor = 0
-	}
-}
+#dst_policy_470 = {
+#	monarch_power = MIL
+#
+#	potential = {
+#		has_idea_group = logistics0
+#		has_idea_group = influence_ideas
+#	}
+#	allow = {
+#		full_idea_group = logistics0
+#		full_idea_group = influence_ideas
+#	}
+#
+#	# Modifier
+#	mercenary_discipline = 0.05
+#
+#
+#	ai_will_do = {
+#		factor = 0
+#	}
+#}
 
 dst_policy_471 = {
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = logistics0
+#		has_idea_group = logistics0
+		has_idea_group = kriegsproduktion0
 		has_idea_group = trade_ideas
 	}
 	allow = {
-		full_idea_group = logistics0
+#		full_idea_group = logistics0
+		full_idea_group = kriegsproduktion0
 		full_idea_group = trade_ideas
 	}
 
@@ -13040,58 +13051,60 @@ dst_policy_471 = {
 	}
 }
 
-dst_policy_472 = {
-	monarch_power = MIL
+#dst_policy_472 = {
+#	monarch_power = MIL
+#
+#	potential = {
+#		has_idea_group = logistics0
+#		has_idea_group = exploration_ideas
+#	}
+#	allow = {
+#		full_idea_group = logistics0
+#		full_idea_group = exploration_ideas
+#		has_landattrition_limiter_trigger = yes
+#	}
+#
+#	# Modifier
+#	land_attrition = -0.15
+#
+#
+#	ai_will_do = {
+#		factor = 0
+#	}
+#}
 
-	potential = {
-		has_idea_group = logistics0
-		has_idea_group = exploration_ideas
-	}
-	allow = {
-		full_idea_group = logistics0
-		full_idea_group = exploration_ideas
-		has_landattrition_limiter_trigger = yes
-	}
-
-	# Modifier
-	land_attrition = -0.15
-
-
-	ai_will_do = {
-		factor = 0
-	}
-}
-
-dst_policy_473 = {
-	monarch_power = DIP
-
-	potential = {
-		has_idea_group = logistics0
-		has_idea_group = maritime_ideas
-	}
-	allow = {
-		full_idea_group = logistics0
-		full_idea_group = maritime_ideas
-	}
-
-	# Modifier
-	navy_tradition = 0.5
-
-
-	ai_will_do = {
-		factor = 0
-	}
-}
+#dst_policy_473 = {
+#	monarch_power = DIP
+#
+#	potential = {
+#		has_idea_group = logistics0
+#		has_idea_group = maritime_ideas
+#	}
+#	allow = {
+#		full_idea_group = logistics0
+#		full_idea_group = maritime_ideas
+#	}
+#
+#	# Modifier
+#	navy_tradition = 0.5
+#
+#
+#	ai_will_do = {
+#		factor = 0
+#	}
+#}
 
 dst_policy_474 = {
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = logistics0
+#		has_idea_group = logistics0
+		has_idea_group = kriegsproduktion0
 		has_idea_group = flottenbasis0
 	}
 	allow = {
-		full_idea_group = logistics0
+#		full_idea_group = logistics0
+		full_idea_group = kriegsproduktion0
 		full_idea_group = flottenbasis0
 	}
 
@@ -13105,76 +13118,78 @@ dst_policy_474 = {
 	}
 }
 
-dst_policy_475 = {
-	monarch_power = DIP
+#dst_policy_475 = {
+#	monarch_power = DIP
+#
+#	potential = {
+#		has_idea_group = logistics0
+#		has_idea_group_any_fleet_focus_trigger = yes
+#	}
+#	allow = {
+#		full_idea_group = logistics0
+#		full_idea_group_any_fleet_focus_trigger = yes
+#		has_unitattrition_limiter_trigger = yes
+#	}
+#
+#	# Modifier
+#	transport_attrition = -0.33
+#
+#
+#	ai_will_do = {
+#		factor = 0
+#	}
+#}
 
-	potential = {
-		has_idea_group = logistics0
-		has_idea_group_any_fleet_focus_trigger = yes
-	}
-	allow = {
-		full_idea_group = logistics0
-		full_idea_group_any_fleet_focus_trigger = yes
-		has_unitattrition_limiter_trigger = yes
-	}
-
-	# Modifier
-	transport_attrition = -0.33
-
-
-	ai_will_do = {
-		factor = 0
-	}
-}
-
-dst_policy_476 = {
-	monarch_power = DIP
-
-	potential = {
-		has_idea_group = logistics0
-		has_idea_group = kolonialimperium0
-	}
-	allow = {
-		full_idea_group = logistics0
-		full_idea_group = kolonialimperium0
-	}
-
-	# Modifier
-	global_colonial_growth = 10
-	trade_range_modifier = 0.25
-
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 0
-			is_year = 1700
-		}
-		modifier = {
-			factor = 0
-			NOT = { num_of_colonists = 2 }
-		}
-		modifier = {
-			factor = 1.5
-			num_of_colonists = 3
-		}
-		modifier = {
-			factor = 1.5
-			NOT = { is_year = 1650 }
-			num_of_colonies = 2
-		}
-	}
-}
+#dst_policy_476 = {
+#	monarch_power = DIP
+#
+#	potential = {
+#		has_idea_group = logistics0
+#		has_idea_group = kolonialimperium0
+#	}
+#	allow = {
+#		full_idea_group = logistics0
+#		full_idea_group = kolonialimperium0
+#	}
+#
+#	# Modifier
+#	global_colonial_growth = 10
+#	trade_range_modifier = 0.25
+#
+#
+#	ai_will_do = {
+#		factor = 1
+#		modifier = {
+#			factor = 0
+#			is_year = 1700
+#		}
+#		modifier = {
+#			factor = 0
+#			NOT = { num_of_colonists = 2 }
+#		}
+#		modifier = {
+#			factor = 1.5
+#			num_of_colonists = 3
+#		}
+#		modifier = {
+#			factor = 1.5
+#			NOT = { is_year = 1650 }
+#			num_of_colonies = 2
+#		}
+#	}
+#}
 
 dst_policy_477 = {
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = logistics0
+#		has_idea_group = logistics0
+		has_idea_group = kriegsproduktion0
 		has_idea_group_any_culture_focus_trigger = yes
 	}
 	allow = {
-		full_idea_group = logistics0
+#		full_idea_group = logistics0
+		full_idea_group = kriegsproduktion0
 		full_idea_group_any_culture_focus_trigger = yes
 	}
 
@@ -13187,37 +13202,39 @@ dst_policy_477 = {
 	}
 }
 
-dst_policy_478 = {
-	monarch_power = MIL
-
-	potential = {
-		has_idea_group = logistics0
-		has_idea_group = gesellschaft0
-	}
-	allow = {
-		full_idea_group = logistics0
-		full_idea_group = gesellschaft0
-		has_movementspeed_limiter_trigger = yes
-	}
-
-	# Modifier
-	movement_speed = 0.25
-
-
-	ai_will_do = {
-		factor = 1
-	}
-}
+#dst_policy_478 = {
+#	monarch_power = MIL
+#
+#	potential = {
+#		has_idea_group = logistics0
+#		has_idea_group = gesellschaft0
+#	}
+#	allow = {
+#		full_idea_group = logistics0
+#		full_idea_group = gesellschaft0
+#		has_movementspeed_limiter_trigger = yes
+#	}
+#
+#	# Modifier
+#	movement_speed = 0.25
+#
+#
+#	ai_will_do = {
+#		factor = 1
+#	}
+#}
 
 dst_policy_479 = {
 	monarch_power = MIL
 
 	potential = {
-		has_idea_group = logistics0
+#		has_idea_group = logistics0
+		has_idea_group = kriegsproduktion0
 		has_idea_group = propaganda0
 	}
 	allow = {
-		full_idea_group = logistics0
+#		full_idea_group = logistics0
+		full_idea_group = kriegsproduktion0
 		full_idea_group = propaganda0
 	}
 
@@ -13241,11 +13258,13 @@ dst_policy_480 = {
 	monarch_power = MIL
 
 	potential = {
-		has_idea_group = logistics0
+#		has_idea_group = logistics0
+		has_idea_group = kriegsproduktion0
 		has_idea_group = nationalismus0
 	}
 	allow = {
-		full_idea_group = logistics0
+#		full_idea_group = logistics0
+		full_idea_group = kriegsproduktion0
 		full_idea_group = nationalismus0
 	}
 
@@ -13258,26 +13277,26 @@ dst_policy_480 = {
 	}
 }
 
-dst_policy_481 = {
-	monarch_power = MIL
-
-	potential = {
-		has_idea_group = logistics0
-		has_idea_group_any_state_power_trigger = yes
-	}
-	allow = {
-		full_idea_group = logistics0
-		full_idea_group_any_state_power_trigger = yes
-	}
-
-	# Modifier
-	mercenary_manpower = 0.1
-
-
-	ai_will_do = {
-		factor = 0
-	}
-}
+#dst_policy_481 = {
+#	monarch_power = MIL
+#
+#	potential = {
+#		has_idea_group = logistics0
+#		has_idea_group = imperialismus0
+#	}
+#	allow = {
+#		full_idea_group = logistics0
+#		full_idea_group = imperialismus0
+#	}
+#
+#	# Modifier
+#	mercenary_manpower = 0.1
+#
+#
+#	ai_will_do = {
+#		factor = 0
+#	}
+#}
 
 dst_policy_482 = {
 	monarch_power = MIL
@@ -13653,11 +13672,11 @@ dst_policy_494 = {
 
 	potential = {
 		has_idea_group = militarismus0
-		has_idea_group_any_state_power_trigger = yes
+		has_idea_group = imperialismus0
 	}
 	allow = {
 		full_idea_group = militarismus0
-		full_idea_group_any_state_power_trigger = yes
+		full_idea_group = imperialismus0
 	}
 
 	# Modifier
@@ -14060,11 +14079,11 @@ dst_policy_506 = {
 #
 #	potential = {
 #		has_idea_group_any_army_focus_trigger = yes
-#		has_idea_group_any_state_power_trigger = yes
+#		has_idea_group = imperialismus0
 #	}
 #	allow = {
 #		full_idea_group_any_army_focus_trigger = yes
-#		full_idea_group_any_state_power_trigger = yes
+#		full_idea_group = imperialismus0
 #		has_doctrine_cap_trigger = yes
 #	}
 #

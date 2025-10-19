@@ -3,7 +3,7 @@ tags={
 	"Balance"
 	"Gameplay"
 }
-name="Ghostowl's Doge"
+name="Ghostowl's Doge Dev"
 dependencies={
 	"1.37 Doge Shattered Europa"
 }

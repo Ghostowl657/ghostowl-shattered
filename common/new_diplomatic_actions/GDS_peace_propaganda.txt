@@ -16,7 +16,7 @@ peace_propaganda_action =  {
 			value = 50
 		}
 		NOT = { FROM = { has_country_modifier = active_propaganda } }
-		NOT = { FROM = { full_idea_group = propaganda0 } }
+#		NOT = { FROM = { full_idea_group = propaganda0 } }
 	}
 	
 	on_accept = {

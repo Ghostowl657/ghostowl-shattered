@@ -1,3 +1,4 @@
 active_propaganda = {
-	war_exhaustion = 0.10
+	# war_exhaustion = 0.10
+	global_supply_limit_modifier = -0.25
 }
