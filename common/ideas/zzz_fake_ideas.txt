@@ -113,29 +113,6 @@ any_state_focus_idea = {
 }
 
 
-any_state_power_idea = {
-    category = DIP
-
-    bonus = {}
-
-    trigger = {
-        always = no
-    }
-
-    any_fleet_focus_idea_1 = {}
-    any_fleet_focus_idea_2 = {}
-    any_fleet_focus_idea_3 = {}
-    any_fleet_focus_idea_4 = {}
-    any_fleet_focus_idea_5 = {}
-    any_fleet_focus_idea_6 = {}
-    any_fleet_focus_idea_7 = {}
-
-    ai_will_do = {
-        factor = 0
-    }
-}
-
-
 any_culture_focus_idea = {
     category = DIP
 

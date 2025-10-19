@@ -5,7 +5,6 @@
  any_fleet_focus_idea: "§TAny Naval Focus§!" # Heavies, Galleys, Trade
  any_government_type_idea: "§WAny Goverment Type Idea§!" # Monarchy, Republic, Theocracy etc.
  any_state_focus_idea: "§lAny State Focus§!" # Central/Decentral
- any_state_power_idea: "§WState Power Idea§!" # Minor/Great Power Ideas
  any_culture_focus_idea: "§VAny Culture Focus§!"
 
  dse_policies_doctrine_cap: "Have no more than §T2§! §YDiscipline§! and/or §YLand Morale§! policies active, as they share the same limit cap."
