@@ -62,7 +62,7 @@
   estate_oppression_peasants_seize_food_stores: "Seize Food Stores"
   estate_oppression_peasants_seize_food_stores_desc: ""
 
-  influencial_peasant_fear.tt: "Be cautious of the Peasantry crossing over §R30§! influence, or §Rfear§! could spread to this §Yestate§!."
+  influencial_peasant_fear.tt: "This privilege will grant you access to 3 privileges located within the Peasantry Estate. \n§YYou may only 1 out 3.§!"
     #nobility/peasantry limited privileges
   estate_nobles_limited_privileges_to_peasantry: "Limited Peasantry Privileges (nobles)"
   estate_nobles_limited_privileges_to_peasantry_desc: ""
