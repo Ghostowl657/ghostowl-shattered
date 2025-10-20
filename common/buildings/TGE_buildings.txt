@@ -651,6 +651,7 @@ cannon_foundry = {
 		}
 	}
 	on_built = {
+		soldiers_household_scale_giver = yes
 		hidden_effect = {
 			owner = {
 				subtract_variable = {            
@@ -695,6 +696,7 @@ cannon_foundry = {
 
 	}
 	on_destroyed = {
+		soldiers_household_scale_remover = yes
 		hidden_effect = {
 			clr_province_flag = has_cannon
 			clr_province_flag = has_latent_good
@@ -802,6 +804,7 @@ metalworking_workshop = {
 	}
 	
 	on_built = {
+		soldiers_household_scale_giver = yes
 		hidden_effect = {
 			owner = {
 				subtract_variable = {            
@@ -838,6 +841,7 @@ metalworking_workshop = {
 	}
 	
 	on_destroyed = {
+		soldiers_household_scale_remover = yes
 		hidden_effect = {
 			clr_province_flag = has_metalworking
 			clr_province_flag = has_latent_good
@@ -937,6 +941,7 @@ munition_factory = {
 	}
 	
 	on_built = {
+		soldiers_household_scale_giver = yes
 		hidden_effect = {
 			owner = {
 				subtract_variable = {            
@@ -972,6 +977,7 @@ munition_factory = {
 	}
 	
 	on_destroyed = {
+		soldiers_household_scale_remover = yes
 		hidden_effect = {
 			clr_province_flag = has_munitions
 			clr_province_flag = has_latent_good
@@ -1126,6 +1132,7 @@ leather_workshop = {
 	
 
 	on_built = {
+		soldiers_household_scale_giver = yes
 		hidden_effect = { 
 			ROOT = { 
 				goods_save = yes
@@ -1136,6 +1143,7 @@ leather_workshop = {
 	}
 	
 	on_destroyed = {
+		soldiers_household_scale_remover = yes
 		ROOT = {
 			clr_province_flag = has_latent_good
 			goods_back = yes	
@@ -1580,6 +1588,7 @@ steam_engine_manu = {
 	}
 	
 	on_built = {
+		soldiers_household_scale_giver = yes
 		hidden_effect = {
 			owner = {
 				subtract_variable = {            
@@ -1633,6 +1642,7 @@ steam_engine_manu = {
 	}
 	
 	on_destroyed = {
+		soldiers_household_scale_remover = yes
 		hidden_effect = { 
 			clr_province_flag = has_steam_engine
 			clr_province_flag = has_latent_good
@@ -1930,6 +1940,7 @@ cheese_workshop = {
 	}
 	
 	on_built = {
+		soldiers_household_scale_giver = yes
 		hidden_effect = { 
 			ROOT = { 
 				goods_save = yes
@@ -1940,6 +1951,7 @@ cheese_workshop = {
 	}
 	
 	on_destroyed = {
+		soldiers_household_scale_remover = yes
 		ROOT = {
 			goods_back = yes
 			clr_province_flag = has_latent_good	

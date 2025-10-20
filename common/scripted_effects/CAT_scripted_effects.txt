@@ -2427,8 +2427,459 @@ soldiers_household_scale_giver = {
 		limit = {
 			any_owned_province = {
 				has_building = soldier_households
-				base_manpower = 25
+				base_manpower = 50
+				OR = {
+					trade_goods = grain
+					trade_goods = fish
+					trade_goods = livestock
+					trade_goods = wine
+					trade_goods = apiculture
+					trade_goods = rice
+					trade_goods = leather
+					trade_goods = horses
+					trade_goods = olive_oil
+					trade_goods = camel
+					trade_goods = elephants
+					trade_goods = potato
+					trade_goods = tomato
+					trade_goods = maize
+					trade_goods = llama
+					trade_goods = cheese
+					trade_goods = beer
+					trade_goods = seafood
+				}
 			}
+		}
+		add_province_modifier = { name = soldiers_household_scale_10b duration = -1 }
+	}
+	else_if = {
+		limit = {
+				has_building = soldier_households
+				base_manpower = 45
+				NOT = { base_manpower = 50 }
+				OR = {
+					trade_goods = grain
+					trade_goods = fish
+					trade_goods = livestock
+					trade_goods = wine
+					trade_goods = apiculture
+					trae_goods = rice
+					trade_goods = leather
+					trade_goods = horses
+					trade_goods = olive_oil
+					trade_goods = camel
+					trade_goods = elephants
+					trade_goods = potato
+					trade_goods = tomato
+					trade_goods = maize
+					trade_goods = llama
+					trade_goods = cheese
+					trade_goods = beer
+					trade_goods = seafood
+				}
+		}
+		add_province_modifier = { name = soldiers_household_scale_9b duration = -1 }
+	}
+	else_if = {
+		limit = {   
+				has_building = soldier_households
+				base_manpower = 40
+				NOT = { base_manpower = 45 }
+				OR = {
+					trade_goods = grain
+					trade_goods = fish
+					trade_goods = livestock
+					trade_goods = wine
+					trade_goods = apiculture
+					trade_goods = rice
+					trade_goods = leather
+					trade_goods = horses
+					trade_goods = olive_oil
+					trade_goods = camel
+					trade_goods = elephants
+					trade_goods = potato
+					trade_goods = tomato
+					trade_goods = maize
+					trade_goods = llama
+					trade_goods = cheese
+					trade_goods = beer
+					trade_goods = seafood
+				}
+		}
+		add_province_modifier = { name = soldiers_household_scale_8b duration = -1 }
+	}
+	else_if = {
+		limit = {   
+				has_building = soldier_households
+				base_manpower = 35
+				NOT = { base_manpower = 40 }
+				OR = {
+					trade_goods = grain
+					trade_goods = fish
+					trade_goods = livestock
+					trade_goods = wine
+					trade_goods = apiculture
+					trade_goods = rice
+					trade_goods = leather
+					trade_goods = horses
+					trade_goods = olive_oil
+					trade_goods = camel
+					trade_goods = elephants
+					trade_goods = potato
+					trade_goods = tomato
+					trade_goods = maize
+					trade_goods = llama
+					trade_goods = cheese
+					trade_goods = beer
+					trade_goods = seafood
+				}
+		}
+		add_province_modifier = { name = soldiers_household_scale_7b duration = -1 }
+	}
+	else_if = {
+		limit = {   
+				has_building = soldier_households
+				base_manpower = 30
+				NOT = { base_manpower = 35 }
+				OR = {
+					trade_goods = grain
+					trade_goods = fish
+					trade_goods = livestock
+					trade_goods = wine
+					trade_goods = apiculture
+					trade_goods = rice
+					trade_goods = leather
+					trade_goods = horses
+					trade_goods = olive_oil
+					trade_goods = camel
+					trade_goods = elephants
+					trade_goods = potato
+					trade_goods = tomato
+					trade_goods = maize
+					trade_goods = llama
+					trade_goods = cheese
+					trade_goods = beer
+					trade_goods = seafood
+				}
+		}
+		add_province_modifier = { name = soldiers_household_scale_6b duration = -1 }
+	}
+	else_if = {
+		limit = {  
+				has_building = soldier_households
+				base_manpower = 25
+				NOT = { base_manpower = 30 }
+				OR = {
+					trade_goods = grain
+					trade_goods = fish
+					trade_goods = livestock
+					trade_goods = wine
+					trade_goods = apiculture
+					trade_goods = rice
+					trade_goods = leather
+					trade_goods = horses
+					trade_goods = olive_oil
+					trade_goods = camel
+					trade_goods = elephants
+					trade_goods = potato
+					trade_goods = tomato
+					trade_goods = maize
+					trade_goods = llama
+					trade_goods = cheese
+					trade_goods = beer
+					trade_goods = seafood
+				}
+		}
+		add_province_modifier = { name = soldiers_household_scale_5b duration = -1 }
+	}
+	else_if = {
+		limit = {  
+				has_building = soldier_households
+				base_manpower = 20
+				NOT = { base_manpower = 25 }
+				OR = {
+					trade_goods = grain
+					trade_goods = fish
+					trade_goods = livestock
+					trade_goods = wine
+					trade_goods = apiculture
+					trade_goods = rice
+					trade_goods = leather
+					trade_goods = horses
+					trade_goods = olive_oil
+					trade_goods = camel
+					trade_goods = elephants
+					trade_goods = potato
+					trade_goods = tomato
+					trade_goods = maize
+					trade_goods = llama
+					trade_goods = cheese
+					trade_goods = beer
+					trade_goods = seafood
+				}
+		}
+		add_province_modifier = { name = soldiers_household_scale_4b duration = -1 }
+	}
+	else_if = {
+		limit = {  
+				has_building = soldier_households
+				base_manpower = 15
+				NOT = { base_manpower = 20 }
+				OR = {
+					trade_goods = grain
+					trade_goods = fish
+					trade_goods = livestock
+					trade_goods = wine
+					trade_goods = apiculture
+					trade_goods = rice
+					trade_goods = leather
+					trade_goods = horses
+					trade_goods = olive_oil
+					trade_goods = camel
+					trade_goods = elephants
+					trade_goods = potato
+					trade_goods = tomato
+					trade_goods = maize
+					trade_goods = llama
+					trade_goods = cheese
+					trade_goods = beer
+					trade_goods = seafood
+				}
+		}
+		add_province_modifier = { name = soldiers_household_scale_3b duration = -1 }
+	}
+	else_if = {
+		limit = { 
+				has_building = soldier_households
+				base_manpower = 10
+				NOT = { base_manpower = 15 }
+				OR = {
+					trade_goods = grain
+					trade_goods = fish
+					trade_goods = livestock
+					trade_goods = wine
+					trade_goods = apiculture
+					trade_goods = rice
+					trade_goods = leather
+					trade_goods = horses
+					trade_goods = olive_oil
+					trade_goods = camel
+					trade_goods = elephants
+					trade_goods = potato
+					trade_goods = tomato
+					trade_goods = maize
+					trade_goods = llama
+					trade_goods = cheese
+					trade_goods = beer
+					trade_goods = seafood
+				}
+		}
+		add_province_modifier = { name = soldiers_household_scale_2b duration = -1 }
+	}
+	else_if = {
+		limit = {
+				has_building = soldier_households
+				base_manpower = 5
+				NOT = { base_manpower = 10 }
+				OR = {
+					trade_goods = grain
+					trade_goods = fish
+					trade_goods = livestock
+					trade_goods = wine
+					trade_goods = apiculture
+					trade_goods = rice
+					trade_goods = leather
+					trade_goods = horses
+					trade_goods = olive_oil
+					trade_goods = camel
+					trade_goods = elephants
+					trade_goods = potato
+					trade_goods = tomato
+					trade_goods = maize
+					trade_goods = llama
+					trade_goods = cheese
+					trade_goods = beer
+					trade_goods = seafood
+				}
+		}
+		add_province_modifier = { name = soldiers_household_scale_1b duration = -1 }
+	}
+	else_if = {
+		limit = {
+				has_building = soldier_households
+				base_manpower = 50
+				NOT = {
+					OR = {
+						trade_goods = grain
+						trade_goods = fish
+						trade_goods = livestock
+						trade_goods = wine
+						trade_goods = apiculture
+						trade_goods = rice
+						trade_goods = leather
+						trade_goods = horses
+						trade_goods = olive_oil
+						trade_goods = camel
+						trade_goods = elephants
+						trade_goods = potato
+						trade_goods = tomato
+						trade_goods = maize
+						trade_goods = llama
+						trade_goods = cheese
+						trade_goods = beer
+						trade_goods = seafood
+					}
+				}
+		}
+		add_province_modifier = { name = soldiers_household_scale_10 duration = -1 }
+	}
+	else_if = {
+		limit = {
+				has_building = soldier_households
+				base_manpower = 45
+				NOT = { base_manpower = 50 }
+				NOT = {
+					OR = {
+						trade_goods = grain
+						trade_goods = fish
+						trade_goods = livestock
+						trade_goods = wine
+						trade_goods = apiculture
+						trade_goods = rice
+						trade_goods = leather
+						trade_goods = horses
+						trade_goods = olive_oil
+						trade_goods = camel
+						trade_goods = elephants
+						trade_goods = potato
+						trade_goods = tomato
+						trade_goods = maize
+						trade_goods = llama
+						trade_goods = cheese
+						trade_goods = beer
+						trade_goods = seafood
+					}
+				}
+		}
+		add_province_modifier = { name = soldiers_household_scale_9 duration = -1 }
+	}
+	else_if = {
+		limit = {
+				has_building = soldier_households
+				base_manpower = 40
+				NOT = { base_manpower = 45 }
+				NOT = {
+					OR = {
+						trade_goods = grain
+						trade_goods = fish
+						trade_goods = livestock
+						trade_goods = wine
+						trade_goods = apiculture
+						trade_goods = rice
+						trade_goods = leather
+						trade_goods = horses
+						trade_goods = olive_oil
+						trade_goods = camel
+						trade_goods = elephants
+						trade_goods = potato
+						trade_goods = tomato
+						trade_goods = maize
+						trade_goods = llama
+						trade_goods = cheese
+						trade_goods = beer
+						trade_goods = seafood
+					}
+				}
+		}
+		add_province_modifier = { name = soldiers_household_scale_8 duration = -1 }
+	}
+	else_if = {
+		limit = {
+				has_building = soldier_households
+				base_manpower = 35
+				NOT = { base_manpower = 40 }
+				NOT = {
+					OR = {
+						trade_goods = grain
+						trade_goods = fish
+						trade_goods = livestock
+						trade_goods = wine
+						trade_goods = apiculture
+						trade_goods = rice
+						trade_goods = leather
+						trade_goods = horses
+						trade_goods = olive_oil
+						trade_goods = camel
+						trade_goods = elephants
+						trade_goods = potato
+						trade_goods = tomato
+						trade_goods = maize
+						trade_goods = llama
+						trade_goods = cheese
+						trade_goods = beer
+						trade_goods = seafood
+					}
+				}
+		}
+		add_province_modifier = { name = soldiers_household_scale_7 duration = -1 }
+	}
+	else_if = {
+		limit = {
+				has_building = soldier_households
+				base_manpower = 30
+				NOT = { base_manpower = 35 }
+				NOT = {
+					OR = {
+						trade_goods = grain
+						trade_goods = fish
+						trade_goods = livestock
+						trade_goods = wine
+						trade_goods = apiculture
+						trade_goods = rice
+						trade_goods = leather
+						trade_goods = horses
+						trade_goods = olive_oil
+						trade_goods = camel
+						trade_goods = elephants
+						trade_goods = potato
+						trade_goods = tomato
+						trade_goods = maize
+						trade_goods = llama
+						trade_goods = cheese
+						trade_goods = beer
+						trade_goods = seafood
+					}
+				}
+		}
+		add_province_modifier = { name = soldiers_household_scale_6 duration = -1 }
+	}
+	else_if = {
+		limit = {
+				has_building = soldier_households
+				base_manpower = 25
+				NOT = { base_manpower = 30 }
+				NOT = {
+					OR = {
+						trade_goods = grain
+						trade_goods = fish
+						trade_goods = livestock
+						trade_goods = wine
+						trade_goods = apiculture
+						trade_goods = rice
+						trade_goods = leather
+						trade_goods = horses
+						trade_goods = olive_oil
+						trade_goods = camel
+						trade_goods = elephants
+						trade_goods = potato
+						trade_goods = tomato
+						trade_goods = maize
+						trade_goods = llama
+						trade_goods = cheese
+						trade_goods = beer
+						trade_goods = seafood
+					}
+				}
 		}
 		add_province_modifier = { name = soldiers_household_scale_5 duration = -1 }
 	}
@@ -2436,7 +2887,29 @@ soldiers_household_scale_giver = {
 		limit = { 
 				has_building = soldier_households
 				base_manpower = 20
-				NOT = { base_manpower = 25 }	
+				NOT = { base_manpower = 25 }
+				NOT = {
+					OR = {
+						trade_goods = grain
+						trade_goods = fish
+						trade_goods = livestock
+						trade_goods = wine
+						trade_goods = apiculture
+						trade_goods = rice
+						trade_goods = leather
+						trade_goods = horses
+						trade_goods = olive_oil
+						trade_goods = camel
+						trade_goods = elephants
+						trade_goods = potato
+						trade_goods = tomato
+						trade_goods = maize
+						trade_goods = llama
+						trade_goods = cheese
+						trade_goods = beer
+						trade_goods = seafood
+					}
+				}
 		}
 		add_province_modifier = { name = soldiers_household_scale_4 duration = -1 }
 	}
@@ -2444,27 +2917,91 @@ soldiers_household_scale_giver = {
 		limit = { 
 				has_building = soldier_households
 				base_manpower = 15
-				NOT = { base_manpower = 20 }		
+				NOT = { base_manpower = 20 }
+				NOT = {
+					OR = {
+						trade_goods = grain
+						trade_goods = fish
+						trade_goods = livestock
+						trade_goods = wine
+						trade_goods = apiculture
+						trade_goods = rice
+						trade_goods = leather
+						trade_goods = horses
+						trade_goods = olive_oil
+						trade_goods = camel
+						trade_goods = elephants
+						trade_goods = potato
+						trade_goods = tomato
+						trade_goods = maize
+						trade_goods = llama
+						trade_goods = cheese
+						trade_goods = beer
+						trade_goods = seafood
+					}
+				}
 		}
-			add_province_modifier = { name = soldiers_household_scale_3 duration = -1 }
+		add_province_modifier = { name = soldiers_household_scale_3 duration = -1 }
 	}
 	else_if = {
 		limit = { 
 				has_building = soldier_households
 				base_manpower = 10
-				NOT = { base_manpower = 15 }		
+				NOT = { base_manpower = 15 }
+				NOT = {
+					OR = {
+						trade_goods = grain
+						trade_goods = fish
+						trade_goods = livestock
+						trade_goods = wine
+						trade_goods = apiculture
+						trade_goods = rice
+						trade_goods = leather
+						trade_goods = horses
+						trade_goods = olive_oil
+						trade_goods = camel
+						trade_goods = elephants
+						trade_goods = potato
+						trade_goods = tomato
+						trade_goods = maize
+						trade_goods = llama
+						trade_goods = cheese
+						trade_goods = beer
+						trade_goods = seafood
+					}
+				}
 		}
 		add_province_modifier = { name = soldiers_household_scale_2 duration = -1 }
 	}
-	else = {
-		if = {
-			limit = {
+	else_if = {
+		limit = {
 				has_building = soldier_households
 				base_manpower = 5
-				NOT = { base_manpower = 10 }				
-			}
-			add_province_modifier = { name = soldiers_household_scale_1 duration = -1 }
+				NOT = { base_manpower = 10 }
+				NOT = {
+					OR = {
+						trade_goods = grain
+						trade_goods = fish
+						trade_goods = livestock
+						trade_goods = wine
+						trade_goods = apiculture
+						trade_goods = rice
+						trade_goods = leather
+						trade_goods = horses
+						trade_goods = olive_oil
+						trade_goods = camel
+						trade_goods = elephants
+						trade_goods = potato
+						trade_goods = tomato
+						trade_goods = maize
+						trade_goods = llama
+						trade_goods = cheese
+						trade_goods = beer
+						trade_goods = seafood
+					}
+				}
 		}
+		add_province_modifier = { name = soldiers_household_scale_1 duration = -1 }
 	}
 }
 soldiers_household_scale_remover = {
@@ -2476,13 +3013,42 @@ soldiers_household_scale_remover = {
 				has_province_modifier = soldiers_household_scale_3
 				has_province_modifier = soldiers_household_scale_4
 				has_province_modifier = soldiers_household_scale_5
+				has_province_modifier = soldiers_household_scale_6
+				has_province_modifier = soldiers_household_scale_7
+				has_province_modifier = soldiers_household_scale_8
+				has_province_modifier = soldiers_household_scale_9
+				has_province_modifier = soldiers_household_scale_10
+				has_province_modifier = soldiers_household_scale_1b
+				has_province_modifier = soldiers_household_scale_2b
+				has_province_modifier = soldiers_household_scale_3b
+				has_province_modifier = soldiers_household_scale_4b
+				has_province_modifier = soldiers_household_scale_5b
+				has_province_modifier = soldiers_household_scale_6b
+				has_province_modifier = soldiers_household_scale_7b
+				has_province_modifier = soldiers_household_scale_8b
+				has_province_modifier = soldiers_household_scale_9b
+				has_province_modifier = soldiers_household_scale_10b
 			}
-		} 
+		}
 		remove_province_modifier = soldiers_household_scale_1
 		remove_province_modifier = soldiers_household_scale_2
 		remove_province_modifier = soldiers_household_scale_3
 		remove_province_modifier = soldiers_household_scale_4
 		remove_province_modifier = soldiers_household_scale_5
+		remove_province_modifier = soldiers_household_scale_6
+		remove_province_modifier = soldiers_household_scale_7
+		remove_province_modifier = soldiers_household_scale_8
+		remove_province_modifier = soldiers_household_scale_9
+		remove_province_modifier = soldiers_household_scale_1b
+		remove_province_modifier = soldiers_household_scale_2b
+		remove_province_modifier = soldiers_household_scale_3b
+		remove_province_modifier = soldiers_household_scale_4b
+		remove_province_modifier = soldiers_household_scale_5b
+		remove_province_modifier = soldiers_household_scale_10
+		remove_province_modifier = soldiers_household_scale_6b
+		remove_province_modifier = soldiers_household_scale_7b
+		remove_province_modifier = soldiers_household_scale_8b
+		remove_province_modifier = soldiers_household_scale_9b
+		remove_province_modifier = soldiers_household_scale_10b
 	}
-
 }

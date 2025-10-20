@@ -6,8 +6,24 @@ multi_cultural_empire_3 = { manpower_in_accepted_culture_provinces = 0.15 }
 multi_cultural_empire_2 = { manpower_in_accepted_culture_provinces = 0.10 }
 multi_cultural_empire_1 = { manpower_in_accepted_culture_provinces = 0.05 }
 
+soldiers_household_scale_10 = { local_manpower = 2.500 }
+soldiers_household_scale_9 = { local_manpower = 2.250 }
+soldiers_household_scale_8 = { local_manpower = 2.000 }
+soldiers_household_scale_7 = { local_manpower = 1.750 }
+soldiers_household_scale_6 = { local_manpower = 1.500 }
 soldiers_household_scale_5 = { local_manpower = 1.250 }
 soldiers_household_scale_4 = { local_manpower = 1.000 }
 soldiers_household_scale_3 = { local_manpower = 0.750 }
 soldiers_household_scale_2 = { local_manpower = 0.500 }
 soldiers_household_scale_1 = { local_manpower = 0.250 }
+
+soldiers_household_scale_10b = { local_manpower = 5.000 }
+soldiers_household_scale_9b = { local_manpower = 4.500 }
+soldiers_household_scale_8b = { local_manpower = 4.000 }
+soldiers_household_scale_7b = { local_manpower = 3.500 }
+soldiers_household_scale_6b = { local_manpower = 3.000 }
+soldiers_household_scale_5b = { local_manpower = 2.500 }
+soldiers_household_scale_4b = { local_manpower = 2.000 }
+soldiers_household_scale_3b = { local_manpower = 1.500 }
+soldiers_household_scale_2b = { local_manpower = 1.000 }
+soldiers_household_scale_1b = { local_manpower = 0.500 }

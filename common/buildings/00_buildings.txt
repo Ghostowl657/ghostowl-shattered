@@ -3860,16 +3860,16 @@ soldier_households = {
 		maize
 		llama
 		cheese
-		
-		
+		beer
+		seafood
 	}
 
 	modifier = {
-		local_manpower = 0.50
+		local_manpower = 0.25
 		#local_state_maintenance_modifier = 0.5
 	}
 	bonus_modifier = {
-		local_manpower = 0.50
+		local_manpower = 0.25
 	}
 	onmap = no
 	show_separate = yes

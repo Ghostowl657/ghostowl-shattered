@@ -381,29 +381,29 @@ humanist_ideas = {
 		idea_cost = -0.10
     }
 
-	humanist_1 = {
+	benevolence = {
 		tolerance_heretic = 2
 		tolerance_of_heretics_capacity = 1
 	}
-	humanist_2 = {
+	local_traditions = {
 		tolerance_heathen = 2
 		tolerance_of_heathens_capacity = 1
 	}
-	humanist_3 = {
+	ecumenism = {
 		adm_tech_cost_modifier = -0.05
 		church_influence_modifier = -0.1
 	}
-	humanist_4 = {
+	humanist_tolerance = {
 		years_of_nationalism = -5
 		religious_unity = 0.15
 	}
-	humanist_5 = {
+	cultural_ties = {
 		interest = -0.5
 	}
-	humanist_6 = {
+	indirect_rule = {
 		global_unrest = -2
 	}
-	humanist_7 = {
+	tolerance_idea = {
 		monthly_karma = 0.5
 		yearly_harmony = 1
 		monthly_church_power = 0.5
@@ -778,45 +778,45 @@ horde0 = {
 ########################################################
 
 
-trademanagement0 = {
-	category = ADM
-
-	bonus = {
-		advisor_cost = -0.1
-	}
-
-
-	trademanagement1 = {
-		embargo_efficiency = 0.15
-		center_of_trade_upgrade_cost = -0.5
-	}
-	trademanagement2 = {
-		trade_efficiency = 0.1
-	}
-	trademanagement3 = {
-		envoy_travel_time = -0.25
-		global_tax_modifier = 0.15
-	}
-	trademanagement4 = {
-		trade_steering = 0.15
-		mercantilism_cost = -0.25
-	}
-	trademanagement5 = {
-		transfer_trade_power_reasons = 10
-		merchants = 1
-	}
-	trademanagement6 = {
-		embracement_cost = -0.15
-		global_institution_spread = 0.1
-	}
-	trademanagement7 = {
-		caravan_power = 0.25
-	}
-
-	ai_will_do = {
-		factor = 1.0
-	}
-}
+#trademanagement0 = {
+#	category = ADM
+#
+#	bonus = {
+#		advisor_cost = -0.1
+#	}
+#
+#
+#	trademanagement1 = {
+#		embargo_efficiency = 0.15
+#		center_of_trade_upgrade_cost = -0.5
+#	}
+#	trademanagement2 = {
+#		trade_efficiency = 0.1
+#	}
+#	trademanagement3 = {
+#		envoy_travel_time = -0.25
+#		global_tax_modifier = 0.15
+#	}
+#	trademanagement4 = {
+#		trade_steering = 0.15
+#		mercantilism_cost = -0.25
+#	}
+#	trademanagement5 = {
+#		transfer_trade_power_reasons = 10
+#		merchants = 1
+#	}
+#	trademanagement6 = {
+#		embracement_cost = -0.15
+#		global_institution_spread = 0.1
+#	}
+#	trademanagement7 = {
+#		caravan_power = 0.25
+#	}
+#
+#	ai_will_do = {
+#		factor = 1.0
+#	}
+#}
 
 ########################################################
 ####### Zentralismus Ideen / Centralism Ideas
