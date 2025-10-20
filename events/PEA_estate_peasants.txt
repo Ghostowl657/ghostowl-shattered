@@ -1,4 +1,4 @@
-namespace = peasants_estate_event
+##namespace = peasants_estate_event
 
 #Peasants vs Nobles
 country_event = {
