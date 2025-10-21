@@ -651,7 +651,6 @@ cannon_foundry = {
 		}
 	}
 	on_built = {
-		soldiers_household_scale_giver = yes
 		hidden_effect = {
 			owner = {
 				subtract_variable = {            
@@ -692,11 +691,12 @@ cannon_foundry = {
 				change_trade_goods = cannon
 			}
 			country_event = { id = New_TradeGood_Events.2 }
+			soldiers_household_scale_remover = yes
+			soldiers_household_scale_giver = yes
 		}
 
 	}
 	on_destroyed = {
-		soldiers_household_scale_remover = yes
 		hidden_effect = {
 			clr_province_flag = has_cannon
 			clr_province_flag = has_latent_good
@@ -750,6 +750,8 @@ cannon_foundry = {
 				goods_back = yes	
 			}
 			country_event = { id = New_TradeGood_Events.2 }
+			soldiers_household_scale_remover = yes
+			soldiers_household_scale_giver = yes
 		}
 	}
 	modifier = {
@@ -804,7 +806,6 @@ metalworking_workshop = {
 	}
 	
 	on_built = {
-		soldiers_household_scale_giver = yes
 		hidden_effect = {
 			owner = {
 				subtract_variable = {            
@@ -836,12 +837,13 @@ metalworking_workshop = {
 			}
 			country_event = { id = New_TradeGood_Events.2 }
 			country_event = { id = tge_tradingbonus_special.6 }
+			soldiers_household_scale_remover = yes
+			soldiers_household_scale_giver = yes
 		}
 
 	}
 	
 	on_destroyed = {
-		soldiers_household_scale_remover = yes
 		hidden_effect = {
 			clr_province_flag = has_metalworking
 			clr_province_flag = has_latent_good
@@ -886,6 +888,8 @@ metalworking_workshop = {
 			}
 			country_event = { id = New_TradeGood_Events.2 }
 			country_event = { id = tge_tradingbonus_special.6 }
+			soldiers_household_scale_remover = yes
+			soldiers_household_scale_giver = yes
 		}
 	}
 	
@@ -941,7 +945,6 @@ munition_factory = {
 	}
 	
 	on_built = {
-		soldiers_household_scale_giver = yes
 		hidden_effect = {
 			owner = {
 				subtract_variable = {            
@@ -972,12 +975,13 @@ munition_factory = {
 				change_trade_goods = munitions
 			}
 			country_event = { id = New_TradeGood_Events.2 }
+			soldiers_household_scale_remover = yes
+			soldiers_household_scale_giver = yes
 		}
 
 	}
 	
 	on_destroyed = {
-		soldiers_household_scale_remover = yes
 		hidden_effect = {
 			clr_province_flag = has_munitions
 			clr_province_flag = has_latent_good
@@ -1021,6 +1025,8 @@ munition_factory = {
 				goods_back = yes	
 			}
 			country_event = { id = New_TradeGood_Events.2 }
+			soldiers_household_scale_remover = yes
+			soldiers_household_scale_giver = yes
 		}
 	}
 	
@@ -1132,22 +1138,24 @@ leather_workshop = {
 	
 
 	on_built = {
-		soldiers_household_scale_giver = yes
 		hidden_effect = { 
 			ROOT = { 
 				goods_save = yes
 				change_trade_goods = leather 
 				set_province_flag = has_latent_good
 			}
+			soldiers_household_scale_remover = yes
+			soldiers_household_scale_giver = yes
 		}
 	}
 	
 	on_destroyed = {
-		soldiers_household_scale_remover = yes
 		ROOT = {
 			clr_province_flag = has_latent_good
 			goods_back = yes	
 		}
+		soldiers_household_scale_remover = yes
+		soldiers_household_scale_giver = yes
 	}
 
 	modifier = {
@@ -1588,7 +1596,6 @@ steam_engine_manu = {
 	}
 	
 	on_built = {
-		soldiers_household_scale_giver = yes
 		hidden_effect = {
 			owner = {
 				subtract_variable = {            
@@ -1637,12 +1644,13 @@ steam_engine_manu = {
 				change_trade_goods = steam_engine			
 			}
 			country_event = { id = New_TradeGood_Events.2 }
+			soldiers_household_scale_remover = yes
+			soldiers_household_scale_giver = yes
 		}
 
 	}
 	
 	on_destroyed = {
-		soldiers_household_scale_remover = yes
 		hidden_effect = { 
 			clr_province_flag = has_steam_engine
 			clr_province_flag = has_latent_good
@@ -1706,6 +1714,8 @@ steam_engine_manu = {
 				goods_back = yes	
 			}
 			country_event = { id = New_TradeGood_Events.2 }
+			soldiers_household_scale_remover = yes
+			soldiers_household_scale_giver = yes
 		}
 	}
 	
@@ -1766,6 +1776,8 @@ mine = {
 		clr_province_flag = mine_marcin1
 		clr_province_flag = mine_marcin2
 		clr_province_flag = mine_marcin3
+		soldiers_household_scale_remover = yes
+		soldiers_household_scale_giver = yes
 	}
 	
 	modifier = {
@@ -1940,22 +1952,24 @@ cheese_workshop = {
 	}
 	
 	on_built = {
-		soldiers_household_scale_giver = yes
 		hidden_effect = { 
 			ROOT = { 
 				goods_save = yes
 				set_province_flag = has_latent_good
 				change_trade_goods = cheese 
 			}
+			soldiers_household_scale_remover = yes
+			soldiers_household_scale_giver = yes
 		}
 	}
 	
 	on_destroyed = {
-		soldiers_household_scale_remover = yes
 		ROOT = {
 			goods_back = yes
 			clr_province_flag = has_latent_good	
 		}
+		soldiers_household_scale_remover = yes
+		soldiers_household_scale_giver = yes
 	}
 
 	modifier = {
