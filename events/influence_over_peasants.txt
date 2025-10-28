@@ -1259,6 +1259,12 @@ country_event = {
 			name = negotiate_modifier_5
 			duration = 10957
 		}
+		hidden_effect = {
+			country_event = { 
+				id = influence_peasant_events.4 
+				days = 1 
+			}
+		}
 	}
 	option = {
 		name = negotiate_events.b.3
@@ -1266,15 +1272,33 @@ country_event = {
 			name = negotiate_modifier_4
 			duration = 16436
 		}
+		hidden_effect = {
+			country_event = { 
+				id = influence_peasant_events.4 
+				days = 1 
+			}
+		}
 	}
 	option = {
 		name = negotiate_events.main.c
 		add_years_of_income = -3
+		hidden_effect = {
+			country_event = { 
+				id = influence_peasant_events.4 
+				days = 1 
+			}
+		}
 	}
 	option = {
 		name = negotiate_events.main.e
 		custom_tooltip = negotiate_events.main.e.tt
 		set_country_flag = noble_promise_flag
+		hidden_effect = {
+			country_event = { 
+				id = influence_peasant_events.4 
+				days = 1 
+			}
+		}
 	}
 	option = {
 		name = negotiate_events.main.f
@@ -1283,6 +1307,12 @@ country_event = {
 			desc = EST_VAL_SEIZED_PRIVILEGES
 			loyalty = -0.15
 			duration = 36525
+		}
+		hidden_effect = {
+			country_event = { 
+				id = influence_peasant_events.4 
+				days = 1 
+			}
 		}
 	}
 }
