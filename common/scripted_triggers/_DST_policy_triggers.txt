@@ -315,7 +315,7 @@ has_unitattrition_limiter_trigger = {
                 amount = 2
                 has_active_policy = dst_policy_4
                 has_active_policy = dst_policy_422
-                has_active_policy = dst_policy_475
+#                has_active_policy = dst_policy_475
             }
         }
     }
@@ -424,7 +424,7 @@ has_wartaxescost_limiter_trigger = {
         NOT = {
             calc_true_if = {
                 amount = 1
-                has_active_policy = dst_policy_23
+#                has_active_policy = dst_policy_23
                 has_active_policy = dst_policy_228
             }
         }
@@ -440,12 +440,12 @@ has_movementspeed_limiter_trigger = {
                 has_active_policy = dst_policy_24
                 has_active_policy = dst_policy_71
                 has_active_policy = dst_policy_76
-                has_active_policy = dst_policy_180
+#                has_active_policy = dst_policy_180
                 has_active_policy = dst_policy_198
                 has_active_policy = dst_policy_366
                 has_active_policy = dst_policy_437
                 has_active_policy = dst_policy_469
-                has_active_policy = dst_policy_478
+#                has_active_policy = dst_policy_478
             }
         }
     }
@@ -491,7 +491,7 @@ has_mercenarymaintenance_limiter_trigger = {
             calc_true_if = {
                 amount = 2
                 has_active_policy = dst_policy_46
-                has_active_policy = dst_policy_254
+#                has_active_policy = dst_policy_254
                 has_active_policy = dst_policy_419
                 has_active_policy = dst_policy_421
             }
@@ -525,17 +525,17 @@ has_moraledamagereceived_limiter_trigger = {
     }    
 }
 
-has_fortmaintenance_limiter_trigger = {
-    custom_trigger_tooltip = {
-        tooltip = dse_policies_normal_limiter_1
-        NOT = {
-            calc_true_if = {
-                amount = 1
-                has_active_policy = dst_policy_50
-            }
-        }
-    }    
-}
+#has_fortmaintenance_limiter_trigger = {
+#    custom_trigger_tooltip = {
+#        tooltip = dse_policies_normal_limiter_1
+#        NOT = {
+#           calc_true_if = {
+#                amount = 1
+#                has_active_policy = dst_policy_50
+#            }
+#        }
+#    }    
+#}
 
 has_colonyboost_limiter_trigger = {
     custom_trigger_tooltip = {
@@ -545,7 +545,7 @@ has_colonyboost_limiter_trigger = {
                 amount = 1
                 has_active_policy = dst_policy_164
                 has_active_policy = dst_policy_192
-                has_active_policy = dst_policy_258
+#                has_active_policy = dst_policy_258
             }
         }
     }    
@@ -572,7 +572,7 @@ has_caravanpower_limiter_trigger = {
             calc_true_if = {
                 amount = 1
                 has_active_policy = dst_policy_81
-                has_active_policy = dst_policy_245
+#                has_active_policy = dst_policy_245
                 has_active_policy = dst_policy_354
             }
         }
@@ -626,8 +626,8 @@ has_lightshippower_limiter_trigger = {
         NOT = {
             calc_true_if = {
                 amount = 2
-                has_active_policy = dst_policy_240
-                has_active_policy = dst_policy_241
+#                has_active_policy = dst_policy_240
+#                has_active_policy = dst_policy_241
                 has_active_policy = dst_policy_342
                 has_active_policy = dst_policy_357
             }
@@ -643,7 +643,7 @@ has_galleypower_limiter_trigger = {
                 amount = 2
                 has_active_policy = dst_policy_84
                 has_active_policy = dst_policy_345
-                has_active_policy = dst_policy_461
+#                has_active_policy = dst_policy_461
                 has_active_policy = dst_policy_488
             }
         }
@@ -669,7 +669,7 @@ has_supplylimit_limiter_trigger = {
             calc_true_if = {
                 amount = 1
                 has_active_policy = dst_policy_102
-                has_active_policy = dst_policy_256
+#                has_active_policy = dst_policy_256
             }
         }
     }    
@@ -715,18 +715,18 @@ has_garrisonunique_limiter_trigger = {
     }    
 }
 
-has_landattrition_limiter_trigger = {
-    custom_trigger_tooltip = {
-        tooltip = dse_policies_normal_limiter_1
-        NOT = {
-            calc_true_if = {
-                amount = 1
-                has_active_policy = dst_policy_206
-                has_active_policy = dst_policy_472
-            }
-        }
-    }    
-}
+#has_landattrition_limiter_trigger = {
+#    custom_trigger_tooltip = {
+#        tooltip = dse_policies_normal_limiter_1
+#        NOT = {
+#            calc_true_if = {
+#                amount = 1
+#                has_active_policy = dst_policy_206
+#                has_active_policy = dst_policy_472
+#            }
+#        }
+#    }    
+#}
 
 has_transportattrition_limiter_trigger = {
     custom_trigger_tooltip = {
@@ -740,17 +740,17 @@ has_transportattrition_limiter_trigger = {
     }    
 }
 
-has_adminefficiency_limiter_trigger = {
-    custom_trigger_tooltip = {
-        tooltip = dse_policies_normal_limiter_1
-        NOT = {
-            calc_true_if = {
-                amount = 1
-                has_active_policy = dst_policy_232
-            }
-        }
-    }    
-}
+#has_adminefficiency_limiter_trigger = {
+#    custom_trigger_tooltip = {
+#        tooltip = dse_policies_normal_limiter_1
+#        NOT = {
+#            calc_true_if = {
+#                amount = 1
+#                has_active_policy = dst_policy_232
+#            }
+#        }
+#    }    
+#}
 
 has_warscorereligion_limiter_trigger = {
     custom_trigger_tooltip = {
@@ -765,30 +765,30 @@ has_warscorereligion_limiter_trigger = {
     }    
 }
 
-has_goodsproduced_limiter_trigger = {
-    custom_trigger_tooltip = {
-        tooltip = dse_policies_normal_limiter_1
-        NOT = {
-            calc_true_if = {
-                amount = 1
-                has_active_policy = dst_policy_237
-            }
-        }
-    }    
-}
+#has_goodsproduced_limiter_trigger = {
+#    custom_trigger_tooltip = {
+#        tooltip = dse_policies_normal_limiter_1
+#        NOT = {
+#            calc_true_if = {
+#                amount = 1
+#                has_active_policy = dst_policy_237
+#            }
+#        }
+#    }    
+#}
 
-has_merchanttradepower_limiter_trigger = {
-    custom_trigger_tooltip = {
-        tooltip = dse_policies_normal_limiter_1
-        NOT = {
-            calc_true_if = {
-                amount = 1
-                has_active_policy = dst_policy_253
-                has_active_policy = dst_policy_260
-            }
-        }
-    }    
-}
+#has_merchanttradepower_limiter_trigger = {
+#    custom_trigger_tooltip = {
+#        tooltip = dse_policies_normal_limiter_1
+#        NOT = {
+#            calc_true_if = {
+#                amount = 1
+#                has_active_policy = dst_policy_253
+#                has_active_policy = dst_policy_260
+#            }
+#        }
+#    }    
+#}
 
 has_expelminorities_limiter_trigger = {
     custom_trigger_tooltip = {
@@ -914,6 +914,7 @@ has_army_focus_cap_trigger = {
                 has_active_policy = dst_policy_78
                 has_active_policy = dst_policy_104
                 has_active_policy = dst_policy_127
+				has_active_policy = dst_policy_153
                 has_active_policy = dst_policy_178
                 has_active_policy = dst_policy_182
                 has_active_policy = dst_policy_222

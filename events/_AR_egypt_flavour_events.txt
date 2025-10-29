@@ -584,17 +584,17 @@ country_event = {
 #			}
 #		}
 #	}
-}#
+#}
 #
 # country_event = { #Sandstorm - devastating all desert / dryland provinces in Egypt - hidden initiator and control event
 # 	id = ar_egypt.24
 # 	title = ar_egypt.24.title
 # 	desc = ar_egypt.24.desc
-
+#
 # 	hidden = yes
-
+#
 # 	fire_only_once = yes
-
+#
 # 	trigger = {
 # 		NOT = {
 # 			any_country = {
@@ -604,11 +604,11 @@ country_event = {
 # 			}
 # 		}
 # 	}
-
+#
 # 	mean_time_to_happen = {
 # 		years = 20
 # 	}
-
+#
 # 	option = {
 # 		every_country = {
 # 			limit = {
@@ -637,16 +637,16 @@ country_event = {
 # 	id = ar_egypt.241
 # 	title = ar_egypt.241.title
 # 	desc = ar_egypt.241.desc
-
+#
 # 	picture = FAMINE_eventPicture
-
+#
 # 	is_triggered_only = yes
-
+#
 # 	option = { #What a catastrophe
 # 		name = ar_egypt.24.a
-
+#
 # 		add_stability = -2
-
+#
 # 		every_owned_province = {
 # 			limit = {
 # 				OR = {

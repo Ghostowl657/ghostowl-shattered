@@ -6831,11 +6831,11 @@ dst_policy_261 = {
 
 	potential = {
 		has_idea_group = spy_ideas
-		has_idea_group_any_culture_focus_trigger = yes
+		has_idea_group_any_state_focus_trigger = yes
 	}
 	allow = {
 		full_idea_group = spy_ideas
-		full_idea_group_any_culture_focus_trigger = yes
+		full_idea_group_any_state_focus_trigger = yes
 	}
 
 	# Modifier
@@ -6853,11 +6853,11 @@ dst_policy_262 = {
 
 	potential = {
 		has_idea_group = influence_ideas
-		has_idea_group_any_culture_focus_trigger = yes
+		has_idea_group_any_state_focus_trigger = yes
 	}
 	allow = {
 		full_idea_group = influence_ideas
-		full_idea_group_any_culture_focus_trigger = yes
+		full_idea_group_any_state_focus_trigger = yes
 	}
 
 	# Modifier
@@ -6874,11 +6874,11 @@ dst_policy_263 = {
 
 	potential = {
 		has_idea_group = trade_ideas
-		has_idea_group = imperialismus0
+		has_idea_group_any_state_focus_trigger = yes
 	}
 	allow = {
 		full_idea_group = trade_ideas
-		full_idea_group = imperialismus0
+		full_idea_group_any_state_focus_trigger = yes
 	}
 
 	# Modifier
@@ -6938,11 +6938,11 @@ dst_policy_265 = {
 
 	potential = {
 		has_idea_group = maritime_ideas
-		has_idea_group = imperialismus0
+		has_idea_group_any_state_focus_trigger = yes
 	}
 	allow = {
 		full_idea_group = maritime_ideas
-		full_idea_group = imperialismus0
+		full_idea_group_any_state_focus_trigger = yes
 	}
 
 	# Modifier
@@ -6979,11 +6979,11 @@ dst_policy_266 = {
 
 	potential = {
 		has_idea_group = flottenbasis0
-		has_idea_group = imperialismus0
+		has_idea_group_any_state_focus_trigger = yes
 	}
 	allow = {
 		full_idea_group = flottenbasis0
-		full_idea_group = imperialismus0
+		full_idea_group_any_state_focus_trigger = yes
 	}
 
 	# Modifier
@@ -6999,11 +6999,11 @@ dst_policy_266 = {
 #	monarch_power = ADM
 #
 #	potential = {
-#		has_idea_group = imperialismus0
+#		has_idea_group_any_state_focus_trigger = yes
 #		has_idea_group_any_fleet_focus_trigger
 #	}
 #	allow = {
-#		full_idea_group = imperialismus0
+#		full_idea_group_any_state_focus_trigger = yes
 #		full_idea_group_any_fleet_focus_trigger = yes
 #		has_governingcapacity_cap_trigger = yes
 #	}
@@ -7022,11 +7022,11 @@ dst_policy_268 = {
 
 	potential = {
 		has_idea_group = kolonialimperium0
-		has_idea_group = imperialismus0
+		has_idea_group_any_state_focus_trigger = yes
 	}
 	allow = {
 		full_idea_group = kolonialimperium0
-		full_idea_group = imperialismus0
+		full_idea_group_any_state_focus_trigger = yes
 	}
 
 	# Modifier
@@ -7061,11 +7061,11 @@ dst_policy_269 = {
 
 	potential = {
 		has_idea_group_any_culture_focus_trigger = yes
-		has_idea_group = imperialismus0
+		has_idea_group_any_state_focus_trigger = yes
 	}
 	allow = {
 		full_idea_group_any_culture_focus_trigger = yes
-		full_idea_group = imperialismus0
+		full_idea_group_any_state_focus_trigger = yes
 		has_dev_cap_trigger = yes
 	}
 
@@ -7083,11 +7083,11 @@ dst_policy_270 = {
 
 	potential = {
 		has_idea_group = gesellschaft0
-		has_idea_group_any_culture_focus_trigger = yes
+		has_idea_group_any_state_focus_trigger = yes
 	}
 	allow = {
 		full_idea_group = gesellschaft0
-		full_idea_group_any_culture_focus_trigger = yes
+		full_idea_group_any_state_focus_trigger = yes
 		has_reformprogress_limiter_trigger = yes
 	}
 
@@ -7105,11 +7105,11 @@ dst_policy_271 = {
 
 	potential = {
 		has_idea_group = propaganda0
-		has_idea_group_any_culture_focus_trigger = yes
+		has_idea_group_any_state_focus_trigger = yes
 	}
 	allow = {
 		full_idea_group = propaganda0
-		full_idea_group_any_culture_focus_trigger = yes
+		full_idea_group_any_state_focus_trigger = yes
 	}
 	# Modifier
 	global_monthly_devastation = -0.1
@@ -7126,11 +7126,11 @@ dst_policy_272 = {
 
 	potential = {
 		has_idea_group = nationalismus0
-		has_idea_group_any_culture_focus_trigger = yes
+		has_idea_group_any_state_focus_trigger = yes
 	}
 	allow = {
 		full_idea_group = nationalismus0
-		full_idea_group_any_culture_focus_trigger = yes
+		full_idea_group_any_state_focus_trigger = yes
 		has_dev_cap_trigger = yes
 	}
 
@@ -7160,11 +7160,11 @@ dst_policy_272 = {
 #
 #	potential = {
 #		has_idea_group = imperialismus0
-#		has_idea_group_any_culture_focus_trigger = yes
+#		has_idea_group_any_state_power_trigger = yes
 #	}
 #	allow = {
 #		full_idea_group = imperialismus0
-#		full_idea_group_any_culture_focus_trigger = yes
+#		full_idea_group_any_state_power_trigger = yes
 #		has_governingcapacity_cap_trigger = yes
 #	}
 #
@@ -7182,11 +7182,11 @@ dst_policy_274 = {
 
 	potential = {
 		has_idea_group = quality_ideas
-		has_idea_group_any_culture_focus_trigger = yes
+		has_idea_group_any_state_focus_trigger = yes
 	}
 	allow = {
 		full_idea_group = quality_ideas
-		full_idea_group_any_culture_focus_trigger = yes
+		full_idea_group_any_state_focus_trigger = yes
 		has_army_focus_cap_trigger = yes
 	}
 
@@ -7223,11 +7223,11 @@ dst_policy_275 = {
 
 	potential = {
 		has_idea_group = quantity_ideas
-		has_idea_group_any_culture_focus_trigger = yes
+		has_idea_group_any_state_focus_trigger = yes
 	}
 	allow = {
 		full_idea_group = quantity_ideas
-		full_idea_group_any_culture_focus_trigger = yes
+		full_idea_group_any_state_focus_trigger = yes
 		has_governingcapacity_cap_trigger = yes
 	}
 
@@ -7245,11 +7245,11 @@ dst_policy_276 = {
 
 	potential = {
 		has_idea_group = offensive_ideas
-		has_idea_group_any_culture_focus_trigger = yes
+		has_idea_group_any_state_focus_trigger = yes
 	}
 	allow = {
 		full_idea_group = offensive_ideas
-		full_idea_group_any_culture_focus_trigger = yes
+		full_idea_group_any_state_focus_trigger = yes
 		has_buildcosts_limiter_trigger = yes
 	}
 
@@ -7267,11 +7267,11 @@ dst_policy_277 = {
 
 	potential = {
 		has_idea_group = defensive_ideas
-		has_idea_group_any_culture_focus_trigger = yes
+		has_idea_group_any_state_focus_trigger = yes
 	}
 	allow = {
 		full_idea_group = defensive_ideas
-		full_idea_group_any_culture_focus_trigger = yes
+		full_idea_group_any_state_focus_trigger = yes
 		has_doctrine_cap_trigger = yes
 	}
 
@@ -7308,11 +7308,11 @@ dst_policy_278 = {
 
 	potential = {
 		has_idea_group = generalstab0
-		has_idea_group_any_culture_focus_trigger = yes
+		has_idea_group_any_state_focus_trigger = yes
 	}
 	allow = {
 		full_idea_group = generalstab0
-		full_idea_group_any_culture_focus_trigger = yes
+		full_idea_group_any_state_focus_trigger = yes
 	}
 
 	# Modifier
@@ -7335,11 +7335,11 @@ dst_policy_278 = {
 #	monarch_power = MIL
 #
 #	potential = {
-#		has_idea_group_any_culture_focus_trigger = yes
+#		has_idea_group_any_state_focus_trigger = yes
 #		has_idea_group_any_army_doctrine_trigger = yes
 #	}
 #	allow = {
-#		full_idea_group_any_culture_focus_trigger = yes
+#		full_idea_group_any_state_focus_trigger = yes
 #		full_idea_group_any_army_doctrine_trigger = yes
 #		has_army_focus_cap_trigger = yes
 #	}
@@ -7358,11 +7358,11 @@ dst_policy_280 = {
 
 	potential = {
 		has_idea_group = mercenary0
-		has_idea_group_any_culture_focus_trigger = yes
+		has_idea_group_any_state_focus_trigger = yes
 	}
 	allow = {
 		full_idea_group = mercenary0
-		full_idea_group_any_culture_focus_trigger = yes
+		full_idea_group_any_state_focus_trigger = yes
 	}
 
 	# Modifier
@@ -7379,11 +7379,11 @@ dst_policy_281 = {
 
 	potential = {
 		has_idea_group = waffenqualitat0
-		has_idea_group_any_culture_focus_trigger = yes
+		has_idea_group_any_state_focus_trigger = yes
 	}
 	allow = {
 		full_idea_group = waffenqualitat0
-		full_idea_group_any_culture_focus_trigger = yes
+		full_idea_group_any_state_focus_trigger = yes
 		has_army_focus_cap_trigger = yes
 	}
 
@@ -7420,11 +7420,11 @@ dst_policy_282 = {
 
 	potential = {
 		has_idea_group = festung0
-		has_idea_group_any_culture_focus_trigger = yes
+		has_idea_group_any_state_focus_trigger = yes
 	}
 	allow = {
 		full_idea_group = festung0
-		full_idea_group_any_culture_focus_trigger = yes
+		full_idea_group_any_state_focus_trigger = yes
 	}
 
 	# Modifier
@@ -7448,11 +7448,11 @@ dst_policy_283 = {
 
 	potential = {
 		has_idea_group = kriegsproduktion0
-		has_idea_group_any_culture_focus_trigger = yes
+		has_idea_group_any_state_focus_trigger = yes
 	}
 	allow = {
 		full_idea_group = kriegsproduktion0
-		full_idea_group_any_culture_focus_trigger = yes
+		full_idea_group_any_state_focus_trigger = yes
 		has_buildcosts_limiter_trigger = yes
 	}
 
@@ -7470,11 +7470,11 @@ dst_policy_283 = {
 #
 #	potential = {
 #		has_idea_group = logistics0
-#		has_idea_group_any_culture_focus_trigger = yes
+#		has_idea_group_any_state_focus_trigger = yes
 #	}
 #	allow = {
 #		full_idea_group = logistics0
-#		full_idea_group_any_culture_focus_trigger = yes
+#		full_idea_group_any_state_focus_trigger = yes
 #	}
 #
 #	# Modifier
@@ -7491,11 +7491,11 @@ dst_policy_285 = {
 
 	potential = {
 		has_idea_group = militarismus0
-		has_idea_group_any_culture_focus_trigger = yes
+		has_idea_group_any_state_focus_trigger = yes
 	}
 	allow = {
 		full_idea_group = militarismus0
-		full_idea_group_any_culture_focus_trigger = yes
+		full_idea_group_any_state_focus_trigger = yes
 	}
 
 	# Modifier
@@ -7512,11 +7512,11 @@ dst_policy_285 = {
 #	monarch_power = MIL
 #
 #	potential = {
-#		has_idea_group_any_culture_focus_trigger = yes
+#		has_idea_group_any_state_focus_trigger = yes
 #		has_idea_group_any_army_focus_trigger = yes
 #	}
 #	allow = {
-#		full_idea_group_any_culture_focus_trigger = yes
+#		full_idea_group_any_state_focus_trigger = yes
 #		full_idea_group_any_army_focus_trigger = yes
 #		has_army_focus_cap_trigger = yes
 #	}

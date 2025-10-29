@@ -1004,3 +1004,47 @@ fire0 = {
 		}
 	}
 }
+
+logistics0 = {
+	category = MIL
+	
+	trigger = {
+		always = no
+	}
+
+	bonus = {
+		siege_blockade_progress = 1
+	}
+		
+	
+	logistics1 = {
+		artillery_levels_available_vs_fort = 1
+	}
+	logistics2 = {
+		land_attrition = -0.15
+	}
+	logistics3 = {
+		movement_speed = 0.25
+	}
+
+	logistics4 = {
+		reinforce_speed = 0.1
+		envoy_travel_time = -0.33
+	}
+
+	logistics5 = {
+		global_supply_limit_modifier = 0.25
+	}
+	logistics6 = {
+		siege_ability = 0.15
+	}
+	logistics7 = {
+		leader_land_manuever = 1
+		leader_naval_manuever = 1
+	}
+	
+	ai_will_do = {
+		factor = 0
+
+	}
+}

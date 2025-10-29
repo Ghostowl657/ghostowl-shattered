@@ -1143,3 +1143,52 @@ imperialismus0 = {
 	}
 }
 
+
+
+konigreich0 = {
+	category = DIP
+
+	bonus = {
+		monthly_splendor = 1
+	}
+
+	trigger = {
+		always = no
+	}
+
+	konigreich1 = {
+		republican_tradition = 0.25
+		legitimacy = 0.5
+		devotion = 0.5
+		horde_unity = 0.5
+		meritocracy = 0.25
+
+		monthly_support_heir_gain = 0.15
+		imperial_mandate = 0.05
+	}
+	konigreich2 = {
+		envoy_travel_time = -0.33
+	}
+	konigreich3 = {
+		unjustified_demands = -0.15
+	}
+	konigreich4 = {
+		diplomatic_annexation_cost = -0.075
+		accept_vassalization_reasons = 10
+	}
+	konigreich5 = {
+		same_culture_advisor_cost = -0.15
+	}
+	konigreich6 = {
+		prestige_from_land = 0.25
+		prestige_from_naval = 0.25
+	}
+	konigreich7 = {
+		#casus_belli = dst_cb_minorpower
+	}
+
+
+	ai_will_do = {
+		factor = 0
+	}
+}

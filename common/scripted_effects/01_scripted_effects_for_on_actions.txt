@@ -4576,7 +4576,6 @@ on_capital_moved_effect = {
 		limit = { 
 			OR = {
 				owner = { has_reform = great_mongol_state_reform }
-				owner = full_idea_group = mercenary0
 			}
 		}
 		FROM = { remove_province_modifier = allow_banners_capital_modifier }
