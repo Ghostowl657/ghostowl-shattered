@@ -61,6 +61,9 @@ country_decisions = {
 				add_adm_power = -100
 			}
 		}
+		ai_will_do = {
+			factor = 0
+		}
 	}
 	lighten_feudalism = {
 		major = yes
