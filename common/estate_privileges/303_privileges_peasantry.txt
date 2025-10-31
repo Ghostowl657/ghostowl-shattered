@@ -680,7 +680,7 @@ estate_limited_peasants_church_educated = {
 			}
 		}
 		modifier = { 
-			technology_cost = 0.05
+			technology_cost = -0.05
 		}
 	}
 	ai_will_do = {
@@ -755,7 +755,11 @@ estate_peasants_sheep_of_clergy = {
 				NOT = { has_country_flag = new_peasantry_status_quo }
 				NOT = { has_country_flag = take_a_mile }		
 			}
-			current_age = age_of_revolutions
+			OR = { 
+				current_age = age_of_enlightenment
+				current_age = industrial_age
+				current_age = age_of_revolutions
+			}
 		}
 		modifier = {
 			global_unrest = 2
@@ -795,7 +799,11 @@ estate_peasants_sheep_of_clergy = {
 	conditional_modifier = {
 		trigger = {
 			has_country_flag = give_an_inch_flag
-			current_age = age_of_revolutions
+			OR = { 
+				current_age = age_of_enlightenment
+				current_age = industrial_age
+				current_age = age_of_revolutions
+			}
 		}
 		modifier = {
 			global_unrest = 4
@@ -917,7 +925,11 @@ estate_peasants_property_of_nobles = {
 				NOT = { has_country_flag = new_peasantry_status_quo }
 				NOT = { has_country_flag = take_a_mile }		
 			}
-			current_age = age_of_revolutions
+			OR = { 
+				current_age = age_of_enlightenment
+				current_age = industrial_age
+				current_age = age_of_revolutions
+			}
 		}
 		modifier = {
 			global_unrest = 2
@@ -957,7 +969,11 @@ estate_peasants_property_of_nobles = {
 	conditional_modifier = {
 		trigger = {
 			has_country_flag = give_an_inch_flag
-			current_age = age_of_revolutions
+			OR = { 
+				current_age = age_of_enlightenment
+				current_age = industrial_age
+				current_age = age_of_revolutions
+			}
 		}
 		modifier = {
 			global_unrest = 4
@@ -1076,7 +1092,11 @@ estate_peasants_unpaid_labor_of_burghers = {
 				NOT = { has_country_flag = new_peasantry_status_quo }
 				NOT = { has_country_flag = take_a_mile }		
 			}
-			current_age = age_of_revolutions
+			OR = { 
+				current_age = age_of_enlightenment
+				current_age = industrial_age
+				current_age = age_of_revolutions
+			}
 		}
 		modifier = {
 			global_unrest = 2
@@ -1116,7 +1136,11 @@ estate_peasants_unpaid_labor_of_burghers = {
 	conditional_modifier = {
 		trigger = {
 			has_country_flag = give_an_inch_flag
-			current_age = age_of_revolutions
+			OR = { 
+				current_age = age_of_enlightenment
+				current_age = industrial_age
+				current_age = age_of_revolutions
+			}
 		}
 		modifier = {
 			global_unrest = 4
