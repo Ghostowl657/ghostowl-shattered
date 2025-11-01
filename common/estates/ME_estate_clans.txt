@@ -8,6 +8,7 @@ estate_clans = {
 			tag = CEE #tag = CLT (EE tag)
 			tag = LOI
 			tag = KOI
+			tag = KTI
 			#religion = celtic
 			primary_culture = irish
 			has_country_flag = WLS_enable_clans_estate # on the edge between the clan and non clan celts. Can enable via missions

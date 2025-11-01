@@ -42,7 +42,7 @@ country_decisions = {
 				province_id = 1872
 				province_id = 1870
 				province_id = 75
-				province_id = 4720
+#				province_id = 4720
 				province_id = 65
 
 			}
@@ -62,7 +62,7 @@ country_decisions = {
 			owns_core_province = 1872 # Ulm
 			owns_core_province = 1870 # Gallen
 			owns_core_province = 75 # Strasbourg
-			owns_core_province = 4720 # Geneva
+#			owns_core_province = 4720 # Geneva
 			owns_core_province = 65 # Munich
 		}
 		effect = {

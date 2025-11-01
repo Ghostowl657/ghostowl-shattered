@@ -49,11 +49,11 @@ country_decisions = {
 				province_id = 80
 				#Dynamisch
 				province_id = 41
-				province_id = 254
+#				province_id = 254
 				province_id = 1775
 				province_id = 1841
-				province_id = 4523
-				province_id = 4723
+#				province_id = 4523
+#				province_id = 4723
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -83,11 +83,11 @@ country_decisions = {
 			owns_core_province = 2995	# Stolp
 
 			owns_core_province = 41		# K�nigsberg
-			owns_core_province = 254	# Posen
+#			owns_core_province = 254	# Posen
 			owns_core_province = 1775	# Holstein
 			owns_core_province = 1841	# Marienburg
-			owns_core_province = 4723	# Oppeln			
-			owns_core_province = 4523	# Inowroclaw
+#			owns_core_province = 4723	# Oppeln			
+#			owns_core_province = 4523	# Inowroclaw
 		}
 		effect = {
 			# General
