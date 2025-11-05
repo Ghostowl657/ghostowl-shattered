@@ -1,9 +1,9 @@
-version="4.0"
+version="4.2"
 tags={
 	"Balance"
 	"Gameplay"
 }
-name="Ghostowl's Doge Dev"
+name="Ghostowl's Doge"
 dependencies={
 	"1.37 Doge Shattered Europa"
 }
