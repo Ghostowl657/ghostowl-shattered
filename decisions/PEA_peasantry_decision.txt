@@ -72,7 +72,7 @@ country_decisions = {
 			NOT = { has_country_flag = new_peasantry_status_quo }
 		}
 		allow = {
-			legitimacy = 100
+			legitimacy_equivalent = 100
 			stability = 1
 			NOT = { has_country_modifier = lighten_feadulism_timer }
 			if = {
