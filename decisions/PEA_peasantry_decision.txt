@@ -231,7 +231,7 @@ country_decisions = {
 	Liberation_of_Peasantry = {
 		major = yes
 		potential = {
-			has_country_flag = give_an_inch_flag
+			current_age = age_of_absolutism
 		}
 		allow = {
 			always = yes

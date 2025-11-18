@@ -187,45 +187,6 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = influence_peasant_events.3
-	title = influence_peasant_events.3.t
-	desc = influence_peasant_events.3.d
-	picture = CITY_VIEW_eventPicture
-
-	is_triggered_only = yes
-
-	trigger = {
-		had_country_flag = {
-			flag = new_peasantry_status_quo
-			days = 18262
-		}
-		current_age = age_of_absolutism
-		if = {
-			limit = {
-				tag = RUS
-			}
-			has_estate_privilege = estate_burghers_the_new_middle_class
-		}
-	}
-
-	immediate = {
-		clr_country_flag = new_peasantry_status_quo
-		set_country_flag = a_breaking_point
-	}
-
-	option = {
-		name = influence_peasant_events.3.a
-		add_government_reform = liberation_of_peasants
-		set_country_flag = take_a_mile
-	}
-
-	option = {
-		name = influence_peasant_events.3.b
-		custom_tooltip = influence_peasant_events.3.tt
-		set_country_flag = give_an_inch_flag
-	}
-}
 
 country_event = {
 	id = influence_peasant_events.4
