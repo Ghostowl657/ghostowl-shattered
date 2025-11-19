@@ -34,6 +34,8 @@ country_decisions = {
 			NOT = { has_country_flag = began_to_lighten_feudalism }
 			NOT = { has_country_flag = new_peasantry_status_quo }
 			NOT = { has_country_flag = a_breaking_point }
+			NOT = { has_government_reform = liberation_of_peasants }
+			has_country_flag = influence_peasant_estates
 			if = {
 				limit = {
 					tag = RUS
@@ -69,6 +71,8 @@ country_decisions = {
 		major = yes
 		potential = {
 			has_country_flag = began_to_lighten_feudalism
+			NOT = { has_government_reform = liberation_of_peasants }
+			has_country_flag = influence_peasant_estates
 			NOT = { has_country_flag = new_peasantry_status_quo }
 		}
 		allow = {
@@ -232,13 +236,16 @@ country_decisions = {
 		major = yes
 		potential = {
 			current_age = age_of_absolutism
+			has_country_flag = influence_peasant_estates
+			NOT = { has_government_reform = liberation_of_peasants }
+			has_country_flag = new_peasantry_status_quo
 		}
 		allow = {
 			always = yes
 		}
 		effect = {
 			add_government_reform = liberation_of_peasants
-			clr_country_flag = give_an_inch_flag
+			clr_country_flag = new_peasantry_status_quo
 			set_country_flag = take_a_mile
 		}
 	}
